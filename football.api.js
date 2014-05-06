@@ -19,9 +19,7 @@ Api.create = function( opts )
 
   function init( opts )
   {
-    // fix: use jquery version ( not underscore
-    //   just depend on jquery for now)
-    settings = _.extend( {}, defaults, opts );
+    settings = $.extend( {}, defaults, opts );
     
     // debug( 'baseUrl: ' + settings.baseUrl );
   }

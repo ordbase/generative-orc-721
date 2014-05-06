@@ -1,0 +1,16 @@
+{
+  "name": "football-api",
+  "version": "0.0.1",
+  "main": "./football.api.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+   "dependencies": {
+    "jquery": "latest",
+    "requirejs": "latest"
+  }
+}
