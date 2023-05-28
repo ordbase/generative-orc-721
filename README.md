@@ -22,7 +22,7 @@ in 8 seconds ;-) - yes, you can. Example:
 
 That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0]`:
 
-- 0 -  punk (human) base
+- 0 - ![](no1/i/1_human.png) punk (human) base
 
 
 ``` json
