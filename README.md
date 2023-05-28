@@ -125,12 +125,12 @@ such as names, categories, and more.
 Example - spritesheet.csv:
 
 ``` csv
-name,     category,    base64
-Blue, Background,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEVkhZa3PARZAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
+name,           category,    base64
+Blue,           Background,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEVkhZa3PARZAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
 Bitcoin Orange, Background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEX3kh03gNzOAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
-Purple, Background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEWOb7aMtmqBAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
-Antenna, Accessories, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAKUlEQVRYCe3BsQ0AIADDsOT/o8sJLEgssSHJhTpg4oDxmzKSJEmS5KEDUlIFA6L+DvwAAAAASUVORK5CYII=
-Rainbow, Accessories, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAu0lEQVRYw+2OsQ5EQBCG12ucjhegpaFdPa/GG3BoeDMamv1vZ5bG1XvJJfMlX2ZGJPspJQiCIAiCIAiWI0tx5imOLMHvH88T4K2sAU8OYROcNojuk/fUTxzGAGYvgb2w02pDzKisLoh2kHb3EmC2EtVUQ88NT3OHbIWLonnpJUBPDcLWsK8O0BRzBem5RkXyXfsJoEeHaMEQr+yrcyFk2IJvF2f8BAzxgufdsytL923/+LeP1q9vgvB3fABOiLQ6WjY8vQAAAABJRU5ErkJggg==
+Purple,         Background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEWOb7aMtmqBAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
+Antenna,        Accessories, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAKUlEQVRYCe3BsQ0AIADDsOT/o8sJLEgssSHJhTpg4oDxmzKSJEmS5KEDUlIFA6L+DvwAAAAASUVORK5CYII=
+Rainbow,        Accessories, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAu0lEQVRYw+2OsQ5EQBCG12ucjhegpaFdPa/GG3BoeDMamv1vZ5bG1XvJJfMlX2ZGJPspJQiCIAiCIAiWI0tx5imOLMHvH88T4K2sAU8OYROcNojuk/fUTxzGAGYvgb2w02pDzKisLoh2kHb3EmC2EtVUQ88NT3OHbIWLonnpJUBPDcLWsK8O0BRzBem5RkXyXfsJoEeHaMEQr+yrcyFk2IJvF2f8BAzxgufdsytL923/+LeP1q9vgvB3fABOiLQ6WjY8vQAAAABJRU5ErkJggg==
 ...
 ```
 
@@ -200,6 +200,159 @@ can add more keys as you please.
 ## Sample Collections
 
 
+
+
+### Sample No. 3 - D.I.Y. Ordibots
+
+What's different compared to Generative BRC-721 (by Jerry Fanelli)?
+Let's compare the Ordibots (BRC-721)
+and D.I.Y. Ordibots (ORC-721) inscriptions!
+
+**Format Option 1) Binary Image - Ultra-Compact**
+
+
+Example - no3/spritesheet.png (~??kb):
+
+![](no3/spritesheet.png)
+
+<details>
+<summary markdown="1">4x</summary>
+
+![](no3/spritesheet@4x.png)
+
+</details>
+
+
+
+
+**Format Option 2) Tabular (.csv) - Compact**
+
+Using the tabular (text) format in the comma-separated values (.csv) format
+lets you add "on-chain" metadata
+such as names, categories, and more.
+
+
+Example - [no3/spritesheet.csv](no3/spritesheet.csv):
+
+``` csv
+blue, background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEVkhZa3PARZAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
+bitcoin-orange, background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEX3kh03gNzOAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
+brown, background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEWUVU4LyOhwAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
+purple, background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEWOb7aMtmqBAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
+antenna, accessories, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAKUlEQVRYCe3BsQ0AIADDsOT/o8sJLEgssSHJhTpg4oDxmzKSJEmS5KEDUlIFA6L+DvwAAAAASUVORK5CYII=
+none, accessories, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGklEQVRYR+3BAQEAAACCIP+vbkhAAQAAAO8GECAAAcFgLJ8AAAAASUVORK5CYII=
+rainbow, accessories, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAu0lEQVRYw+2OsQ5EQBCG12ucjhegpaFdPa/GG3BoeDMamv1vZ5bG1XvJJfMlX2ZGJPspJQiCIAiCIAiWI0tx5imOLMHvH88T4K2sAU8OYROcNojuk/fUTxzGAGYvgb2w02pDzKisLoh2kHb3EmC2EtVUQ88NT3OHbIWLonnpJUBPDcLWsK8O0BRzBem5RkXyXfsJoEeHaMEQr+yrcyFk2IJvF2f8BAzxgufdsytL923/+LeP1q9vgvB3fABOiLQ6WjY8vQAAAABJRU5ErkJggg==
+...
+```
+
+and the deploy inscription:
+
+``` json
+{
+    "p": "orc-721",
+    "op": "deploy",
+    "slug": "diyordibots",
+    "name": "D.I.Y. Ordibots",
+    "max": 1000,
+    "dim": "32x32",
+    "generative": "<spritesheet/art layers inscription id here>"
+}
+```
+
+and the mint inscriptions:
+
+ordibot no. 0 specs:
+- background: 2 - brown
+- accessories: 5 - none
+- body:  16 - standard-oval
+- belly:  23 - empty
+- face: 9 - surprised
+
+``` json
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diyordibots",
+   "g": [2,5,16,23,9]
+}
+```
+
+ordibot no. 1 specs:
+
+- background: 0 - blue
+- accessories: 4 - antenna
+- body:  16 - standard-oval
+- belly:  23 - empty
+- face: 8 - neutral
+
+``` json
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diyordibots",
+   "g": [0,4,16,23,8]
+}
+```
+
+and so on.
+
+**Compare to Gen-BRC-721**
+
+The deploy inscription ([no. 8 326 719](https://ordinals.com/content/b7205d40f3b1b1486567f0d6e53ff2812983db4c03ad7d3606812cd150c64802i0))
+on May 21, 2023 by Jerry Fanelli
+
+``` json
+{
+  "p": "gen-brc-721",
+  "op": "deploy",
+  "slug": "ordibots",
+  "name": "OrdiBots",
+  "supply": 1000,
+  "trait_types": [
+     "background",
+     "accessories",
+     "body",
+     "belly",
+     "face"
+    ],
+  "traits": {
+       ...
+    }
+}
+```
+
+
+The 1000 mint inscriptions
+
+``` json
+{
+   "p":"gen-brc-721",
+   "op":"mint",
+   "s":"ordibots",
+   "t_ins":["b7205d40f3b1b1486567f0d6e53ff2812983db4c03ad7d3606812cd150c64802i0"],"h":"2b936881d34e7be726d6ad3f23edbdaf84ae5974e33c987505d4d70a144859d5","id":"0",
+   "a":[[0,"brown"],
+        [0,"none"],
+        [0,"standard-oval"],
+        [0,"empty"],
+        [0,"surprised"]]
+}
+```
+
+``` json
+{
+   "p":"gen-brc-721",
+   "op":"mint",
+   "s":"ordibots",
+   "t_ins":["b7205d40f3b1b1486567f0d6e53ff2812983db4c03ad7d3606812cd150c64802i0"],"h":"ad82a097c19a5d349ab99db3ad9102caf624486702d9a147f4d3003162b90222","id":"1",
+   "a":[[0,"blue"],
+        [0,"antenna"],
+        [0,"standard-oval"],
+        [0,"empty"],
+        [0,"neutral"]]
+}
+```
+
+and so on.
 
 
 
