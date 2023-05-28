@@ -5,7 +5,7 @@ Author:  Gerald Bauer (Punk's Not Dead, Learn Pixel Art, et al)
 
 
 Let's deploy a new 10 000 d.i.y. punk (pixel head) collection
-in 8 seconds ;-) -yes, you can. Example:
+in 8 seconds ;-) - yes, you can. Example:
 
 
 ``` json
