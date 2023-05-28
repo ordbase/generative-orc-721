@@ -1,8 +1,50 @@
 # Generative ORC-721 Protocol / Standard for Bitcoin & Co.
 
-Author:  Gerald Bauer (Punk's Not Dead et al)
+Author:  Gerald Bauer (Punk's Not Dead, Learn Pixel Art, et al)
 
 
+
+Let's deploy a new 10 000 d.i.y. punk (pixel head) collection
+in 8 seconds ;-) -yes, you can. Example:
+
+
+``` json
+{
+    "p": "orc-721",
+    "op": "deploy",
+    "slug": "diypunks",
+    "name": "D.I.Y. Punks",
+    "supply": 10000,
+    "size": "24x24",
+    "generative": "<spritesheet/art layers inscription id here>"
+}
+```
+
+That's it. Ready to mint:
+
+``` json
+```
+
+
+
+Where's the catch?   Step 0: To make  it work you can (re)use
+existing inscribed spritesheets / art layers or inscribe your very own.
+Read on.
+
+
+
+## Spritesheet / Artwork Layers Inscriptions
+
+
+
+
+
+
+
+## Deploy Inscriptions
+
+
+## Mint Inscriptions
 
 
 
