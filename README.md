@@ -211,7 +211,7 @@ and D.I.Y. Ordibots (ORC-721) inscriptions!
 **Format Option 1) Binary Image - Ultra-Compact**
 
 
-Example - no3/spritesheet.png (~??kb):
+Example - [no3/spritesheet.png](no3/spritesheet.png) (~3kb):
 
 ![](no3/spritesheet.png)
 
@@ -225,12 +225,7 @@ Example - no3/spritesheet.png (~??kb):
 
 
 
-**Format Option 2) Tabular (.csv) - Compact**
-
-Using the tabular (text) format in the comma-separated values (.csv) format
-lets you add "on-chain" metadata
-such as names, categories, and more.
-
+**Format Option 2) Tabular Text (.csv) - Compact**
 
 Example - [no3/spritesheet.csv](no3/spritesheet.csv):
 
@@ -262,11 +257,12 @@ and the deploy inscription:
 and the mint inscriptions:
 
 ordibot no. 0 specs:
-- background: 2 - brown
-- accessories: 5 - none
-- body:  16 - standard-oval
-- belly:  23 - empty
-- face: 9 - surprised
+- background: ![](no3/i/2_brown.png) 2 - brown
+- accessories: ![](no3/i/5_none.png) 5 - none
+- body:   ![](no3/i/16_standard-oval.png) 16 - standard-oval
+- belly:  ![](no3/i/23_empty.png) 23 - empty
+- face: ![](no3/i/9_surprised.png)  9 - surprised
+
 
 ``` json
 {
@@ -279,11 +275,11 @@ ordibot no. 0 specs:
 
 ordibot no. 1 specs:
 
-- background: 0 - blue
-- accessories: 4 - antenna
-- body:  16 - standard-oval
-- belly:  23 - empty
-- face: 8 - neutral
+- background: ![](no3/i/0_blue.png)  0 - blue
+- accessories:  ![](no3/i/4_antenna.png)  4 - antenna
+- body:  ![](no3/i/16_standard-oval.png)  16 - standard-oval
+- belly:  ![](no3/i/23_empty.png)  23 - empty
+- face:  ![](no3/i/8_neutral.png)  8 - neutral
 
 ``` json
 {
@@ -329,7 +325,8 @@ The 1000 mint inscriptions
    "p":"gen-brc-721",
    "op":"mint",
    "s":"ordibots",
-   "t_ins":["b7205d40f3b1b1486567f0d6e53ff2812983db4c03ad7d3606812cd150c64802i0"],"h":"2b936881d34e7be726d6ad3f23edbdaf84ae5974e33c987505d4d70a144859d5","id":"0",
+   "t_ins":["b7205d40f3b1b1486567f0d6e53ff2812983db4c03ad7d3606812cd150c64802i0"],
+   "h":"2b936881d34e7be726d6ad3f23edbdaf84ae5974e33c987505d4d70a144859d5","id":"0",
    "a":[[0,"brown"],
         [0,"none"],
         [0,"standard-oval"],
@@ -343,7 +340,8 @@ The 1000 mint inscriptions
    "p":"gen-brc-721",
    "op":"mint",
    "s":"ordibots",
-   "t_ins":["b7205d40f3b1b1486567f0d6e53ff2812983db4c03ad7d3606812cd150c64802i0"],"h":"ad82a097c19a5d349ab99db3ad9102caf624486702d9a147f4d3003162b90222","id":"1",
+   "t_ins":["b7205d40f3b1b1486567f0d6e53ff2812983db4c03ad7d3606812cd150c64802i0"],
+   "h":"ad82a097c19a5d349ab99db3ad9102caf624486702d9a147f4d3003162b90222","id":"1",
    "a":[[0,"blue"],
         [0,"antenna"],
         [0,"standard-oval"],
