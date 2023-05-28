@@ -361,7 +361,7 @@ ordibot no. 0 specs:
 }
 ```
 
-![](no3/i/ordibot0.png) <br> 4x
+![](no3/i/ordibot0.png)  4x
 ![](no3/i/ordibot0@4x.png)
 
 
@@ -383,7 +383,7 @@ ordibot no. 1 specs:
 }
 ```
 
-![](no3/i/ordibot1.png) <br> 4x
+![](no3/i/ordibot1.png)  4x
 ![](no3/i/ordibot1@4x.png)
 
 
