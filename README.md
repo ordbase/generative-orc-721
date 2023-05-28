@@ -1,6 +1,6 @@
 # Generative ORC-721 Protocol / Standard for Bitcoin & Co.
 
-Author:  Gerald Bauer (Punk's Not Dead, Learn Pixel Art, et al)
+Author:  [Gerald Bauer](https://github.com/geraldb) ([Punk's Not Dead](https://github.com/cryptopunksnotdead), [Learn Pixel Art](https://github.com/learnpixelart), etc)
 
 
 
