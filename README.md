@@ -20,8 +20,6 @@ in 8 seconds ;-) - yes, you can. Example:
 }
 ```
 
-That's it. Ready to mint:
-
 That's it. Ready to mint the first punk:
 
 ``` json
