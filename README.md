@@ -14,8 +14,8 @@ in 8 seconds ;-) - yes, you can. Example:
     "op": "deploy",
     "slug": "diypunks",
     "name": "D.I.Y. Punks",
-    "supply": 10000,
-    "size": "24x24",
+    "max": 10000,
+    "dim": "24x24",
     "generative": "<spritesheet/art layers inscription id here>"
 }
 ```
@@ -87,6 +87,21 @@ Three main ideas:
 1) Make it (even) easier
 2) Use less bytes (and, thus, save on inscription fees)
 3) Many more options (and less restrictions / requirements)
+
+
+
+###  More Design Notes
+
+- Keep all keys unique, that is, MUST start with a different letter,
+  thus,
+  - d is the same as dim
+  - g is the same as generative
+  - n is the same as name
+  - m is the same as max
+  - s is the same as slug
+  - etc.
+
+
 
 
 
