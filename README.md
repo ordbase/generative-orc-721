@@ -57,19 +57,28 @@ Read on.
 To inscribe your spritesheet(s) / art layers you have
 three format options:
 
-1) binary - ultra-compact (less bytes, saving sats!)
-2) tabular (.csv) - compact (less bytes, saving sats!)
-3) structured (.json)  - classic
+1) binary image - ultra-compact (less bytes, saving sats!)
+2) tabular text / dataset (.csv) - compact (less bytes, saving sats!)
+3) structured text / dataset (.json)  - classic
 
 
 Let's use the d.i.y (ordinal) punks as an example.
 
 
-### Format Optin 1) Binary - Ultra-Compact
+### Format Option 1) Binary Image - Ultra-Compact
 
 Inscribe the spritesheet / art layers as a single binary image file (image/png).
 
-Example:
+Example - spritesheet.png (~8kb):
+
+![](i/spritesheet.png)
+
+<details>
+<summary markdown="1">4x</summary>
+
+![](i/spritesheet@4x.png)
+
+</details>
 
 
 
@@ -89,6 +98,35 @@ Thus, [3,18,24,49]`, for example, from the mint example no. 1:
 ```
 references the sprite / attribute no. 3, 18, 24, 49
 and the get merged / stacked in the order listed.
+
+
+
+### Format Option 2) Tabular (.csv) Compact
+
+
+Using the tabular (text) format in the comma-separated values (.csv) format
+lets you add "on-chain" metadata
+such as names, categories, and more.
+
+Example - spritesheet.csv:
+
+``` csv
+name, category, base64
+
+```
+
+Note: The name (or names) or the category columns
+are optional - only the base64-encoded image is required - and, yes you
+can add more columns as you please.
+
+
+Aside - What's base64?
+
+Images are binary blobs - using the base64 encoding
+you can convert (or encode) the binary blob into
+a ascii-safe text snippet that you can copy-n-paste
+into any text file.
+
 
 
 
