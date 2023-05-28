@@ -20,25 +20,48 @@ in 8 seconds ;-) - yes, you can. Example:
 }
 ```
 
-That's it. Ready to mint the first punk:
+That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0]`:
+
+- 0 - ![](no1/i/0_human.png) punk (human) base
 
 ``` json
 {
    "p":"orc-721",
    "op":"mint",
    "s":"diypunks",
-   "g":[3,18,24,49]
+   "g":[0]
 }
 ```
 
-and the second:
+
+
+and the second with the (generative) specs - `[0,38]`:
+
+- 0 - ![](no1/i/0_human.png)  punk (human) base
+- 32 - ![](no/i/38_laser-eyes.png) laser eyes
 
 ``` json
 {
    "p":"orc-721",
    "op":"mint",
    "s":"diypunks",
-   "g":[1,14,42]
+   "g":[0,38]
+}
+```
+
+
+and the third  with the (generative specs) - `[99, 0,38]`:
+
+- 99 - ![](no1/i/99_bitcoin-pattern.png)  background - bitcoin pattern
+- 0 - ![](no1/i/0_human.png)  punk (human) base
+- 32 - ![](no/i/38_laser-eyes.png) laser eyes
+
+``` json
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diypunks",
+   "g":[99, 0,38]
 }
 ```
 
@@ -200,7 +223,7 @@ can add more keys as you please.
 
 ## Sample Collections
 
-### Sample No. 3 - D.I.Y. Orange-Pilled Punks (w/ Laser Eyes Optional)
+### Sample No. 1 - D.I.Y. Orange-Pilled Punks (w/ Laser Eyes Optional)
 
 **Format Option 1) Binary Image - Ultra-Compact**
 
