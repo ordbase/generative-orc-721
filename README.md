@@ -230,6 +230,7 @@ Example - [no3/spritesheet.png](no3/spritesheet.png) (~3kb):
 Example - [no3/spritesheet.csv](no3/spritesheet.csv):
 
 ``` csv
+name, category, base64
 blue, background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEVkhZa3PARZAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
 bitcoin-orange, background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEX3kh03gNzOAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
 brown, background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEWUVU4LyOhwAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
@@ -273,6 +274,11 @@ ordibot no. 0 specs:
 }
 ```
 
+![](no3/i/ordibot0.png) <br> 4x
+![](no3/i/ordibot0@4x.png)
+
+
+
 ordibot no. 1 specs:
 
 - background: ![](no3/i/0_blue.png)  0 - blue
@@ -289,6 +295,12 @@ ordibot no. 1 specs:
    "g": [0,4,16,23,8]
 }
 ```
+
+![](no3/i/ordibot1.png) <br> 4x
+![](no3/i/ordibot1@4x.png)
+
+
+
 
 and so on.
 
@@ -326,7 +338,8 @@ The 1000 mint inscriptions
    "op":"mint",
    "s":"ordibots",
    "t_ins":["b7205d40f3b1b1486567f0d6e53ff2812983db4c03ad7d3606812cd150c64802i0"],
-   "h":"2b936881d34e7be726d6ad3f23edbdaf84ae5974e33c987505d4d70a144859d5","id":"0",
+   "h":"2b936881d34e7be726d6ad3f23edbdaf84ae5974e33c987505d4d70a144859d5",
+   "id":"0",
    "a":[[0,"brown"],
         [0,"none"],
         [0,"standard-oval"],
@@ -341,7 +354,8 @@ The 1000 mint inscriptions
    "op":"mint",
    "s":"ordibots",
    "t_ins":["b7205d40f3b1b1486567f0d6e53ff2812983db4c03ad7d3606812cd150c64802i0"],
-   "h":"ad82a097c19a5d349ab99db3ad9102caf624486702d9a147f4d3003162b90222","id":"1",
+   "h":"ad82a097c19a5d349ab99db3ad9102caf624486702d9a147f4d3003162b90222",
+   "id":"1",
    "a":[[0,"blue"],
         [0,"antenna"],
         [0,"standard-oval"],
