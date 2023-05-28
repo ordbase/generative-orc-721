@@ -197,7 +197,94 @@ can add more keys as you please.
 
 
 
+
 ## Sample Collections
+
+### Sample No. 3 - D.I.Y. Orange-Pilled Punks (w/ Laser Eyes Optional)
+
+**Format Option 1) Binary Image - Ultra-Compact**
+
+Example - [no1/spritesheet.png](no1/spritesheet.png) (~??kb):
+
+![](no1/spritesheet.png)
+
+<details>
+<summary markdown="1">4x</summary>
+
+![](no1/spritesheet@4x.png)
+
+</details>
+
+
+**Format Option 2) Tabular Text (.csv) - Compact**
+
+Example - [no1/spritesheet.csv](no1/spritesheet.csv):
+
+``` csv
+name, category, base64
+...
+```
+
+and the deploy inscription:
+
+``` json
+{
+    "p": "orc-721",
+    "op": "deploy",
+    "slug": "diypunks",
+    "name": "D.I.Y. Punks",
+    "max": 100,
+    "dim": "24x24",
+    "generative": "<spritesheet/art layers inscription id here>"
+}
+```
+
+and the mint inscriptions...
+
+
+
+### Sample No. 2 - D.I.Y. Wiener - Edmund "Mundl" Sackbauer et al
+
+
+**Format Option 1) Binary Image - Ultra-Compact**
+
+Example - [no2/spritesheet.png](no2/spritesheet.png) (~??kb):
+
+![](no2/spritesheet.png)
+
+<details>
+<summary markdown="1">4x</summary>
+
+![](no2/spritesheet@4x.png)
+
+</details>
+
+
+**Format Option 2) Tabular Text (.csv) - Compact**
+
+Example - [no2/spritesheet.csv](no2/spritesheet.csv):
+
+``` csv
+name, category, base64
+...
+```
+
+and the deploy inscription:
+
+``` json
+{
+    "p": "orc-721",
+    "op": "deploy",
+    "slug": "diywiener",
+    "name": "D.I.Y. Wiener",
+    "max": 100,
+    "dim": "32x32",
+    "generative": "<spritesheet/art layers inscription id here>"
+}
+```
+
+and the mint inscriptions...
+
 
 
 
