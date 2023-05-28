@@ -54,6 +54,46 @@ Read on.
 
 ## Spritesheet / Artwork Layers Inscriptions
 
+To inscribe your spritesheet(s) / art layers you have
+three format options:
+
+1) binary - ultra-compact (less bytes, saving sats!)
+2) tabular (.csv) - compact (less bytes, saving sats!)
+3) structured (.json)  - classic
+
+
+Let's use the d.i.y (ordinal) punks as an example.
+
+
+### Format Optin 1) Binary - Ultra-Compact
+
+Inscribe the spritesheet / art layers as a single binary image file (image/png).
+
+Example:
+
+
+
+Note:  To make it work all sprites or attributes MUST be of the same image dimension (e.g. 24x24) and get referenced by number (starting with 0)
+count left-to-right and top-to-bottom.
+
+
+Thus, [3,18,24,49]`, for example, from the mint example no. 1:
+
+``` json
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diypunks",
+   "g":[3,18,24,49]
+}
+```
+references the sprite / attribute no. 3, 18, 24, 49
+and the get merged / stacked in the order listed.
+
+
+
+
+
 
 
 
