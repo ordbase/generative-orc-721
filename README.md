@@ -1,4 +1,4 @@
-# Generative ORC-721 Protocol / Standard for Bitcoin & Co.
+# Generative Art ORC-721 Protocol / Standard for Bitcoin & Co.
 
 Author:  [Gerald Bauer](https://github.com/geraldb) ([Punk's Not Dead](https://github.com/cryptopunksnotdead), [Learn Pixel Art](https://github.com/learnpixelart), etc)
 
