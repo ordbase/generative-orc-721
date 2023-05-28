@@ -22,8 +22,29 @@ in 8 seconds ;-) - yes, you can. Example:
 
 That's it. Ready to mint:
 
+That's it. Ready to mint the first punk:
+
 ``` json
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diypunks",
+   "g":[3,18,24,49]
+}
 ```
+
+and the second:
+
+``` json
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diypunks",
+   "g":[1,14,42]
+}
+```
+
+and so on.
 
 
 
