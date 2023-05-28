@@ -132,7 +132,7 @@ Thus, for example `[59,0,38]` from the mint starter examples:
 ```
 
 references the sprites / attributes no. 59 - ![](no1/i/59_bitcoin-pattern.png),
-no. 0 - ![](no1/i/1_human.png),
+no. 0 - ![](no1/i/0_human.png),
 no. 38- ![](no1/i/38_laser-eyes.png)
 and the sprites / attributes
 get merged / stacked / pasted-on-top-of-each-other in the order listed.
