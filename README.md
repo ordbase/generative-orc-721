@@ -83,10 +83,10 @@ Example - spritesheet.png (~8kb):
 
 
 Note:  To make it work all sprites or attributes MUST be of the same image dimension (e.g. 24x24) and get referenced by number (starting with 0)
-count left-to-right and top-to-bottom.
+counting left-to-right and top-to-bottom.
 
 
-Thus, [3,18,24,49]`, for example, from the mint example no. 1:
+Thus, for example `[3,18,24,49]` from the mint example no. 1:
 
 ``` json
 {
@@ -96,8 +96,21 @@ Thus, [3,18,24,49]`, for example, from the mint example no. 1:
    "g":[3,18,24,49]
 }
 ```
-references the sprite / attribute no. 3, 18, 24, 49
-and the get merged / stacked in the order listed.
+
+references the sprites / attributes no. 3, 18, 24, 49
+and the sprites / attributes
+get merged / stacked / pasted-on-top-of-each-other in the order listed.
+
+
+Aside - Pasted On Top Of Each Other?!
+
+Yes, the (generative) magic is the transparent background / color!
+If you merge a solid / fully opaque image (let's say all black)
+on-top-of another image, than it gets completly overwritten -
+to make the (generative) magic work - use the transparent color
+in your sprite / art layers.
+
+
 
 
 
