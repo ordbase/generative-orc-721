@@ -69,7 +69,7 @@ Let's use the d.i.y (ordinal) punks as an example.
 
 Inscribe the spritesheet / art layers as a single binary image file (image/png).
 
-Example - spritesheet.png (~8kb):
+Example - spritesheet.png (~4kb):
 
 ![](no1/spritesheet.png)
 
@@ -204,7 +204,7 @@ can add more keys as you please.
 
 **Format Option 1) Binary Image - Ultra-Compact**
 
-Example - [no1/spritesheet.png](no1/spritesheet.png) (~??kb):
+Example - [no1/spritesheet.png](no1/spritesheet.png) (~4kb):
 
 ![](no1/spritesheet.png)
 
