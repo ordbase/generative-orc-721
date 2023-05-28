@@ -22,7 +22,8 @@ in 8 seconds ;-) - yes, you can. Example:
 
 That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0]`:
 
-- 0 - ![](no1/i/0_human.png) punk (human) base
+- 0 -  punk (human) base
+
 
 ``` json
 {
@@ -37,8 +38,8 @@ That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0
 
 and the second with the (generative) specs - `[0,38]`:
 
-- 0 - ![](no1/i/0_human.png)  punk (human) base
-- 32 - ![](no/i/38_laser-eyes.png) laser eyes
+- 0 - ![](no1/i/1_human.png)  punk (human) base
+- 32 - ![](no1/i/38_laser-eyes.png) laser eyes
 
 ``` json
 {
@@ -53,8 +54,8 @@ and the second with the (generative) specs - `[0,38]`:
 and the third  with the (generative specs) - `[99, 0,38]`:
 
 - 99 - ![](no1/i/99_bitcoin-pattern.png)  background - bitcoin pattern
-- 0 - ![](no1/i/0_human.png)  punk (human) base
-- 32 - ![](no/i/38_laser-eyes.png) laser eyes
+- 0 - ![](no1/i/1_human.png)  punk (human) base
+- 32 - ![](no1/i/38_laser-eyes.png) laser eyes
 
 ``` json
 {
