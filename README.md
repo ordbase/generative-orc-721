@@ -71,12 +71,12 @@ Inscribe the spritesheet / art layers as a single binary image file (image/png).
 
 Example - spritesheet.png (~8kb):
 
-![](i/spritesheet.png)
+![](no1/spritesheet.png)
 
 <details>
 <summary markdown="1">4x</summary>
 
-![](i/spritesheet@4x.png)
+![](no1/spritesheet@4x.png)
 
 </details>
 
