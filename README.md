@@ -22,7 +22,7 @@ in 8 seconds ;-) - yes, you can. Example:
 
 That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0]`:
 
-- 0 - ![](no1/i/1_human.png) punk (human) base
+- 0 - ![](no1/i/0_human.png) punk (human) base
 
 
 ``` json
@@ -34,12 +34,15 @@ That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0
 }
 ```
 
+![](no1/i/punk0.png)  4x
+![](no1/i/punk0@4x.png)
+
 
 
 and the second with the (generative) specs - `[0,38]`:
 
-- 0 - ![](no1/i/1_human.png)  punk (human) base
-- 32 - ![](no1/i/38_laser-eyes.png) laser eyes
+- 0 - ![](no1/i/0_human.png)  punk (human) base
+- 38 - ![](no1/i/38_laser-eyes.png) laser eyes
 
 ``` json
 {
@@ -50,21 +53,28 @@ and the second with the (generative) specs - `[0,38]`:
 }
 ```
 
+![](no1/i/punk1.png)  4x
+![](no1/i/punk1@4x.png)
 
-and the third  with the (generative specs) - `[99, 0,38]`:
 
-- 99 - ![](no1/i/99_bitcoin-pattern.png)  background - bitcoin pattern
-- 0 - ![](no1/i/1_human.png)  punk (human) base
-- 32 - ![](no1/i/38_laser-eyes.png) laser eyes
+and the third with the (generative specs) - `[59,0,38]`:
+
+- 59 - ![](no1/i/59_bitcoin-pattern.png)  background - bitcoin pattern
+- 0 - ![](no1/i/0_human.png)  punk (human) base
+- 38 - ![](no1/i/38_laser-eyes.png) laser eyes
 
 ``` json
 {
    "p":"orc-721",
    "op":"mint",
    "s":"diypunks",
-   "g":[99, 0,38]
+   "g":[59,0,38]
 }
 ```
+
+![](no1/i/punk2.png)  4x
+![](no1/i/punk2@4x.png)
+
 
 and so on.
 
@@ -110,20 +120,24 @@ Note:  To make it work all sprites or attributes MUST be of the same image dimen
 counting left-to-right and top-to-bottom.
 
 
-Thus, for example `[3,18,24,49]` from the mint example no. 1:
+Thus, for example `[59,0,38]` from the mint starter examples:
 
 ``` json
 {
    "p":"orc-721",
    "op":"mint",
    "s":"diypunks",
-   "g":[3,18,24,49]
+   "g":[59,0,38]
 }
 ```
 
-references the sprites / attributes no. 3, 18, 24, 49
+references the sprites / attributes no. 59 - ![](no1/i/59_bitcoin-pattern.png),
+no. 0 - ![](no1/i/1_human.png),
+no. 38- ![](no1/i/38_laser-eyes.png)
 and the sprites / attributes
 get merged / stacked / pasted-on-top-of-each-other in the order listed.
+
+
 
 
 Aside - Pasted On Top Of Each Other?!
