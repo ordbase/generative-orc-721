@@ -1,0 +1,20 @@
+# do NOT check in dev/test enviroment variables in .env (dot env files)
+.env
+.env.yaml
+.env.yml
+
+
+
+##################################
+#  add more tmp directories
+tmp/
+tmp2/
+tmp3/
+tmp4/
+tmp5/
+tmp6/
+tmp7/
+tmp32/
+tmp40/
+tmp2017/
+tmpa16z/
