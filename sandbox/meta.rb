@@ -12,6 +12,11 @@ recs.each_with_index do |rec,i|
   id = rec['id']
   puts "==> #{i} - #{id}"
 
+  path = "./cache/#{id}.json"
+
+  next  if File.exist?( path )
+
+
   content = Ordinals.content( id )
   pp content
   #=> #<Ordinals::Api::Content:0x000001a1352df938
@@ -34,7 +39,7 @@ recs.each_with_index do |rec,i|
   data = JSON.parse( txt )
   pp data
 
-  write_text( "./cache/#{id}.json", txt )
+  write_text( path, txt )
 end
 
 puts "bye"
