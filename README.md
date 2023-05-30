@@ -4,8 +4,9 @@ Author:  [Gerald Bauer](https://github.com/geraldb) ([Punk's Not Dead](https://g
 
 
 
-Let's deploy a new 10 000 d.i.y. punk (pixel head) collection
-in 8 seconds ;-) - yes, you can. Example:
+
+Let's deploy a new 721 d.i.y. punk (pixel head) collection
+in 8 seconds ;-) - yes, you can. Example - [Inscription No. 9947030](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0):
 
 
 ``` json
@@ -14,11 +15,13 @@ in 8 seconds ;-) - yes, you can. Example:
     "op": "deploy",
     "slug": "diypunks",
     "name": "D.I.Y. Punks",
-    "max": 10000,
+    "max": 721,
     "dim": "24x24",
-    "generative": "<spritesheet/art layers inscription id here>"
+    "generative": "cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0"
 }
 ```
+
+
 
 That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0]`:
 
@@ -99,11 +102,12 @@ three format options:
 Let's use the d.i.y (ordinal) punks as an example.
 
 
+
 ### Format Option 1) Binary Image - Ultra-Compact
 
 Inscribe the spritesheet / art layers as a single binary image file (image/png).
 
-Example - spritesheet.png (~4kb):
+Example - [spritesheet.png (~4kb) @ Inscription No. 9917010](https://ordinals.com/inscription/cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0):
 
 ![](no1/spritesheet.png)
 
@@ -162,12 +166,13 @@ such as names, categories, and more.
 Example - spritesheet.csv:
 
 ``` csv
-name,           category,    base64
-Blue,           Background,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEVkhZa3PARZAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
-Bitcoin Orange, Background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEX3kh03gNzOAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
-Purple,         Background, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEWOb7aMtmqBAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=
-Antenna,        Accessories, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAKUlEQVRYCe3BsQ0AIADDsOT/o8sJLEgssSHJhTpg4oDxmzKSJEmS5KEDUlIFA6L+DvwAAAAASUVORK5CYII=
-Rainbow,        Accessories, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAu0lEQVRYw+2OsQ5EQBCG12ucjhegpaFdPa/GG3BoeDMamv1vZ5bG1XvJJfMlX2ZGJPspJQiCIAiCIAiWI0tx5imOLMHvH88T4K2sAU8OYROcNojuk/fUTxzGAGYvgb2w02pDzKisLoh2kHb3EmC2EtVUQ88NT3OHbIWLonnpJUBPDcLWsK8O0BRzBem5RkXyXfsJoEeHaMEQr+yrcyFk2IJvF2f8BAzxgufdsytL923/+LeP1q9vgvB3fABOiLQ6WjY8vQAAAABJRU5ErkJggg==
+name,   category, base64
+Human,  Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAAAADWdQf3kxr4rUv///+T6IvaAAAABnRSTlMA//////96eeD+AAAAXklEQVR4nGNiQAJM5HIEBQUFYBxGJSUlRRhHiBFIC8CU8SPr+YDTtP8fGN5DOYwK/w0YPsNlmB4wyME4D5D0/AdS95BNU8Ll6n/IyphQlf37AOfcu3cfIfP//QcM0wAaAxSH2HomKQAAAABJRU5ErkJggg==
+Vampire, Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAFVBMVEUAAAAAAABbMwOlXQX2AAv3kxr////bh9zEAAAAB3RSTlMA////////pX+m+wAAAG1JREFUeJxjYkACTORyBAUFBWAcRhcXF0cYRwSIWQRINO3fA4Z7UA6jwz8DhsdwGZYPDPYwzgEkPf+B1B5k01xw2bNnzwEEx8TFAMxhFBRkYBBg4PkA4vxnFAQp2w9R9h7kI4EPEM5/EP0erBUAERwWzx5CqboAAAAASUVORK5CYII=
+Demon,   Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAD1BMVEUAAAAAAAC4cAv3kxr///+zzqXqAAAABXRSTlMA/////xzQJlIAAABgSURBVHichY3dDYAgDISPTgAuYGX/mdANaByAqonSEhPty+XL/ZTgjj4hRCB1Z0Fgi6VoHcq5w3Rp/J0eQQX1hsDK2G1aMD+wuY6eUvxa9uD/NB+jMdakQymrOVrltXYAZGITh03FFbsAAAAASUVORK5CYII=
+Zombie,  Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAAAADHcwz3kxr/AAD/z5G469XyAAAABnRSTlMA//////96eeD+AAAAYUlEQVR4nJ2O0Q2AMAhEDyZoHUAr+89UjQuUCVr7IZXE9Ec+IC93HDBc8V+IMQYDEpHdYOmNg9lWv3NO05qiPECJFdtQasJlcBJgR1sf2afJ7OvqbeRthKoDcj5epRX9pN0MGRSH7kVdXgAAAABJRU5ErkJggg==
+Ape,     Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAAAAD3kxr3nzL/xHj////N6G+OAAAABnRSTlMA//////96eeD+AAAAb0lEQVR4nJ3PwQ2AMAgAQNq+TcoGJg6gkf1HIDqCcYGyQFs1kdKHL/nQC4WAhy78XyBiVLgbqHgeLn721JSkYSJarSKQXrhYRjhbJQjMCummVThyttElhNLgLd9NzLudQLQ0DABZFI55s2+1W1TjAn1pHXVHt3hFAAAAAElFTkSuQmCC
+Alien,   Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAAAACcXA7QeA33kxr/z5E7kZyXAAAABnRSTlMA//////96eeD+AAAAY0lEQVR4nGNiQAJM5HIEBQUFYBxGY2NjQxhHmJGBgVkApowfWc8HHKYxMvy7wHAXyhFW+K/A8AnKeSsANApu9AWYEUDOf7wOFUDinD17AcExNjZA1vP3A5Ky8wiZ/+8/YBgNAJwZFZmWaFZKAAAAAElFTkSuQmCC
 ...
 ```
 
@@ -194,21 +199,24 @@ such as names, categories, and more.
 Example - spritesheet.json:
 
 ``` json
-[{ "name": "Blue",
-   "category": "Background",
-   "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEVkhZa3PARZAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=" },
- { "name": "Bitcoin Orange",
-   "category": "Background",
-   "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEX3kh03gNzOAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=" },
- { "name": "Purple",
-   "category": "Background",
-   "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA1BMVEWOb7aMtmqBAAAAC0lEQVR4AWMY5AAAAKAAAVQqnscAAAAASUVORK5CYII=" },
- { "name": "Antenna",
-   "category": "Accessories",
-   "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAKUlEQVRYCe3BsQ0AIADDsOT/o8sJLEgssSHJhTpg4oDxmzKSJEmS5KEDUlIFA6L+DvwAAAAASUVORK5CYII=" },
- { "name": "Rainbow",
-   "category": "Accessories",
-   "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAu0lEQVRYw+2OsQ5EQBCG12ucjhegpaFdPa/GG3BoeDMamv1vZ5bG1XvJJfMlX2ZGJPspJQiCIAiCIAiWI0tx5imOLMHvH88T4K2sAU8OYROcNojuk/fUTxzGAGYvgb2w02pDzKisLoh2kHb3EmC2EtVUQ88NT3OHbIWLonnpJUBPDcLWsK8O0BRzBem5RkXyXfsJoEeHaMEQr+yrcyFk2IJvF2f8BAzxgufdsytL923/+LeP1q9vgvB3fABOiLQ6WjY8vQAAAABJRU5ErkJggg=="},
+[{ "name": "Human",
+   "category": "Base",
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAAAADWdQf3kxr4rUv///+T6IvaAAAABnRSTlMA//////96eeD+AAAAXklEQVR4nGNiQAJM5HIEBQUFYBxGJSUlRRhHiBFIC8CU8SPr+YDTtP8fGN5DOYwK/w0YPsNlmB4wyME4D5D0/AdS95BNU8Ll6n/IyphQlf37AOfcu3cfIfP//QcM0wAaAxSH2HomKQAAAABJRU5ErkJggg==" },
+  { "name": "Vampire",
+    "category": "Base",
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAFVBMVEUAAAAAAABbMwOlXQX2AAv3kxr////bh9zEAAAAB3RSTlMA////////pX+m+wAAAG1JREFUeJxjYkACTORyBAUFBWAcRhcXF0cYRwSIWQRINO3fA4Z7UA6jwz8DhsdwGZYPDPYwzgEkPf+B1B5k01xw2bNnzwEEx8TFAMxhFBRkYBBg4PkA4vxnFAQp2w9R9h7kI4EPEM5/EP0erBUAERwWzx5CqboAAAAASUVORK5CYII=" },
+  { "name": "Demon",
+    "category": "Base",
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAD1BMVEUAAAAAAAC4cAv3kxr///+zzqXqAAAABXRSTlMA/////xzQJlIAAABgSURBVHichY3dDYAgDISPTgAuYGX/mdANaByAqonSEhPty+XL/ZTgjj4hRCB1Z0Fgi6VoHcq5w3Rp/J0eQQX1hsDK2G1aMD+wuY6eUvxa9uD/NB+jMdakQymrOVrltXYAZGITh03FFbsAAAAASUVORK5CYII=" },
+  { "name": "Zombie",
+    "category": "Base",
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAAAADHcwz3kxr/AAD/z5G469XyAAAABnRSTlMA//////96eeD+AAAAYUlEQVR4nJ2O0Q2AMAhEDyZoHUAr+89UjQuUCVr7IZXE9Ec+IC93HDBc8V+IMQYDEpHdYOmNg9lWv3NO05qiPECJFdtQasJlcBJgR1sf2afJ7OvqbeRthKoDcj5epRX9pN0MGRSH7kVdXgAAAABJRU5ErkJggg==" },
+  { "name": "Ape",
+    "category": "Base",
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAAAAD3kxr3nzL/xHj////N6G+OAAAABnRSTlMA//////96eeD+AAAAb0lEQVR4nJ3PwQ2AMAgAQNq+TcoGJg6gkf1HIDqCcYGyQFs1kdKHL/nQC4WAhy78XyBiVLgbqHgeLn721JSkYSJarSKQXrhYRjhbJQjMCummVThyttElhNLgLd9NzLudQLQ0DABZFI55s2+1W1TjAn1pHXVHt3hFAAAAAElFTkSuQmCC" },
+  { "name": "Alien",
+    "category": "Base",
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAAAACcXA7QeA33kxr/z5E7kZyXAAAABnRSTlMA//////96eeD+AAAAY0lEQVR4nGNiQAJM5HIEBQUFYBxGY2NjQxhHmJGBgVkApowfWc8HHKYxMvy7wHAXyhFW+K/A8AnKeSsANApu9AWYEUDOf7wOFUDinD17AcExNjZA1vP3A5Ky8wiZ/+8/YBgNAJwZFZmWaFZKAAAAAElFTkSuQmCC" },
  ...
 ]
 ```
@@ -258,7 +266,10 @@ Example - [no1/spritesheet.png](no1/spritesheet.png) (~4kb):
 Example - [no1/spritesheet.csv](no1/spritesheet.csv):
 
 ``` csv
-name, category, base64
+name,   category, base64
+Human,  Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAAAADWdQf3kxr4rUv///+T6IvaAAAABnRSTlMA//////96eeD+AAAAXklEQVR4nGNiQAJM5HIEBQUFYBxGJSUlRRhHiBFIC8CU8SPr+YDTtP8fGN5DOYwK/w0YPsNlmB4wyME4D5D0/AdS95BNU8Ll6n/IyphQlf37AOfcu3cfIfP//QcM0wAaAxSH2HomKQAAAABJRU5ErkJggg==
+Vampire, Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAFVBMVEUAAAAAAABbMwOlXQX2AAv3kxr////bh9zEAAAAB3RSTlMA////////pX+m+wAAAG1JREFUeJxjYkACTORyBAUFBWAcRhcXF0cYRwSIWQRINO3fA4Z7UA6jwz8DhsdwGZYPDPYwzgEkPf+B1B5k01xw2bNnzwEEx8TFAMxhFBRkYBBg4PkA4vxnFAQp2w9R9h7kI4EPEM5/EP0erBUAERwWzx5CqboAAAAASUVORK5CYII=
+Demon,   Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAD1BMVEUAAAAAAAC4cAv3kxr///+zzqXqAAAABXRSTlMA/////xzQJlIAAABgSURBVHichY3dDYAgDISPTgAuYGX/mdANaByAqonSEhPty+XL/ZTgjj4hRCB1Z0Fgi6VoHcq5w3Rp/J0eQQX1hsDK2G1aMD+wuY6eUvxa9uD/NB+jMdakQymrOVrltXYAZGITh03FFbsAAAAASUVORK5CYII=
 ...
 ```
 
@@ -270,9 +281,9 @@ and the deploy inscription:
     "op": "deploy",
     "slug": "diypunks",
     "name": "D.I.Y. Punks",
-    "max": 100,
+    "max": 721,
     "dim": "24x24",
-    "generative": "<spritesheet/art layers inscription id here>"
+    "generative": "cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0"
 }
 ```
 
@@ -303,6 +314,7 @@ Example - [no2/spritesheet.csv](no2/spritesheet.csv):
 
 ``` csv
 name, category, base64
+
 ...
 ```
 

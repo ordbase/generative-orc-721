@@ -1,0 +1,12 @@
+id
+31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0
+
+## encoding error? - uses "smart" quotes e.g. “p” and NOT "p"
+##  "{\xE2\x80\x9Cp\xE2\x80\x9D:\"orc-721\",\"op\":\"mint\",\"s\":\"diypunks\",\"g\":[6,15,38,57]}"
+0c213e4ac0f7361227b8417948ab29f4019e38db901786dc60347c8fcda9dd1bi0
+
+## encoding error? - uses "smart" quotes e.g. “p” and NOT "p"
+##  "{\xE2\x80\x9Cp\xE2\x80\x9D:\"orc-721\",\"op\":\"mint\",\"s\":\"diypunks\",\"g\":[1,17,36,51]}"
+d21fcecdb9d9057044460ccba900432e21c4cccb639b28d648c829273bd32c0ei0
+
+
