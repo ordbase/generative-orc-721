@@ -27,7 +27,7 @@ will get generated in 1x (24x24px) and 4x (96x24px) and uploaded for public use 
 The naming format is `/content/<inscription_id>.png` for 1x
 and `/content/<inscription_id>@4x.png` for 4x.
 
-Example - Genesis - The World's 1st (Generative) ORC-721 ever! - [Inscription no. 9959200](https://ordinals.com/inscription/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0)
+Example - [Inscription №9959200](https://ordinals.com/inscription/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0) - Genesis - The World's 1st (Generative) ORC-721 ever! -
 
 
 
@@ -62,7 +62,8 @@ will get generated in 1x (24x24px) and 4x (96x24px) and uploaded for public use 
 The naming format is `/<slug>/g/<generative_ids>.png` for 1x
 and `/<slug>/g/<generative_ids>.png@4x.png` for 4x.
 
-Example - Genesis - The World's 1st (Generative) ORC-721 ever!
+
+Example - [Inscription №9959200](https://ordinals.com/inscription/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0) - Genesis - The World's 1st (Generative) ORC-721 ever! -
 
 ``` json
 {"p":"orc-721","op":"mint","s":"diypunks","g":[58,4,19]}
@@ -131,14 +132,18 @@ The more controversial still under discussion second option (in addition to work
 is to start a second "diypunks-v2" collection - with a new ORC-721 deploy inscription e.g.
 
 ```json
-{"p":"orc-721",
- "op":"deploy",
- "slug":"diypunks-v2",
- "name":"D.I.Y. Punks V2",
- "max":721,"dim":"24x24","generative":"cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0"}
+{
+  "p":"orc-721",
+  "op":"deploy",
+  "slug":"diypunks-v2",
+  "name":"D.I.Y. Punks V2",
+  "max":721,
+  "dim":"24x24",
+  "generative":"cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0"
+}
 ```
 
-that gives everyon a second chance to get a mint below 721.   If you support this idea
+that gives you (and everyone else) a second chance to get in a mint below 721.   If you support this idea
 and are interested in doing the "deploy" inscription - please, tell us / say so on the ordinals punk channel!
 
 
