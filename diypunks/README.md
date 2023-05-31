@@ -116,7 +116,7 @@ Example (broken) real-world mints:
 ``` json
 ```
 
-Note: These inscriptions are still ordinals that you own and, thus, can sell or buy -
+Note: These (broken) inscriptions are still ordinals that you own and, thus, can sell or buy -
 are early misprints (or mismints) the new ultra-rares?
 
 
@@ -162,7 +162,7 @@ Example broken real-world mints:
 ``` json
 ```
 
-Note: These inscriptions are still ordinals that you own and, thus, can sell or buy -
+Note: These (broken) inscriptions are still ordinals that you own and, thus, can sell or buy -
 are early misprints (or mismints) the new ultra-rares?
 
 
