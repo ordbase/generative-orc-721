@@ -27,19 +27,24 @@ will get generated in 1x (24x24px) and 4x (96x24px) and uploaded for public use 
 The naming format is `/content/<inscription_id>.png` for 1x
 and `/content/<inscription_id>@4x.png` for 4x.
 
-Example - Genesis - The World's 1st (Generative) ORC-721 ever!
+Example - Genesis - The World's 1st (Generative) ORC-721 ever! - [Inscription no. 9959200](https://ordinals.com/inscription/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0)
 
-[inscription no. 9959200](https://ordinals.com/inscription/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0)
-w/ id `31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0`
+
+
+The id is `31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0`
+with the content:
 
 ``` json
 {"p":"orc-721","op":"mint","s":"diypunks","g":[58,4,19]}
 ```
 
-![](https://github.com/ordbase/generative-orc-721/raw/master/content/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0.png) (Source:
+resulting in:
+
+![](https://github.com/ordbase/generative-orc-721/raw/master/content/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0.png) <br>
+(Source:
 <https://github.com/ordbase/generative-orc-721/raw/master/content/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0.png>)
 
-4x ![](https://github.com/ordbase/generative-orc-721/raw/master/content/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0@4x.png)
+4x ![](https://github.com/ordbase/generative-orc-721/raw/master/content/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0@4x.png) <br>
 (Source: <https://github.com/ordbase/generative-orc-721/raw/master/content/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0@4x.png>
 
 
@@ -63,15 +68,17 @@ Example - Genesis - The World's 1st (Generative) ORC-721 ever!
 {"p":"orc-721","op":"mint","s":"diypunks","g":[58,4,19]}
 ```
 
-![](https://github.com/ordbase/generative-orc-721/raw/master/content/diypunks/g/58_4_19.png) (Source:
-<https://github.com/ordbase/generative-orc-721/raw/master/content/diypunks/g/58_4_19.png>)
+![](https://github.com/ordbase/generative-orc-721/raw/master/diypunks/g/58_4_19.png) <br>
+(Source:
+<https://github.com/ordbase/generative-orc-721/raw/master/diypunks/g/58_4_19.png>)
 
-4x ![](https://github.com/ordbase/generative-orc-721/raw/master/content/diypunks/g/58_4_19@4x.png) (Source:
-<https://github.com/ordbase/generative-orc-721/raw/master/content/diypunks/g/58_4_19@4x.png>)
-
+4x ![](https://github.com/ordbase/generative-orc-721/raw/master/diypunks/g/58_4_19@4x.png) <br>
+(Source:
+<https://github.com/ordbase/generative-orc-721/raw/master/diypunks/g/58_4_19@4x.png>)
 
 
 For more see  [/diypunks/g »](g)
+
 
 
 
