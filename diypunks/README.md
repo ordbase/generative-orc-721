@@ -27,7 +27,8 @@ will get generated in 1x (24x24px) and 4x (96x24px) and uploaded for public use 
 The naming format is `/content/<inscription_id>.png` for 1x
 and `/content/<inscription_id>@4x.png` for 4x.
 
-Example - [Inscription №9959200](https://ordinals.com/inscription/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0) - Genesis - The World's 1st (Generative) ORC-721 ever! -
+
+Example - [Inscription №9959200](https://ordinals.com/inscription/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0) -  The World's 1st (Generative) ORC-721 ever! - Genesis:
 
 
 
@@ -63,7 +64,7 @@ The naming format is `/<slug>/g/<generative_ids>.png` for 1x
 and `/<slug>/g/<generative_ids>.png@4x.png` for 4x.
 
 
-Example - [Inscription №9959200](https://ordinals.com/inscription/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0) - Genesis - The World's 1st (Generative) ORC-721 ever! -
+Example - [Inscription №9959200](https://ordinals.com/inscription/31bd26c29a483fbcde4c44d0a7f21741d72931e107aae978f43d1f6511b7bba8i0) -  The World's 1st (Generative) ORC-721 ever! - Genesis:
 
 ``` json
 {"p":"orc-721","op":"mint","s":"diypunks","g":[58,4,19]}
