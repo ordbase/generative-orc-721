@@ -25,7 +25,7 @@ in 8 seconds ;-) - yes, you can. Example - [Inscription No. 9947030](https://ord
 
 That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0]`:
 
-- 0 - ![](no1/i/0_human.png) punk (human) base
+- 0 - ![](diypunks/i/0_human.png) punk (human) base
 
 
 ``` json
@@ -37,15 +37,15 @@ That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0
 }
 ```
 
-![](no1/i/punk0.png)  4x
-![](no1/i/punk0@4x.png)
+![](diypunks/i/punk0.png)  4x
+![](diypunks/i/punk0@4x.png)
 
 
 
 and the second with the (generative) specs - `[0,38]`:
 
-- 0 - ![](no1/i/0_human.png)  punk (human) base
-- 38 - ![](no1/i/38_laser-eyes.png) laser eyes
+- 0 - ![](diypunks/i/0_human.png)  punk (human) base
+- 38 - ![](diypunks/i/38_laser-eyes.png) laser eyes
 
 ``` json
 {
@@ -56,15 +56,15 @@ and the second with the (generative) specs - `[0,38]`:
 }
 ```
 
-![](no1/i/punk1.png)  4x
-![](no1/i/punk1@4x.png)
+![](diypunks/i/punk1.png)  4x
+![](diypunks/i/punk1@4x.png)
 
 
 and the third with the (generative specs) - `[59,0,38]`:
 
-- 59 - ![](no1/i/59_bitcoin-pattern.png)  background - bitcoin pattern
-- 0 - ![](no1/i/0_human.png)  punk (human) base
-- 38 - ![](no1/i/38_laser-eyes.png) laser eyes
+- 59 - ![](diypunks/i/59_bitcoin-pattern.png)  background - bitcoin pattern
+- 0 - ![](diypunks/i/0_human.png)  punk (human) base
+- 38 - ![](diypunks/i/38_laser-eyes.png) laser eyes
 
 ``` json
 {
@@ -75,11 +75,14 @@ and the third with the (generative specs) - `[59,0,38]`:
 }
 ```
 
-![](no1/i/punk2.png)  4x
-![](no1/i/punk2@4x.png)
+![](diypunks/i/punk2.png)  4x
+![](diypunks/i/punk2@4x.png)
 
 
 and so on.
+
+
+NEW!  Try the [D.I.Y. Punks Previewer »](https://ordbase.github.io/generative-orc-721/diypunks)
 
 
 
@@ -109,12 +112,12 @@ Inscribe the spritesheet / art layers as a single binary image file (image/png).
 
 Example - [spritesheet.png (~4kb) @ Inscription No. 9917010](https://ordinals.com/inscription/cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0):
 
-![](no1/spritesheet.png)
+![](diypunks/spritesheet.png)
 
 <details>
 <summary markdown="1">4x</summary>
 
-![](no1/spritesheet@4x.png)
+![](diypunks/spritesheet@4x.png)
 
 </details>
 
@@ -135,11 +138,11 @@ Thus, for example `[59,0,38]` from the mint starter examples:
 }
 ```
 
-references the sprites / attributes no. 59 - ![](no1/i/59_bitcoin-pattern.png),
-no. 0 - ![](no1/i/0_human.png),
-no. 38- ![](no1/i/38_laser-eyes.png)
+references the sprites / attributes no. 59 - ![](diypunks/i/59_bitcoin-pattern.png),
+no. 0 - ![](diypunks/i/0_human.png),
+no. 38- ![](diypunks/i/38_laser-eyes.png)
 and the sprites / attributes
-get merged / stacked / pasted-on-top-of-each-other in the order listed resulting in ![](no1/i/punk2.png).
+get merged / stacked / pasted-on-top-of-each-other in the order listed resulting in ![](diypunks/i/punk2.png).
 
 
 
@@ -249,21 +252,21 @@ can add more keys as you please.
 
 **Format Option 1) Binary Image - Ultra-Compact**
 
-Example - [no1/spritesheet.png](no1/spritesheet.png) (~4kb):
+Example - [diypunks/spritesheet.png](diypunks/spritesheet.png) (~4kb):
 
-![](no1/spritesheet.png)
+![](diypunks/spritesheet.png)
 
 <details>
 <summary markdown="1">4x</summary>
 
-![](no1/spritesheet@4x.png)
+![](diypunks/spritesheet@4x.png)
 
 </details>
 
 
 **Format Option 2) Tabular Text (.csv) - Compact**
 
-Example - [no1/spritesheet.csv](no1/spritesheet.csv):
+Example - [diypunks/spritesheet.csv](diypunks/spritesheet.csv):
 
 ``` csv
 name,   category, base64
@@ -290,8 +293,17 @@ and the deploy inscription:
 and the mint inscriptions...
 
 
+Try the [D.I.Y. Punks Previewer »](https://ordbase.github.io/generative-orc-721/diypunks)
 
-### Sample No. 2 - D.I.Y. Wiener - Edmund "Mundl" Sackbauer et al
+
+To learn more or read-up on the D.I.Y. Punks OG & V2
+inscribed on bitcoin (btc), see [D.I.Y. Punks Read Me 'n' Frequently Asked Questions (F.A.Q.s) & Answers »](diypunks)
+
+
+
+
+
+### Sample No. 2 - D.I.Y. Wiener - Edmund "Mundl" Sackbauer et al  (SOON!)
 
 
 **Format Option 1) Binary Image - Ultra-Compact**
@@ -347,14 +359,14 @@ and D.I.Y. Ordibots (ORC-721) inscriptions!
 **Format Option 1) Binary Image - Ultra-Compact**
 
 
-Example - [no3/spritesheet.png](no3/spritesheet.png) (~3kb):
+Example - [diyordibots/spritesheet.png](diyordibots/spritesheet.png) (~3kb):
 
-![](no3/spritesheet.png)
+![](diyordibots/spritesheet.png)
 
 <details>
 <summary markdown="1">4x</summary>
 
-![](no3/spritesheet@4x.png)
+![](diyordibots/spritesheet@4x.png)
 
 </details>
 
@@ -363,7 +375,7 @@ Example - [no3/spritesheet.png](no3/spritesheet.png) (~3kb):
 
 **Format Option 2) Tabular Text (.csv) - Compact**
 
-Example - [no3/spritesheet.csv](no3/spritesheet.csv):
+Example - [diyordibots/spritesheet.csv](diyordibots/spritesheet.csv):
 
 ``` csv
 name, category, base64
@@ -394,11 +406,11 @@ and the deploy inscription:
 and the mint inscriptions:
 
 ordibot no. 0 specs:
-- background: ![](no3/i/2_brown.png) 2 - brown
-- accessories: ![](no3/i/5_none.png) 5 - none
-- body:   ![](no3/i/16_standard-oval.png) 16 - standard-oval
-- belly:  ![](no3/i/23_empty.png) 23 - empty
-- face: ![](no3/i/9_surprised.png)  9 - surprised
+- background: ![](diyordibots/i/2_brown.png) 2 - brown
+- accessories: ![](diyordibots/i/5_none.png) 5 - none
+- body:   ![](diyordibots/i/16_standard-oval.png) 16 - standard-oval
+- belly:  ![](diyordibots/i/23_empty.png) 23 - empty
+- face: ![](diyordibots/i/9_surprised.png)  9 - surprised
 
 
 ``` json
@@ -410,18 +422,18 @@ ordibot no. 0 specs:
 }
 ```
 
-![](no3/i/ordibot0.png)  4x
-![](no3/i/ordibot0@4x.png)
+![](diyordibots/i/ordibot0.png)  4x
+![](diyordibots/i/ordibot0@4x.png)
 
 
 
 ordibot no. 1 specs:
 
-- background: ![](no3/i/0_blue.png)  0 - blue
-- accessories:  ![](no3/i/4_antenna.png)  4 - antenna
-- body:  ![](no3/i/16_standard-oval.png)  16 - standard-oval
-- belly:  ![](no3/i/23_empty.png)  23 - empty
-- face:  ![](no3/i/8_neutral.png)  8 - neutral
+- background: ![](diyordibots/i/0_blue.png)  0 - blue
+- accessories:  ![](diyordibots/i/4_antenna.png)  4 - antenna
+- body:  ![](diyordibots/i/16_standard-oval.png)  16 - standard-oval
+- belly:  ![](diyordibots/i/23_empty.png)  23 - empty
+- face:  ![](diyordibots/i/8_neutral.png)  8 - neutral
 
 ``` json
 {
@@ -432,13 +444,18 @@ ordibot no. 1 specs:
 }
 ```
 
-![](no3/i/ordibot1.png)  4x
-![](no3/i/ordibot1@4x.png)
-
-
+![](diyordibots/i/ordibot1.png)  4x
+![](diyordibots/i/ordibot1@4x.png)
 
 
 and so on.
+
+
+Try the [D.I.Y. Ordipunks Previewer »](https://ordbase.github.io/generative-orc-721/diypunks)
+
+
+
+
 
 **Compare to Gen-BRC-721**
 

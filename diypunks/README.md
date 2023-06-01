@@ -5,7 +5,7 @@ _The World's 1st (Generative) ORC-721 Collection (on Bitcoin)_
 
 
 For now the official support channel is the ordinal punks discord
-(until we stretch the welcome and get kicked out). For an invite
+(join us in the #generative-orc-721 channel). For an invite
 see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
 
 For more technical questions & commentary,
