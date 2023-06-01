@@ -1,7 +1,31 @@
+
+
+
+**What's News? Updates**
+
+We are live!  The world's first ORC-721 collections (on bitcoin) include:
+
+- 721 D.I.Y. Punks
+- 721 D.I.Y. Punks V2
+- 1000 D.I.Y. Ordibots
+- 1000 D.I.Y. Ordibots
+- ....
+
+Wen [next] deploy?   You are welcome to announce your ORC-721 collections
+in the ordinal punks discord (in the #generative-orc-721 channel).
+For an invite
+see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
+
+
+
+---
+
+
+
+
 # Generative Art ORC-721 Protocol / Standard for Bitcoin & Co.
 
 Author:  [Gerald Bauer](https://github.com/geraldb) ([Punk's Not Dead](https://github.com/cryptopunksnotdead), [Learn Pixel Art](https://github.com/learnpixelart), etc)
-
 
 
 
