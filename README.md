@@ -9,6 +9,7 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 - 721 D.I.Y. Punks V2
 - 1000 D.I.Y. Ordibots
 - 1000 D.I.Y. Ordibots
+- 721 D.I.Y. Cool Cats
 - ....
 
 Wen [next] deploy?   You are welcome to announce your ORC-721 collections
@@ -16,6 +17,8 @@ in the ordinal punks discord (in the #generative-orc-721 channel).
 For an invite
 see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
 
+
+NEW!  For up-to-date ORC-721 analytics / statistics see the [Generative-ORC-721 Dune dashboard](https://dune.com/jokie/orc-721-dashboard)  - thanks to Jokie.
 
 
 ---
