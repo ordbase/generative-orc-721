@@ -1,18 +1,34 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>ORC-721 Previewer</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--
-    source based on fiddle by @jokie
-       see https://jsfiddle.net/uf95w2j4/7/
--->
+
+  <script
+    type="text/javascript"
+    src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+    
+  ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
 
-<style>
+  <style id="compiled-css" type="text/css">
+    body {
 
+}
 .container {
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
     padding: 10px;
     font-family: Arial, sans-serif;
+    text-align:center;
 }
 
 .instructions {
@@ -37,6 +53,7 @@
 
 .input-fields label, .input-fields input {
     margin-bottom: 10px;
+    width: 50%;
 }
 
 #spritesheet {
@@ -65,9 +82,11 @@
     color: #777;
     border-top: 1px solid #ccc;
     padding-top: 20px;
+    margin-top: 20px;
+    font-size: 12px;
 }
 
-button {
+button, input[type=submit]  {
     display: inline-block;
     padding: 15px 30px;
     font-size: 18px;
@@ -78,8 +97,15 @@ button {
     background-color: #44f;
     border: none;
     border-radius: 5px;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
+
+.warn {
+  color: #c54;
+  text-align:center;
+}
+.ok {color: green;}
 
 a[disabled] {
   color: #ccc;
@@ -92,34 +118,64 @@ a:not([disabled]) {
   cursor: pointer;
   text-decoration: underline;
 }
-</style>
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.sprite.selected {
+  background-color: red;
+  opacity: 0.3;
+}
 
 
-<div class="container">
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+    <div class="container">
   <h1>Generative ORC-721 Previewer</h1>
+  <h2 id="subtitle"></h2>
   <div class="instructions">
-      <p>Directions:</p>
-      <ol>
-          <li>Upload the sprite map from the inscription. (an example diypunks sprite map) <img src="https://cdn.discordapp.com/attachments/900856159211257889/1113607517512155136/cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0.png" /> </li>
-          <li>Specify the number of rows and columns of sprites. (in the above case, its 10 columns and 6 rows)</li>
-          <li>Click on the sprite image to construct your mint inscription</li>
-          <li>Press clear to start over.</li>
-          <li>When you're happy, use the attribute list generated.</li>
-      </ol>
-  </div>
-  <div class="input-fields">
-      <label for="spriteMap">Upload Sprite Map (Image):</label>
-      <input id="spriteMap" type="file" accept="image/png, image/jpeg">
-  </div>
-  <div class="input-fields">
-      <label for="spriteColumns">How many columns does it have? (usually 10)</label>
-      <input id="spriteColumns" type="number">
-  </div>
-  <div class="input-fields">
+    Click on the sprite image to construct your mint inscription <br/>
+    Press clear to start over.
+    When you're happy, use the json generated.
+  <p class="warn">Note: This tool is provided as is. No guarantees. Use at your own risk.</p>
 
-      <label for="spriteRows">How many rows does it have?</label>
-      <input id="spriteRows" type="number">
   </div>
+  <!--
+    <div class="input-fields">
+        <label for="spriteMap">Upload Sprite Map (Image):</label>
+        <input id="spriteMap" type="file" accept="image/png, image/jpeg">
+    </div>
+    <div class="input-fields">
+        <label for="spriteColumns">How many columns does it have? (usually 10)</label>
+        <input id="spriteColumns" type="number">
+    </div>
+    <div class="input-fields">
+
+        <label for="spriteRows">How many rows does it have?</label>
+        <input id="spriteRows" type="number">
+    </div>
+    -->
   <div id="spritesheet"></div>
   <div style="text-align:center;">
     <canvas id="canvas" width="240" height="240"></canvas>
@@ -127,25 +183,69 @@ a:not([disabled]) {
 
   </div>
   <div id="cleardiv">
-      <button id="clear">Clear Canvas</button>
-      <a id="download" href="#" disabled>Download</a>
+    <button id="clear">Clear Canvas</button>
+    <!--<a id="download" href="#" disabled>Download</a>-->
+
   </div>
 
+  <br /><br /><br />
+
+  <h2>
+    Check your json.
+  </h2>
+  <textarea id="jsonInput" rows="7" cols="50" placeholder='Example: {"p":"orc-721", "op":"mint", "s":"diymycollection", "g":[5,24]}'></textarea>
+  <br>
+  <p id="validity_message"></p>
+
+  <button onclick="validateBtnClick()">Check JSON and Preview on Canvas</button>
+
+  <br /><br /><br />
+  <h2>
+    Create a Previewer for your own Gen ORC-721
+  </h3>
+  <p>
+    Fill in the form below to generate a link to a page like this for your own collection.
+  </p>
+  <form id="shareForm">
+    <label for="sprite_url">Url to your Sprite Image:</label>
+    <input type="text" id="sprite_url_input" name="sprite_url" placeholder="Example: https://example.com/spritesheet.png"><br>
+    <label for="slug">Slug:</label>
+    <input type="text" id="slug_input" name="slug" placeholder="Example: diyapes">
+    <br />
+    <br />
+    <input type="submit" value="Generate Shareable Link">
+  </form>
+  <p id="shareableLink"></p>
+  <br /><br /><br />
 
   <div class="footer">
-      DIY Punks is a project by geraldb.
-      Learn more on the <a href="https://discord.gg/swBWd827qM">Ordinal Punks discord</a> (in the #generative-orc-721 channel)
-      and the <a href="https://github.com/ordbase/generative-orc-721">generative-orc-721 github</a>
-      <p>This previewer adopted from a fiddle written by Jokie.
-         If you're not 100% satisfied I will refund the full amount you paid me to use this tool. </p>
+    DIY Punks is a project by the <a href="https://twitter.com/OrdinalPunks">Ordinal Punks</a> community. <br />
+    Learn more on the <a href="https://discord.gg/swBWd827qM">Ordinal Punks discord</a> (in the #generative-orc-721 channel)
+    and the <a href="https://github.com/ordbase/generative-orc-721">generative-orc-721 github</a>
+
   </div>
 </div>
 
 
-<!-- note: requires jquery 3.4.1 -->
-<script scr="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">//<![CDATA[
 
-<script>
+
+//instructions: Change these variables to create your own previewer!
+let sprite_url = "https://raw.githubusercontent.com/ordbase/generative-orc-721/master/diypunks/spritesheet.png"; 
+let slug = "diypunks"; //orc-721 slug 
+let num_columns_on_spritesheet = 10;
+
+//variables that are automatically set. no need to touch them unless you don't have a square sheet
+let num_rows_on_spritesheet = null; //automatically calculated based on columns and img dimensions if its a square sprite.
+
+
+// Get the URL parameters
+const params = new URLSearchParams(window.location.search);
+
+// Set the sprite_url and slug if specified in the URL parameters. this allows customization of the page by anyone.
+sprite_url = params.get('sprite_url') || sprite_url;
+slug = params.get('slug') || slug;
+num_columns_on_spritesheet = params.get('cols') || num_columns_on_spritesheet;
 
 let canvas = document.getElementById('canvas');
 canvas.width = 240;
@@ -159,6 +259,9 @@ let output = document.getElementById('output');
 let selectedSprites = [];
 let scaleFactor = 10;
 
+img.src = sprite_url;
+
+/*
 document.getElementById('spriteMap').addEventListener('change', function(evt) {
     if (evt.target.files.length > 0) {
         let file = evt.target.files[0];
@@ -170,65 +273,200 @@ document.getElementById('spriteMap').addEventListener('change', function(evt) {
         reader.readAsDataURL(file);
     }
 });
+*/
+
+function generateMintString(slug, attr_array) {
+  return `{"p":"orc-721", "op":"mint", "s":"${slug}", "g":[${attr_array}]}`;
+}
+
+function tryParseJSONObject(jsonString) {
+  try {
+    var o = JSON.parse(jsonString);
+
+    // Handle non-exception-throwing cases:
+    // Neither JSON.parse(false) or JSON.parse(1234) throw errors, hence the type-checking,
+    // but... JSON.parse(null) returns null, and typeof null === "object", 
+    // so we must check for that, too. Thankfully, null is falsey, so this suffices:
+    if (o && typeof o === "object") {
+      return o;
+    }
+  } catch (e) {}
+
+  return false;
+}
+
+function validateBtnClick() {
+  const jsonStr = document.getElementById('jsonInput').value;
+  let msgElement = document.getElementById('validity_message');
+	clearCanvas();
+  msgElement.innerHTML = validateJson(jsonStr);
+  let jsonObj = JSON.parse(jsonStr);
+  programmaticallyClickG(jsonObj.g);
+  return
+}
+
+function validateJson(jsonStr) {
+  let jsonObj;
+  try {
+    jsonObj = JSON.parse(jsonStr);
+  } catch (e) {
+    return "Invalid JSON - use a <a href='https://jsonlint.com/'>JSON Validator</a> to get more feedback. ";
+  }
+
+  // Check keys are exactly those required
+  let keys = Object.keys(jsonObj);
+  if (keys.length !== 4 || !keys.includes('p') || !keys.includes('op') || !keys.includes('s') || !keys.includes('g')) {
+    return "❌ Invalid JSON - Incorrect keys. you need a p, op, s and g";
+  }
+
+  // Check key 'p' is set to 'orc-721'
+  if (jsonObj.p !== 'orc-721') {
+    return "❌ Invalid JSON - Incorrect value for key 'p'. must be orc-721";
+  }
+
+  // Check key 'op' is set to 'mint'
+  if (jsonObj.op !== 'mint') {
+    return "❌ Invalid JSON - Incorrect value for key 'op'. must be mint";
+  }
+
+  // Check key 's' is set to 'diypunks'
+  if (jsonObj.s !== slug) {
+    return `❌ Invalid JSON - Incorrect value for key 's'. must be ${slug}`;
+  }
+
+  // Check key 'g' is an array
+  if (!Array.isArray(jsonObj.g)) {
+    return "❌ Invalid JSON - Value for key 'g' should be an array";
+  }
+
+  // Check each value in the 'g' array is an integer between 0 and 60
+  for (let i = 0; i < jsonObj.g.length; i++) {
+    if (!Number.isInteger(jsonObj.g[i]) || jsonObj.g[i] < 0 || jsonObj.g[i] > 60) {
+      return "Invalid JSON - Value in 'g' array should be an integer between 0 and 60";
+    }
+  }
+
+  return "Probably Valid ✅. But no guarantees. This tool doesn't check for everything";
+
+}
+
+function programmaticallyClickG(g) {
+  let elements = document.getElementsByClassName('sprite');
+
+  g.forEach(index => {
+    if (elements[index]) {
+      elements[index].click();
+    }
+  });
+}
+
+function clearCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  selectedSprites = [];
+  output.textContent = '';
+  //document.getElementById('download').setAttribute('disabled', 'true');
+  // Remove 'selected' class from all sprites
+  let sprites = document.getElementsByClassName('sprite');
+  for (let i = 0; i < sprites.length; i++) {
+    sprites[i].classList.remove('selected');
+  }
+}
 
 img.onload = function() {
-		//estimate it by assuming the width is 10 columns if no values are specified
-    let spriteColumns = spriteColumnsInput.value ? parseInt(spriteColumnsInput.value) : 10;
-		let spriteRows = spriteRowsInput.value ? parseInt(spriteRowsInput.value) : Math.round(img.height / (img.width / spriteColumns));
+  //estimate it by assuming the width is 10 columns if no values are specified
+  let spriteColumns = num_columns_on_spritesheet;
+  let spriteRows = num_rows_on_spritesheet ? num_rows_on_spritesheet : Math.round(img.height / (img.width / spriteColumns));
 
-    // Set the input fields to the calculated values
-		spriteColumnsInput.value = spriteColumns;
-		spriteRowsInput.value = spriteRows;
+  // Set the input fields to the calculated values
+  //spriteColumnsInput.value = spriteColumns;
+  //spriteRowsInput.value = spriteRows;
+  num_rows_on_spritesheet = spriteRows; //set globally for json validator -- terrible hack
 
-    let spriteWidth = img.width / spriteColumns;
-    let spriteHeight = img.height / spriteRows;
-    let numberOfSprites = spriteColumns * spriteRows;
+  let spriteWidth = img.width / spriteColumns;
+  let spriteHeight = img.height / spriteRows;
+  let numberOfSprites = spriteColumns * spriteRows;
 
-    let spritesheet = document.getElementById('spritesheet');
-    spritesheet.innerHTML = ''; // Clear the spritesheet before adding new sprites
+  let spritesheet = document.getElementById('spritesheet');
+  spritesheet.innerHTML = ''; // Clear the spritesheet before adding new sprites
 
-    // Dynamically set the grid and background properties
-    spritesheet.style.gridTemplateColumns = `repeat(${spriteColumns}, ${spriteWidth}px)`;
-    spritesheet.style.gridTemplateRows = `repeat(${spriteRows}, ${spriteHeight}px)`;
-    spritesheet.style.width = `${img.width}px`;
-    spritesheet.style.height = `${img.height}px`;
-    spritesheet.style.background = `url(${img.src})`;
+  // Dynamically set the grid and background properties
+  spritesheet.style.gridTemplateColumns = `repeat(${spriteColumns}, ${spriteWidth}px)`;
+  spritesheet.style.gridTemplateRows = `repeat(${spriteRows}, ${spriteHeight}px)`;
+  spritesheet.style.width = `${img.width}px`;
+  spritesheet.style.height = `${img.height}px`;
+  spritesheet.style.background = `url(${img.src})`;
 
-    for(let i = 0; i < numberOfSprites; i++) {
-        let sprite = document.createElement('div');
+  for (let i = 0; i < numberOfSprites; i++) {
+    let sprite = document.createElement('div');
+    sprite.className = 'sprite';
+    sprite.style.width = `${spriteWidth}px`;
+    sprite.style.height = `${spriteHeight}px`;
+    sprite.style.backgroundPosition = `-${(i % spriteColumns) * spriteWidth}px -${Math.floor(i / spriteColumns) * spriteHeight}px`;
+    sprite.title = i;
+    sprite.addEventListener('click', () => {
+      let row = Math.floor(i / spriteColumns);
+      let col = i % spriteColumns;
 
-        sprite.className = 'sprite';
-        sprite.style.width = `${spriteWidth}px`;
-        sprite.style.height = `${spriteHeight}px`;
-        sprite.style.backgroundPosition = `-${(i % spriteColumns) * spriteWidth}px -${Math.floor(i / spriteColumns) * spriteHeight}px`;
-		    sprite.title = i;
-        sprite.addEventListener('click', () => {
-            let row = Math.floor(i / spriteColumns);
-            let col = i % spriteColumns;
+      ctx.drawImage(img, col * spriteWidth, row * spriteHeight, spriteWidth, spriteHeight, 0, 0, canvas.width, canvas.height);
+      selectedSprites.push(i);
+      output.textContent = generateMintString(slug, selectedSprites);
+      sprite.classList.add('selected');
+      //document.getElementById('download').removeAttribute('disabled');
+    });
 
-            ctx.drawImage(img, col * spriteWidth, row * spriteHeight, spriteWidth, spriteHeight, 0, 0, canvas.width, canvas.height);
-            selectedSprites.push(i);
-            output.textContent = '"g":[' + selectedSprites.join(',') + ']';
-            document.getElementById('download').removeAttribute('disabled');
-        });
-
-        spritesheet.appendChild(sprite);
-    }
+    spritesheet.appendChild(sprite);
+  }
 };
 
-spriteColumnsInput.addEventListener('input', img.onload);
-spriteRowsInput.addEventListener('input', img.onload);
 
+//clear canvas button
 document.getElementById('clear').addEventListener('click', () => {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    selectedSprites = [];
-    output.textContent = '';
-    document.getElementById('download').setAttribute('disabled', 'true');
+	clearCanvas();
 });
 
-document.getElementById('download').addEventListener('click', function() {
-    this.href = canvas.toDataURL('image/png');
-    this.download = 'my-orc-721.png';
+//set subtitle to slug
+document.getElementById('subtitle').innerHTML = slug;
+
+//generate shareable custom collection page.
+document.getElementById('shareForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevent the form from submitting normally
+  
+  let sprite_url_input = document.getElementById('sprite_url_input').value;
+  let slug_input = document.getElementById('slug_input').value;
+  
+  // Construct the URL with the sprite_url and slug parameters
+  let shareableUrl = window.location.origin + window.location.pathname + 
+    '?sprite_url=' + encodeURIComponent(sprite_url_input) + 
+    '&slug=' + encodeURIComponent(slug_input);
+
+  // Display the shareable link
+  document.getElementById('shareableLink').innerHTML = 'Shareable Link: ' + `<a href=${shareableUrl} target=_blank>${shareableUrl}</a>`;
 });
 
-</script>
+
+//download doesn't work for non-local urls :()
+//document.getElementById('download').addEventListener('click', function() {
+//    this.href = canvas.toDataURL('image/png');
+//    this.download = 'my-orc-721.png';
+//});
+
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "6u8pmLvo"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>
