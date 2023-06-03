@@ -5,10 +5,10 @@
 
 We are live!  The world's first ORC-721 collections (on bitcoin) include:
 
-- 721 D.I.Y. Punks
+- 721 D.I.Y. Punks 
 - 721 D.I.Y. Punks V2
 - 1000 D.I.Y. Ordibots
-- 1000 D.I.Y. Ordibots
+- 1000 D.I.Y. Ordibots V2
 - 721 D.I.Y. Cool Cats
 - ....
 
