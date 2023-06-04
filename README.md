@@ -20,7 +20,7 @@ see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
 I NEED YOUR HELP ...
 
 ... let's prepare the Week 02 - D.I.Y. Birdies (max. 721) deploy today (Sun Jun 4th) if possible ... <br>
-... the spritesheet.png is ready to inscribe and has 200+ tiles (20 columns x11 rows = 220 tiles / sprites)  ... it's about 35kb  ... <br>
+... the spritesheet.png is ready to inscribe and has 200+ tiles (20 columns x 11 rows = 220 tiles / sprites)  ... it's about 35kb  ... <br>
 ... see
 
 ![](diybirdies/spritesheet.png)
