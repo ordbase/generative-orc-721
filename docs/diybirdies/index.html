@@ -1,0 +1,106 @@
+
+<!--
+    source based on fiddle by @jokie
+       see https://jsfiddle.net/a6mnft3d/34/
+-->
+
+
+<style>
+body {
+  text-align:center;
+}
+
+#spritesheet {
+  display: grid;
+  grid-template-columns: repeat(20, 24px);
+  grid-template-rows: repeat(11, 24px);
+  width: 480px;
+  height: 264px;
+  margin: auto;
+
+  background: url(https://raw.githubusercontent.com/ordbase/generative-orc-721/master/diybirdies/spritesheet.png);
+
+  transform: scale(1);
+  transform-origin: 0 0;
+}
+
+.sprite {
+  width: 24px;
+  height: 24px;
+}
+
+#canvas {
+  width: 240px;
+  height: 240px;
+  filter: blur(.0px);
+  border: 2px solid #ccc;
+  margin: 10px;
+  background-color: #eee;
+}
+
+#cleardiv {
+  margin:auto;
+  text-align:center;
+  }
+</style>
+
+
+ <h1>
+  DIY Birdies Previewer
+  </h1>
+  <p>
+  Directions: click on the map below to preview your DIY Birdie.
+  Press clear to start over.<br/><br/>
+  When you're happy, use the attribute list generated.
+  </p>
+  <div id="spritesheet"></div>
+
+  <canvas id="canvas" width="240" height="240"></canvas>
+
+  <div id="cleardiv">
+   <button id="clear">Clear</button>
+  </div>
+  <p id="output"></p>
+
+  DIY Birdies is a project by the ORC-721 community.
+  Learn more on the <a href="https://discord.gg/swBWd827qM">Ordinal Punks discord</a> (in the #generative-orc-721 channel)
+  and the <a href="https://github.com/ordbase/generative-orc-721">generative-orc-721 github</a>
+  <footer>This previewer adopted from a fiddle written by Jokie </footer>
+
+
+<!-- note: requires jquery 3.4.1 -->
+<script scr="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script>
+let canvas = document.getElementById('canvas');
+canvas.width = 240;
+canvas.height = 240;
+let ctx = canvas.getContext('2d');
+ctx.imageSmoothingEnabled = false; // Disable image smoothing
+let img = new Image();
+img.src = 'https://raw.githubusercontent.com/ordbase/generative-orc-721/master/diybirdies/spritesheet.png';
+
+let output = document.getElementById('output');
+let selectedSprites = [];
+let scaleFactor = 10;
+
+img.onload = function() {
+    for(let i = 0; i < 220; i++) {
+        let sprite = document.createElement('div');
+        sprite.className = 'sprite';
+        sprite.style.backgroundPosition = `-${(i % 10) * 24}px -${Math.floor(i / 10) * 24}px`;
+        sprite.addEventListener('click', () => {
+            ctx.drawImage(img, (i % 10) * 24, Math.floor(i / 10) * 24, 24, 24, 0, 0, 24 * scaleFactor, 24 * scaleFactor);
+            selectedSprites.push(i);
+            output.textContent = '"g":[' + selectedSprites.join(', ') + ']';
+        });
+        document.getElementById('spritesheet').appendChild(sprite);
+    }
+};
+
+document.getElementById('clear').addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    selectedSprites = [];
+    output.textContent = '';
+});
+  </script>
