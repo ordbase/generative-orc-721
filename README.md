@@ -25,7 +25,7 @@ I NEED YOUR HELP ...
 
 ![](diybirdies/spritesheet.png)
 
-... your comments more than welcome on the new Week 02 collection - the structure is - bodies first incl. golden and skeleton (bone/red) and robot - the beak ("nose") -  eyes - and optional eyewear and optional headwear and clothing optional - that's it.<br>
+... your comments more than welcome on the new Week 02 collection - the structure is - bodies first incl. golden and skeleton (bone/red) and robot - the beak ("nose") -  eyes - and optional eyewear, headwear, and clothing - that's it.<br>
 ... and again the call for help ...... if anyone wants to sponsor / lead the inscribe (spritesheet today (Sun Jun 4th) and deploy tomorrow (Mon Jun5th), please tell in the ordinal punks discord (in the #generative-orc-721 channel) - you make it all happen ...
 
 
