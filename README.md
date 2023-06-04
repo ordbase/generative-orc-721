@@ -5,7 +5,7 @@
 
 We are live!  The world's first ORC-721 collections (on bitcoin) include:
 
-- [721 D.I.Y. Punks](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0) 
+- [721 D.I.Y. Punks](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0) - sub 10 million club!
 - [721 D.I.Y. Punks V2](https://ordinals.com/inscription/49fc0b24a6d2be8c78b1b468b77729e3516fae223766e64dc3e68d4051c52e89i0)
 - [1000 D.I.Y. Ordibots](https://ordinals.com/inscription/e1be0a2827e42ffaacde0da19006566d9efb5b920e41d29fd59b5d0a3527cfc8i0)
 - [999 D.I.Y. Ordibots V2](https://ordinals.com/inscription/671293d418f7e05a503ffec6703b266ce08eb5522329774f2ac008b883a4e2a0i0)
