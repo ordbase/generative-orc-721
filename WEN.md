@@ -16,7 +16,7 @@ collected at /generative-orc-721.
 How?
 
 
-Here's are your task(s):
+Here are your task(s):
 
 Sign-up or use your gitub accounts  -   and one of you start a new github org(anization) whatever name e.g. inscribes etc. - free -  
 that lets you add all people that want to help and add inscriptions ids to get validated and added to
