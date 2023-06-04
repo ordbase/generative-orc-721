@@ -88,9 +88,9 @@ img.onload = function() {
     for(let i = 0; i < 220; i++) {
         let sprite = document.createElement('div');
         sprite.className = 'sprite';
-        sprite.style.backgroundPosition = `-${(i % 10) * 24}px -${Math.floor(i / 10) * 24}px`;
+        sprite.style.backgroundPosition = `-${(i % 20) * 24}px -${Math.floor(i / 20) * 24}px`;
         sprite.addEventListener('click', () => {
-            ctx.drawImage(img, (i % 10) * 24, Math.floor(i / 10) * 24, 24, 24, 0, 0, 24 * scaleFactor, 24 * scaleFactor);
+            ctx.drawImage(img, (i % 20) * 24, Math.floor(i / 20) * 24, 24, 24, 0, 0, 24 * scaleFactor, 24 * scaleFactor);
             selectedSprites.push(i);
             output.textContent = '"g":[' + selectedSprites.join(', ') + ']';
         });
