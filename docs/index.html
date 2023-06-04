@@ -16,7 +16,6 @@
     
   ></script>
 
-    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
 
   <style id="compiled-css" type="text/css">
@@ -61,13 +60,14 @@
   margin: auto;
   transform: scale(1);
   transform-origin: 0 0;
+  image-rendering: pixelated;
 }
 
 
 #canvas {
   filter: blur(.0px);
   border: 2px solid #ccc;
-  margin: 10px;
+  margin: 50px;
   text-align: center;
   background-color: #eee;
 }
@@ -259,21 +259,12 @@ let output = document.getElementById('output');
 let selectedSprites = [];
 let scaleFactor = 10;
 
+//scale up spritesheet
+let container = document.querySelector('.container');
+
+
 img.src = sprite_url;
 
-/*
-document.getElementById('spriteMap').addEventListener('change', function(evt) {
-    if (evt.target.files.length > 0) {
-        let file = evt.target.files[0];
-        let reader = new FileReader();
-        reader.onloadend = function() {
-            img.src = reader.result;
-            img.onload();
-        }
-        reader.readAsDataURL(file);
-    }
-});
-*/
 
 function generateMintString(slug, attr_array) {
   return `{"p":"orc-721", "op":"mint", "s":"${slug}", "g":[${attr_array}]}`;
@@ -377,13 +368,17 @@ img.onload = function() {
   let spriteColumns = num_columns_on_spritesheet;
   let spriteRows = num_rows_on_spritesheet ? num_rows_on_spritesheet : Math.round(img.height / (img.width / spriteColumns));
 
+  let scale = container.offsetWidth / img.width;
+
   // Set the input fields to the calculated values
   //spriteColumnsInput.value = spriteColumns;
   //spriteRowsInput.value = spriteRows;
   num_rows_on_spritesheet = spriteRows; //set globally for json validator -- terrible hack
 
-  let spriteWidth = img.width / spriteColumns;
-  let spriteHeight = img.height / spriteRows;
+//  let spriteWidth = img.width / spriteColumns;
+//  let spriteHeight = img.height / spriteRows;
+  let spriteWidth = (img.width / spriteColumns) * scale;
+  let spriteHeight = (img.height / spriteRows) * scale;
   let numberOfSprites = spriteColumns * spriteRows;
 
   let spritesheet = document.getElementById('spritesheet');
@@ -392,9 +387,11 @@ img.onload = function() {
   // Dynamically set the grid and background properties
   spritesheet.style.gridTemplateColumns = `repeat(${spriteColumns}, ${spriteWidth}px)`;
   spritesheet.style.gridTemplateRows = `repeat(${spriteRows}, ${spriteHeight}px)`;
-  spritesheet.style.width = `${img.width}px`;
-  spritesheet.style.height = `${img.height}px`;
+  spritesheet.style.width = `${img.width * scale}px`;
+  spritesheet.style.height = `${img.height * scale}px`;
+  console.log("height of spritesheet: "+scale);
   spritesheet.style.background = `url(${img.src})`;
+  spritesheet.style.backgroundSize = `${img.width * scale}px ${img.height * scale}px`;
 
   for (let i = 0; i < numberOfSprites; i++) {
     let sprite = document.createElement('div');
@@ -402,12 +399,15 @@ img.onload = function() {
     sprite.style.width = `${spriteWidth}px`;
     sprite.style.height = `${spriteHeight}px`;
     sprite.style.backgroundPosition = `-${(i % spriteColumns) * spriteWidth}px -${Math.floor(i / spriteColumns) * spriteHeight}px`;
+    sprite.style.backgroundSize = `${img.width * scale}px ${img.height * scale}px`;
     sprite.title = i;
     sprite.addEventListener('click', () => {
       let row = Math.floor(i / spriteColumns);
       let col = i % spriteColumns;
 
-      ctx.drawImage(img, col * spriteWidth, row * spriteHeight, spriteWidth, spriteHeight, 0, 0, canvas.width, canvas.height);
+      //need to scale back down for the canvas
+      ctx.drawImage(img, col * spriteWidth / scale, row * spriteHeight / scale, spriteWidth / scale, spriteHeight / scale, 0, 0, canvas.width, canvas.height);
+
       selectedSprites.push(i);
       output.textContent = generateMintString(slug, selectedSprites);
       sprite.classList.add('selected');
