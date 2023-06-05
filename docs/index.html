@@ -251,6 +251,10 @@ sprite_url = params.get('sprite_url') || sprite_url;
 slug = params.get('slug') || slug;
 num_columns_on_spritesheet = params.get('cols') || num_columns_on_spritesheet;
 
+//lets set the title if a slug is passed in.
+if (params.get('slug')) { document.title = slug + ' ORC-721 Previewer' }
+
+
 let canvas = document.getElementById('canvas');
 canvas.width = 240;
 canvas.height = 240;
