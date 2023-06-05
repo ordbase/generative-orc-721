@@ -25,7 +25,7 @@ body {
 
   background: url(https://ordbase.github.io/generative-orc-721/btcwords/spritesheet.png);
 
-  transform: scale(0.5);    /* make smaller -  show with 50% zoom e.g. half the original size */
+  transform: scale(1);    /* make smaller not working - try again later sorry; show with 50% zoom e.g. half the original size */
   transform-origin: 0 0;
 }
 
@@ -81,18 +81,6 @@ body {
 <script scr="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
   <script>
-let canvas = document.getElementById('canvas');
-canvas.width = 204;
-canvas.height = 64;
-let ctx = canvas.getContext('2d');
-ctx.imageSmoothingEnabled = false; // Disable image smoothing
-let img = new Image();
-img.src = 'https://ordbase.github.io/generative-orc-721/btcwords/spritesheet.png';
-
-let output = document.getElementById('output');
-let selectedSprites = [];
-let scaleFactor = 2;
-
  // 27 columns x 6 rows    (162 tiles)
  //    tile / sprite 102 x 32px - width x height
  //
@@ -101,6 +89,22 @@ let scaleFactor = 2;
  let tiles = cols * rows;
  let width = 102;
  let height = 32;
+
+ let scaleFactor = 2;
+
+let canvas = document.getElementById('canvas');
+canvas.width  = width * scaleFactor; /* 204px */
+canvas.height = height * scaleFactor;  /* 64px */
+
+let ctx = canvas.getContext('2d');
+ctx.imageSmoothingEnabled = false; // Disable image smoothing
+
+let img = new Image();
+img.src = 'https://ordbase.github.io/generative-orc-721/btcwords/spritesheet.png';
+
+let output = document.getElementById('output');
+let selectedSprites = [];
+
 
 
 img.onload = function() {
