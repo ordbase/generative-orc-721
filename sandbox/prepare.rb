@@ -84,8 +84,8 @@ links = links.uniq
 puts "   #{links.size} link(s)"
 
 ## exclude
-links = links.reject { |link| EXCLUDES.include?( link ) }
-puts "   #{links.size} link(s)"
+## links = links.reject { |link| EXCLUDES.include?( link ) }
+## puts "   #{links.size} link(s)"
 
 
 recs = []
