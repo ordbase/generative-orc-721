@@ -1,0 +1,130 @@
+
+<!--
+    source based on fiddle by @jokie
+       see https://jsfiddle.net/a6mnft3d/34/
+-->
+
+
+<style>
+body {
+  text-align:center;
+}
+
+
+#spritesheet {
+  display: grid;
+
+  /* 27 columns x 6 rows
+       tile / sprite 102 x 32px - width x height
+   */
+  grid-template-columns: repeat(27, 24px);
+  grid-template-rows: repeat(6, 24px);
+  width: 2754px;    /*   27 x 102px = 2754px */
+  height: 192px;     /*   6 x 32px  = 192px */
+  margin: auto;
+
+  background: url(https://ordbase.github.io/generative-orc-721/btcwords/spritesheet.png);
+
+  transform: scale(0.5);    /* make smaller -  show with 50% zoom e.g. half the original size */
+  transform-origin: 0 0;
+}
+
+
+.sprite {
+  width: 102px;
+  height: 32px;
+}
+
+#canvas {
+ /*   preview - instead of 10x - try 2x
+  */
+
+  width: 204px;     /* 2 x 102px = 204px */
+  height: 64px;    /* 2 x 32px = 64px */
+  filter: blur(.0px);
+  border: 2px solid #ccc;
+  margin: 10px;
+  background-color: #eee;
+}
+
+#cleardiv {
+  margin:auto;
+  text-align:center;
+  }
+</style>
+
+
+ <h1>
+  Bitcoin (BTC) Words Previewer
+  </h1>
+  <p>
+  Directions: click on the map below to preview your Bitcoin (BTC) Words.
+  Press clear to start over.<br/><br/>
+  When you're happy, use the attribute list generated.
+  </p>
+  <div id="spritesheet"></div>
+
+  <canvas id="canvas" width="204" height="64"></canvas>
+
+  <div id="cleardiv">
+   <button id="clear">Clear</button>
+  </div>
+  <p id="output"></p>
+
+  Bitcoin (BTC) Words is a project by <a href="https://twitter.com/zimmerallday">@ZimmerAllDay</a>.
+  Learn more on the <a href="https://discord.gg/swBWd827qM">Ordinal Punks discord</a> (in the #generative-orc-721 channel)
+  and the <a href="https://github.com/ordbase/generative-orc-721">generative-orc-721 github</a>
+  <footer>This previewer adopted from a fiddle written by Jokie </footer>
+
+
+<!-- note: requires jquery 3.4.1 -->
+<script scr="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script>
+let canvas = document.getElementById('canvas');
+canvas.width = 204;
+canvas.height = 64;
+let ctx = canvas.getContext('2d');
+ctx.imageSmoothingEnabled = false; // Disable image smoothing
+let img = new Image();
+img.src = 'https://ordbase.github.io/generative-orc-721/btcwords/spritesheet.png';
+
+let output = document.getElementById('output');
+let selectedSprites = [];
+let scaleFactor = 2;
+
+ // 27 columns x 6 rows    (162 tiles)
+ //    tile / sprite 102 x 32px - width x height
+ //
+ let cols = 27;
+ let rows = 6;
+ let tiles = cols * rows;
+ let width = 102;
+ let height = 32;
+
+
+img.onload = function() {
+
+    for(let i = 0; i < tiles; i++) {
+        let sprite = document.createElement('div');
+        sprite.className = 'sprite';
+
+        let x = i % cols;
+        let y = Math.floor(i / cols);
+
+        sprite.style.backgroundPosition = `-${x * width}px -${y * height}px`;
+        sprite.addEventListener('click', () => {
+            ctx.drawImage(img, x * width, y * height, width, height, 0, 0, width * scaleFactor, height * scaleFactor);
+            selectedSprites.push(i);
+            output.textContent = '"g":[' + selectedSprites.join(', ') + ']';
+        });
+        document.getElementById('spritesheet').appendChild(sprite);
+    }
+};
+
+document.getElementById('clear').addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    selectedSprites = [];
+    output.textContent = '';
+});
+  </script>
