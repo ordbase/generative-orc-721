@@ -19,14 +19,14 @@ see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
 
 I NEED YOUR HELP ...
 
-... let's prepare the Week 02 - D.I.Y. Birdies (max. 721) deploy today (Sun Jun 4th) if possible ... <br>
+... let's start minting the Week 02 - D.I.Y. Birdies (max. 721)  if possible ... <br>
 ... the spritesheet.png is ready to inscribe and has 200+ tiles (20 columns x 11 rows = 220 tiles / sprites)  ... it's about 35kb  ... <br>
 ... see
 
 ![](diybirdies/spritesheet.png)
 
 ... your comments more than welcome on the new Week 02 - D.I.Y. Birdies collection - the structure - see [diybirdies/meta.csv](diybirdies/meta.csv) for details - is - bodies first incl. golden and skeleton (bone/ruby) and robot - the beak ("nose") -  eyes - and optional eyewear, headwear, and clothing - that's it.<br>
-... and again the call for help ...... if anyone wants to sponsor / lead the inscribe (spritesheet today (Sun Jun 4th) and deploy tomorrow (Mon Jun5th), please tell in the ordinal punks discord (in the #generative-orc-721 channel) - you make it all happen ...
+... and again the call for help ...... if anyone wants to sponsor / lead the inscribe (step one - the spritesheet and step two - the deploy inscribe with a reference to the spritesheet inscribton id, please tell in the ordinal punks discord (in the #generative-orc-721 channel) - you make it all happen ...
 
 Try the [D.I.Y. Birdie Previewer »](https://ordbase.github.io/generative-orc-721/diybirdies)
 
