@@ -35,12 +35,10 @@ body {
   height: 32px;
 }
 
-#canvas {
- /*   preview - instead of 10x - try 2x
-  */
 
-  width: 204px;     /* 2 x 102px = 204px */
-  height: 64px;    /* 2 x 32px = 64px */
+#canvas {
+  width: 1020px;     /* 10x => 1020px     -- 2 x 102px = 204px */
+  height: 320px;     /* 10x => 320px       -- 2 x 32px = 64px */
   filter: blur(.0px);
   border: 2px solid #ccc;
   margin: 10px;
@@ -64,7 +62,7 @@ body {
   </p>
   <div id="spritesheet"></div>
 
-  <canvas id="canvas" width="204" height="64"></canvas>
+  <canvas id="canvas" width="1020" height="320"></canvas>
 
   <div id="cleardiv">
    <button id="clear">Clear</button>
@@ -90,11 +88,11 @@ body {
  let width = 102;
  let height = 32;
 
- let scaleFactor = 2;
+ let scaleFactor = 10;
 
 let canvas = document.getElementById('canvas');
-canvas.width  = width * scaleFactor; /* 204px */
-canvas.height = height * scaleFactor;  /* 64px */
+canvas.width  = width * scaleFactor;
+canvas.height = height * scaleFactor;
 
 let ctx = canvas.getContext('2d');
 ctx.imageSmoothingEnabled = false; // Disable image smoothing
@@ -115,11 +113,24 @@ img.onload = function() {
 
         let x = i % cols;
         let y = Math.floor(i / cols);
+        console.log( `==> add sprite ${i} - x: ${x} y: ${y}` );
 
-        sprite.style.backgroundPosition = `-${x * width}px -${y * height}px`;
+        let pos = `-${x * width}px -${y * height}px`;
+        sprite.style.backgroundPosition = pos;
+        console.log( `  pos: ${pos}` );
+
+
         sprite.addEventListener('click', () => {
-            ctx.drawImage(img, x * width, y * height, width, height, 0, 0, width * scaleFactor, height * scaleFactor);
+            ctx.drawImage(img,
+                          x * width,
+                          y * height,
+                          width, height, 0, 0,
+                          width * scaleFactor,
+                          height * scaleFactor);
             selectedSprites.push(i);
+
+            console.log( `   click on sprite ${i} - x: ${x} y: ${y}` );
+
             output.textContent = '"g":[' + selectedSprites.join(', ') + ']';
         });
         document.getElementById('spritesheet').appendChild(sprite);
