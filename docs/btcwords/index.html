@@ -113,11 +113,11 @@ img.onload = function() {
 
         let x = i % cols;
         let y = Math.floor(i / cols);
-        console.log( `==> add sprite ${i} - x: ${x} y: ${y}` );
+        // console.log( `==> add sprite ${i} - x: ${x} y: ${y}` );
 
         let pos = `-${x * width}px -${y * height}px`;
         sprite.style.backgroundPosition = pos;
-        console.log( `  pos: ${pos}` );
+        // console.log( `  pos: ${pos}` );
 
 
         sprite.addEventListener('click', () => {
@@ -129,7 +129,7 @@ img.onload = function() {
                           height * scaleFactor);
             selectedSprites.push(i);
 
-            console.log( `   click on sprite ${i} - x: ${x} y: ${y}` );
+            // console.log( `   click on sprite ${i} - x: ${x} y: ${y}` );
 
             output.textContent = '"g":[' + selectedSprites.join(', ') + ']';
         });
