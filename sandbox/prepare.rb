@@ -6,10 +6,11 @@ require 'cocos'
 ## https://ordinals.com/inscription/e8830c5fbdfc2f529350fd04a2ac20bb097dce98f159223837513ae3c8d05714i0
 ##  and export as tabular dataset (in .csv)
 
+
+=begin
+### diypunks
 pages = (1..12).to_a
 pp pages
-
-
 
 txt = ""
 
@@ -17,6 +18,21 @@ pages.each do |page|
   txt <<  read_text( "./sandbox/tmp/page#{page}.html" )
   txt << "\n\n\n"
 end
+=end
+
+
+
+### diycoolcats
+pages = (1..5).to_a
+pp pages
+
+txt = ""
+
+pages.each do |page|
+  txt <<  read_text( "./sandbox/tmp/cat#{page}.html" )
+  txt << "\n\n\n"
+end
+
 
 
 ## d.i.y. punk broken (or deploy)

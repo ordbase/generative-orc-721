@@ -2,14 +2,18 @@ require 'pixelart'
 
 
 
-recs = read_csv( "./diypunks/mint.csv" )
+# slug = 'diypunks'
+slug = 'diycoolcats'
+
+
+recs = read_csv( "./#{slug}/mint.csv" )
 puts "   #{recs.size} record(s)"
 
 ## cut down to first hundred
 recs = recs[0, 100]
 
 
-spritesheet = ImageComposite.read( './diypunks/spritesheet.png',
+spritesheet = ImageComposite.read( "./#{slug}/spritesheet.png",
                                       width: 24,
                                       height: 24 )
 
@@ -27,8 +31,9 @@ recs.each_with_index do |rec,i|
   composite << img
 end
 
-composite.save( './tmp/diypunks.png' )
-composite.zoom(4).save( './tmp/diypunks@4x.png' )
+composite.save( "./tmp/#{slug}.png" )
+composite.zoom(4).save( "./tmp/#{slug}@4x.png" )
+
 
 
 puts "bye"
