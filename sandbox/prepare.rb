@@ -22,14 +22,14 @@ end
 
 
 
-### diycoolcats
+### diycoolcats, diyordibots
 pages = (1..5).to_a
 pp pages
 
 txt = ""
 
 pages.each do |page|
-  txt <<  read_text( "./sandbox/tmp/cat#{page}.html" )
+  txt <<  read_text( "./sandbox/tmp/iipunk#{page}.html" )
   txt << "\n\n\n"
 end
 

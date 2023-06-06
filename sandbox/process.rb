@@ -4,13 +4,21 @@ require_relative 'validate'
 
 
 ## test process run
-##    for now diypunks, diycoolcats only; sorry
+##    for now diypunks,
+##            diyordibots,
+##            diycoolcats only; sorry
 
 
 DEPLOYS ={
   'diypunks' => { 'num' => 9947030,  ## deploy inscribe num
                   'g'   => 60     ##  max g range e.g. 0-59 (60)
                 },
+  'diypunks-v2'  => { 'num' => 10282958,
+                      'g'   => 60
+                    },
+  'diyordibots' => {  'num' => 10339670,
+                      'g'   => 30
+                    },
   'diycoolcats' => { 'num' => 10509482,
                     'g'   =>  70
                   },
@@ -108,8 +116,8 @@ recs.each_with_index do |rec,i|
 
      data = JSON.parse( content )
      slug = data['s']
-     if slug != 'diycoolcats'
-      puts "!! ERROR - sorry - only setup for diycoolcats for now"
+     if slug != 'diypunks-v2'
+      puts "!! ERROR - sorry - only setup for diypunks-v2 for now"
       exit 1
      end
      g  = data['g']
@@ -142,7 +150,7 @@ mints.each do |values|
   buf << "\n"
 end
 
-write_text( "./diycoolcats/mint.csv", buf )
+write_text( "./diypunks-v2/mint.csv", buf )
 
 
 
