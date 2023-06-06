@@ -78,11 +78,13 @@ recs.each_with_index do |rec,i|
    meta = read_json( meta_path )
 
    content_type = meta['content type']
-   if !content_type.start_with?( 'text/' )
-    puts "!! ERROR - expected text inscribe; got:"
-    pp meta
-    exit 1
+   if !(content_type.start_with?( 'text/' )  ||
+        content_type.start_with?( 'application/json'))
+      puts "!! expected text/* or application/json inscribe; got:"
+      pp meta
+      exit 1
    end
+
 
    ## puts "   content_type: >#{content_type}<"
 

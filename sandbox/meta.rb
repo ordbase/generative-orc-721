@@ -2,8 +2,9 @@ require 'ordinals'
 
 ## try to fetch metadata
 
+slug = 'diypunks'
 
-recs = read_csv( './sandbox/ordinals.csv' )
+recs = read_csv( "./sandbox/tmp/ordinals.#{slug}.csv" )
 puts "   #{recs.size} record(s)"
 
 
@@ -34,8 +35,9 @@ recs.each_with_index do |rec,i|
 
 
    content_type = meta['content type']
-   if !content_type.start_with?( 'text/' )
-    puts "!! expected text inscribe; got:"
+   if !(content_type.start_with?( 'text/' )  ||
+        content_type.start_with?( 'application/json'))
+    puts "!! expected text/* or application/json inscribe; got:"
     pp meta
     exit 1
    end
@@ -43,6 +45,7 @@ recs.each_with_index do |rec,i|
    puts "   content_type: >#{content_type}<..."
 
    ## step 2) get content - check for mime type - text/
+   ##   note - save appliation/json as .txt for now too - why? why not?
 
    path    = "#{cache_dir}/content/#{id}.txt"
    if File.exist?( path )
