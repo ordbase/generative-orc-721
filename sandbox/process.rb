@@ -8,6 +8,11 @@ require_relative 'validate'
 ##            diyordibots,
 ##            diycoolcats only; sorry
 
+SLUG = 'diypunks'
+## SLUG = 'diypunks-v2'
+## SLUG = 'diyordibots'
+## SLUG = 'diycoolcats'
+
 
 DEPLOYS ={
   'diypunks' => { 'num' => 9947030,  ## deploy inscribe num
@@ -41,18 +46,24 @@ def title_to_num( str )
 end
 
 
-recs = read_csv( './sandbox/ordinals.csv' )
+
+
+recs = read_csv( "./sandbox/tmp/ordinals.#{SLUG}.csv" )
 puts "   #{recs.size} record(s)"
+
 
 
 cache_dir = '../ordinals.cache/btc'
 
 
+
 mints = []
+error_log = ""
+
 
 recs.each_with_index do |rec,i|
   id = rec['id']
-  puts "==> #{i} - #{id}"
+  ## puts "==> #{i} - #{id}"
 
 
   ## step 1)  get metadata records
@@ -73,7 +84,7 @@ recs.each_with_index do |rec,i|
     exit 1
    end
 
-   puts "   content_type: >#{content_type}<"
+   ## puts "   content_type: >#{content_type}<"
 
    num = title_to_num( meta['title'])
    if num.nil?
@@ -81,8 +92,6 @@ recs.each_with_index do |rec,i|
      pp meta
      exit 1
    end
-
-   puts "   inscribe num: #{num}"
 
    ## step 2) get content - check for mime type - text/
 
@@ -94,35 +103,67 @@ recs.each_with_index do |rec,i|
 
    ## note: always assumes utf8 encoding for now
    content = read_text( path )
-   puts "  text:"
-   pp content
 
 
   ######
   ## todo/fix - single step - validate json only first
   ######
 
+   ## first see if valid json
+   data = nil
+   begin
+     data = JSON.parse( content )
+   rescue JSON::ParserError => ex
+      ## keep going
+   end
+
+
+   if data
+      ## quick fuzzy check if include for mint checking
+      ##  p|P == orc-721 (insensitive) must MATCH  AND
+      ##  op|OP == mint (insensitive) must MATCH  AND
+      ##  s|S|slug|SLUG == <slug> (insensitive) must MATCH
+      next if (data['p']||data['P']||'').downcase.strip   != 'orc-721'  ||
+              (data['op']||data['OP']||'').downcase.strip  != 'mint'    ||
+              (data['s']||data['S']||data['slug']||data['SLUG']||'').downcase.strip != SLUG
+   else
+      ## use regex fuzzy check (json parse failed!!)
+      ## check for orc-721
+      p_rx  = /\borc-?721\b/i
+      op_rx = /\bmint\b/i
+      s_rx  = /\b#{SLUG}\b/i
+
+      next if p_rx.match( content ).nil?  ||
+              op_rx.match( content ).nil? ||
+              s_rx.match( content ).nil?
+   end
+
 
    ## note: todo/fix - need to filter out deploys and other ops!
    ##             from error list
    errors = validate_mint( num, content, deploys: DEPLOYS )
    if errors.size != 0
-     puts " !! ERROR(S):"
-      errors.each do |msg|
-          puts msg
-      end
-   else
-     puts "OK"
+     buf = ""
+     buf << "!! ERROR(S) in  #{num} / #{id}:\n"
+     buf << content
+     buf << "\n\n"
+     errors.each do |msg|
+        buf << "   - #{msg}\n"
+     end
+     buf << "\n"
 
+     puts buf              ## print to screen
+     error_log << buf      ## auto-add to error log
+   else
      data = JSON.parse( content )
      slug = data['s']
-     if slug != 'diypunks-v2'
-      puts "!! ERROR - sorry - only setup for diypunks-v2 for now"
+     if slug != SLUG
+      puts "!! ERROR - sorry - only setup for >#{SLUG}<"
       exit 1
      end
      g  = data['g']
 
-     puts "  #{num}, #{g.join(' ')}"
+     puts "OK  #{num}, #{g.join(' ')}"
      ## add validated mint  - note: dataset values always strings!
      mints << [num.to_s, g.join(' ')]
    end
@@ -136,7 +177,7 @@ puts "  #{mints.size} mint(s)"
 mints = mints.sort { |l,r|  l[0].to_i(10) <=> r[0].to_i(10) }
 
 
-pp mints
+## pp mints
 
 ### save
 ##
@@ -150,8 +191,9 @@ mints.each do |values|
   buf << "\n"
 end
 
-write_text( "./diypunks-v2/mint.csv", buf )
+write_text( "./#{SLUG}/mint.csv", buf )
 
+write_text( "./#{SLUG}/error.txt", error_log )
 
 
 puts "bye"

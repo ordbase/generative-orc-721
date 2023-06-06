@@ -1,0 +1,35 @@
+!! ERROR(S) in  10508681 / f102d975ae15cc2d82b7d314ce7df6f120c8d4da16a78be965ccab54d25f7f37i0:
+{"p":"orc-721","op":"mint","s":"diycoolcats","g":[1]}
+
+   - protocol -- 'diycoolcats' mint inscribe no. 10508681 lower than deploy inscribe no 10509482
+
+!! ERROR(S) in  10508756 / 66a0999de8198320999ee1bda4a3478d82ccbd3371d54126f001f7abeb9140e7i0:
+{"p":"orc-721","op":"mint","s":"diycoolcats","g":[0]}
+
+   - protocol -- 'diycoolcats' mint inscribe no. 10508756 lower than deploy inscribe no 10509482
+
+!! ERROR(S) in  10509359 / 10c248b7a8dbea2cefa34347c04cbb90b23f7c0e3fe01f7c9187086c399c154ai0:
+{"p":"orc-721","op":"mint","s":"diycoolcats","g":[0,40,6]}
+
+   - protocol -- 'diycoolcats' mint inscribe no. 10509359 lower than deploy inscribe no 10509482
+
+!! ERROR(S) in  10509360 / eac0ed9c5e110223dd41bbf394d71c97a862eabca53582fb0f5ecb58b7127b1di0:
+{"p":"orc-721","op":"mint","s":"diycoolcats","g":[59,40,9]}
+
+   - protocol -- 'diycoolcats' mint inscribe no. 10509360 lower than deploy inscribe no 10509482
+
+!! ERROR(S) in  10509361 / 34a9167f6a4d175d078c68267b953183557efad98108a537906532657b81dc5bi0:
+{"p":"orc-721","op":"mint","s":"diycoolcats","g":[0,65,61]}
+
+   - protocol -- 'diycoolcats' mint inscribe no. 10509361 lower than deploy inscribe no 10509482
+
+!! ERROR(S) in  10509364 / c94627d11fbec2640cb69a08f0b36afca5984fddb78ead33ce834861a270ce62i0:
+{"p":"orc-721","op":"mint","s":"diycoolcats","g":[65,62,24]}
+
+   - protocol -- 'diycoolcats' mint inscribe no. 10509364 lower than deploy inscribe no 10509482
+
+!! ERROR(S) in  10509365 / a76055ac7972b17dee814d427d4d12008a4495596b6d451212addd0b6ae5dbd7i0:
+{"p":"orc-721","op":"mint","s":"diycoolcats","g":[62,63]}
+
+   - protocol -- 'diycoolcats' mint inscribe no. 10509365 lower than deploy inscribe no 10509482
+

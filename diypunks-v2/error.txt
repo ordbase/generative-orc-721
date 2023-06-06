@@ -1,0 +1,50 @@
+!! ERROR(S) in  10292177 / 629dbc2b4228cbdcc0106607de37ae1f6f3d705ce877bd6bb561fe253e802b01i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[59,7,38]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[59,7,38]}'
+
+!! ERROR(S) in  10292207 / cb73a38010bcad68957820811a2a3c06b4814fd6711ad48365e61351c1149208i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[<4>,<24>,<17>, <36>]}
+
+   - json parse -- 451: unexpected token at '<4>,<24>,<17>, <36>]}'
+
+!! ERROR(S) in  10292208 / 27dc5e2b3024fa10c7fb993ce785f907e739540c27ca8e66406bec0c92e8381bi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[<3>,<22>,<10>, <47>]}
+
+   - json parse -- 451: unexpected token at '<3>,<22>,<10>, <47>]}'
+
+!! ERROR(S) in  10292770 / f83b9dc74bf8da0c532ba3ba29988454fad61736d992141e213fef1e4b3368fci0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[58,8,55]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[58,8,55]}'
+
+!! ERROR(S) in  10292937 / f1f3659b1d587ea6c5695e921a877d7f0818d46d3f130b2d5a70f6e284f8249ei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[<5>,<25>,<11>, <30>]}
+
+   - json parse -- 451: unexpected token at '<5>,<25>,<11>, <30>]}'
+
+!! ERROR(S) in  10293059 / 147be5f125e7d4de97e3e698ec6dcbdab81ec42855d4caff4a8e95f2be2c2f91i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[<2>,<25>,<19>, <34>]}
+
+   - json parse -- 451: unexpected token at '<2>,<25>,<19>, <34>]}'
+
+!! ERROR(S) in  10309978 / c9ae736b0e1ad2d2b5ab72e350af59339b7956eeaf71d83ada093e861ab18af9i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，6，38]}
+
+   - json parse -- 451: unexpected token at '，6，38]}'
+
+!! ERROR(S) in  10310078 / 46153da464fb19ab1ce497303a583882afa2d0c676421291c7d2dfe9f6b2f5dei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[Bitcoin Orange,  Background,Robot, Base, Wild Blonde, Hair,Sombrero,   Headwear Buckteeth,  Mouth]}
+
+   - json parse -- 451: unexpected token at 'Bitcoin Orange,  Background,Robot, Base, Wild Blonde, Hair,Sombrero,   Headwear Buckteeth,  Mouth]}'
+
+!! ERROR(S) in  10311306 / 260407351f6e37deb54fe6496b4865ec1d431f77804c5fef469f03aed74d6e75i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，7，37]}
+
+   - json parse -- 451: unexpected token at '，7，37]}'
+
+!! ERROR(S) in  10311327 / 6696b31496b3244a68de82a78fe2b1d74b08b9fbc8152b6426cba2267ca71312i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，5，38]}
+
+   - json parse -- 451: unexpected token at '，5，38]}'
+

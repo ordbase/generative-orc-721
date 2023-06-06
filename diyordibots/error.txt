@@ -1,0 +1,45 @@
+!! ERROR(S) in  9999004 / 2a1a35600460a561e49b3118e7a48fa94005064b6189652a56ff3fc0af4db9fbi0:
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diyordibots",
+   "g":[2,8,10,23,26]
+}
+
+   - protocol -- 'diyordibots' mint inscribe no. 9999004 lower than deploy inscribe no 10339670
+
+!! ERROR(S) in  10324736 / 63f7e903829e8ef69908f33870c0d8aaf10c119b044c13141d8474256dbeb03bi0:
+{"p":"orc-721","op":"mint","s":"diyordibots","g":[58,7,26,12,38,39,44,53,55]}
+
+   - protocol -- 'diyordibots' mint inscribe no. 10324736 lower than deploy inscribe no 10339670
+
+!! ERROR(S) in  10325073 / cba81ba3b77dbb51c9279b8be2b1e7794d2f0ffbcb9fb4e5c36e534c466adc22i0:
+{"p":"orc-721","op":"mint","s":"diyordibots","g":[58,7, 26,12,19]}
+
+   - protocol -- 'diyordibots' mint inscribe no. 10325073 lower than deploy inscribe no 10339670
+
+!! ERROR(S) in  10340398 / f900d0f3df683eefaef19916ad3f53786bd5df6b86351ed070ba3d034afb0e12i0:
+"p": "orc-721",
+  "op": "mint",
+  "s": "diyordibots",
+  "g": [
+    0,
+    4,
+    14,
+    25,
+    8
+  ]
+}
+
+   - json parse -- 859: unexpected token at ': "orc-721",
+  "op": "mint",
+  "s": "diyordibots",
+  "g": [
+    0,
+    4,
+    14,
+    25,
+    8
+  ]
+}'
+
