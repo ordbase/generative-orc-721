@@ -56,6 +56,7 @@ puts "   #{recs.size} record(s)"
 cache_dir = '../ordinals.cache/btc'
 
 
+num_to_ids = []
 
 mints = []
 error_log = ""
@@ -168,6 +169,8 @@ recs.each_with_index do |rec,i|
      puts "OK  #{num}, #{g.join(' ')}"
      ## add validated mint  - note: dataset values always strings!
      mints << [num.to_s, g.join(' ')]
+
+     num_to_ids << [num.to_s, id]
    end
 end
 
@@ -196,6 +199,23 @@ end
 write_text( "./#{SLUG}/mint.csv", buf )
 
 write_text( "./#{SLUG}/error.txt", error_log )
+
+
+
+## sort by inscrib num
+num_to_ids = num_to_ids.sort { |l,r|  l[0].to_i(10) <=> r[0].to_i(10) }
+
+headers = ['num', 'id']
+buf = String.new('')
+buf << headers.join( ', ' )
+buf << "\n"
+num_to_ids.each do |values|
+  buf << values.join( ', ' )
+  buf << "\n"
+end
+
+## save only for diypunks for now
+write_text( "./sandbox/#{SLUG}_ids.csv", buf )   if SLUG == 'diypunks'
 
 
 puts "bye"
