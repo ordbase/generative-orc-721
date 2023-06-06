@@ -493,7 +493,7 @@ ordibot no. 1 specs:
 and so on.
 
 
-Try the [D.I.Y. Ordipunks Previewer »](https://ordbase.github.io/generative-orc-721/diypunks)
+Try the [D.I.Y. Ordibots Previewer »](https://ordbase.github.io/generative-orc-721/diyordibots)
 
 
 
