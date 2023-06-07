@@ -8,9 +8,9 @@ require_relative 'validate'
 ##            diyordibots,
 ##            diycoolcats only; sorry
 
-SLUG = 'diypunks'
+## SLUG = 'diypunks'
 ## SLUG = 'diypunks-v2'
-## SLUG = 'diyordibots'
+SLUG = 'diyordibots'
 ## SLUG = 'diycoolcats'
 
 
@@ -214,8 +214,8 @@ num_to_ids.each do |values|
   buf << "\n"
 end
 
-## save only for diypunks for now
-write_text( "./sandbox/#{SLUG}_ids.csv", buf )   if SLUG == 'diypunks'
+
+write_text( "./sandbox/#{SLUG}_ids.csv", buf )
 
 
 puts "bye"
