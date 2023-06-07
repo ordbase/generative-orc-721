@@ -1,0 +1,20 @@
+!! ERROR(S) in  11072097 / 7cb1b7d4722fa2f2dcf74d7414d61b8ef490a74a2dac0fbbc1cfd30ffac7ae07i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[0,67,81,119,153]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"btcwords","g":[0,67,81,119,153]'
+
+!! ERROR(S) in  11072108 / 86af86cc49235f0189fb5a50684e44ef956075377aefed229d34feed03f7f223i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[0,53,68,98,111,143]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"btcwords","g":[0,53,68,98,111,143]'
+
+!! ERROR(S) in  11072119 / a71e00c0158ff212e34d908cf06a4e8bc56ce14aea649a3474770ff000d846eci0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[0,42,74,94,118,153]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"btcwords","g":[0,42,74,94,118,153]'
+
+!! ERROR(S) in  11073206 / ffac7dfa1f08b41900027e6137a95a6489da2e9e9d36bb8135adca96d6a5c66fi0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[Four]}
+
+   - json parse -- 451: unexpected token at 'Four]}'
+
