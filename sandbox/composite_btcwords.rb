@@ -1,4 +1,9 @@
+###
+#  note: requires latest pixelart bug fix (for composite)
+#    uses (local) source version for now
+$LOAD_PATH.unshift( "../pixelart/pixelart/lib" )
 require 'pixelart'
+
 
 
 slug = 'btcwords'
@@ -35,12 +40,6 @@ puts "  #{spritesheet.count}"
 composite = ImageComposite.new( 5, 10,  width: width,
                                         height: height )
 
-outname = "./tmp/#{slug}"
-
-composite.save( "#{outname}.png" )
-composite.zoom(4).save( "#{outname}@4x.png" )
-
-__END__
 recs.each_with_index do |rec,i|
   img = Image.new( width, height )
   g = rec['g'].split( ' ' ).map {|v| v.to_i(10) }
@@ -52,8 +51,11 @@ recs.each_with_index do |rec,i|
   img.save( "./tmp/#{slug}#{i}.png" )
   img.zoom(4).save( "./tmp/#{slug}#{i}@4x.png" )
 
-  ## composite << img
+  composite << img
 end
+
+
+outname = "./tmp/#{slug}"
 
 composite.save( "#{outname}.png" )
 composite.zoom(4).save( "#{outname}@4x.png" )
