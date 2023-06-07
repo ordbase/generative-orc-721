@@ -10,8 +10,8 @@ require_relative 'validate'
 
 ## SLUG = 'diypunks'
 ## SLUG = 'diypunks-v2'
-SLUG = 'diyordibots'
-## SLUG = 'diycoolcats'
+## SLUG = 'diyordibots'
+SLUG = 'diycoolcats'
 
 
 DEPLOYS ={

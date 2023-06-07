@@ -3,7 +3,8 @@ require 'ordinals'
 ## try to fetch metadata
 
 ## slug = 'diypunks'
-slug = 'diyordibots'
+## slug = 'diyordibots'
+slug = 'diycoolcats'
 
 
 recs = read_csv( "./sandbox/tmp/ordinals.#{slug}.csv" )

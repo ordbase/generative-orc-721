@@ -3,13 +3,11 @@ require 'pixelart'
 
 
 
-## slug = 'diypunks'
-slug = 'diycoolcats'
-width  = 24
-height = 24
-max = 721
-grid = [30,25]   ## 30 cols x 25 rows = 750
-
+slug = 'diyordibots'
+width  = 32
+height = 32
+max = 1000
+grid = [40,25]   ## 40 cols x 25 rows = 1000
 
 recs = read_csv( "./#{slug}/mint.csv" )
 puts "   #{recs.size} record(s)"
@@ -17,6 +15,7 @@ puts "   #{recs.size} record(s)"
 # cut-down to max. limit
 recs = recs[0, max]
 puts "   #{recs.size} record(s)"
+
 
 
 spritesheet_path = if defined?( slug_spritesheet )
