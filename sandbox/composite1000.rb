@@ -3,10 +3,11 @@ require 'pixelart'
 
 
 
-slug = 'diyordibots'
+slug             = 'diyordibots-v2'
+slug_spritesheet = 'diyordibots'
 width  = 32
 height = 32
-max = 1000
+max = 999
 grid = [40,25]   ## 40 cols x 25 rows = 1000
 
 recs = read_csv( "./#{slug}/mint.csv" )
