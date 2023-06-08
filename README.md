@@ -5,7 +5,7 @@
 
 We are live!  The world's first ORC-721 collections (on bitcoin) include:
 
-[721 D.I.Y. Punks (24×24px)](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0) - sub 10 million club!
+[**721 D.I.Y. Punks**](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0) (24×24px) - sub 10 million club!
 
 <details>
 <summary markdown="1">Show / Hide</summary>
@@ -15,11 +15,11 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 </details>
 
 
-[721 D.I.Y. Punks V2 (24×24px)](https://ordinals.com/inscription/49fc0b24a6d2be8c78b1b468b77729e3516fae223766e64dc3e68d4051c52e89i0)
+[**721 D.I.Y. Punks V2**](https://ordinals.com/inscription/49fc0b24a6d2be8c78b1b468b77729e3516fae223766e64dc3e68d4051c52e89i0) (24×24px)
 
 
 
-[1000 D.I.Y. Ordibots (32×32px)](https://ordinals.com/inscription/e1be0a2827e42ffaacde0da19006566d9efb5b920e41d29fd59b5d0a3527cfc8i0)
+[**1000 D.I.Y. Ordibots**](https://ordinals.com/inscription/e1be0a2827e42ffaacde0da19006566d9efb5b920e41d29fd59b5d0a3527cfc8i0) (32×32px)
 
 <details>
 <summary markdown="1">Show / Hide</summary>
@@ -29,7 +29,7 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 </details>
 
 
-[999 D.I.Y. Ordibots V2 (32×32px)](https://ordinals.com/inscription/671293d418f7e05a503ffec6703b266ce08eb5522329774f2ac008b883a4e2a0i0)
+[**999 D.I.Y. Ordibots V2**](https://ordinals.com/inscription/671293d418f7e05a503ffec6703b266ce08eb5522329774f2ac008b883a4e2a0i0) (32×32px)
 
 <details>
 <summary markdown="1">Show / Hide</summary>
@@ -39,7 +39,7 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 </details>
 
 
-[721 D.I.Y. Cool Cats (24×24px)](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0)
+[**721 D.I.Y. Cool Cats**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)
 
 <details>
 <summary markdown="1">Show / Hide</summary>
@@ -50,7 +50,8 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 
 
 
-[1000 Words on Bitcoin (102×32px)](https://ordinals.com/inscription/ac685db241919af1e5556bfc5a452e40efc961b074d385de750863256272a8aai0)  - see the [Words On Bitcoin Getting Started Guide and Documentation »](https://github.com/ZimmerAllDay/btcwords)
+[**1000 Words on Bitcoin**](https://ordinals.com/inscription/ac685db241919af1e5556bfc5a452e40efc961b074d385de750863256272a8aai0) (102×32px) - see the [Words On Bitcoin Getting Started Guide and Documentation »](https://github.com/ZimmerAllDay/btcwords)
+
 
 
 Wen [next] deploy?   You are welcome to announce your ORC-721 collections
