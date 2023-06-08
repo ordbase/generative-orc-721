@@ -310,3 +310,39 @@
 
    - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"btcwords","g":[0, 53, 74, 99, 127, 138]'
 
+!! ERROR(S) in  11107640 / aafc79da2b73b94c3b026f363d9578d273332e39d5a70f2a33e1e207f88fede5i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[242,74,94,118,153]}
+
+   - protocol --  g no. 242 out-of-range 0-161 (162) in 'btcwords' mint
+
+!! ERROR(S) in  11112015 / 4d71e14047a21be203207cf287254dda50ef71c1a06f548ef0e449d0f8db5de6i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":["g":[11,30,58,57,118,150]]}
+
+   - json parse -- 451: unexpected token at ':[11,30,58,57,118,150]]}'
+
+!! ERROR(S) in  11112016 / 034be625a39bf5f2a57c308b02eb7fd64667c796f480c1ca55b4773112bd8616i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":["g":[12,42,69,96,123,150]]}
+
+   - json parse -- 451: unexpected token at ':[12,42,69,96,123,150]]}'
+
+!! ERROR(S) in  11112040 / 7be3718de2fc84f6eec9728cd65d0d6f321883215cf7240d52ec37f6a5c02c93i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":["g":[9,35,62,89,116,143]]}
+
+   - json parse -- 451: unexpected token at ':[9,35,62,89,116,143]]}'
+
+!! ERROR(S) in  11112047 / 47d7bf914e18c4ac5339ecec71deadd8d4afa7ebef8d669819fc80223bbb42c9i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":["g":[8,39,66,93,121,148]]}
+
+   - json parse -- 451: unexpected token at ':[8,39,66,93,121,148]]}'
+
+!! ERROR(S) in  11112055 / 61d7748101f0431b8bc3d1dd201cfe91626e85aaf4a443d3825ecef51e049ffci0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":["g":[4,42,68,96,122,150]]}
+
+   - json parse -- 451: unexpected token at ':[4,42,68,96,122,150]]}'
+
+!! ERROR(S) in  11136514 / cb537ca32ca51b4244ee1707e6c5889e1dddde0a40d75279284c7f191d20a22fi0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[0,53,72,81,127,153]}
+{"p":"orc-721","op":"mint","s":"btcwords","g":[0,0,53,55,100,110]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"btcwords","g":[0,0,53,55,100,110]}'
+

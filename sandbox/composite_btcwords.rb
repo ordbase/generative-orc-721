@@ -1,57 +1,43 @@
-###
-#  note: requires latest pixelart bug fix (for composite)
-#    uses (local) source version for now
-$LOAD_PATH.unshift( "../pixelart/pixelart/lib" )
 require 'pixelart'
 
 
+## step 1 - read (local) spritesheet.png ("art layers")
 
-slug = 'btcwords'
-width  = 102
-height = 32
+btcwords   = Orc721::Generator.read( './docs/btcwords/spritesheet.png',
+                                          width: 102,
+                                          height: 32 )
 
 
-recs = read_csv( "./#{slug}/mint.csv" )
+recs = read_csv( "./btcwords/mint.csv" )
 puts "   #{recs.size} record(s)"
 
 
-
 ## cut down to first fifty, next fifty
-offset = 150
+offset = 200
 recs = recs[offset, 50]
 puts "   #{recs.size} record(s)"
 
 
-spritesheet_path = "./docs/btcwords/spritesheet.png"
-
-
-spritesheet = ImageComposite.read( spritesheet_path,
-                                      width: width,
-                                      height: height )
-
-composite = ImageComposite.new( 5, 10,  width: width,
-                                        height: height )
+composite = ImageComposite.new( 5, 10,  width:  btcwords.width,
+                                        height: btcwords.height )
 
 
 recs.each_with_index do |rec,i|
-  img = Image.new( width, height )
-  g = rec['g'].split( ' ' ).map {|v| v.to_i(10) }
-  puts "==> no. #{i+offset}   g: #{rec['g']} - #{g.inspect}"
-  g.each do |num|
-     img.compose!( spritesheet[ num ] )
-  end
+  num = rec['num']
+  g   = btcwords._parse( rec['g'] )
+  puts "==> no. #{i+offset} @ #{num}  g: #{rec['g']} - #{g.inspect}"
+  img = btcwords.generate( *g )
 
-  img.save( "./tmp/#{slug}#{i+offset}.png" )
-  img.zoom(4).save( "./tmp/#{slug}#{i+offset}@4x.png" )
+  img.save( "./tmp/btcwords#{i+offset}.png" )
+  img.zoom(4).save( "./tmp/btcwords#{i+offset}@4x.png" )
 
   composite << img
 end
 
 
-outname = "./tmp/#{slug}_#{offset}"
 
-composite.save( "#{outname}.png" )
-composite.zoom(4).save( "#{outname}@4x.png" )
+composite.save( "./tmp/btcwords_#{offset}.png" )
+composite.zoom(4).save( "./tmp/btcwords_#{offset}@4x.png" )
 
 
 
