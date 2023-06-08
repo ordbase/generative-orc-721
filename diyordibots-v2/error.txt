@@ -1,0 +1,316 @@
+!! ERROR(S) in  10366662 / 5f8c94b102d05f534876b34ed5e35dbc36c1945bf3c61fcfcb7e848269b3d0dfi0:
+{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,8]}
+
+   - json parse -- 859: unexpected token at '{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,8]}'
+
+!! ERROR(S) in  10366818 / c1f55837e23e95f8334c069ef62bedce125bb0c86ad1f9bc51e0bc9ffe11d15di0:
+{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,9]}
+
+   - json parse -- 859: unexpected token at '{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,9]}'
+
+!! ERROR(S) in  10367118 / 8883d8afc4993e67beb41b4709b00bbad7437fccf837691287175a920d2b2c22i0:
+{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,12]}
+
+   - json parse -- 859: unexpected token at '{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,12]}'
+
+!! ERROR(S) in  10367135 / a41a406696fcd01c2df7b91431d7c16b55361eae9eb11aee5deb09a36f00532di0:
+{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,10]}
+
+   - json parse -- 859: unexpected token at '{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,10]}'
+
+!! ERROR(S) in  10367254 / 529c2f2ff037deaffec1a45c70bc3befedfc7e78c7edb5bef79907cc17e7afedi0:
+{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,11]}
+
+   - json parse -- 859: unexpected token at '{“p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,11]}'
+
+!! ERROR(S) in  10367376 / 68493946a1f21762c4b5977069548dff0b65b40860067ffbe9e53c8aa3f4a63di0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[]}
+
+   - protocol format -- empty g
+
+!! ERROR(S) in  10367425 / 3cffbee189f6a20796f4a0b66e480c0401b2372fdea096a312bda101ff8429d9i0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367426 / 27ed2783fb0c9643c090585b3ff22a52c7b4d19163a15c8a096d1f811fc5c000i0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367427 / c7aa85bc7f4051918d380a8b9a80211c97d08414786131e896ee1c69b603c41fi0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367430 / a4ac9ddd8280bd85e371f0732fcbe36bbd79177b58064876ff7f4bcf37782e38i0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367434 / 97b81a674c9c60a1130bcef6912e9f35aa33ef3af24f04884f9f680d6138e051i0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367435 / 8cab2cf2f7a9f292a49a7698948078c95c8b3288f59c53d6ac50d482fd1f696ei0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367436 / 44169c9b60e368caf9428fc0a17a24d82efc4c45bd74ce0541ac63054aaec773i0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367438 / 44b9fa99a4d3a25939920ff0f3be570466d80cc8590ce5dad45a703873497a7bi0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367440 / ab05130aeab2261a6357353c9a5c8a1f73db58431939b6bbeb29cb861b2929aci0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367441 / 7647748c2b57ee9aa63a30f763fb04b24220456cee718211c2aefac0a7b094b3i0:
+example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}
+
+   - json parse -- 859: unexpected token at 'example:{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,22,24,7]}'
+
+!! ERROR(S) in  10367470 / ecec7b344bee93a91ff5af0283d6474bbb513f1bd9de3efdafa98cfc28478ba3i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[3，4，8，19，24]}
+
+   - json parse -- 451: unexpected token at '，4，8，19，24]}'
+
+!! ERROR(S) in  10367825 / 95221ddc98b39411b463ed82b1485b27385e2ab0d6c22d39b3e08117ffb394b2i0:
+{"p": "orc-721","op":"mint","s":"diyordibots-v2"}
+
+   - protocol format -- required key 'g' not found in inscribe text
+
+!! ERROR(S) in  10368070 / f205cc0320ef4d69d68942bc8e38792983571ca32cb00e0b17d04258ec0cc540i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[2,4,14,23,7]}{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[2,4,14,23,9]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[2,4,14,23,9]}'
+
+!! ERROR(S) in  10368073 / fea43ff33ae82757810c9ac8e7dd0bd87dee9e5e958d370be45fc8f4283edbd8i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[3,6,21,23,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[3,6,21,23,8]}'
+
+!! ERROR(S) in  10368074 / 7bc033eb405a0b3998aa2061ba08e8216586643e9f43f1297e473375785be41ei0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[3,6,21,25,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[3,6,21,25,8]}'
+
+!! ERROR(S) in  10368075 / 0654bd404efa5f4b0c74498c7a35910082801141b2a06efd3accd75c5f080749i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[2,6,21,25,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[2,6,21,25,8]}'
+
+!! ERROR(S) in  10368076 / ef7352ad8af1bccb639ab7199d1f4f328dd0dcfb206c9c7f8303b002f4eb4f6ei0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[0,6,21,25,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[0,6,21,25,8]}'
+
+!! ERROR(S) in  10368077 / b387d14707ed0538a6222de81f00e60243c1d4dc784b46eeeda920fcc606eb99i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[1,6,21,25,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[1,6,21,25,8]}'
+
+!! ERROR(S) in  10368078 / 4fd755dd562b143b047ff18b3737f183976bcf7eade13ba795028f91f4228ea2i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[0,6,21,25,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[0,6,21,25,8]}'
+
+!! ERROR(S) in  10368079 / 81bd2fa7cfc0dbf539a9a9b849b3601cdb62ae63683d0a14cf8570820d9ce2c9i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[3,6,21,24,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[3,6,21,24,8]}'
+
+!! ERROR(S) in  10368080 / dcade2086f84f4b56e5600ac0618d2bae60d44084216f3cbf437382aee9b96dbi0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[1,6,21,24,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[1,6,21,24,8]}'
+
+!! ERROR(S) in  10368081 / b327d2c72a1649b0b28182ba1c622e7112711617b25d42a992c1d1a8cff230efi0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[1,6,21,23,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[1,6,21,23,8]}'
+
+!! ERROR(S) in  10368082 / ba49631b71a414d8968fc518bc72b1678649cb6be5005fb48aa62c7713f74ef1i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[0,6,21,24,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[0,6,21,24,8]}'
+
+!! ERROR(S) in  10368107 / 8d7532b4e38be48d0096824cb3b28e3cfb2705e8918ace17cc467edbea10a485i0:
+"p":"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,25,8]
+
+   - json parse -- 859: unexpected token at ':"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,25,8]'
+
+!! ERROR(S) in  10368166 / 64e4b5df792a07e4bc71e191ed3b5beaa000cca88253ce535fd198b564d1b205i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,20,23,3]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,20,23,3]'
+
+!! ERROR(S) in  10368167 / 951b81aa7ab3b7f3afd746c8fc24142857333e4fed2312a5403afc9e431ee74ai0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,20,13,3]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,20,13,3]'
+
+!! ERROR(S) in  10368170 / b4775020539d7b866ef836c15e91a124875c4a888697b747aaf39d2faf76e28ci0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,20,13,3]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[0,5,20,13,3]'
+
+!! ERROR(S) in  10368378 / 8225e0d24b16fd1bb93f413d09c6726e62d98f7033f9359756224affe92745d6i0:
+"p":"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,23,13]
+
+   - json parse -- 859: unexpected token at ':"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,23,13]'
+
+!! ERROR(S) in  10368385 / 59eb78d9ca06e50f772e0f44f4d858577741daae9bab4f8d7127c250b64b9767i0:
+"p":"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,23,8]
+
+   - json parse -- 859: unexpected token at ':"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,23,8]'
+
+!! ERROR(S) in  10368449 / 39cb27247d06689fb4d19c7afc753ac775ca6ce0cc7b21dce95a51242e88ffaai0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,14,21,11]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,8,14,22,11]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,14,24,18]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,14,23,14]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,11,24,11]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,8,14,22,11]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,14,24,18]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,14,23,14]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,11,24,11]}'
+
+!! ERROR(S) in  10368793 / 3ae554bda69c01886c44b52a5d8df8ca1ee1817989b0df1a4fbb9f7693a5f98ai0:
+"p":"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,25,7]
+
+   - json parse -- 859: unexpected token at ':"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,25,7]'
+
+!! ERROR(S) in  10368852 / 5fc386206e55c62127bb57812d73dfe7b9996249a2214673794cabbb77dc6926i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,11]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,11]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,11]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,11]}
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,5,15,24,11]}'
+
+!! ERROR(S) in  10368917 / d180a77d97fba9b724be9e5427156f3b7899be44dc29bdacccd1fd7eb0913823i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,2]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,2]'
+
+!! ERROR(S) in  10368980 / e5db40c6c3f95778a8f42afc179087875b248c516e21053d193f61686bbd0647i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[3，7，8，19，24]}
+
+   - json parse -- 451: unexpected token at '，7，8，19，24]}'
+
+!! ERROR(S) in  10369301 / c459e7d26fdf79e871a41157f671601e70958186a8f8fab7f5b9545dfa3d0675i0:
+"p":"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,23,7]
+
+   - json parse -- 859: unexpected token at ':"orc-721","op":"mint","s":"diyordibots-v2","g": [1,6,17,23,7]'
+
+!! ERROR(S) in  10369586 / f6c52d2ea4a414576d6e499094b744399d95ad1e2e8d9d80e37f015210ed52cdi0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,3,17,23,7]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,3,17,23,7]'
+
+!! ERROR(S) in  10369587 / 296d6ae1008dde293f6f136d43722de1f7ab02dbecdf87c24294c046495e9574i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,2,17,23,7]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,2,17,23,7]'
+
+!! ERROR(S) in  10369588 / 11dc7ef2c9298849667b8b7d3dadec9fc9c9691d1dcfc6b1e3b96dccf3b5ac9ai0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,1,17,23,7]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,1,17,23,7]'
+
+!! ERROR(S) in  10369673 / baad8086fd532a5179de3ef9f0ab57d8a6721c5045decdf3d27a09cad6cbda96i0:
+{"p": "orc-721","op": "mint',"s": "diyordibots-v2","g": "[3,5,16,24,7]"}
+
+   - json parse -- 859: unexpected token at '{"p": "orc-721","op": "mint',"s": "diyordibots-v2","g": "[3,5,16,24,7]"}'
+
+!! ERROR(S) in  10369701 / b4d79a5024cca856bc1fd1b7a247dea9b9735e5c575ef7e7a01571636c4482a3i0:
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diyordibots-v2",
+   "g":[59,0,38]
+}
+
+   - protocol --  g no. 59 out-of-range 0-29 (30) in 'diyordibots-v2' mint
+   - protocol --  g no. 38 out-of-range 0-29 (30) in 'diyordibots-v2' mint
+
+!! ERROR(S) in  10369723 / b53815a3f7db08a821b72bf57c0a8d3c0c60db054814569d37d5d58df0a3b547i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[2,8,12,21,26]}{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[2,8,12,22,26]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[2,8,12,22,26]}'
+
+!! ERROR(S) in  10369736 / 1e9d625100e5ae4a882d21a1b6ade4345820098295c2257121f853323f621d3ai0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,21,45,11]}
+
+   - protocol --  g no. 45 out-of-range 0-29 (30) in 'diyordibots-v2' mint
+
+!! ERROR(S) in  10369797 / bdf94fdcf60d745975a7b0d74aa95ad096ec745dab65f126b13d529cb4e810fci0:
+diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,5,18,25,8]}
+
+   - json parse -- 859: unexpected token at 'diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,5,18,25,8]}'
+
+!! ERROR(S) in  10370235 / 34c5b04ad43299b98da492cb5f35e7acab7c660ac02b16c2d8eb0e70eb915e6ai0:
+diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,5,16,25,6]}
+
+   - json parse -- 859: unexpected token at 'diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,5,16,25,6]}'
+
+!! ERROR(S) in  10370239 / f379546a47267073a73dc1563f8a0de19953f1e4c5dd82f74a2f2bba9e9c4585i0:
+diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,6,18,25,8]}
+
+   - json parse -- 859: unexpected token at 'diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,6,18,25,8]}'
+
+!! ERROR(S) in  10370433 / 6defb65ba396d71731aa7a33f0f00374ff02e5c181f7318ddc776f417a4c5b91i0:
+diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,6,16,25,8]}
+
+   - json parse -- 859: unexpected token at 'diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,6,16,25,8]}'
+
+!! ERROR(S) in  10370581 / 1d8976bf7fa759fad5a3b990c83426616dd0f9d32a7e7143b49e674f9cac93f0i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g": []}
+
+   - protocol format -- empty g
+
+!! ERROR(S) in  10370702 / 6b709e6b125b4210a086a7b63ec1612f235cc01d8cc2bdeb95626168a58888d6i0:
+diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,5,18,21,8]}
+
+   - json parse -- 859: unexpected token at 'diyordibots-v2{"p":"orc-721","op":"mint","s":"diyordibots","g": [1,5,18,21,8]}'
+
+!! ERROR(S) in  10371129 / 52878cb81d5217e113e729dd147f8fb793fdaa4f83be50998393edc1e822d226i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,3]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,3]'
+
+!! ERROR(S) in  10371415 / 021c92066e45adb1de4fc4f7f60df160da28085135037331d461e74e11832362i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,4]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,4]'
+
+!! ERROR(S) in  10371474 / e33b5adcbd37c3aad7127ffbc9d7e79835bfc9c075c1b4a986201d0611f678c9i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,6]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,6]'
+
+!! ERROR(S) in  10371492 / 7ac66b2bb3db216399287584993984046c881f6b00864f2461d1c72c67de65f0i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,5]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2","g":[1,6,17,23,5]'
+
+!! ERROR(S) in  10372243 / 65b85db77b44a4e1646de59a411bab9e14bbbeaa9e25cc67ff1ccdbc2525b11ei0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[3,6,21,21,8]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2""g":[3,6,21,21,8]}'
+
+!! ERROR(S) in  10389843 / cc2c3627a1ff929e1e4a99088d358ac20361b861bda2f8a140dddc549d3af0f2i0:
+{"p":"orc-721","op":"mint","s":"diyordibots-v2”,”g”:[1,6,23,9]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diyordibots-v2”,”g”:[1,6,23,9]}'
+
