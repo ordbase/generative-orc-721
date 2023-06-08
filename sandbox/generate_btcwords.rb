@@ -2,46 +2,33 @@
 #  to run use
 #    $ ruby ./sandbox/generate_btcwords.rb
 
-###
-#  note: requires latest pixelart bug fix (for composite)
-#    uses (local) source version for now
-$LOAD_PATH.unshift( "../pixelart/pixelart/lib" )
 require 'pixelart'
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
 
-slug = 'btcwords'
-width  = 102
-height = 32
+btcwords   = Orc721::Generator.read( './docs/btcwords/spritesheet.png',
+                                          width: 102,
+                                          height: 32 )
 
-
-spritesheet = ImageComposite.read( "./docs/#{slug}/spritesheet.png",
-                                      width: width,
-                                      height: height )
-
-
-recs = read_csv( "./#{slug}/mint.csv" )
+recs = read_csv( "./btcwords/mint.csv" )
 puts "   #{recs.size} record(s)"
 
 
 recs.each_with_index do |rec,i|
-  img = Image.new( width, height )
-  g = rec['g'].split( ' ' ).map {|v| v.to_i(10) }
-  puts "==> no. #{i}   g: #{rec['g']} - #{g.inspect}"
-  g.each do |num|
-     img.compose!( spritesheet[ num ] )
-  end
-
   num = rec['num']
-  img.save( "../ordbase.github.io/content/#{num}.png" )
-  img.zoom(4).save( "../ordbase.github.io/content/#{num}@4x.png" )
+  g   = btcwords._parse( rec['g'] )
 
-  img.save( "../ordbase.github.io/#{slug}/#{g.join('_')}.png" )
-  img.zoom(4).save( "../ordbase.github.io/#{slug}/#{g.join('_')}@4x.png" )
+  puts "==> word no. #{i} @ #{num} - g: #{g.inspect}"
+
+  img = btcwords.generate( *g )
+
+  img.save( "../ordbase.github.io/num/#{num}.png" )
+  img.zoom(4).save( "../ordbase.github.io/num/#{num}@4x.png" )
+
+  img.save( "../ordbase.github.io/btcwords/#{g.join('_')}.png" )
+  img.zoom(4).save( "../ordbase.github.io/btcwords/#{g.join('_')}@4x.png" )
 end
 
 
 puts "bye"
-
-

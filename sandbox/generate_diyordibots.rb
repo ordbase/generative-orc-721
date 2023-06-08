@@ -6,11 +6,19 @@ require 'pixelart'
 
 
 
+
+
 ## step 1 - read (local) spritesheet.png ("art layers")
 
-spritesheet = ImageComposite.read( './no3/spritesheet.png',
-                                      width: 32,
-                                      height: 32 )
+diyordibots   = Orc721::Generator.read( './diyordibots/spritesheet.png',
+                                          width: 32,
+                                          height: 32 )
+
+
+pp diyordibots._parse( '1_2_3' )
+pp diyordibots._parse( ' 1 _ 2 _ 3 ' )
+pp diyordibots._parse( ' 1 2  3 ' )
+
 
 
 specs = [
@@ -28,14 +36,40 @@ specs = [
 
 specs.each do |attributes|
   puts "==> bot #{attributes.inspect}"
-  punk = Image.new( 32, 32 )
-  attributes.each do |num|
-     punk.compose!( spritesheet[ num ] )
-  end
+  bot = diyordibots.generate( *attributes )
 
   path = "./tmp/bot-#{attributes.join('_')}"
-  punk.save( path+'bot' )
-  punk.zoom(4).save( path+'@4x.png' )
+  bot.save( path+'bot' )
+  bot.zoom(4).save( path+'@4x.png' )
+end
+
+
+####
+#  auto-add first hundred to  public image host @ ordbase.github.io
+
+recs = read_csv( "./diyordibots/mint.csv" )
+puts "   #{recs.size} record(s)"
+
+# cut-down to max. limit
+recs = recs[0, 100]
+puts "   #{recs.size} record(s)"
+
+
+
+recs.each_with_index do |rec,i|
+  num = rec['num']
+  g   = diyordibots._parse( rec['g'] )
+
+  puts "==> bot no. #{i} @ #{num} - g: #{g.inspect}"
+
+
+  img = diyordibots.generate( *g )
+
+  img.save( "../ordbase.github.io/num/#{num}.png" )
+  img.zoom(4).save( "../ordbase.github.io/num/#{num}@4x.png" )
+
+  img.save( "../ordbase.github.io/diyordibots/#{g.join('_')}.png" )
+  img.zoom(4).save( "../ordbase.github.io/diyordibots/#{g.join('_')}@4x.png" )
 end
 
 
