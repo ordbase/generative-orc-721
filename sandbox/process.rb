@@ -11,8 +11,9 @@ require_relative 'validate'
 ## SLUG = 'diypunks'
 ## SLUG = 'diypunks-v2'
 ## SLUG = 'diyordibots'
+SLUG = 'diyordibots-v2'
 ## SLUG = 'diycoolcats'
-SLUG = 'btcwords'
+## SLUG = 'btcwords'
 
 
 DEPLOYS ={
@@ -25,6 +26,9 @@ DEPLOYS ={
   'diyordibots' => {  'num' => 10339670,
                       'g'   => 30
                     },
+  'diyordibots-v2' => {  'num' => 10347807,
+                         'g'   => 30
+                      },
   'diycoolcats' => { 'num' => 10509482,
                     'g'   =>  70
                   },
