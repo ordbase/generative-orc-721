@@ -13,7 +13,7 @@ puts "   #{recs.size} record(s)"
 
 
 ## cut down to first fifty, next fifty
-offset = 200
+offset = 300
 recs = recs[offset, 50]
 puts "   #{recs.size} record(s)"
 
@@ -28,8 +28,8 @@ recs.each_with_index do |rec,i|
   puts "==> no. #{i+offset} @ #{num}  g: #{rec['g']} - #{g.inspect}"
   img = btcwords.generate( *g )
 
-  img.save( "./tmp/btcwords#{i+offset}.png" )
-  img.zoom(4).save( "./tmp/btcwords#{i+offset}@4x.png" )
+  # img.save( "./tmp/btcwords#{i+offset}.png" )
+  # img.zoom(4).save( "./tmp/btcwords#{i+offset}@4x.png" )
 
   composite << img
 end
@@ -37,7 +37,7 @@ end
 
 
 composite.save( "./tmp/btcwords_#{offset}.png" )
-composite.zoom(4).save( "./tmp/btcwords_#{offset}@4x.png" )
+# composite.zoom(4).save( "./tmp/btcwords_#{offset}@4x.png" )
 
 
 

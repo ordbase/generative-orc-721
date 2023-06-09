@@ -346,3 +346,43 @@
 
    - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"btcwords","g":[0,0,53,55,100,110]}'
 
+!! ERROR(S) in  11209831 / 8b4931832eed6d476c5792d15b3da54d48851d5228a5ce0f69493cdc3063a1dci0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[12,28,54,82,132]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"btcwords","g":[12,28,54,82,132]'
+
+!! ERROR(S) in  11209844 / 40c82c7915ad9c05ab833a820ce45d9b5757ab0f0509e9af2a0a2ea4bf21dc59i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[0、28、57、85、113]}
+
+   - json parse -- 451: unexpected token at '、28、57、85、113]}'
+
+!! ERROR(S) in  11209848 / aac71b146c04c08ae4b1c3bb46292b4a106de86f45ff82f97f9d2b993b31e349i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[13, 93, 121, 122, 150]]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"btcwords","g":[13, 93, 121, 122, 150]]}'
+
+!! ERROR(S) in  11209886 / 4bc4e455f2186aadbede96a06319867fb964e7fae16d62c66cb11dd3d4e830cei0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[8、45、58、131、159]}
+
+   - json parse -- 451: unexpected token at '、45、58、131、159]}'
+
+!! ERROR(S) in  11210859 / 0d864606834243ba4b31e30a678950b0aa8d52a149fca95279b1a6e2457bdb10i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[4、35、66、86、116]}
+
+   - json parse -- 451: unexpected token at '、35、66、86、116]}'
+
+!! ERROR(S) in  11210873 / 5ac64c746f106fcc002d5db4d252f84200e611b109bba63379aa634424dd9dc3i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[8、53、60、90、120]}
+
+   - json parse -- 451: unexpected token at '、53、60、90、120]}'
+
+!! ERROR(S) in  11210874 / 17cefd3af10c7b4729a2ab97c371edba19c38b892251e586808d414534e5faebi0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[6、41、60、89、118]}
+
+   - json parse -- 451: unexpected token at '、41、60、89、118]}'
+
+!! ERROR(S) in  11210875 / 367751312c4fcf1166aeaca15d3225b5a1ae29f28625569baca9b76c7f3cbd89i0:
+{"p":"orc-721","op":"mint","s":"btcwords","g":[10、40、63、93、123]}
+
+   - json parse -- 451: unexpected token at '、40、63、93、123]}'
+
