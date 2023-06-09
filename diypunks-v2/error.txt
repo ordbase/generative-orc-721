@@ -48,3 +48,578 @@
 
    - json parse -- 451: unexpected token at '，5，38]}'
 
+!! ERROR(S) in  10311332 / cb465a9939c371d4d7ebed475720b117ddb861fb1461c4f4c87ca773411f667fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，7，38]}
+
+   - json parse -- 451: unexpected token at '，7，38]}'
+
+!! ERROR(S) in  10311333 / 381069fbdd1f8b0d7d613a99ee8949cbf03bb8a7b50f30b12c1ca77750c1d7edi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，5，38]}
+
+   - json parse -- 451: unexpected token at '，5，38]}'
+
+!! ERROR(S) in  10311339 / dc041475a357751c72bc4d424c2fd3106f63b1eb826795cbd42ccc9f2080c4e4i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，3，39]}
+
+   - json parse -- 451: unexpected token at '，3，39]}'
+
+!! ERROR(S) in  10311391 / 8c701d4253b0cdd10ae348be4d90057a3304600e67e7e037dc26c5b7bf5803bfi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，2，38]}
+
+   - json parse -- 451: unexpected token at '，2，38]}'
+
+!! ERROR(S) in  10311413 / 1afaa462bca1814f6c6763b6034cced49c5e44d7092fed074c7234491b6458e5i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,6,38,39,45,48,53,55,57]}{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,7,38,39,45,48,53,54,57]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,7,38,39,45,48,53,54,57]}'
+
+!! ERROR(S) in  10311429 / 26fbe5c9df5bc2ee367a384c3f17de353bdf0d1f37b3f578906b6877be047191i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，2，38]}
+
+   - json parse -- 451: unexpected token at '，2，38]}'
+
+!! ERROR(S) in  10311430 / 823efbf50c3448ab4481f31b499cd956e8deba47bf28a0fda87ede11b0d3109fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，8，38]}
+
+   - json parse -- 451: unexpected token at '，8，38]}'
+
+!! ERROR(S) in  10311526 / c4c298287f5bccec58eb07f89e86caff722a8d09328f7b86c6546358a4a478f5i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,9,28,20,37,39,42,45,47,48,49,54,57]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,9,28,20,37,39,42,45,47,48,49,54,57]'
+
+!! ERROR(S) in  10311533 / 9b0348f9a74179831d031a5656d1237361fcea414dd61c1f917d87d61c836727i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,6,57,30,44,]}
+
+   - json parse -- 451: unexpected token at ']}'
+
+!! ERROR(S) in  10312320 / 11625ac71027a5c42c5009a4af21db7b91818ad6260fbda2a667380252d6e97fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[]}
+
+   - protocol format -- empty g
+
+!! ERROR(S) in  10312321 / d06577fa96461713465af981dbcb9bb25d6d490b263e7320e8a6e8a3348c6384i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[]}
+
+   - protocol format -- empty g
+
+!! ERROR(S) in  10312355 / 410d28b662df907b20a10281cf722de4c8cd0fd648cc3429a460c407fa388ea6i0:
+{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,1,27,37,51,55]}
+
+   - json parse -- 859: unexpected token at '{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,1,27,37,51,55]}'
+
+!! ERROR(S) in  10312357 / b5a0f0d3006f30c750e5f84ea48b68af43711d34f81cdf0f16d852f5c0b71fcai0:
+{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,52,56]}
+
+   - json parse -- 859: unexpected token at '{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,52,56]}'
+
+!! ERROR(S) in  10312359 / c5467b2b25d9be90ecb22f37bde3fd03abd4d09c3bf5f2d8b390cb2a1d6d8949i0:
+{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,42,49,53,56]}
+
+   - json parse -- 859: unexpected token at '{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,42,49,53,56]}'
+
+!! ERROR(S) in  10312361 / a9ab150dafe5b25b973ffaba8389a50978a017d549baab11003d571ccd8097d1i0:
+{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,1,27,48,51,56]}
+
+   - json parse -- 859: unexpected token at '{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,1,27,48,51,56]}'
+
+!! ERROR(S) in  10312362 / cc9f6325174761d1bedecc1ab8b09462e488877ef59bfa969707728db82afc42i0:
+{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,42,48,51,56]}
+
+   - json parse -- 859: unexpected token at '{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,42,48,51,56]}'
+
+!! ERROR(S) in  10312370 / 52678c1f3722b5b3b3e082a05d9bfff6058460d23ab0b458544b3624df296ecai0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[]}
+
+   - protocol format -- empty g
+
+!! ERROR(S) in  10312371 / 27a6c8d2fdd3d82a9f5d4c79abf03a7cc56ce23e36e69bb2fc83bcd839b29109i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[]}
+
+   - protocol format -- empty g
+
+!! ERROR(S) in  10312377 / cb8635d71e29ea9ad53b28c53e2000ecc2b4a4e313a7398397164953fdb75e83i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[]}
+
+   - protocol format -- empty g
+
+!! ERROR(S) in  10312389 / f5dde342d47a49a5dd387d2e1ad702c97d8043da73e93a02cd7dccb2dfc9c4aei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58, Bitcoin Orange,  Background,  3, Zombie, Base, 27, Crazy Red Hair, Hair, 17, Cowboy Hat, Headwear, 34, Heart Shades,    Eyewear,40, Chinstrap, Beards, 43, Frown,  Mouth, 50, Cigarette, Mouth Props , 54, Earring,   Jewelery,57, Hoodie, Clothes]}
+
+   - json parse -- 451: unexpected token at 'Bitcoin Orange,  Background,  3, Zombie, Base, 27, Crazy Red Hair, Hair, 17, Cowboy Hat, Headwear, 34, Heart Shades,    Eyewear,40, Chinstrap, Beards, 43, Frown,  Mouth, 50, Cigarette, Mouth Props , 54, Earring,   Jewelery,57, Hoodie, Clothes]}'
+
+!! ERROR(S) in  10312418 / d50220e60eca5603451c5805fa94e2e96da6950a3bb4a6cff1204cf30da36952i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58, Bitcoin Orange,  Background,8, Mummy, Base,22, Messy Black Hair, Hair,15, Cap McD Red,   Headwear,35, Eye Mask,    Eyewear,40, Chinstrap, Beards,43, Frown,  Mouth,45, Spots, Face,47, Clown Nose, Nose,48, Demon Horns, More,51, Cigar, Mouth Props,55, Gold Chain, Jewelery,57, Hoodie, Clothes]}
+
+   - json parse -- 451: unexpected token at 'Bitcoin Orange,  Background,8, Mummy, Base,22, Messy Black Hair, Hair,15, Cap McD Red,   Headwear,35, Eye Mask,    Eyewear,40, Chinstrap, Beards,43, Frown,  Mouth,45, Spots, Face,47, Clown Nose, Nose,48, Demon Horns, More,51, Cigar, Mouth Props,55, Gold Chain, Jewelery,57, Hoodie, Clothes]}'
+
+!! ERROR(S) in  10312438 / 3776117c7342ca49bb64a3bc2d928a53d8cc5aa601237f60c2e452e0bce5a690i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，3，28，21，36，42，45，47，48，50，55，57]}
+
+   - json parse -- 451: unexpected token at '，3，28，21，36，42，45，47，48，50，55，57]}'
+
+!! ERROR(S) in  10312441 / e9f406450991545371a5743f9245da82c7cacec2faec304d5b0d3dd72c2d2201i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，2.48]}
+
+   - json parse -- 451: unexpected token at '，2.48]}'
+
+!! ERROR(S) in  10312449 / 5bb6a26056fec4d0cdfc22affb539a58601327be67daaf38fe97afb8167b300fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，5，36]}
+
+   - json parse -- 451: unexpected token at '，5，36]}'
+
+!! ERROR(S) in  10312450 / 43cbbbadd951477ae4bccd7188a3b4ff30fe1eda1d83142a6b917a36a8fecf71i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，5，34]}
+
+   - json parse -- 451: unexpected token at '，5，34]}'
+
+!! ERROR(S) in  10312451 / c6694c87277f269ba54c1896b5cc3a193bfbcafd931b064a40ef48c3587e0d39i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，9]}
+
+   - json parse -- 451: unexpected token at '，9]}'
+
+!! ERROR(S) in  10312454 / c56c16adb93cf63606ad878dadd62f1bfb44cc6801ec59ca1279507cc331aa8bi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，8，17，4，55]}
+
+   - json parse -- 451: unexpected token at '，8，17，4，55]}'
+
+!! ERROR(S) in  10312455 / 85dbacb401744e8f639162f61198cd32c9f3d9970a2bc626f69d03cb7ac220b7i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，6，35]}
+
+   - json parse -- 451: unexpected token at '，6，35]}'
+
+!! ERROR(S) in  10312456 / f04571354977199bd9542a4fcf832e9f88382b13bb107b001d21a0b83ce34acai0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，4，32]}
+
+   - json parse -- 451: unexpected token at '，4，32]}'
+
+!! ERROR(S) in  10312462 / a2c08f3b59211a45745b0d7ed1070a7d50c143fe74f1764713033cfd954490dfi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，1，33]}
+
+   - json parse -- 451: unexpected token at '，1，33]}'
+
+!! ERROR(S) in  10312463 / 6babcb41b930afde23d815fc57432b51a30e44e10c58dc4e33a4a4e507e50725i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，7，33]}
+
+   - json parse -- 451: unexpected token at '，7，33]}'
+
+!! ERROR(S) in  10312464 / 00b6f6e1dbdad0bd7592b125256e19eaed3b61186c3d366aff0fc0878c25fe4fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，7，31]}
+
+   - json parse -- 451: unexpected token at '，7，31]}'
+
+!! ERROR(S) in  10312465 / fa31d2126c2b2fba4d60078386df3f5987e4297a1e9664f54c8413e365f43c9ei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，5，33]}
+
+   - json parse -- 451: unexpected token at '，5，33]}'
+
+!! ERROR(S) in  10312466 / 7ce43c62c63dd523affe99212d9af1cabe63dfad4db18d1a0b46b3613ff259a8i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，1，31]}
+
+   - json parse -- 451: unexpected token at '，1，31]}'
+
+!! ERROR(S) in  10312467 / f2394b9533251edaf8e1019f5617b90109e6e66786a44bf63881f767f021f7efi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，5，31]}
+
+   - json parse -- 451: unexpected token at '，5，31]}'
+
+!! ERROR(S) in  10312481 / 1afd92a9762562f0d2f0b8e072cf3a0fe5a2e1c75145431158d3958e0bbcb242i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[59,2,23,10,38,44,48,55]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[59,2,23,10,38,44,48,55]}'
+
+!! ERROR(S) in  10312482 / ed95ca2599fdf1431b0a038c035125a8578b60106e2cbe2bd881b3fecec9f229i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，5，21]}
+
+   - json parse -- 451: unexpected token at '，5，21]}'
+
+!! ERROR(S) in  10312483 / dab521f86c3edd66a002baeb98730404635ff386589a93b49d96350cbc87197fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，7，48]}
+
+   - json parse -- 451: unexpected token at '，7，48]}'
+
+!! ERROR(S) in  10312484 / add40094a66b036c66d1e9e8b3ac4109be76c7c70ef60b8072d2d37480135d28i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，1，36]}
+
+   - json parse -- 451: unexpected token at '，1，36]}'
+
+!! ERROR(S) in  10312485 / d3f0a213736fa9bba80b63ff91420307826081cfb4381e4e05323d83936b736di0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，2，36]}
+
+   - json parse -- 451: unexpected token at '，2，36]}'
+
+!! ERROR(S) in  10312486 / f9837d65b2b1bb1ab9c088ab145e1b36445188a166ccacb03e044bc243be4e82i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，0，36]}
+
+   - json parse -- 451: unexpected token at '，0，36]}'
+
+!! ERROR(S) in  10312487 / c1ce8fb6f03f4def1475f351da8110be4ea3e01120a2f4f0970772d54829068ei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，1，35]}
+
+   - json parse -- 451: unexpected token at '，1，35]}'
+
+!! ERROR(S) in  10312488 / 169b4726ce7eb1b7e65b0891cb5d590ad3e99680a9c13188350376c1dee3b397i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，2，35]}
+
+   - json parse -- 451: unexpected token at '，2，35]}'
+
+!! ERROR(S) in  10312489 / 0ce5083962c2be339bc34dcc3b333b6f7da5ee1bc8c86e0adc050c668610acdei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，0，35]}
+
+   - json parse -- 451: unexpected token at '，0，35]}'
+
+!! ERROR(S) in  10312493 / a890feed44574ed0107defb39c7e05f5b17d2042ea8ee5d36dcca8125c3477fci0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，9.38]}
+
+   - json parse -- 451: unexpected token at '，9.38]}'
+
+!! ERROR(S) in  10312596 / 1abbd88b043225bc490535e11254d08975814a9eec152a8bef1563e8212821abi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[58,9,24,38,44,48,51,55]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[58,9,24,38,44,48,51,55]}'
+
+!! ERROR(S) in  10312597 / 944c91dd39c27a992e607cf392cbf2b4e6b16af10e8d49832f9ebc013fc9e74fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，0，36]}
+
+   - json parse -- 451: unexpected token at '，0，36]}'
+
+!! ERROR(S) in  10312627 / 590af6cf542ea5decd42fe4efca7c6aed8ce7e17d54d3efe9c66a20ae62cdb49i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，9，38]}
+
+   - json parse -- 451: unexpected token at '，9，38]}'
+
+!! ERROR(S) in  10312628 / 6bf104ea9769a99600daa147ae00783588367eef5d423891cd552e24215c5a4fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，8，38]}
+
+   - json parse -- 451: unexpected token at '，8，38]}'
+
+!! ERROR(S) in  10312629 / a822320036c34d9d84a31963f297b399d5e0d948c0ac29a893b946871796b583i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，1，38]}
+
+   - json parse -- 451: unexpected token at '，1，38]}'
+
+!! ERROR(S) in  10312630 / 4be7f78c8a3f1eccfe984764590616dd75a491a66f1f4e2b32b1148ccb1aa6b2i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，5，37]}
+
+   - json parse -- 451: unexpected token at '，5，37]}'
+
+!! ERROR(S) in  10312652 / f4595f12c02633c54d6998e6722a8d6cfd359ea5f725a1be4988b49edec07e0ai0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，0，38]}
+
+   - json parse -- 451: unexpected token at '，0，38]}'
+
+!! ERROR(S) in  10312653 / 5a6a68e89403d9b140a2269705dfc7eaba9e985696991cae3875e352683d8daei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，0，38]}
+
+   - json parse -- 451: unexpected token at '，0，38]}'
+
+!! ERROR(S) in  10312673 / d5e291c95d856079bd028f56597f3e5853447ea4509698493f01830d269f3c77i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[58,7,28,10,37,40,42,46,47,48,52,56,57]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[58,7,28,10,37,40,42,46,47,48,52,56,57]}'
+
+!! ERROR(S) in  10312682 / 149d092c59e7e4766f797a7826c9a3890fbeb13b0c633c81a2b2398c850632e9i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[59,7,28,10,37,48,52,56,57]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[59,7,28,10,37,48,52,56,57]}'
+
+!! ERROR(S) in  10312728 / 024524aea0ae1e71b77db5320ee782e5e656d105563a2c19e852ac2443bfcdfdi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,7,27,30,]}
+
+   - json parse -- 451: unexpected token at ']}'
+
+!! ERROR(S) in  10312733 / 7c26d8e802f46bbf25f829eef173ac4d5e2ce93e8ce1fd74281ca62f144a99eai0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[9，25，44]}
+
+   - json parse -- 451: unexpected token at '，25，44]}'
+
+!! ERROR(S) in  10312740 / 42d7ad552868915703a959d13357b06d1c0e50b85fd63f41f1d7355bc53e5c32i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，38，51]}
+
+   - json parse -- 451: unexpected token at '，38，51]}'
+
+!! ERROR(S) in  10312755 / dd97c8b9c25126ef17334bc8d57a1322bd92ed52e78bc94c8a703708083c0d0bi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[6,32,50, 36,53,]}
+
+   - json parse -- 451: unexpected token at ']}'
+
+!! ERROR(S) in  10312764 / 08cc822b2f4dfa15eec68478238d73729ff09ab224ff9c2be570f536d1fa25c4i0:
+{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,52,57]}
+
+   - json parse -- 859: unexpected token at '{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,52,57]}'
+
+!! ERROR(S) in  10312768 / 207125ca58d9071c2d9fe7703721ab7db3958b87164850ab75c18baf615f1acbi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，7，31]}
+
+   - json parse -- 451: unexpected token at '，7，31]}'
+
+!! ERROR(S) in  10312778 / 45bad380976e6a941fd497247dc131b66bba57f120db80fb5001eafa1d274d75i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，2，34]}
+
+   - json parse -- 451: unexpected token at '，2，34]}'
+
+!! ERROR(S) in  10312779 / 2228ff4b2247b4b8f4846439b3b0126a09cffdf2a9b218787842ca8cbdf67865i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，6，34]}
+
+   - json parse -- 451: unexpected token at '，6，34]}'
+
+!! ERROR(S) in  10312780 / 9031306dfbdd3225e48867b4802b768b878d85fd5662d6162e150566444745c8i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，8，34]}
+
+   - json parse -- 451: unexpected token at '，8，34]}'
+
+!! ERROR(S) in  10312781 / 5ec2122cce2425cf0898a9793a345029798eb0467b28bb8ec174842c9cc595e5i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，2，34]}
+
+   - json parse -- 451: unexpected token at '，2，34]}'
+
+!! ERROR(S) in  10312782 / cdc1eb7fa72248948ba74ec31bd5d570f830912232ca0febb254207c9daebdf7i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，6，34]}
+
+   - json parse -- 451: unexpected token at '，6，34]}'
+
+!! ERROR(S) in  10312783 / cc07414f77c80b968dace43d2e47a975d52e9da16788ed594fad32655b244bfci0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，8，34]}
+
+   - json parse -- 451: unexpected token at '，8，34]}'
+
+!! ERROR(S) in  10312844 / 6410f1c4e5b018b067aae34da3e6ea66704b6cf7e4a29ce114bf891a19659622i0:
+"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,0,25,10,30,40,44,46,47,48,51,55,57]}
+
+   - json parse -- 859: unexpected token at ':"orc-721","op":"mint","s":"diypunks-v2","g":[58,0,25,10,30,40,44,46,47,48,51,55,57]}'
+
+!! ERROR(S) in  10312846 / ec87352a3aa59bdc386f7a309bbd567af0d06ed66c9c3aee59019356c2099379i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[]}
+
+   - protocol format -- empty g
+
+!! ERROR(S) in  10313042 / a00b08a1c6d2ea36949cbf89d26d425c48c5a51d3f4a0f254d667943cfc84a2ci0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59,6,36,39,45,48,53,55,57]}{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59,7,37,39,45,48,53,54,57]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59,7,37,39,45,48,53,54,57]}'
+
+!! ERROR(S) in  10313076 / 356fd3ad9130f35c939ca4ed4b7ae522b3579ed14acad61b80af589ac5ab1b53i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，4，21]}
+
+   - json parse -- 451: unexpected token at '，4，21]}'
+
+!! ERROR(S) in  10313077 / 5be02f5c3b1217060906f6e4c6ba7bb086b54e8a5d2c72716a5501b1cc91b69bi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，4，31]}
+
+   - json parse -- 451: unexpected token at '，4，31]}'
+
+!! ERROR(S) in  10313078 / ce4a9656dcdacb261aef0961c8c4e003a65037404e123188cf16a3929d42009di0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，4，34]}
+
+   - json parse -- 451: unexpected token at '，4，34]}'
+
+!! ERROR(S) in  10313079 / cd94a394eed96a3075d298ba810157c937068149a9c0f33eb47c691682663ec2i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，4，33]}
+
+   - json parse -- 451: unexpected token at '，4，33]}'
+
+!! ERROR(S) in  10313080 / 16143911364608015498d6021509bbb4b34bcfe4c5f9775a2c55ffab2aabebe5i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，4，32]}
+
+   - json parse -- 451: unexpected token at '，4，32]}'
+
+!! ERROR(S) in  10313147 / 8e05cca83261c3b518aaa209dc64faffdb67da47c87008ca7c5ad2798bbeb859i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59, Bitcoin Pattern, Background，4, Ape, Base，28, Red Mohawk, Hair，17, Cowboy Hat,   Headwear，36, Eye Patch,    Eyewear，41, Goatie, Beards，44, Smile,  Mouth，46, Mole, Face，47, Clown Nose, Nose，48, Demon Horns, More，51, Cigar, Mouth Props，56, Silver Chain, Jewelery，57, Hoodie, Clothes]}
+
+   - json parse -- 451: unexpected token at 'Bitcoin Pattern, Background，4, Ape, Base，28, Red Mohawk, Hair，17, Cowboy Hat,   Headwear，36, Eye Patch,    Eyewear，41, Goatie, Beards，44, Smile,  Mouth，46, Mole, Face，47, Clown Nose, Nose，48, Demon Horns, More，51, Cigar, Mouth Props，56, Silver Chain, Jewelery，57, Hoodie, Clothes]}'
+
+!! ERROR(S) in  10313199 / d3687d16d16f6a5ece7e65b4251cbf8a255af4d3019c959a08140f1964c3f22ai0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,6,36,39,45,48,53,55,57]}{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,7,37,39,45,48,53,54,57]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,7,37,39,45,48,53,54,57]}'
+
+!! ERROR(S) in  10313252 / bcd69fc4ba4594cfb0af61b0d036da8f4435e0fec2f820ae7fb34bc4f3d17ea4i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[Bitcoin Orange,  Background,Alien, Mohawk Black, Hair]}
+
+   - json parse -- 451: unexpected token at 'Bitcoin Orange,  Background,Alien, Mohawk Black, Hair]}'
+
+!! ERROR(S) in  10313313 / ff2043e9a86fe6a568ae9728351237130dee9eb0eaa1e276d1c66ebc39968211i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，1，38]}
+
+   - json parse -- 451: unexpected token at '，1，38]}'
+
+!! ERROR(S) in  10313436 / 809fdeed32cc3688da24ff3586d419ee44d89a9aece5d5696ce0b0ddec7b3c1fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，9, Skeleton, Base]}
+
+   - json parse -- 451: unexpected token at '，9, Skeleton, Base]}'
+
+!! ERROR(S) in  10313440 / d903fceefc1e5c231249509780242b590d35e46a643ef17b2fd6090a873ed992i0:
+{“p”:"orc-721","op":"mint","s":"diypunks-v2","g":[Bitcoin Orange,Human,Wild Blonde,3D Glasses]}
+
+   - json parse -- 859: unexpected token at '{“p”:"orc-721","op":"mint","s":"diypunks-v2","g":[Bitcoin Orange,Human,Wild Blonde,3D Glasses]}'
+
+!! ERROR(S) in  10313441 / 3d23e50b0305847d0a89d2f0a1fa7e450181df71f367fc12ff45c50c3fe34e32i0:
+{“p”:"orc-721","op":"mint","s":"diypunks-v2","g":[Bitcoin Orange,Human,Wild Blonde,3D Glasses]}
+
+   - json parse -- 859: unexpected token at '{“p”:"orc-721","op":"mint","s":"diypunks-v2","g":[Bitcoin Orange,Human,Wild Blonde,3D Glasses]}'
+
+!! ERROR(S) in  10313499 / 17a20021035abfd548b2a191e20029fab6dd95b54b95aa9291e32faca9843cf9i0:
+{“p”:"orc-721","op":"mint","s":"diypunks-v2","g":[Bitcoin Orange,Human,Wild Blonde,3D Glasses]}
+
+   - json parse -- 859: unexpected token at '{“p”:"orc-721","op":"mint","s":"diypunks-v2","g":[Bitcoin Orange,Human,Wild Blonde,3D Glasses]}'
+
+!! ERROR(S) in  10315095 / 81386bc9d21337eee7d34c0a829b0e12927473acc978cd3aa0a59a47f8ede46ei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,8,27,10,30,38,44,46,47,48,51,55,84]}
+
+   - protocol --  g no. 84 out-of-range 0-59 (60) in 'diypunks-v2' mint
+
+!! ERROR(S) in  10315096 / bfcafb9025d3bc1de30999d3fdce9583d49888aaca8cbf3bcc4f6a92822c1691i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,8,10,27,30,36,44,45,47,48,56,58,87]}
+
+   - protocol --  g no. 87 out-of-range 0-59 (60) in 'diypunks-v2' mint
+
+!! ERROR(S) in  10315098 / b35dc155d3295c35a8591d087229f19de1b4b33050ad6911acf15d635182effbi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,8,10,27,30,36,44,45,47,48,57,58,88]}
+
+   - protocol --  g no. 88 out-of-range 0-59 (60) in 'diypunks-v2' mint
+
+!! ERROR(S) in  10315149 / 0746327f6a140b60c340e4afe87042310cbf2fc9aa5a7fba1d148588284ba8a7i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59,3,29,101,38,56]}
+
+   - protocol --  g no. 101 out-of-range 0-59 (60) in 'diypunks-v2' mint
+
+!! ERROR(S) in  10315154 / b0c0dff59464839d1d425dea2512a548fcace3b2e517d1ea0b0e9d1b9edbc8b7i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59,4,29,20,38,40,46, 51,56,57,]}
+
+   - json parse -- 451: unexpected token at ']}'
+
+!! ERROR(S) in  10315171 / 1bbce302dd87e8deb26c4988179df7103f8136605fd8af3d2eaf4eff1cfccebdi0:
+{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,48,52,57]}
+
+   - json parse -- 859: unexpected token at '{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,48,52,57]}'
+
+!! ERROR(S) in  10315175 / 21281b9cc4a8600da0fb7d7e93e66e4bb287234efd1770044ab77b9a94156c14i0:
+{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,39,48,52,57]}
+
+   - json parse -- 859: unexpected token at '{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,39,48,52,57]}'
+
+!! ERROR(S) in  10315179 / c45c24ee0f56dd2dbc942914550374e0a2641cff043ce080c9d98796bad222c9i0:
+{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,39,46,52,57]}
+
+   - json parse -- 859: unexpected token at '{“p”：“orc-721”，“op”：“mint”，“s”：“diypunks-v2”，“g”：[58,5,17,39,46,52,57]}'
+
+!! ERROR(S) in  10315267 / 965cfdb9e62192ec1358eb141f2d11805fe631dd03052aac5d5201d654510f54i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59,3,24,30,42,49,57,]}
+
+   - json parse -- 451: unexpected token at ']}'
+
+!! ERROR(S) in  10315297 / 76ec1df7cde9d5bad613d40aac48f74465c74a075d313a70398942b85b092bf8i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，7,27,17,37,41,42,45,47,57]}
+
+   - json parse -- 451: unexpected token at '，7,27,17,37,41,42,45,47,57]}'
+
+!! ERROR(S) in  10315298 / 990722b328337705f8e1a74db02406fe6032268a19c7e63e7899d31bf8999eaci0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，7,27,16,36,39，41,42]}
+
+   - json parse -- 451: unexpected token at '，7,27,16,36,39，41,42]}'
+
+!! ERROR(S) in  10315299 / f65c960e827b02d0e102614f798c9aba07c366399e32ce7fa2274188e1b5ac2ei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，7,27,18,38,41,42,45,47,57]}
+
+   - json parse -- 451: unexpected token at '，7,27,18,38,41,42,45,47,57]}'
+
+!! ERROR(S) in  10315300 / b3cb8575442a2ec5d3c226cf209e4845d20b53737ec530db7b5265559a839967i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，7,27,17,37,41,42,45,47,57]}
+
+   - json parse -- 451: unexpected token at '，7,27,17,37,41,42,45,47,57]}'
+
+!! ERROR(S) in  10315307 / 5b85a10be6ff3ef3898454a124b356d397b43d471da0cd2dd1315bf8cd2617fbi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，7,27,17,37,40,43,46,57]}
+
+   - json parse -- 451: unexpected token at '，7,27,17,37,40,43,46,57]}'
+
+!! ERROR(S) in  10315308 / e1419a6680921bbb92e5aec3309e6525d2165f805f88ebc4869afa63696b6b30i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，0，32]}
+
+   - json parse -- 451: unexpected token at '，0，32]}'
+
+!! ERROR(S) in  10315322 / 62b4e4cffbf0a366aeb9e42f3a5e34da882e30143cb92d05aa2c3c3fda31d77di0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，9，57]}
+
+   - json parse -- 451: unexpected token at '，9，57]}'
+
+!! ERROR(S) in  10315328 / 25fa03f2296afcae598a8bdfa20e7d99a33712df6d54a8be291c1bd949951a7fi0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","56":[59,5,37]}
+
+   - protocol format -- required key 'g' not found in inscribe text
+
+!! ERROR(S) in  10315329 / 4bdd1df360baa259b6de51316d032ccad5e50de0d13596b9089bb8ee71ce3102i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","48":[59,4,35]}
+
+   - protocol format -- required key 'g' not found in inscribe text
+
+!! ERROR(S) in  10315331 / 7543dcdc56c2608555591e386d33d6779dd634d93a90bdb106afd8cc9eaf5716i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,3,14,27,35,42,45,47,48,57,]}
+
+   - json parse -- 451: unexpected token at ']}'
+
+!! ERROR(S) in  10315343 / ff22481620ea73785eea20e62b0f2699599accb380fcae6394df80477da2ac86i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","47":[59,3,31]}
+
+   - protocol format -- required key 'g' not found in inscribe text
+
+!! ERROR(S) in  10315390 / cc47e8c7b39b8356bf6b259130ad101ed7eb015bdd54efbbb44f8a7c5feb7935i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58,2,24,14,37,41,43,46,47,48,51,55,57,]}
+
+   - json parse -- 451: unexpected token at ']}'
+
+!! ERROR(S) in  10315392 / f58e2dfbaf9f6ea286ad3ff468fcb8d8fd559361726f9a74f24b31df5605c7a0i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[58,0,27,17,38,44,48,51,56,57]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[58,0,27,17,38,44,48,51,56,57]}'
+
+!! ERROR(S) in  10315398 / 05e830ffc83353350827a88b2eb7667e185c69126e54b2f65faf17c32a03fd0di0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，3，22，12，30，39，44，46，47，48，50，55，57]}
+
+   - json parse -- 451: unexpected token at '，3，22，12，30，39，44，46，47，48，50，55，57]}'
+
+!! ERROR(S) in  10315439 / b0bc30002a32da02237d03a8b90844b452395f1db16bef626eaae4cec81f3874i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，5，17，51，56]}
+
+   - json parse -- 451: unexpected token at '，5，17，51，56]}'
+
+!! ERROR(S) in  10315471 / 4e7d4c8dda02e305cceef2efe11e64458414e92e2c98b0faf6a3935d3b0683d1i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，3，32]}
+
+   - json parse -- 451: unexpected token at '，3，32]}'
+
+!! ERROR(S) in  10315472 / 464dfaa34f7605b5ee447f3891465ee9d265c3c3f57ecaf68eaa589657e97e22i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，3，37]}
+
+   - json parse -- 451: unexpected token at '，3，37]}'
+
+!! ERROR(S) in  10315473 / 76262b5568a11f5ddcfb9063de8394b962b312dfc623d7fe2f3b740c59bf7a23i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[58，3，34]}
+
+   - json parse -- 451: unexpected token at '，3，34]}'
+
+!! ERROR(S) in  10315474 / 272de6874ed854358aa9cdab3b378b308d5e39c84aaf934752acbc6926c39777i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，3，33]}
+
+   - json parse -- 451: unexpected token at '，3，33]}'
+
+!! ERROR(S) in  10315475 / 1608e5d8d27eb92291912e8ded0042a40794f8c754b13533a10f2c7f092ff57ai0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59，3，35]}
+
+   - json parse -- 451: unexpected token at '，3，35]}'
+
+!! ERROR(S) in  10315493 / 56b0bd30080e0b4c506266d0fad5b38c0a04d482dbd197f98af090cd40fcbc6ci0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[59,1,25,74]}
+
+   - protocol --  g no. 74 out-of-range 0-59 (60) in 'diypunks-v2' mint
+
+!! ERROR(S) in  10315495 / 5ecbd41627db494ad107292d25b57b7ef6e1bb8e8167f53964e964c32010128ei0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2","g":[]}
+
+   - protocol format -- empty g
+
+!! ERROR(S) in  10315528 / 65272898d63fbc5ae41d9cc1d8522f9077a682474d9273c394214c9d081b0f03i0:
+{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[59,7,28,15,38,40,44,51,55,57]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diypunks-v2”,”g”:[59,7,28,15,38,40,44,51,55,57]}'
+

@@ -77,10 +77,10 @@ end
 
 pages = {
 #  'diypunks'    => [ 'page', 31 ],
-#  'diypunks-v2' => [ 'iipunk', 5 ],
+  'diypunks-v2' => [ 'punk-ii/', 33 ],
 #  'diyordibots' => [ 'bot', 44 ],
 #   'diycoolcats' => [ 'cat', 27 ],
-    'btcwords' => [ 'word/',12 ],
+#    'btcwords' => [ 'word/',12 ],
 #  'diyordibots-v2' => [ 'iibot/', 40 ],
 
 }

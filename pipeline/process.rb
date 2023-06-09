@@ -9,11 +9,11 @@ require_relative 'validate'
 ##            diycoolcats only; sorry
 
 ## SLUG = 'diypunks'
-## SLUG = 'diypunks-v2'
+SLUG = 'diypunks-v2'
 ## SLUG = 'diyordibots'
 ## SLUG = 'diyordibots-v2'
 ## SLUG = 'diycoolcats'
-SLUG = 'btcwords'
+## SLUG = 'btcwords'
 
 
 DEPLOYS ={
