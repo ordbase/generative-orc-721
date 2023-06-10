@@ -1,9 +1,8 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/generate_diypunks.rb
+#    $ ruby ./sandbox/preview_diypunks.rb
 
 require 'pixelart'
-
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
@@ -67,34 +66,5 @@ specs.each do |attributes|
 end
 
 
-####
-#  auto-add first hundred to  public image host @ ordbase.github.io
-
-recs = read_csv( "./diypunks/mint.csv" )
-puts "   #{recs.size} record(s)"
-
-# cut-down to max. limit
-# recs = recs[0, 100]
-# puts "   #{recs.size} record(s)"
-
-
-
-recs.each_with_index do |rec,i|
-  num = rec['num']
-  g   = diypunks._parse( rec['g'] )
-
-  puts "==> punk no. #{i} @ #{num} - g: #{g.inspect}"
-
-  img = diypunks.generate( *g )
-
-  img.save( "../ordbase.github.io/num/#{num}.png" )
-  img.zoom(4).save( "../ordbase.github.io/num/#{num}@4x.png" )
-
-  img.save( "../ordbase.github.io/diypunks/#{g.join('_')}.png" )
-  img.zoom(4).save( "../ordbase.github.io/diypunks/#{g.join('_')}@4x.png" )
-end
-
 
 puts "bye"
-
-

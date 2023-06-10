@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/preview_birdies.rb
+#    $ ruby ./sandbox/preview_diybirdies.rb
 
 require 'pixelart'
 

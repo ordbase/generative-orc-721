@@ -1,8 +1,12 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/generate_diypunks-v2.rb
+#    $ ruby ./generate/diypunks-v2.rb
 
 require 'pixelart'
+
+## note: change outdir (root for /num & /diypunks)
+##          to where you want to save the generated images
+outdir = '../ordbase.github.io'
 
 
 
@@ -28,14 +32,12 @@ recs.each_with_index do |rec,i|
 
   img = diypunks.generate( *g )
 
-  img.save( "../ordbase.github.io/num/#{num}.png" )
-  img.zoom(4).save( "../ordbase.github.io/num/#{num}@4x.png" )
+  img.save( "#{outdir}/num/#{num}.png" )
+  img.zoom(4).save( "#{outdir}/num/#{num}@4x.png" )
 
-  img.save( "../ordbase.github.io/diypunks/#{g.join('_')}.png" )
-  img.zoom(4).save( "../ordbase.github.io/diypunks/#{g.join('_')}@4x.png" )
+  img.save( "#{outdir}/diypunks/#{g.join('_')}.png" )
+  img.zoom(4).save( "#{outdir}/diypunks/#{g.join('_')}@4x.png" )
 end
 
 
 puts "bye"
-
-
