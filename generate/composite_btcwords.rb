@@ -12,33 +12,33 @@ recs = read_csv( "./btcwords/mint.csv" )
 puts "   #{recs.size} record(s)"
 
 
+
 ## cut down to first fifty, next fifty
-offset = 300
-recs = recs[offset, 50]
-puts "   #{recs.size} record(s)"
+[0,50,100,150,200,250,300,350,400,450].each_with_index do |offset,i|
+  puts "==> page #{i+1} starting at offset #{offset}"
+  batch = recs[offset, 50]
+  puts "   #{batch.size} record(s)"
 
 
-composite = ImageComposite.new( 5, 10,  width:  btcwords.width,
-                                        height: btcwords.height )
+  composite = ImageComposite.new( 5, 10,  width:  btcwords.width,
+                                          height: btcwords.height )
 
 
-recs.each_with_index do |rec,i|
-  num = rec['num']
-  g   = btcwords._parse( rec['g'] )
-  puts "==> no. #{i+offset} @ #{num}  g: #{rec['g']} - #{g.inspect}"
-  img = btcwords.generate( *g )
+  batch.each_with_index do |rec,i|
+    num = rec['num']
+    g   = btcwords._parse( rec['g'] )
+    puts "==> no. #{i+offset} @ #{num}  g: #{rec['g']} - #{g.inspect}"
+    img = btcwords.generate( *g )
 
-  # img.save( "./tmp/btcwords#{i+offset}.png" )
-  # img.zoom(4).save( "./tmp/btcwords#{i+offset}@4x.png" )
+    # img.save( "./tmp/btcwords#{i+offset}.png" )
+    # img.zoom(4).save( "./tmp/btcwords#{i+offset}@4x.png" )
 
-  composite << img
+    composite << img
+  end
+
+  composite.save( "./tmp/btcwords_#{offset}.png" )
+  # composite.zoom(4).save( "./tmp/btcwords_#{offset}@4x.png" )
 end
-
-
-
-composite.save( "./tmp/btcwords_#{offset}.png" )
-# composite.zoom(4).save( "./tmp/btcwords_#{offset}@4x.png" )
-
 
 
 puts "bye"

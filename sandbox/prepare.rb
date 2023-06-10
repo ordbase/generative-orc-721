@@ -3,7 +3,7 @@ require 'cocos'
 
 ## get inscription  links
 ## e.g.
-## https://ordinals.com/inscription/e8830c5fbdfc2f529350fd04a2ac20bb097dce98f159223837513ae3c8d05714i0
+##    inscription/e8830c5fbdfc2f529350fd04a2ac20bb097dce98f159223837513ae3c8d05714i0
 ##  and export as tabular dataset (in .csv)
 
 
