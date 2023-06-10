@@ -14,7 +14,7 @@ puts "   #{recs.size} record(s)"
 
 
 ## cut down to first fifty, next fifty
-[0,50,100,150,200,250,300,350,400,450].each_with_index do |offset,i|
+[0,50,100,150,200,250,300,350,400,450,500,550,600,650].each_with_index do |offset,i|
   puts "==> page #{i+1} starting at offset #{offset}"
   batch = recs[offset, 50]
   puts "   #{batch.size} record(s)"

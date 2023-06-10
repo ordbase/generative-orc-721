@@ -80,7 +80,7 @@ pages = {
 #  'diypunks-v2' => [ 'punk-ii/', 33 ],
 #  'diyordibots' => [ 'bot', 44 ],
 #   'diycoolcats' => [ 'cat', 27 ],
-    'btcwords' => [ 'word/', 20 ],
+    'btcwords' => [ 'word/', 32 ],
 #  'diyordibots-v2' => [ 'iibot/', 40 ],
 
 }
