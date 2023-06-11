@@ -14,10 +14,16 @@ require 'pixelart'
 # width  = 24
 # height = 24
 
-slug = 'diypunks'
+# slug = 'diypunks'
+# width  = 24
+# height = 24
+# offset = 100
+
+slug = 'diybirdies'
 width  = 24
 height = 24
-offset = 100
+offset = 0
+
 
 recs = read_csv( "./#{slug}/mint.csv" )
 puts "   #{recs.size} record(s)"
@@ -32,20 +38,17 @@ spritesheet_path = if defined?( slug_spritesheet )
                      "./#{slug}/spritesheet.png"
                    end
 
-spritesheet = ImageComposite.read( spritesheet_path,
-                                      width: width,
-                                      height: height )
+generator  = Orc721::Generator.read( spritesheet_path,
+                                       width: width,
+                                       height: height )
 
 composite = ImageComposite.new( 10, 10, width: width,
                                         height: height )
 
 recs.each_with_index do |rec,i|
-  img = Image.new( width, height )
-  g = rec['g'].split( ' ' ).map {|v| v.to_i(10) }
+  g = generator._parse( rec['g'] )
   puts "==> no. #{offset+i}   g: #{rec['g']} - #{g.inspect}"
-  g.each do |num|
-     img.compose!( spritesheet[ num ] )
-  end
+  img = generator.generate( *g )
 
   composite << img
 end

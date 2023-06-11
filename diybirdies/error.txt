@@ -1,0 +1,105 @@
+!! ERROR(S) in  11027180 / ff157a25cf058cb780b16235cf63911d2332bdcb72ca39737daf0424c0070dffi0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[10,179,176,143]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diybirdies","g":[10,179,176,143]'
+
+!! ERROR(S) in  11330707 / 829b776caa422213eeedf4b4a3e8dd179162f96f47952d9505cf9271faf6e8b0i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[43、199、187、126、213]
+
+   - json parse -- 451: unexpected token at '、199、187、126、213]'
+
+!! ERROR(S) in  11330713 / 95815d0a753f684adf3994cb5a0cf74337d64a90a2778821b3f89d852db4d669i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[90、175、211、213]
+
+   - json parse -- 451: unexpected token at '、175、211、213]'
+
+!! ERROR(S) in  11330714 / 61c00e541b718049a96079c3e4b20e6894b92f9dcdee61ba3d963da18c4f719di0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[8、152、201、216]
+
+   - json parse -- 451: unexpected token at '、152、201、216]'
+
+!! ERROR(S) in  11330715 / d843c32b85ef540fc23266a53ac19885cd26f023d90136de651d40f4375f7aedi0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[23、187、147、213]
+
+   - json parse -- 451: unexpected token at '、187、147、213]'
+
+!! ERROR(S) in  11330716 / 7de027bdfe6d0a51b275a05c692ebc3aa0f41b3f27cf587e27c8e4a2ad59b800i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[76、201、175、93、216]
+
+   - json parse -- 451: unexpected token at '、201、175、93、216]'
+
+!! ERROR(S) in  11330717 / 8858bb37ca95202e3379b37f84aacbb61f27315705a6669407d3bd5e6cba1609i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[81、201、143、96、219]
+
+   - json parse -- 451: unexpected token at '、201、143、96、219]'
+
+!! ERROR(S) in  11330718 / db2213741efdc270e3ca4e55fff4095f4205e268640970066ad8f3969fd5a532i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[83、161、219、96、184]
+
+   - json parse -- 451: unexpected token at '、161、219、96、184]'
+
+!! ERROR(S) in  11330719 / 8ad439b2aeef88a858432fe10988f47a537301d1fd069d5c528cdc481570dc43i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[4、201、175、103、216]
+
+   - json parse -- 451: unexpected token at '、201、175、103、216]'
+
+!! ERROR(S) in  11330720 / a7e01581daab2dd3f27312ebd569900611b0b73acb264f44e6640e56cfc3be53i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[17、201、175、99、213]
+
+   - json parse -- 451: unexpected token at '、201、175、99、213]'
+
+!! ERROR(S) in  11330721 / d02e785d079729b9ee4b43a10af96fcdd838fd8adc457685b339c8e142054557i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[62、201、175、99、213]
+
+   - json parse -- 451: unexpected token at '、201、175、99、213]'
+
+!! ERROR(S) in  11330722 / bc3e149e269303eb3eb88539ac6a7468fed1c62cf0ee76db7f1110a5add79e70i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[23、201、167、99、213]
+
+   - json parse -- 451: unexpected token at '、201、167、99、213]'
+
+!! ERROR(S) in  11330723 / a76e7814d75ba96e21524b9472ae2d10556027501f7cdcd087c93ff1758d8288i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[22、186、175、99、216]
+
+   - json parse -- 451: unexpected token at '、186、175、99、216]'
+
+!! ERROR(S) in  11330724 / 78d0cc1338a1356308fc38c23c293e0a2b9b1c098c9d68bbd22cdddb6640a19ei0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[17、194、167、96、216]
+
+   - json parse -- 451: unexpected token at '、194、167、96、216]'
+
+!! ERROR(S) in  11330725 / 4955ea29c589d9b2185e812ab1cf9c2de11d787d6768a6438cd546ff55314c76i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[25、202、167、107、219]
+
+   - json parse -- 451: unexpected token at '、202、167、107、219]'
+
+!! ERROR(S) in  11330726 / f0d0ef5c060ee5dd795b7d07f996bdba22f219cd793f4d37a26716550718cb85i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[25、201、176、102、216]
+
+   - json parse -- 451: unexpected token at '、201、176、102、216]'
+
+!! ERROR(S) in  11330727 / 45b0d38b97e8bebac39ffdff9793686b0de11e9b860b0c0292aad869d72e73a4i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[82、186、175、103、216]
+
+   - json parse -- 451: unexpected token at '、186、175、103、216]'
+
+!! ERROR(S) in  11330728 / a6ed3307c9a145e420ae64ae7587dfe0c3f6cd582a684a3af483f845fd7ec5b6i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[81、201、175、216、100]
+
+   - json parse -- 451: unexpected token at '、201、175、216、100]'
+
+!! ERROR(S) in  11330729 / f347312055b1562fc184d2f1023324bd4da9e4988baa818647faf9e14acc21bfi0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[17、167、201、101、213]
+
+   - json parse -- 451: unexpected token at '、167、201、101、213]'
+
+!! ERROR(S) in  11330730 / e7bbbcaf701b468f9e721d84f82b878d306467ca164d6844fe0a88061b418c5ei0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[82、201、175、197、216、96]
+
+   - json parse -- 451: unexpected token at '、201、175、197、216、96]'
+
+!! ERROR(S) in  11341577 / fdc9743f1f6cc5e3751478839c794ad97f918df9e9d28ffd5c7f8695b45f1044i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[0,172,241]}
+
+   - protocol --  g no. 241 out-of-range 0-219 (220) in 'diybirdies' mint
+

@@ -80,9 +80,9 @@ pages = {
 #  'diypunks-v2' => [ 'punk-ii/', 33 ],
 #  'diyordibots' => [ 'bot', 44 ],
 #   'diycoolcats' => [ 'cat', 27 ],
-    'btcwords' => [ 'word/', 32 ],
+#    'btcwords' => [ 'word/', 32 ],
 #  'diyordibots-v2' => [ 'iibot/', 40 ],
-
+   'diybirdies'  => [ 'bird/', 6 ],
 }
 
 pages.each_with_index do |(slug, h),i|
