@@ -63,7 +63,7 @@ see the [Words On Bitcoin Getting Started Guide and Documentation »](https://gi
 
 
 
-[**ORC-721 Week 02 Collection - 721 D.I.Y. Birdies**](https://ordinals.com/inscription/5cf5cb5cf764f6363e6485b85824909533b8d274c4a9988a9c7362e3d4e4409fi0) (24×24px)  -  deploy (& spritesheet) inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor), public domain ("do what you want") pixel art thanks to [@TheScullCat](https://twitter.com/TheSkullCat)
+[**ORC-721 Week 02 Collection - 721 D.I.Y. Birdies**](https://ordinals.com/inscription/5cf5cb5cf764f6363e6485b85824909533b8d274c4a9988a9c7362e3d4e4409fi0) (24×24px)  -  deploy (& spritesheet) inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor), public domain ("do what you want") pixel art thanks to [@TheSkullCat](https://twitter.com/TheSkullCat)
 
 
 
