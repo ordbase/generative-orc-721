@@ -5,7 +5,7 @@
 
 We are live!  The world's first ORC-721 collections (on bitcoin) include:
 
-[**721 D.I.Y. Punks**](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0) (24×24px) - sub 10 million club!
+[**721 D.I.Y. Punks**](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0) (24×24px) - sub 10 million club!  - deploy (& spritesheet) inscribes thanks to [@ZimmerAllDay](https://twitter.com/zimmerallday)
 
 <details>
 <summary markdown="1">Show / Hide</summary>
@@ -47,7 +47,7 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 </details>
 
 
-[**721 D.I.Y. Cool Cats - ORC-721 Week 01 Collection**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)   - (spritesheet &) deploy inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor)
+[**721 D.I.Y. Cool Cats - ORC-721 Week 01 Collection**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)   - deploy (& spritesheet) inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor)
 
 <details>
 <summary markdown="1">Show / Hide</summary>
@@ -58,10 +58,12 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 
 
 
-[**1000 Words on Bitcoin**](https://ordinals.com/inscription/ac685db241919af1e5556bfc5a452e40efc961b074d385de750863256272a8aai0) (102×32px) - see the [Words On Bitcoin Getting Started Guide and Documentation »](https://github.com/ZimmerAllDay/btcwords)
+[**1000 Words on Bitcoin**](https://ordinals.com/inscription/ac685db241919af1e5556bfc5a452e40efc961b074d385de750863256272a8aai0) (102×32px) by  [@ZimmerAllDay](https://twitter.com/zimmerallday) -
+see the [Words On Bitcoin Getting Started Guide and Documentation »](https://github.com/ZimmerAllDay/btcwords)
 
 
-[**721 D.I.Y. Birdies  - ORC-721 Week 02 Collection**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)  - (spritesheet &) deploy inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor), public domain ("do what you want") pixel art thanks to [@TheScullCat](https://twitter.com/TheSkullCat)
+
+[**721 D.I.Y. Birdies  - ORC-721 Week 02 Collection**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)  -  deploy (& spritesheet) inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor), public domain ("do what you want") pixel art thanks to [@TheScullCat](https://twitter.com/TheSkullCat)
 
 
 
