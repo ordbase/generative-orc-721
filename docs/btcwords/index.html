@@ -23,7 +23,7 @@ body {
   height: 192px;     /*   6 x 32px  = 192px */
   margin: auto;
 
-  background: url(https://ordbase.github.io/generative-orc-721/btcwords/spritesheet.png);
+  background: url(https://raw.githubusercontent.com/ordbase/generative-orc-721/master/btcwords/spritesheet.png);
 
   transform: scale(1);    /* make smaller not working - try again later sorry; show with 50% zoom e.g. half the original size */
   transform-origin: 0 0;
@@ -58,7 +58,7 @@ body {
   <p>
    New to Words on Bitcoin? See the <a href="https://github.com/ZimmerAllDay/btcwords">Words On Bitcoin Getting Started Guide and Documentation »</a>
 </p>
- <p>     
+ <p>
   Directions: click on the map below to preview your Words on Bitcoin.
   Press clear to start over.<br/><br/>
   When you're happy, use the attribute list generated.
@@ -101,7 +101,7 @@ let ctx = canvas.getContext('2d');
 ctx.imageSmoothingEnabled = false; // Disable image smoothing
 
 let img = new Image();
-img.src = 'https://ordbase.github.io/generative-orc-721/btcwords/spritesheet.png';
+img.src = 'https://raw.githubusercontent.com/ordbase/generative-orc-721/master/btcwords/spritesheet.png';
 
 let output = document.getElementById('output');
 let selectedSprites = [];

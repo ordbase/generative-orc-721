@@ -1,13 +1,19 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/generate_btcwords.rb
+#    $ ruby ./sandbox/btcwords.rb
 
 require 'pixelart'
 
 
+## note: change outdir (root for /num & /diypunks)
+##          to where you want to save the generated images
+outdir = '../ordbase.github.io'
+
+
+
 ## step 1 - read (local) spritesheet.png ("art layers")
 
-btcwords   = Orc721::Generator.read( './docs/btcwords/spritesheet.png',
+btcwords   = Orc721::Generator.read( './btcwords/spritesheet.png',
                                           width: 102,
                                           height: 32 )
 
@@ -23,11 +29,11 @@ recs.each_with_index do |rec,i|
 
   img = btcwords.generate( *g )
 
-  img.save( "../ordbase.github.io/num/#{num}.png" )
-  img.zoom(4).save( "../ordbase.github.io/num/#{num}@4x.png" )
+  img.save( "#{outdir}/num/#{num}.png" )
+  img.zoom(4).save( "#{outdir}/num/#{num}@4x.png" )
 
-  img.save( "../ordbase.github.io/btcwords/#{g.join('_')}.png" )
-  img.zoom(4).save( "../ordbase.github.io/btcwords/#{g.join('_')}@4x.png" )
+  img.save( "#{outdir}/btcwords/#{g.join('_')}.png" )
+  img.zoom(4).save( "#{outdir}/btcwords/#{g.join('_')}@4x.png" )
 end
 
 

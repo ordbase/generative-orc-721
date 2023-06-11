@@ -19,7 +19,8 @@ diypunks    = Orc721::Generator.read( './diypunks/spritesheet.png',
 
 
 ####
-#  auto-add first hundred to  public image host @ ordbase.github.io
+#  auto-add to public image host @ ordbase.github.io
+
 
 recs = read_csv( "./diypunks/mint.csv" )
 puts "   #{recs.size} record(s)"

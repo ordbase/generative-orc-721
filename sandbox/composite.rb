@@ -22,14 +22,15 @@ require 'pixelart'
 slug = 'diybirdies'
 width  = 24
 height = 24
-offset = 0
+offset = 100
 
 
 recs = read_csv( "./#{slug}/mint.csv" )
-puts "   #{recs.size} record(s)"
+puts "   #{recs.size} record(s) - total"
 
 ## cut down to first hundred
 recs = recs[offset, 100]
+puts "   #{recs.size} record(s)"
 
 
 spritesheet_path = if defined?( slug_spritesheet )

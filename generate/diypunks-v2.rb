@@ -16,12 +16,15 @@ diypunks    = Orc721::Generator.read( './diypunks/spritesheet.png',
                                         height: 24 )
 
 
+####
+#  auto-add to public image host @ ordbase.github.io
+
 recs = read_csv( "./diypunks-v2/mint.csv" )
 puts "   #{recs.size} record(s)"
 
 ## cut-down to max. limit for now; sorry
-recs = recs[0, 721]
-puts "   #{recs.size} record(s)"
+## recs = recs[0, 721]
+## puts "   #{recs.size} record(s)"
 
 
 recs.each_with_index do |rec,i|
@@ -35,8 +38,8 @@ recs.each_with_index do |rec,i|
   img.save( "#{outdir}/num/#{num}.png" )
   img.zoom(4).save( "#{outdir}/num/#{num}@4x.png" )
 
-  img.save( "#{outdir}/diypunks/#{g.join('_')}.png" )
-  img.zoom(4).save( "#{outdir}/diypunks/#{g.join('_')}@4x.png" )
+  ## img.save( "#{outdir}/diypunks/#{g.join('_')}.png" )
+  ## img.zoom(4).save( "#{outdir}/diypunks/#{g.join('_')}@4x.png" )
 end
 
 

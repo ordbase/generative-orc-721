@@ -47,7 +47,7 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 </details>
 
 
-[**721 D.I.Y. Cool Cats**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)
+[**721 D.I.Y. Cool Cats - ORC-721 Week 01 Collection**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)   - (spritesheet &) deploy inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor)
 
 <details>
 <summary markdown="1">Show / Hide</summary>
@@ -61,11 +61,18 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 [**1000 Words on Bitcoin**](https://ordinals.com/inscription/ac685db241919af1e5556bfc5a452e40efc961b074d385de750863256272a8aai0) (102×32px) - see the [Words On Bitcoin Getting Started Guide and Documentation »](https://github.com/ZimmerAllDay/btcwords)
 
 
+[**721 D.I.Y. Birdies  - ORC-721 Week 02 Collection**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)  - (spritesheet &) deploy inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor), public domain ("do what you want") pixel art thanks to [@TheScullCat](https://twitter.com/TheSkullCat)
+
+
+
 
 Wen [next] deploy?   You are welcome to announce your ORC-721 collections
 in the ordinal punks discord (in the #generative-orc-721 channel).
 For an invite
 see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
+
+
+<!--
 
 ## D.I.Y. BIRDIES (MAX. 721) NEED YOUR HELP ...
 
@@ -79,6 +86,8 @@ see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
 ... and again the call for help ...... if anyone wants to sponsor / lead the inscribe (step one - the spritesheet and step two - the deploy inscribe with a reference to the spritesheet inscripton id, please tell in the ordinal punks discord (in the #generative-orc-721 channel) - you make it all happen ...
 
 Try the [D.I.Y. Birdie Previewer »](https://ordbase.github.io/generative-orc-721/diybirdies)
+
+-->
 
 
 
