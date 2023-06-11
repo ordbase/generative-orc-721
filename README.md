@@ -47,7 +47,7 @@ We are live!  The world's first ORC-721 collections (on bitcoin) include:
 </details>
 
 
-[**721 D.I.Y. Cool Cats - ORC-721 Week 01 Collection**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)   - deploy (& spritesheet) inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor)
+[**ORC-721 Week 01 Collection - 721 D.I.Y. Cool Cats**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)   - deploy (& spritesheet) inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor)
 
 <details>
 <summary markdown="1">Show / Hide</summary>
@@ -63,7 +63,7 @@ see the [Words On Bitcoin Getting Started Guide and Documentation »](https://gi
 
 
 
-[**721 D.I.Y. Birdies  - ORC-721 Week 02 Collection**](https://ordinals.com/inscription/02ef2b3c240e56acd9ffad6c17e9758b5c5fd2d957fb80949f22de8c5ec6df83i0) (24×24px)  -  deploy (& spritesheet) inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor), public domain ("do what you want") pixel art thanks to [@TheScullCat](https://twitter.com/TheSkullCat)
+[**ORC-721 Week 02 Collection - 721 D.I.Y. Birdies**](https://ordinals.com/inscription/5cf5cb5cf764f6363e6485b85824909533b8d274c4a9988a9c7362e3d4e4409fi0) (24×24px)  -  deploy (& spritesheet) inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor), public domain ("do what you want") pixel art thanks to [@TheScullCat](https://twitter.com/TheSkullCat)
 
 
 

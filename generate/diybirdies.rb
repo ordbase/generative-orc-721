@@ -5,7 +5,7 @@
 require 'pixelart'
 
 
-## note: change outdir (root for /num & /diypunks)
+## note: change outdir (root for /num & /diybirdies)
 ##          to where you want to save the generated images
 outdir = '../ordbase.github.io'
 

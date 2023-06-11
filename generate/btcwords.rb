@@ -1,11 +1,11 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/btcwords.rb
+#    $ ruby ./generate/btcwords.rb
 
 require 'pixelart'
 
 
-## note: change outdir (root for /num & /diypunks)
+## note: change outdir (root for /num & /btcwords)
 ##          to where you want to save the generated images
 outdir = '../ordbase.github.io'
 

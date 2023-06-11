@@ -1,8 +1,13 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/generate_diycoolcats.rb
+#    $ ruby ./generate/diycoolcats.rb
 
 require 'pixelart'
+
+
+## note: change outdir (root for /num & /diycoolcats)
+##          to where you want to save the generated images
+outdir = '../ordbase.github.io'
 
 
 
@@ -32,11 +37,11 @@ recs.each_with_index do |rec,i|
 
   img = diycoolcats.generate( *g )
 
-  img.save( "../ordbase.github.io/num/#{num}.png" )
-  img.zoom(4).save( "../ordbase.github.io/num/#{num}@4x.png" )
+  img.save( "#{outdir}/num/#{num}.png" )
+  img.zoom(4).save( "#{outdir}/num/#{num}@4x.png" )
 
-  img.save( "../ordbase.github.io/diycoolcats/#{g.join('_')}.png" )
-  img.zoom(4).save( "../ordbase.github.io/diycoolcats/#{g.join('_')}@4x.png" )
+  img.save( "#{outdir}/diycoolcats/#{g.join('_')}.png" )
+  img.zoom(4).save( "#{outdir}/diycoolcats/#{g.join('_')}@4x.png" )
 end
 
 
