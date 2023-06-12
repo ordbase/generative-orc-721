@@ -81,3 +81,13 @@ How the cold storage will last 1000+ years   ... now please help me explain how 
 
 
 ... a little public service announcement -   computer programming is a never-ending bug fixing odysee ... in the blockchain you inscribe data (and why not code? code is data!)  - no change possible -  sure - inscribe new versions (again and again and again and again and again...)  .... imagine if the bitcoin protocol is set in stone - than it's ded -  (hello bitcoin maxis ;-) - do you love the new ordinal kids on the block?)  -  change the (bitcoin) code, not the climate - see the point?  use upgradable "off-chain" protocols and store / inscribe the data "on-chain" forever unchangeable. 
+
+
+ha. allow me one last comment ... i saw this coming...
+
+> You're now running Bitcoin ON Bitcoin.
+
+mind blown or can it get any more stupid than that?!       - 
+as an "old school" computer programmer let me tell you we can run windows in windows in windows or firefox inside firefox inside firefox  ...  
+that is the challenge  ...  Bitcoin ON Bitcoin ON Bitcoin -  make it happen!  make it recursive (all the way down)! - 
+the quote is from the recursive ordinals explainer here -> https://twitter.com/ordinalhub/status/1668075272132870145
