@@ -78,3 +78,6 @@ love it. LFG!  Wen D.I.Y. Punks by@OnChainMonkey?
 PS:  anyways -  call my "old school" - i don't see the point of inscribing npm (javascript open source) packages ... there are public versions on the internets...  by the way ... microsoft has an artic vault of all github repos -> https://archiveprogram.github.com/arctic-vault/  
 if anyone is worried, the code is going away ...   the website explains - 
 How the cold storage will last 1000+ years   ... now please help me explain how bitcoin mining will work in 200 years ;-).
+
+
+... a little public service announcement -   computer programming is a never-ending bug fixing odysee ... in the blockchain you inscribe data (and why not code? code is data!)  - no change possible -  sure - inscribe new versions (again and again and again and again and again...)  .... imagine if the bitcoin protocol is set in stone - than it's ded -  (hello bitcoin maxis ;-) - do you love the new ordinal kids on the block?)  -  change the (bitcoin) code, not the climate - see the point?  use upgradable "off-chain" protocols and store / inscribe the data "on-chain". 
