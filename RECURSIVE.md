@@ -1,7 +1,7 @@
 
-> "To iterate is to human, to recurse is to divine."
+> "To iterate is human, to recurse is to divine."
 >
->  -- God (There Only Can Be One Maxi)
+>  -- God (There Only Can Be One Maxi Club Member)
 
 
 # Quick Commentary / Notes on Recursive Ordinals
