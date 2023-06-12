@@ -6,6 +6,12 @@
 
 # Quick Commentary / Notes on Recursive Ordinals
 
+tldr;  love it. LFG! let's make bitcoin magic again and change the bitcoin code, not the climate!   
+Wen bigger?  Wen bigger L1 (layer 1) blocks?
+
+
+
+
 > Q: u see these new recursive ordinals ?
 
 
