@@ -10,7 +10,7 @@ Q: How can I generate a inscriptions.json dataset?
 Let's try the  D.I.Y. Ordibots (w/ slug: diyordibots)
 collection ...
 
-Use / start with the [market/diyordibots.rb](market/diyordibots.rb) script ...
+Use / start with the [market/diyordibots.rb](diyordibots.rb) script ...
 
 ... that will auto-generate a filled-in basic skeleton
 of an inscription.json dataset ...
@@ -25,7 +25,7 @@ of an inscription.json dataset ...
     $ ruby market/diyordibots.rb
 
 
-... that's it  ... that will get you   [diyordibots_inscriptions.json](diyordibots_inscriptions.json)   generated  (using the
+... that's it  ... that will get you   [market/diyordibots_inscriptions.json](diyordibots_inscriptions.json)   generated  (using the
 [diyordibots/mint.csv](../diyordibots/mint.csv) &
 [market/diyordibots_ids.csv](diyordibots_ids.csv) tabular datasets in the comma-separated values (.csv) format)
 
