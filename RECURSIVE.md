@@ -64,28 +64,17 @@ i deployed 721 punks now!   no "smart contract" ...  see the one-liner inscribe 
 
 
 
+**Updates**
 
+... reading-up ... this might be a new real-world recursive expirement to follow to learn & understand more about the new magic:
 
+> Everyone in the Ordinals space should be paying attention
+>  to what @OnChainMonkey is doing here.  
+>  They've inscribe two npm packages fully on-chain onto Bitcoin which will be public goods 
+>  that anyone can leverage to make fully on-chain, generative art similar to Art Blocks...
 
+love it. LFG!  Wen D.I.Y. Punks by@OnChainMonkey?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+PS:  anyways -  call my "old school" - i don't see the point of inscribing npm (javascript open source) packages ... there are public versions on the internets...  by the way ... microsoft has an artic vault of all github repos -> https://archiveprogram.github.com/arctic-vault/  
+if anyone is worried, the code is going away ...   the website explains - 
+How the cold storage will last 1000+ years   ... now please help me explain how bitcoin mining will work in 200 years ;-).
