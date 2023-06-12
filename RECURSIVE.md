@@ -1,5 +1,5 @@
 
-> "To iterate is human, to recurse is to divine."
+> "To iterate is human, to recurse divine."
 >
 >  -- God (There Only Can Be One Maxi Club Member)
 
@@ -91,3 +91,10 @@ mind blown or can it get any more stupid than that?!       -
 as an "old school" computer programmer let me tell you we can run windows in windows in windows or firefox inside firefox inside firefox  ...  
 that is the challenge  ...  Bitcoin ON Bitcoin ON Bitcoin -  make it happen!  make it recursive (all the way down)! - 
 the quote is from the recursive ordinals explainer here -> https://twitter.com/ordinalhub/status/1668075272132870145
+
+
+
+What's your take?   You are welcome to join the ongoing is ORC-721 ded? debate 
+in the ordinal punks discord (in the #generative-orc-721 channel).
+For an invite
+see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
