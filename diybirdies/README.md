@@ -110,7 +110,7 @@ bonus:    share the link here so we all can enjoy your d.i.y. birdie!
 
 > Q: how can i find the broken ones to check if i didn't mint wrong?
 
-if the mint inscribe got "indexed" and you think you got it wrong than find / check the broken mints in the diybirdies/error.txt log  - see [diybirdies/error.txt}(error.txt)
+if the mint inscribe got "indexed" and you think you got it wrong than find / check the broken mints in the diybirdies/error.txt log  - see [diybirdies/error.txt](error.txt)
 
 
 
