@@ -3,12 +3,12 @@ require 'pixelart'
 
 
 ##############################
-#   d.i.y. alien (attribute) inscribes
+#   d.i.y. apes (attribute) inscribes
 
 
 inscribes =
 {
- 'base' => '81ec4177e7fce4e568cc1c14366fe29deb88b0f0841eb12d4f1d0638cca68201i0',
+ 'base' => 'b36750a6b444e3815f0cbb50a36e0f1231b74ba930855b1e9067f907942f34fci0',
 
  ## note - double check and make sure
  ##            NOT to mix-up female and male attributes!!!
@@ -61,7 +61,7 @@ inscribes.each_with_index do |(name,id), i|
 
    ## note: assume png - double check?
 
-   path = "./tmp/aliens/#{name}.png"
+   path = "./tmp/apes/#{name}.png"
    force = false  ## download & overwrite if exists
 
 
@@ -132,15 +132,15 @@ composite = ImageComposite.new( 10, 3, width: 24,
                                        height: 24 )
 
 attributes.each do |name|
-  path = "./tmp/aliens/#{name}.png"
+  path = "./tmp/apes/#{name}.png"
   img = Image.read( path )
   composite << img
 end
 
 
-composite.save( "./tmp/aliens/spritesheet.png" )
-# composite.zoom(4).save( "./tmp/aliens/spritesheet@4x.png" )
-# composite.zoom(8).save( "./tmp/aliens/spritesheet@8x.png" )
+composite.save( "./tmp/apes/spritesheet.png" )
+# composite.zoom(4).save( "./tmp/apes/spritesheet@4x.png" )
+# composite.zoom(8).save( "./tmp/apes/spritesheet@8x.png" )
 
 
 
@@ -163,7 +163,7 @@ end
 puts "  #{data.size} id(s) in generative:"
 pp data
 
-write_json( "./tmp/aliens/generative.json", data )
+write_json( "./tmp/apes/generative.json", data )
 
 
 puts "bye"
