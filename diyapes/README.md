@@ -92,9 +92,9 @@ Example 2 - Ape / Beanie / 3D Glasses
 }
 ```
 
-![](i/ape-10_14.png) <br>
+![](i/ape-0_10_14.png) <br>
 4x <br>
-![](i/ape-10_14@4x.png)
+![](i/ape-0_10_14@4x.png)
 
 
 Example 2 - Ape / Mohawk / Earring
