@@ -1,9 +1,7 @@
-# D.I.Y. (Recursive) Aliens (max. 100)
+# D.I.Y. (Recursive) Apes (max. 100)
 
 ## Wen Deploy?
 
-
-> Bro, pls wait for me for several hours rest, then deploy
 
 here's everything to make it happen
 (no worries - don't wait for me - please go ahead - LFG!) and please post the link to the deploy inscription in the #generative-orc-721 channel.
@@ -14,12 +12,12 @@ here's the magic ORC-721 deploy text to inscribe (the max limit set to 100 plus 
 {
     "p": "orc-721",
     "op": "deploy",
-    "slug": "diyaliens",
-    "name": "D.I.Y. Aliens",
+    "slug": "diyapes",
+    "name": "D.I.Y. Apes",
     "max": 100,
     "dim": "24x24",
     "generative":
-["81ec4177e7fce4e568cc1c14366fe29deb88b0f0841eb12d4f1d0638cca68201i0",
+["b36750a6b444e3815f0cbb50a36e0f1231b74ba930855b1e9067f907942f34fci0",
  "5ce9f89ad571e5380baa5b5ee387f08ea313421e7e54662b3899d411c39321ddi0",
  "1355524a2aab576e069bac91227b0e52d227d65d84c5535377d3a0ea4e44d470i0",
  "a6b4b81f69e8c217db24f0a71954195d67ced49a819b67a4daf9f3ca7fa1b971i0",
@@ -52,7 +50,7 @@ here's the magic ORC-721 deploy text to inscribe (the max limit set to 100 plus 
 NOTE:  as always please double check
 that your copy-n-paste text in json format is valid e.g. ->  https://jsonlint.com/
 
-For the D.I.Y. Aliens (max. 100)  image previewer - see https://ordbase.github.io/generative-orc-721/diyaliens   and for a cheatsheet /  list of attributes (0-25) with categories / structure - see https://github.com/ordbase/generative-orc-721/blob/master/diyaliens/meta.csv
+For the D.I.Y. Apes (max. 100)  image previewer - see https://ordbase.github.io/generative-orc-721/diyapes   and for a cheatsheet /  list of attributes (0-25) with categories / structure - see https://github.com/ordbase/generative-orc-721/blob/master/diyapes/meta.csv
 
 
 PS: For the mint text use - and fill-in the g numbers:
@@ -61,63 +59,63 @@ PS: For the mint text use - and fill-in the g numbers:
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diyaliens",
+   "s":"diyapes",
    "g":[]
 }
 ```
 
 
-Example 1 - Alien
+Example 1 - Ape
 
 ``` json
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diyaliens",
+   "s":"diyape",
    "g":[0]
 }
 ```
 
-![](i/alien-0.png) <br>
+![](i/ape-0.png) <br>
 4x <br>
-![](i/alien-0@4x.png)
+![](i/ape-0@4x.png)
 
 
-Example 2 - Alien / Headband
+Example 2 - Ape / Beanie / 3D Glasses
 
 ``` json
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diyaliens",
-   "g":[0,4]
+   "s":"diyape",
+   "g":[0,10,14]
 }
 ```
 
-![](i/alien-0_4.png) <br>
+![](i/ape-10_14.png) <br>
 4x <br>
-![](i/alien-0_4@4x.png)
+![](i/ape-10_14@4x.png)
 
 
-Example 2 - Alien / Mohawk / Earring
+Example 2 - Ape / Mohawk / Earring
 
 ``` json
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diyaliens",
+   "s":"diyape",
    "g":[0,1,20]
 }
 ```
 
-![](i/alien-0_1_20.png) <br>
+![](i/ape-0_1_20.png) <br>
 4x <br>
-![](i/alien-0_1_20@4x.png)
+![](i/ape-0_1_20@4x.png)
 
 
 
 
-Here be dragons. Happy minting D.I.Y. Aliens (max. 100).  Wen deploy?
+Here be dragons. Happy minting D.I.Y. Apes (max. 100).  Wen deploy?
 
 
 
