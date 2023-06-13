@@ -22,7 +22,7 @@ require 'pixelart'
 slug = 'diybirdies'
 width  = 24
 height = 24
-offset = 100
+offset = 200
 
 
 recs = read_csv( "./#{slug}/mint.csv" )
