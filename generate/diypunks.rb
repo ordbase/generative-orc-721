@@ -2,26 +2,24 @@
 #  to run use
 #    $ ruby ./generate/diypunks.rb
 
-require 'pixelart'
+require 'ordgen'
 
 
 ## note: change outdir (root for /num & /diypunks)
 ##          to where you want to save the generated images
-outdir = '../ordbase.github.io'
+# outdir = '../ordbase.github.io'
+outdir = './tmp'
 
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
-diypunks    = Orc721::Generator.read( './diypunks/spritesheet.png',
+diypunks    = Ordgen.read( './diypunks/spritesheet.png',
                                         width: 24,
                                         height: 24 )
 
 
 
-####
-#  auto-add to public image host @ ordbase.github.io
-
-
+## step 2 - read mint records
 recs = read_csv( "./diypunks/mint.csv" )
 puts "   #{recs.size} record(s)"
 
@@ -30,7 +28,7 @@ puts "   #{recs.size} record(s)"
 # puts "   #{recs.size} record(s)"
 
 
-
+## step 3 - auto-generate public images
 recs.each_with_index do |rec,i|
   num = rec['num']
   g   = diypunks._parse( rec['g'] )

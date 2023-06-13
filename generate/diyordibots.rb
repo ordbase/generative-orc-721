@@ -2,26 +2,22 @@
 #  to run use
 #    $ ruby ./generate/diyordibots.rb
 
-require 'pixelart'
+require 'ordgen'
 
 
 ## note: change outdir (root for /num & /diyordibots)
 ##          to where you want to save the generated images
-outdir = '../ordbase.github.io'
-
+# outdir = '../ordbase.github.io'
+outdir = './tmp'
 
 ## step 1 - read (local) spritesheet.png ("art layers")
-
-diyordibots   = Orc721::Generator.read( './diyordibots/spritesheet.png',
+diyordibots   = Ordgen.read( './diyordibots/spritesheet.png',
                                           width: 32,
                                           height: 32 )
 
 
 
-####
-#  auto-add  to  public image host @ ordbase.github.io
-
-
+## step 2 - read mint records
 recs = read_csv( "./diyordibots/mint.csv" )
 puts "   #{recs.size} record(s)"
 
@@ -30,6 +26,7 @@ puts "   #{recs.size} record(s)"
 # puts "   #{recs.size} record(s)"
 
 
+## step 3 - auto-generate public images
 recs.each_with_index do |rec,i|
   num = rec['num']
   g   = diyordibots._parse( rec['g'] )

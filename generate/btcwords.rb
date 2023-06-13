@@ -2,25 +2,26 @@
 #  to run use
 #    $ ruby ./generate/btcwords.rb
 
-require 'pixelart'
+require 'ordgen'
 
 
 ## note: change outdir (root for /num & /btcwords)
 ##          to where you want to save the generated images
-outdir = '../ordbase.github.io'
-
+# outdir = '../ordbase.github.io'
+outdir = './tmp'
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
-
-btcwords   = Orc721::Generator.read( './btcwords/spritesheet.png',
+btcwords   = Ordgen.read( './btcwords/spritesheet.png',
                                           width: 102,
                                           height: 32 )
 
+## step 2 - read mint records
 recs = read_csv( "./btcwords/mint.csv" )
 puts "   #{recs.size} record(s)"
 
 
+## step 3 - auto-generate public images
 recs.each_with_index do |rec,i|
   num = rec['num']
   g   = btcwords._parse( rec['g'] )

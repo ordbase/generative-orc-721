@@ -2,25 +2,23 @@
 #  to run use
 #    $ ruby ./generate/diybirdies.rb
 
-require 'pixelart'
+require 'ordgen'
 
 
 ## note: change outdir (root for /num & /diybirdies)
 ##          to where you want to save the generated images
-outdir = '../ordbase.github.io'
-
+# outdir = '../ordbase.github.io'
+outdir = './tmp'
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
-diybirdies    = Orc721::Generator.read( './diybirdies/spritesheet.png',
+diybirdies    = Ordgen.read( './diybirdies/spritesheet.png',
                                         width: 24,
                                         height: 24 )
 
 
 
-####
-#  auto-add to public image host @ ordbase.github.io
-
+## step 2 - read mint records
 recs = read_csv( "./diybirdies/mint.csv" )
 puts "   #{recs.size} record(s)"
 
@@ -29,7 +27,7 @@ puts "   #{recs.size} record(s)"
 # puts "   #{recs.size} record(s)"
 
 
-
+## step 3 - auto-generate public images
 recs.each_with_index do |rec,i|
   num = rec['num']
   g   = diybirdies._parse( rec['g'] )
