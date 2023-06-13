@@ -1,0 +1,57 @@
+id, name
+
+####
+##  base -   REQUIRED - pick the one and only
+
+0, ape
+
+
+##
+# hair
+1, (black) mohawk
+
+
+###
+#  face
+2,   spots
+
+##
+#  headwear (hats, caps & more)
+
+3, bandana
+4, headband
+5, tophat
+6, cowboy hat
+7, cap
+8, cap forward
+9, knitted cap
+10, beanie
+11, do-rag
+
+####
+#  eyewear (glasses, shades, & more)
+
+12, nerd glasses
+13, vr
+14, 3d glasses
+15, eye mask
+16, regular shades
+17, small shades
+18, horned rim glasses
+19, eye patch
+
+####
+#  jewelery
+20,  earring
+21,  goldchain
+
+###
+# props
+22, pipe
+23, cigarette
+24, medical mask
+
+###
+#  clothes
+25,  hoodie
+
