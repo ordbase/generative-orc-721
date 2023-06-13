@@ -103,3 +103,29 @@
 
    - protocol --  g no. 241 out-of-range 0-219 (220) in 'diybirdies' mint
 
+!! ERROR(S) in  11484130 / 27fa855a8be18c0ea15f11afbfe3cd4c56905349ed848f4aedcb6116144efb8ei0:
+{
+	"p": "orc-721",
+	"op": "mint",
+	"s": "diybirdies",
+	"g": [47, 211, 132, 13, 13, 6, 111]
+}
+
+   - json parse -- 451: unexpected token at ' 13, 6, 111]
+}'
+
+!! ERROR(S) in  11489654 / 2f2bdfde37067e579f556da030714267f3a8479c69efeb8e25ca626274fdc6dfi0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":"g":[89,95,122,196,219]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diybirdies","g":"g":[89,95,122,196,219]}'
+
+!! ERROR(S) in  11489655 / 3c1338056b5aba31ced130500c3afc0fa01c4d083a1873967d1df88ca349a9d0i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":"g":[86,95,149,201,219]}
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diybirdies","g":"g":[86,95,149,201,219]}'
+
+!! ERROR(S) in  11517394 / 861e2ed396978e33a4153b9a5cd5f05e500e093e34247522971f7556a211cf4ai0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[0,170,241]}
+
+   - protocol --  g no. 241 out-of-range 0-219 (220) in 'diybirdies' mint
+

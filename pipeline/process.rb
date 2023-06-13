@@ -227,7 +227,7 @@ num_to_ids.each do |values|
 end
 
 
-write_text( "./sandbox/#{SLUG}_ids.csv", buf )
+write_text( "./market/#{SLUG}_ids.csv", buf )
 
 
 puts "bye"
