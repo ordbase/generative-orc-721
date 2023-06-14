@@ -8,7 +8,8 @@ require 'ordinals'
 ## slug = 'diyordibots-v2'
 ## slug = 'diycoolcats'
 ## slug = 'btcwords'
-slug = 'diybirdies'
+## slug = 'diybirdies'
+slug = 'diyapes'
 
 
 recs = read_csv( "./sandbox/tmp/ordinals.#{slug}.csv" )

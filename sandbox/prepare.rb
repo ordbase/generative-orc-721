@@ -82,8 +82,10 @@ pages = {
 #   'diycoolcats' => [ 'cat', 27 ],
 #    'btcwords' => [ 'word/', 32 ],
 #  'diyordibots-v2' => [ 'iibot/', 40 ],
-   'diybirdies'  => [ 'bird/', 12 ],
+#   'diybirdies'  => [ 'bird/', 12 ],
+    'diyapes' => [ 'ape/', 3 ],
 }
+
 
 pages.each_with_index do |(slug, h),i|
     puts "==>  [#{i+1}] #{slug} - #{h[1]} page(s)  ..."

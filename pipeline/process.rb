@@ -13,8 +13,9 @@ require_relative 'validate'
 ## SLUG = 'diyordibots'
 ## SLUG = 'diyordibots-v2'
 ## SLUG = 'diycoolcats'
-SLUG = 'btcwords'
+## SLUG = 'btcwords'
 ## SLUG = 'diybirdies'
+SLUG = 'diyapes'
 
 
 DEPLOYS ={
@@ -39,6 +40,9 @@ DEPLOYS ={
   'diybirdies' => {  'num' => 11326228,
                      'g' => 220   ## 20x11=220
                   },
+   'diyapes'  => { 'num' => 11803822,
+                  'g'   =>  26   ## 0-25 (26) inscribe ids
+                 },
 }
 
 
