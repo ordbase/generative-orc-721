@@ -71,7 +71,7 @@ Example 1 - Ape
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diyape",
+   "s":"diyapes",
    "g":[0]
 }
 ```
@@ -87,7 +87,7 @@ Example 2 - Ape / Beanie / 3D Glasses
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diyape",
+   "s":"diyapes",
    "g":[0,10,14]
 }
 ```
@@ -103,7 +103,7 @@ Example 2 - Ape / Mohawk / Earring
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diyape",
+   "s":"diyapes",
    "g":[0,1,20]
 }
 ```
