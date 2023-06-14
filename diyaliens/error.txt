@@ -1,0 +1,45 @@
+!! ERROR(S) in  11769188 / e1d42cb644f69e6f86ec437445e2c98bdd1c7fbb33ae37ed140b714efa4d5680i0:
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diyaliens",
+   "g":[0, 12, 25]
+}
+
+   - protocol -- 'diyaliens' mint inscribe no. 11769188 lower than deploy inscribe no 11834519
+
+!! ERROR(S) in  11769307 / a6afda0c3ac6bafe6b0a97f5658120addfa960727695ef76cf165b45bca39dbbi0:
+{
+	"p": "orc-721",
+	"op": "mint",
+	"s": "diyaliens",
+	"g": [0, 19, 23]
+}
+
+   - protocol -- 'diyaliens' mint inscribe no. 11769307 lower than deploy inscribe no 11834519
+
+!! ERROR(S) in  11805793 / 3484c3d4487384d8e0493759d2475eaeda621930bc32d424030e95a835ed9608i0:
+{"p":"orc-721","op":"mint","s":"diyaliens","g":[0,14,9]}
+
+   - protocol -- 'diyaliens' mint inscribe no. 11805793 lower than deploy inscribe no 11834519
+
+!! ERROR(S) in  11805794 / 3295a82240b456deb88e5718c70ee1318bf61952306807707188529e5aaca101i0:
+{"p":"orc-721","op":"mint","s":"diyaliens","g":[0,16,9]}
+
+   - protocol -- 'diyaliens' mint inscribe no. 11805794 lower than deploy inscribe no 11834519
+
+!! ERROR(S) in  11805799 / 9dcd7803ab36afbfb4a4db2f0832c7dc04a5a0598b1814feaac4a89fce884d23i0:
+{"p":"orc-721","op":"mint","s":"diyaliens","g":[0,15,9]}
+
+   - protocol -- 'diyaliens' mint inscribe no. 11805799 lower than deploy inscribe no 11834519
+
+!! ERROR(S) in  11805811 / b234c63f5dc4861b35cf81583ea986ef7c1f23ad34f62b0e97496b7c0f0e1969i0:
+{"p":"orc-721","op":"mint","s":"diyaliens","g":[0,18,9]}
+
+   - protocol -- 'diyaliens' mint inscribe no. 11805811 lower than deploy inscribe no 11834519
+
+!! ERROR(S) in  11805818 / 201b778ab3b23f2dd16fcb6d116091ef8c5abddc2f8562163262f116ad592bcci0:
+{"p":"orc-721","op":"mint","s":"diyaliens","g":[0,17,9]}
+
+   - protocol -- 'diyaliens' mint inscribe no. 11805818 lower than deploy inscribe no 11834519
+

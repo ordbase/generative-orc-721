@@ -83,7 +83,8 @@ pages = {
 #    'btcwords' => [ 'word/', 32 ],
 #  'diyordibots-v2' => [ 'iibot/', 40 ],
 #   'diybirdies'  => [ 'bird/', 12 ],
-    'diyapes' => [ 'ape/', 4 ],
+#    'diyapes' => [ 'ape/', 4 ],
+    'diyaliens' => [ 'alien/', 3 ],
 }
 
 
