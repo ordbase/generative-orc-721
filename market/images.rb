@@ -3,21 +3,23 @@
 ##    for ordinals wallet et al
 #
 #  to run use:
-#    $ ruby sandbox/market_images.rb
+#    $ ruby market/images.rb
 
 
-require 'pixelart'
+require 'ordgen'
 
 
-max  = 721              ##  to be done - get "automagically" from deploy inscribe
+max  = 100              ##  to be done - get "automagically" from deploy inscribe
 
-recs = read_csv( "./diypunks/mint.csv" )
+recs = read_csv( "./diyapes/mint.csv" )
 recs = recs[0, max]    ## cut-off "cursed" overflow "negatives" if any
 
 puts "   #{recs.size } mint record(s)"
 
+
+
 ## (lookup) mapping (table) ord num to ord id
-mapping = read_csv( "./sandbox/diypunks_ids.csv" ).reduce( {} ) do |mapping, rec|
+mapping = read_csv( "./market/diyapes_ids.csv" ).reduce( {} ) do |mapping, rec|
                                          mapping[rec['num']] = rec['id']
                                          mapping
                                     end
@@ -26,7 +28,7 @@ mapping = read_csv( "./sandbox/diypunks_ids.csv" ).reduce( {} ) do |mapping, rec
 
 
 ## read (local) spritesheet.png ("art layers")
-diypunks    = Orc721::Generator.read( './diypunks/spritesheet.png',
+diyapes    = Ordgen.read( './docs/diyapes/spritesheet.png',
                                         width: 24,
                                         height: 24 )
 
@@ -43,8 +45,8 @@ recs.each_with_index do |rec,i|
 
    puts "==> #{i} - #{id} ..."
 
-   g = diypunks._parse( rec['g'] )
-   img = diypunks.generate( *g )
+   g = diyapes._parse( rec['g'] )
+   img = diyapes.generate( *g )
 
    path = "../ordbase.github.io/content/#{id}.png"
    img.save( path )

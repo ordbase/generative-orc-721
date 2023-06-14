@@ -13,7 +13,7 @@
 
 
 def generate_inscriptions( slug:, max:, name:,
-                            offset: 0  )
+                            offset: 0, include_images: false  )
 
   recs = read_csv( "./#{slug}/mint.csv" )
   recs = recs[0, max]    ## cut-off "cursed" overflow "negatives" if any
@@ -30,15 +30,35 @@ def generate_inscriptions( slug:, max:, name:,
 
   data = []
   recs.each_with_index do |rec,i|
+
+    id = mapping[ rec['num']]
+
     h = {
-      'id' => mapping[ rec['num']],
+      'id' => id,
       'meta' => {
          'name' => "#{name} ##{i+offset}",
-         'attributes' => [],
       }
     }
+
+    h['meta']['high_res_img_url'] = "https://ordbase.github.io/content/#{id}.png"  if include_images
+
+
    data << h
   end
 
   data
 end
+
+
+
+__END__
+
+### example from recursive punks  inscriptions.json  ...
+
+{
+    "id": "e7676a95cb0dab3058edff0371a095685b998213cebaeea0a17e2c16e973eb9ei0",
+    "meta": {
+      "name": "Recursive Punk #0",
+      "high_res_img_url": "https://raw.githubusercontent.com/RecursivePunks/RecursivePunks/main/highres/0.png"
+    }
+  },
