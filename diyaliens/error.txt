@@ -43,3 +43,13 @@
 
    - protocol -- 'diyaliens' mint inscribe no. 11805818 lower than deploy inscribe no 11834519
 
+!! ERROR(S) in  11845038 / d1ff143f2b7a33bd1900d8ee0087d617bf1b1e54d556728a85b032b71e964b03i0:
+{"p":"orc-721","op":"mint","s":"diyaliens","g":[25，0，19]}
+
+   - json parse -- 451: unexpected token at '，0，19]}'
+
+!! ERROR(S) in  11845039 / d40de05010dffdd16373a9acddede839cab357575039d5153ff2f480c49b980di0:
+{"p":"orc-721","op":"mint","s":"diyaliens","g":[0，13，8]}
+
+   - json parse -- 451: unexpected token at '，13，8]}'
+

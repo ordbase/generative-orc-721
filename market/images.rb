@@ -9,9 +9,12 @@
 require 'ordgen'
 
 
+
+slug = 'diyaliens'
 max  = 100              ##  to be done - get "automagically" from deploy inscribe
 
-recs = read_csv( "./diyapes/mint.csv" )
+
+recs = read_csv( "./#{slug}/mint.csv" )
 recs = recs[0, max]    ## cut-off "cursed" overflow "negatives" if any
 
 puts "   #{recs.size } mint record(s)"
@@ -19,7 +22,7 @@ puts "   #{recs.size } mint record(s)"
 
 
 ## (lookup) mapping (table) ord num to ord id
-mapping = read_csv( "./market/diyapes_ids.csv" ).reduce( {} ) do |mapping, rec|
+mapping = read_csv( "./market/#{slug}_ids.csv" ).reduce( {} ) do |mapping, rec|
                                          mapping[rec['num']] = rec['id']
                                          mapping
                                     end
@@ -28,7 +31,7 @@ mapping = read_csv( "./market/diyapes_ids.csv" ).reduce( {} ) do |mapping, rec|
 
 
 ## read (local) spritesheet.png ("art layers")
-diyapes    = Ordgen.read( './docs/diyapes/spritesheet.png',
+gen    = Ordgen.read( "./docs/#{slug}/spritesheet.png",
                                         width: 24,
                                         height: 24 )
 
@@ -45,8 +48,8 @@ recs.each_with_index do |rec,i|
 
    puts "==> #{i} - #{id} ..."
 
-   g = diyapes._parse( rec['g'] )
-   img = diyapes.generate( *g )
+   g = gen._parse( rec['g'] )
+   img = gen.generate( *g )
 
    path = "../ordbase.github.io/content/#{id}.png"
    img.save( path )
