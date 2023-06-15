@@ -29,7 +29,7 @@ mars red -> ![](i/marsred.png) (204 bytes)   HELP - PLEASE, INSCRIBE!
 
 
 
-in 4x <br>
+in 4x  (only for documentation - DO NOT INSCRIBE)<br>
 ![](i/martians@4x.png)
 
 
@@ -41,10 +41,10 @@ laser eyes (gold) ->  ![](i/lasereyes-gold.png)  (143 bytes) HELP - PLEASE, INSC
 laser eyes (blue) ->  ![](i/lasereyes-blue.png)  (208 bytes) HELP - PLEASE, INSCRIBE!
 
 
-in 4x <br>
+in 4x  (only for documentation - DO NOT INSCRIBE)<br>
 ![](i/lasereyes@4x.png)
 
-and a sampling of Martians w/ Laser Eyes in 4x <br>
+and a sampling of Martians w/ Laser Eyes in 4x  (only for documentation - DO NOT INSCRIBE)<br>
 ![](i/martians-lasereyes@4x.png)
 
 
@@ -65,10 +65,10 @@ ukraine  -> ![](i/background-ukraine.png)  (95 bytes) HELP - PLEASE, INSCRIBE!
 
 
 
-in 4x <br>
+in 4x  (only for documentation - DO NOT INSCRIBE)<br>
 ![](i/backgrounds@4x.png)
 
-and a sampling of  Martians w/ Backgrounds in 4x <br>
+and a sampling of  Martians w/ Backgrounds in 4x (only for documentation - DO NOT INSCRIBE)<br>
 ![](i/martians-backgrounds@4x.png)
 
 
@@ -80,10 +80,10 @@ and a sampling of  Martians w/ Backgrounds in 4x <br>
 smile -> ![](i/smile.png)  (90 bytes) HELP - PLEASE, INSCRIBE!
 
 
-in 4x <br>
+in 4x (only for documentation - DO NOT INSCRIBE)<br>
 ![](i/smile@4x.png)
 
-and a sampling of  Martians w/ Smile in 4x <br>
+and a sampling of  Martians w/ Smile in 4x (only for documentation - DO NOT INSCRIBE)<br>
 ![](i/martians-smile@4x.png)
 
 
@@ -93,10 +93,10 @@ noun glasses      -> ![](i/noun-glasses.png)  (189 bytes) HELP - PLEASE, INSCRIB
 noun glasses xl   ->  ![](i/noun-glasses_xl.png) (196 bytes) HELP - PLEASE, INSCRIBE!
 
 
-in 4x <br>
+in 4x (only for documentation - DO NOT INSCRIBE)<br>
 ![](i/noun-glasses@4x.png)
 
-and a sampling of Martians w/ Noun Glasses in 4x <br>
+and a sampling of Martians w/ Noun Glasses in 4x (only for documentation - DO NOT INSCRIBE)<br>
 ![](i/martians-noun@4x.png)
 
 
