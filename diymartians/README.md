@@ -4,7 +4,7 @@
 The idea ...
 
 let's do the world's 1st (d.i.y) recursive generative ...
-that let's you mix'n'match inscribes from more than one collection source (yes, this is recursive!) ...
+that let's you mix'n'match inscribes from more than one collection source (yes, thas is recursive!) ...
 
 
 
@@ -28,7 +28,7 @@ mars red -> ![](i/marsred.png) (204 bytes)   HELP - PLEASE, INSCRIBE!
 
 
 
-in 4x
+in 4x <br>
 ![](i/martians@4x.png)
 
 
@@ -40,10 +40,10 @@ laser eyes (gold) ->  ![](i/lasereyes-gold.png)  (143 bytes) HELP - PLEASE, INSC
 laser eyes (blue) ->  ![](i/lasereyes-blue.png)  (208 bytes) HELP - PLEASE, INSCRIBE!
 
 
-in 4x
+in 4x <br>
 ![](i/lasereyes@4x.png)
 
-and Martians w/ Laser Eyes in 4x
+and Martians w/ Laser Eyes in 4x <br>
 ![](i/martians-lasereyes@4x.png)
 
 
