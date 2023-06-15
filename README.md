@@ -81,7 +81,7 @@ see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
 The idea ...
 
 let's do the world's 1st (d.i.y) recursive generative ...
-that let's you mix'n'match inscribes from more than one collection source (yes, thas is recursive!) ...
+that let's you mix'n'match inscribes from more than one collection source (yes, that is recursive!) ...
 
 **Wen deploy?**
 
@@ -103,7 +103,7 @@ mars red -> ![](diymartians/i/marsred.png) (204 bytes)   HELP - PLEASE, INSCRIBE
 
 
 in 4x <br>
-![](diymartiansi/martians@4x.png)
+![](diymartians/i/martians@4x.png)
 
 
 ... read more at the [100 D.I.Y. Recursive Martians (Aliens Vol. 2) Readme »](diymartians) 
