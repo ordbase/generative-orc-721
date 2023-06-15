@@ -43,14 +43,37 @@ laser eyes (blue) ->  ![](i/lasereyes-blue.png)  (208 bytes) HELP - PLEASE, INSC
 in 4x <br>
 ![](i/lasereyes@4x.png)
 
-and Martians w/ Laser Eyes in 4x <br>
+and a sampling of Martians w/ Laser Eyes in 4x <br>
 ![](i/martians-lasereyes@4x.png)
 
 
 
 **10 Backgrounds in 24×24px in .PNG**
 
-SOON!
+
+laser eyes -> ![](i/lasereyes.png)  (143 bytes) HELP - PLEASE, INSCRIBE!<br>
+
+bitcoin orange -> ![](i/background-bitcoin-orange.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+bitcoin pattern -> ![](i/background-bitcoin-pattern.png)  (183 bytes) HELP - PLEASE, INSCRIBE!<br>
+red             -> ![](i/background-red.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+green           -> ![](i/background-green.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+greenback (dollar) pattern  -> ![](i/background-dollar-pattern.png)  (186 bytes) HELP - PLEASE, INSCRIBE!<br>
+blue  ->  ![](i/background-blue.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+aqua  ->  ![](i/background-aqua.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+classic -> ![](i/background-classic.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+rainbow  ->  ![](i/background-rainbow.png)  (124 bytes) HELP - PLEASE, INSCRIBE!<br>
+ukraine  -> ![](i/background-ukraine.png)  (95 bytes) HELP - PLEASE, INSCRIBE!
+
+
+
+in 4x <br>
+![](i/backgrounds@4x.png)
+
+and a sampling of  Martians w/ Backgrounds in 4x <br>
+![](i/martians-backgrounds@4x.png)
+
+
+
 
 
 **Bonus - 1 Happy Smile in 24×24px in .PNG**
@@ -61,7 +84,7 @@ smile -> ![](i/smile.png)  (90 bytes) HELP - PLEASE, INSCRIBE!
 in 4x <br>
 ![](i/smile@4x.png)
 
-and Martians w/ Smile in 4x <br>
+and a sampling of  Martians w/ Smile in 4x <br>
 ![](i/martians-smile@4x.png)
 
 
@@ -74,7 +97,7 @@ noun glasses xl   ->  ![](i/noun-glasses_xl.png) (196 bytes) HELP - PLEASE, INSC
 in 4x <br>
 ![](i/noun-glasses@4x.png)
 
-and Martians w/ Noun Glasses in 4x <br>
+and a sampling of Martians w/ Noun Glasses in 4x <br>
 ![](i/martians-noun@4x.png)
 
 
@@ -83,7 +106,8 @@ and Martians w/ Noun Glasses in 4x <br>
 
 ###  Step 2:   The Deploy Inscribe - LFG!
 
-SOON!
+SOON!    First with your help let's complete step 1 and than ready to deploy in minutes.
+
 
 
 

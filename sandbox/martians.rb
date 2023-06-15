@@ -1,6 +1,20 @@
 require 'pixelart'
 
 
+backgrounds = [
+ 'bitcoin-orange',
+ 'bitcoin-pattern',
+ 'red',
+ 'green',
+ 'dollar-pattern',
+ 'blue',
+ 'aqua',
+ 'classic',
+ 'rainbow',
+ 'ukraine',
+]
+
+
 base = [
  'orange',
  'gold',
@@ -27,6 +41,9 @@ end
 
 composite.save( "./martians/tmp/martians.png" )
 composite.zoom(4).save( "./martians/tmp/martians@4x.png" )
+
+
+
 
 
 
@@ -81,6 +98,49 @@ end
 
 composite.save( "./martians/tmp/martians-smile.png" )
 composite.zoom(4).save( "./martians/tmp/martians-smile@4x.png" )
+
+
+
+
+composite = ImageComposite.new( 10, 1, width: 24,
+                                      height: 24 )
+
+backgrounds.each do |name|
+   composite << Image.read( "./martians/backgrounds/#{name}.png" )
+end
+
+composite.save( "./martians/tmp/backgrounds.png" )
+composite.zoom(4).save( "./martians/tmp/backgrounds@4x.png" )
+
+
+composite = ImageComposite.new( 6, 5, width: 24,
+                                      height: 24 )
+
+3.times do |n|
+   backgrounds.each_with_index do |name,m|
+       img = Image.new( 24, 24 )
+       img.compose!( Image.read( "./martians/backgrounds/#{name}.png" ))
+       i = n*10+m
+       base_name = base[ i % base.size ]
+       img.compose!( Image.read( "./martians/#{base_name}.png"))
+
+       if i > 17
+         lasereyes_name = lasereyes[ i % lasereyes.size ]
+         img.compose!( Image.read( "./martians/#{lasereyes_name}.png"))
+      end
+
+       if i > 23
+         img.compose!( smile )
+       end
+
+       composite << img
+   end
+end
+
+
+composite.save( "./martians/tmp/martians-backgrounds.png" )
+composite.zoom(4).save( "./martians/tmp/martians-backgrounds@4x.png" )
+
 
 
 
