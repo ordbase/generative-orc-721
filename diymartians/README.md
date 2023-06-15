@@ -18,13 +18,14 @@ Help with the 24×24px .PNG inscribes ...
 
 **7 Martians in 24×24px in .PNG**
 
-mars red -> ![](i/marsred.png) (204 bytes)   HELP - PLEASE, INSCRIBE!<br>
 orange -> ![](i/orange.png) (204 bytes)      HELP - PLEASE, INSCRIBE!<br>
 gold       ->   ![](i/gold.png)  (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
 cyber green  ->  ![](i/cybergreen.png)  (207 bytes)  HELP - PLEASE, INSCRIBE!<br>
 deep blue   ->   ![](i/deepblue.png) (207 bytes)    HELP - PLEASE, INSCRIBE!<br>
 midnight   ->    ![](i/midnight.png) (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
 magenta    ->    ![](i/magenta.png) (204 bytes)   HELP - PLEASE, INSCRIBE!<br>
+mars red -> ![](i/marsred.png) (204 bytes)   HELP - PLEASE, INSCRIBE!
+
 
 
 in 4x
@@ -34,9 +35,25 @@ in 4x
 
 **3 Laser Eyes in 24×24px in .PNG**
 
-SOON!
+laser eyes -> ![](i/lasereyes.png)  (143 bytes) HELP - PLEASE, INSCRIBE!<br>
+laser eyes (gold) ->  ![](i/lasereyes-gold.png)  (143 bytes) HELP - PLEASE, INSCRIBE!<br>
+laser eyes (blue) ->  ![](i/lasereyes-blue.png)  (208 bytes) HELP - PLEASE, INSCRIBE!
+
+
+in 4x
+![](i/lasereyes@4x.png)
+
+and Martians w/ Laser Eyes in 4x
+![](i/martians-lasereyes@4x.png)
+
+
 
 **10 Backgrounds in 24×24px in .PNG**
+
+SOON!
+
+
+**Bonus - 1 Happy Smile in 24×24px in .PNG**
 
 SOON!
 
