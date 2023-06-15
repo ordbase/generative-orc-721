@@ -55,7 +55,15 @@ SOON!
 
 **Bonus - 1 Happy Smile in 24×24px in .PNG**
 
-SOON!
+smile -> ![](i/smile.png)  (90 bytes) HELP - PLEASE, INSCRIBE!
+
+
+in 4x <br>
+![](i/smile@4x.png)
+
+and Martians w/ Smile in 4x <br>
+![](i/martians-smile@4x.png)
+
 
 
 
