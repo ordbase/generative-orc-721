@@ -10,9 +10,13 @@ require 'ordgen'
 
 
 
-slug = 'diyaliens'
-max  = 100              ##  to be done - get "automagically" from deploy inscribe
+## slug = 'diyaliens'
+## max  = 100              ##  to be done - get "automagically" from deploy inscribe
 
+slug = 'diycoolcats'
+max  = 721
+width = 24
+height = 24
 
 recs = read_csv( "./#{slug}/mint.csv" )
 recs = recs[0, max]    ## cut-off "cursed" overflow "negatives" if any
@@ -31,9 +35,9 @@ mapping = read_csv( "./market/#{slug}_ids.csv" ).reduce( {} ) do |mapping, rec|
 
 
 ## read (local) spritesheet.png ("art layers")
-gen    = Ordgen.read( "./docs/#{slug}/spritesheet.png",
-                                        width: 24,
-                                        height: 24 )
+gen    = Ordgen.read( "./#{slug}/spritesheet.png",
+                                        width: width,
+                                        height: height )
 
 
 
