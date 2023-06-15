@@ -1,5 +1,21 @@
 # D.I.Y. (Recursive) Aliens (max. 100)
 
+
+## Fam
+
+1x <br>
+
+![](i/diyaliens.png)
+
+4x  <br>
+![]()
+
+![](i/diyaliens@4x.png)
+
+
+
+
+
 ## Wen Deploy?
 
 
