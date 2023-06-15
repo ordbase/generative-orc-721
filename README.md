@@ -66,6 +66,32 @@ see the [Words On Bitcoin Getting Started Guide and Documentation »](https://gi
 [**ORC-721 Week 02 Collection - 721 D.I.Y. Birdies**](https://ordinals.com/inscription/5cf5cb5cf764f6363e6485b85824909533b8d274c4a9988a9c7362e3d4e4409fi0) (24×24px)  -  deploy (& spritesheet) inscribes thanks to [@TheInscriptor](https://twitter.com/TheInscriptor), public domain ("do what you want") pixel art thanks to [@TheSkullCat](https://twitter.com/TheSkullCat)
 
 
+**ORC-721 Protocol Update - Look Ma! No Spritesheet! It's "Recursive!"**
+
+
+[**100 D.I.Y. (Recursive) Apes**](https://ordinals.com/inscription/610ad953a48ce514ca71933b40228a366ef5edb8f6581ac20dca3098d618c7b2i0) (24×24px)   - world's 1st recursive generative  (re-using recursive punk .PNG inscribes in 24×24px - thank you!)
+
+<details>
+<summary markdown="1">Show / Hide</summary>
+
+![](diyapes/i/diyapes.png)
+
+</details>
+
+
+[**100 D.I.Y. (Recursive) Aliens**](https://ordinals.com/inscription/3832d5d8dc247cfa3506343acca1f4a9f1a9f914a4e6f16589e0dac4fdb67c1ci0) (24×24px)  - world's 2nd recursive generative  (re-using recursive punk .PNG inscribes in 24×24px - thank you!)
+
+
+<details>
+<summary markdown="1">Show / Hide</summary>
+
+![](diyaliens/i/diyaliens.png)
+
+</details>
+
+
+
+
 
 
 Wen [next] deploy?   You are welcome to announce your ORC-721 collections
@@ -106,7 +132,7 @@ in 4x <br>
 ![](diymartians/i/martians@4x.png)
 
 
-... read more at the [100 D.I.Y. Recursive Martians (Aliens Vol. 2) Readme »](diymartians) 
+... read more at the [100 D.I.Y. Recursive Martians (Aliens Vol. 2) Readme »](diymartians)
 
 ... your comments more than welcome on the new d.i.y. recursive martians<br>
 ... and again the call for help ...... if anyone wants to sponsor / lead / help with the inscribes (step one - the .PNGs in 24×24px - about 200 bytes each and step two - the deploy inscribe with a reference to the .PNG inscripton ids PLUS 20+ more "on-chain" thanks to recursive punks, please tell in the ordinal punks discord (in the #generative-orc-721 channel) - you make it all happen ...
