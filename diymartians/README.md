@@ -14,7 +14,8 @@ Yes, you can help ...
 
 ### Step 1:  24×24px .PNG Inscribes - New Aliens, Laser Eyes & Backgrounds To "Recurse"
 
-Help with the 24×24px .PNG inscribes ...
+Help with the 24×24px .PNG inscribes ...      IMPORTANT! PLEASE ONLY INSCRIBE 24x24px .PNGs in 1x .. NO 4x -  the 4x is only for documentation in the readme page.
+
 
 **7 Martians in 24×24px in .PNG**
 
