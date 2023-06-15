@@ -229,6 +229,11 @@
 
    - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diycoolcats","g":[14, 16, 46, 21, 0, 53, 54, 17]'
 
+!! ERROR(S) in  10516872 / d225835bfe119c9683cd636febda6e8b898e411d293497919bc8b8110d0836c8i0:
+{"p":"orc-721","op":"mint","s":"diycoolcats","g":[0,50,29,45.32]}
+
+   - protocol format -- g no. 45.32 not an integer number; got type Float
+
 !! ERROR(S) in  10516873 / 86f48fdaf80a7c753b07d2461253aba09bfd64ca766e358dfe7272a87b3996c9i0:
 {"p":"orc-721","op":"mint","s":"diycoolcats","g":[16, 54, 33, 24]
 
