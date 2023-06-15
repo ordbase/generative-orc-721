@@ -82,9 +82,9 @@ pages = {
 #   'diycoolcats' => [ 'cat', 27 ],
 #    'btcwords' => [ 'word/', 32 ],
 #  'diyordibots-v2' => [ 'iibot/', 40 ],
-#   'diybirdies'  => [ 'bird/', 12 ],
+   'diybirdies'  => [ 'bird/', 17 ],
 #    'diyapes' => [ 'ape/', 4 ],
-    'diyaliens' => [ 'alien/', 4 ],
+#    'diyaliens' => [ 'alien/', 4 ],
 }
 
 

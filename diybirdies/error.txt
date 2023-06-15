@@ -124,8 +124,59 @@
 
    - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diybirdies","g":"g":[86,95,149,201,219]}'
 
+!! ERROR(S) in  11510229 / 7bf0286062d644758149898ff20edbc3f3db05ba4fca3b6be0ac97204fd5743ai0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[8,93,113,167,180.213]}
+
+   - protocol format -- g no. 180.213 not an integer number; got type Float
+
+!! ERROR(S) in  11510232 / e46a5583dfde55672c30fcb30d3e9c53b8a5a5e947af3d13ad28ebab0eea3421i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[92,105,162,167,184.214]}
+
+   - protocol format -- g no. 184.214 not an integer number; got type Float
+
+!! ERROR(S) in  11510245 / 7e325cc41a97485c0ea64235ef3f77fae3be26ee59fd2446bb1ad785874c72c6i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[91,102,153,168,178.213]}
+
+   - protocol format -- g no. 178.213 not an integer number; got type Float
+
+!! ERROR(S) in  11511780 / f197e6bde38181583e46fa79ab0f25bef67aff95019b70e18b36d6f2f31f27b9i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[81,98,147,172,189.219]}
+
+   - protocol format -- g no. 189.219 not an integer number; got type Float
+
+!! ERROR(S) in  11511783 / 59c2e8d87c5de0cabd6dc723cdb98af418e5f28290e5136b0c8b6ec89aca10d6i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g":[90,99,152,167,179.214]}
+
+   - protocol format -- g no. 179.214 not an integer number; got type Float
+
 !! ERROR(S) in  11517394 / 861e2ed396978e33a4153b9a5cd5f05e500e093e34247522971f7556a211cf4ai0:
 {"p":"orc-721","op":"mint","s":"diybirdies","g":[0,170,241]}
 
    - protocol --  g no. 241 out-of-range 0-219 (220) in 'diybirdies' mint
+
+!! ERROR(S) in  11624325 / 216fe4c648176ab70ae4bd2aa686a8342126255892aa093b384846551c0cc028i0:
+{"p":"orc-721","op":"mint","s":"diybirdies","g": [91, 202, 197, 215, 169, 174]
+
+   - json parse -- 859: unexpected token at '{"p":"orc-721","op":"mint","s":"diybirdies","g": [91, 202, 197, 215, 169, 174]'
+
+!! ERROR(S) in  11867798 / bdd7ca44827c46ef35809b503506f3eb7e29e381a032d391e782bd4851e3c454i0:
+{
+    "p": "orc-721",
+    "op": "mint",
+    "s": "diybirdies",
+    "g": [89 98 177 197 219]
+}
+
+   - json parse -- 451: unexpected token at '98 177 197 219]
+}'
+
+!! ERROR(S) in  11906809 / 96862867a118f8300935267e07f68f368b289ad5fc54301045f7c284436776b1i0:
+{
+    "p": "orc-721",
+    "op": "mint",
+    "s": "diybirdies",
+    "g": [[88, 212, 145, 219]]
+}
+
+   - protocol format -- g no. [88, 212, 145, 219] not an integer number; got type Array
 

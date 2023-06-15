@@ -14,9 +14,9 @@ require_relative 'validate'
 ## SLUG = 'diyordibots-v2'
 ## SLUG = 'diycoolcats'
 ## SLUG = 'btcwords'
-## SLUG = 'diybirdies'
+SLUG = 'diybirdies'
 ## SLUG = 'diyapes'
-SLUG = 'diyaliens'
+## SLUG = 'diyaliens'
 
 
 DEPLOYS ={

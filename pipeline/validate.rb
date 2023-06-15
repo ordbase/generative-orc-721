@@ -97,10 +97,17 @@ def validate_mint( num, content, deploys: {} )
               ##          or [0,1,1,2,1,2]
               deploy_g = deploy['g']
                values.each do |value|
-                   if value >= deploy_g
-                     msg = "protocol --  g no. #{value} out-of-range 0-#{deploy_g-1} (#{deploy_g}) in '#{slug}' mint"
-                     errors << msg
-                  end
+                    ##
+                    ## check for value - MUST be a integer number
+                    if value.is_a?( Integer )
+                      if value >= deploy_g
+                        msg = "protocol --  g no. #{value} out-of-range 0-#{deploy_g-1} (#{deploy_g}) in '#{slug}' mint"
+                        errors << msg
+                      end
+                    else
+                       msg = "protocol format -- g no. #{value} not an integer number; got type #{value.class.name}"
+                       errors << msg
+                    end
                end
             end
          end
