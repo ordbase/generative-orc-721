@@ -19,13 +19,13 @@ Help with the 24×24px .PNG inscribes ...      IMPORTANT! PLEASE ONLY INSCRIBE 2
 
 **7 Martians in 24×24px in .PNG**
 
-orange -> ![](i/orange.png) (204 bytes)      HELP - PLEASE, INSCRIBE!<br>
-gold       ->   ![](i/gold.png)  (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
-cyber green  ->  ![](i/cybergreen.png)  (207 bytes)  HELP - PLEASE, INSCRIBE!<br>
-deep blue   ->   ![](i/deepblue.png) (207 bytes)    HELP - PLEASE, INSCRIBE!<br>
-midnight   ->    ![](i/midnight.png) (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
-magenta    ->    ![](i/magenta.png) (204 bytes)   HELP - PLEASE, INSCRIBE!<br>
-mars red -> ![](i/marsred.png) (204 bytes)   HELP - PLEASE, INSCRIBE!
+orange -> ![](i/orange.png)  <- (204 bytes)      HELP - PLEASE, INSCRIBE!<br>
+gold       ->   ![](i/gold.png)  <-  (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
+cyber green  ->  ![](i/cybergreen.png)  <-  (207 bytes)  HELP - PLEASE, INSCRIBE!<br>
+deep blue   ->   ![](i/deepblue.png)  <- (207 bytes)    HELP - PLEASE, INSCRIBE!<br>
+midnight   ->    ![](i/midnight.png)  <- (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
+magenta    ->    ![](i/magenta.png)  <- (204 bytes)   HELP - PLEASE, INSCRIBE!<br>
+mars red -> ![](i/marsred.png)  <- (204 bytes)   HELP - PLEASE, INSCRIBE!
 
 
 
@@ -36,9 +36,9 @@ in 4x  (only for documentation - DO NOT INSCRIBE)<br>
 
 **3 Laser Eyes in 24×24px in .PNG**
 
-laser eyes -> ![](i/lasereyes.png)  (143 bytes) HELP - PLEASE, INSCRIBE!<br>
-laser eyes (gold) ->  ![](i/lasereyes-gold.png)  (143 bytes) HELP - PLEASE, INSCRIBE!<br>
-laser eyes (blue) ->  ![](i/lasereyes-blue.png)  (208 bytes) HELP - PLEASE, INSCRIBE!
+laser eyes -> ![](i/lasereyes.png)  <- (143 bytes) HELP - PLEASE, INSCRIBE!<br>
+laser eyes (gold) ->  ![](i/lasereyes-gold.png)  <- (143 bytes) HELP - PLEASE, INSCRIBE!<br>
+laser eyes (blue) ->  ![](i/lasereyes-blue.png)  <- (208 bytes) HELP - PLEASE, INSCRIBE!
 
 
 in 4x  (only for documentation - DO NOT INSCRIBE)<br>
@@ -52,16 +52,16 @@ and a sampling of Martians w/ Laser Eyes in 4x  (only for documentation - DO NOT
 **10 Backgrounds in 24×24px in .PNG**
 
 
-bitcoin orange -> ![](i/background-bitcoin-orange.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
-bitcoin pattern -> ![](i/background-bitcoin-pattern.png)  (183 bytes) HELP - PLEASE, INSCRIBE!<br>
-red             -> ![](i/background-red.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
-green           -> ![](i/background-green.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
-greenback (dollar) pattern  -> ![](i/background-dollar-pattern.png)  (186 bytes) HELP - PLEASE, INSCRIBE!<br>
-blue  ->  ![](i/background-blue.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
-aqua  ->  ![](i/background-aqua.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
-classic -> ![](i/background-classic.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
-rainbow  ->  ![](i/background-rainbow.png)  (124 bytes) HELP - PLEASE, INSCRIBE!<br>
-ukraine  -> ![](i/background-ukraine.png)  (95 bytes) HELP - PLEASE, INSCRIBE!
+bitcoin orange -> ![](i/background-bitcoin-orange.png)   <- (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+bitcoin pattern -> ![](i/background-bitcoin-pattern.png)  <- (183 bytes) HELP - PLEASE, INSCRIBE!<br>
+red             -> ![](i/background-red.png)   <- (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+green           -> ![](i/background-green.png)  <- (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+greenback (dollar) pattern  -> ![](i/background-dollar-pattern.png)  <-  (186 bytes) HELP - PLEASE, INSCRIBE!<br>
+blue  ->  ![](i/background-blue.png)  <- (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+aqua  ->  ![](i/background-aqua.png)  <- (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+classic -> ![](i/background-classic.png)  <- (136 bytes) HELP - PLEASE, INSCRIBE!<br>
+rainbow  ->  ![](i/background-rainbow.png)  <- (124 bytes) HELP - PLEASE, INSCRIBE!<br>
+ukraine  -> ![](i/background-ukraine.png)   <- (95 bytes) HELP - PLEASE, INSCRIBE!
 
 
 
@@ -77,7 +77,7 @@ and a sampling of  Martians w/ Backgrounds in 4x (only for documentation - DO NO
 
 **Bonus - 1 Happy Smile in 24×24px in .PNG**
 
-smile -> ![](i/smile.png)  (90 bytes) HELP - PLEASE, INSCRIBE!
+smile -> ![](i/smile.png)  <- (90 bytes) HELP - PLEASE, INSCRIBE!
 
 
 in 4x (only for documentation - DO NOT INSCRIBE)<br>
@@ -89,8 +89,8 @@ and a sampling of  Martians w/ Smile in 4x (only for documentation - DO NOT INSC
 
 **Bonus -  2 Noun Glasses in 24×24px in .PNG**
 
-noun glasses      -> ![](i/noun-glasses.png)  (189 bytes) HELP - PLEASE, INSCRIBE! <br>
-noun glasses xl   ->  ![](i/noun-glasses_xl.png) (196 bytes) HELP - PLEASE, INSCRIBE!
+noun glasses      -> ![](i/noun-glasses.png)   <- (189 bytes) HELP - PLEASE, INSCRIBE! <br>
+noun glasses xl   ->  ![](i/noun-glasses_xl.png)  <- (196 bytes) HELP - PLEASE, INSCRIBE!
 
 
 in 4x (only for documentation - DO NOT INSCRIBE)<br>
