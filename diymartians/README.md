@@ -18,13 +18,13 @@ Help with the 24×24px .PNG inscribes ...
 
 **7 Martians in 24×24px in .PNG**
 
-mars red -> ![](i/marsred.png)    HELP - PLEASE, INSCRIBE!<br>
-orange -> ![](i/orange.png)       HELP - PLEASE, INSCRIBE!<br>
-gold       ->   ![](i/gold.png)   HELP - PLEASE, INSCRIBE!<br>
-cyber green  ->  ![](i/cybergreen.png)  HELP - PLEASE, INSCRIBE!<br>
-deep blue   ->   ![](i/deepblue.png)    HELP - PLEASE, INSCRIBE!<br>
-midnight   ->    ![](i/midnight.png)   HELP - PLEASE, INSCRIBE!<br>
-magenta    ->    ![](i/magenta.png)   HELP - PLEASE, INSCRIBE!<br>
+mars red -> ![](i/marsred.png) (204 bytes)   HELP - PLEASE, INSCRIBE!<br>
+orange -> ![](i/orange.png) (204 bytes)      HELP - PLEASE, INSCRIBE!<br>
+gold       ->   ![](i/gold.png)  (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
+cyber green  ->  ![](i/cybergreen.png)  (207 bytes)  HELP - PLEASE, INSCRIBE!<br>
+deep blue   ->   ![](i/deepblue.png) (207 bytes)    HELP - PLEASE, INSCRIBE!<br>
+midnight   ->    ![](i/midnight.png) (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
+magenta    ->    ![](i/magenta.png) (204 bytes)   HELP - PLEASE, INSCRIBE!<br>
 
 
 in 4x
