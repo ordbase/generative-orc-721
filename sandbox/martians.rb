@@ -85,4 +85,49 @@ composite.zoom(4).save( "./martians/tmp/martians-smile@4x.png" )
 
 
 
+noun    = Image.read( "./martians/noun-glasses.png" )
+noun_xl = Image.read( "./martians/noun-glasses-big.png" )
+
+noun.zoom( 4 ).save( "./martians/tmp/noun-glasses@4x.png" )
+noun.zoom( 8 ).save( "./martians/tmp/noun-glasses@8x.png" )
+
+noun_xl.zoom( 4 ).save( "./martians/tmp/noun-glasses-big@4x.png" )
+noun_xl.zoom( 8 ).save( "./martians/tmp/noun-glasses-big@8x.png" )
+
+
+composite = ImageComposite.new( 2, 1, width: 24,
+                                      height: 24 )
+
+composite << noun
+composite << noun_xl
+composite.save( "./martians/tmp/noun-glasses.png" )
+composite.zoom( 4 ).save( "./martians/tmp/noun-glasses@4x.png" )
+
+
+
+
+composite = ImageComposite.new( 7, 2, width: 24,
+                                      height: 24 )
+
+base.each do |name|
+   img = Image.new( 24, 24 )
+   img.compose!( Image.read( "./martians/#{name}.png" ))
+   img.compose!( noun )
+
+   composite << img
+end
+
+base.each do |name|
+   img = Image.new( 24, 24 )
+   img.compose!( Image.read( "./martians/#{name}.png" ))
+   img.compose!( noun_xl )
+
+   composite << img
+end
+
+composite.save( "./martians/tmp/martians-noun.png" )
+composite.zoom(4).save( "./martians/tmp/martians-noun@4x.png" )
+
+
+
 puts "bye"

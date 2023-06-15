@@ -65,6 +65,19 @@ and Martians w/ Smile in 4x <br>
 ![](i/martians-smile@4x.png)
 
 
+**Bonus -  2 Noun Glasses in 24×24px in .PNG**
+
+noun glasses      -> ![](i/noun-glasses.png)  (189 bytes) HELP - PLEASE, INSCRIBE! <br>
+noun glasses xl   ->  ![](i/noun-glasses_xl.png) (196 bytes) HELP - PLEASE, INSCRIBE!
+
+
+in 4x <br>
+![](i/noun-glasses@4x.png)
+
+and Martians w/ Noun Glasses in 4x <br>
+![](i/martians-noun@4x.png)
+
+
 
 
 
