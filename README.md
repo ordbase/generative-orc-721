@@ -137,7 +137,7 @@ in 4x <br>
 ... your comments more than welcome on the new d.i.y. recursive martians<br>
 ... and again the call for help ...... if anyone wants to sponsor / lead / help with the inscribes (step one - the .PNGs in 24×24px - about 200 bytes each and step two - the deploy inscribe with a reference to the .PNG inscripton ids PLUS 20+ more "on-chain" thanks to recursive punks, please tell in the ordinal punks discord (in the #generative-orc-721 channel) - you make it all happen ...
 
-Try the D.I.Y. Recursive Martians - Aliens Vol. 2 Previewer (SOON!) »
+Try the [D.I.Y. Recursive Martians - Aliens Vol. 2 Previewer »](https://ordbase.github.io/generative-orc-721/diymartians)
 
 
 
