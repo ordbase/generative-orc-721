@@ -102,47 +102,6 @@ composite.zoom(4).save( "./martians/tmp/martians-smile@4x.png" )
 
 
 
-composite = ImageComposite.new( 10, 1, width: 24,
-                                      height: 24 )
-
-backgrounds.each do |name|
-   composite << Image.read( "./martians/backgrounds/#{name}.png" )
-end
-
-composite.save( "./martians/tmp/backgrounds.png" )
-composite.zoom(4).save( "./martians/tmp/backgrounds@4x.png" )
-
-
-composite = ImageComposite.new( 6, 5, width: 24,
-                                      height: 24 )
-
-3.times do |n|
-   backgrounds.each_with_index do |name,m|
-       img = Image.new( 24, 24 )
-       img.compose!( Image.read( "./martians/backgrounds/#{name}.png" ))
-       i = n*10+m
-       base_name = base[ i % base.size ]
-       img.compose!( Image.read( "./martians/#{base_name}.png"))
-
-       if i > 17
-         lasereyes_name = lasereyes[ i % lasereyes.size ]
-         img.compose!( Image.read( "./martians/#{lasereyes_name}.png"))
-      end
-
-       if i > 23
-         img.compose!( smile )
-       end
-
-       composite << img
-   end
-end
-
-
-composite.save( "./martians/tmp/martians-backgrounds.png" )
-composite.zoom(4).save( "./martians/tmp/martians-backgrounds@4x.png" )
-
-
-
 
 
 noun    = Image.read( "./martians/noun-glasses.png" )
@@ -187,6 +146,55 @@ end
 
 composite.save( "./martians/tmp/martians-noun.png" )
 composite.zoom(4).save( "./martians/tmp/martians-noun@4x.png" )
+
+
+
+
+composite = ImageComposite.new( 10, 1, width: 24,
+                                      height: 24 )
+
+backgrounds.each do |name|
+   composite << Image.read( "./martians/backgrounds/#{name}.png" )
+end
+
+composite.save( "./martians/tmp/backgrounds.png" )
+composite.zoom(4).save( "./martians/tmp/backgrounds@4x.png" )
+
+
+composite = ImageComposite.new( 6, 5, width: 24,
+                                      height: 24 )
+
+3.times do |n|
+   backgrounds.each_with_index do |name,m|
+       img = Image.new( 24, 24 )
+       img.compose!( Image.read( "./martians/backgrounds/#{name}.png" ))
+       i = n*10+m
+       base_name = base[ i % base.size ]
+       img.compose!( Image.read( "./martians/#{base_name}.png"))
+
+       row = i / 6
+
+       if row == 2
+         lasereyes_name = lasereyes[ i % lasereyes.size ]
+         img.compose!( Image.read( "./martians/#{lasereyes_name}.png"))
+       end
+
+       img.compose!( smile )   if row == 3
+
+
+       img.compose!( noun_xl )   if row == 4
+
+
+       composite << img
+   end
+end
+
+
+composite.save( "./martians/tmp/martians-backgrounds.png" )
+composite.zoom(4).save( "./martians/tmp/martians-backgrounds@4x.png" )
+
+
+
 
 
 

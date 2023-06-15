@@ -51,8 +51,6 @@ and a sampling of Martians w/ Laser Eyes in 4x <br>
 **10 Backgrounds in 24×24px in .PNG**
 
 
-laser eyes -> ![](i/lasereyes.png)  (143 bytes) HELP - PLEASE, INSCRIBE!<br>
-
 bitcoin orange -> ![](i/background-bitcoin-orange.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
 bitcoin pattern -> ![](i/background-bitcoin-pattern.png)  (183 bytes) HELP - PLEASE, INSCRIBE!<br>
 red             -> ![](i/background-red.png)  (136 bytes) HELP - PLEASE, INSCRIBE!<br>
