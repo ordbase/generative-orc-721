@@ -7,8 +7,8 @@ require 'ordgen'
 
 ## note: change outdir (root for /num & /diybirdies)
 ##          to where you want to save the generated images
-# outdir = '../ordbase.github.io'
-outdir = './tmp'
+outdir = '../ordbase.github.io'
+# outdir = './tmp'
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
@@ -39,8 +39,8 @@ recs.each_with_index do |rec,i|
   img.save( "#{outdir}/num/#{num}.png" )
   img.zoom(4).save( "#{outdir}/num/#{num}@4x.png" )
 
-  img.save( "#{outdir}/diybirdies/#{g.join('_')}.png" )
-  img.zoom(4).save( "#{outdir}/diybirdies/#{g.join('_')}@4x.png" )
+  ## img.save( "#{outdir}/diybirdies/#{g.join('_')}.png" )
+  ## img.zoom(4).save( "#{outdir}/diybirdies/#{g.join('_')}@4x.png" )
 end
 
 

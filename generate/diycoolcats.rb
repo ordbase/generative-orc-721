@@ -7,8 +7,8 @@ require 'ordgen'
 
 ## note: change outdir (root for /num & /diycoolcats)
 ##          to where you want to save the generated images
-## outdir = '../ordbase.github.io'
-outdir = './tmp'
+outdir = '../ordbase.github.io'
+## outdir = './tmp'
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
