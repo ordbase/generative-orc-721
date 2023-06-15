@@ -86,13 +86,13 @@ composite.zoom(4).save( "./martians/tmp/martians-smile@4x.png" )
 
 
 noun    = Image.read( "./martians/noun-glasses.png" )
-noun_xl = Image.read( "./martians/noun-glasses-big.png" )
+noun_xl = Image.read( "./martians/noun-glasses_xl.png" )
 
 noun.zoom( 4 ).save( "./martians/tmp/noun-glasses@4x.png" )
 noun.zoom( 8 ).save( "./martians/tmp/noun-glasses@8x.png" )
 
-noun_xl.zoom( 4 ).save( "./martians/tmp/noun-glasses-big@4x.png" )
-noun_xl.zoom( 8 ).save( "./martians/tmp/noun-glasses-big@8x.png" )
+noun_xl.zoom( 4 ).save( "./martians/tmp/noun-glasses_xl@4x.png" )
+noun_xl.zoom( 8 ).save( "./martians/tmp/noun-glasses_xl@8x.png" )
 
 
 composite = ImageComposite.new( 2, 1, width: 24,
