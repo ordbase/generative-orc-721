@@ -119,13 +119,13 @@ Help with the 24×24px .PNG inscribes ...
 
 **7 Martians in 24×24px in .PNG**
 
-orange -> ![](diymartians/i/orange.png) (204 bytes)      HELP - PLEASE, INSCRIBE!<br>
-gold       ->   ![](diymartians/i/gold.png)  (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
-cyber green  ->  ![](diymartians/i/cybergreen.png)  (207 bytes)  HELP - PLEASE, INSCRIBE!<br>
-deep blue   ->   ![](diymartians/i/deepblue.png) (207 bytes)    HELP - PLEASE, INSCRIBE!<br>
-midnight   ->    ![](diymartians/i/midnight.png) (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
-magenta    ->    ![](diymartians/i/magenta.png) (204 bytes)   HELP - PLEASE, INSCRIBE!<br>
-mars red -> ![](diymartians/i/marsred.png) (204 bytes)   HELP - PLEASE, INSCRIBE!
+orange -> ![](diymartians/i/orange.png) (204 bytes)      inscribe by Jdogg - thank you!<br>
+gold       ->   ![](diymartians/i/gold.png)  (204 bytes)  inscribe by Jdogg - thank you!<br>
+cyber green  ->  ![](diymartians/i/cybergreen.png)  (207 bytes)  inscribe by Jdogg - thank you!<br>
+deep blue   ->   ![](diymartians/i/deepblue.png) (207 bytes)    inscribe by Jdogg - thank you!<br>
+midnight   ->    ![](diymartians/i/midnight.png) (204 bytes)  inscribe by Jdogg - thank you!<br>
+magenta    ->    ![](diymartians/i/magenta.png) (204 bytes)   inscribe by Jdogg - thank you!<br>
+mars red -> ![](diymartians/i/marsred.png) (204 bytes)   inscribe by Jdogg - thank you!
 
 
 in 4x <br>
