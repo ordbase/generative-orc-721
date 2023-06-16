@@ -1,0 +1,208 @@
+
+<!--
+    source based on fiddle by @jokie
+       see https://jsfiddle.net/a6mnft3d/34/
+-->
+
+
+<style>
+body {
+  text-align:center;
+}
+
+
+#spritesheet {
+  display: grid;
+
+  /* 24 columns x 24 rows
+       tile / sprite 24 x 24 px - width x height
+   */
+  grid-template-columns: repeat(24, 24px);
+  grid-template-rows: repeat(24, 24px);
+  width: 576px;    /*   24 x 24px = 576px */
+  height: 576px;     /*   24 x 24px  = 576px */
+  margin: auto;
+
+  background: url(https://github.com/ZimmerAllDay/orangepixels/blob/main/spritesheet.png?raw=true);
+
+  transform: scale(1);    /* make smaller not working - try again later sorry; show with 50% zoom e.g. half the original size */
+  transform-origin: 0 0;
+  border: 2px solid #ccc;
+}
+
+
+.sprite {
+  width: 24px;
+  height: 24px;
+}
+
+
+#canvas {
+  width: 240px;     /* 10x => 1020px     -- 2 x 102px = 204px */
+  height: 240px;     /* 10x => 320px       -- 2 x 32px = 64px */
+  filter: blur(.0px);
+  border: 2px solid #ccc;
+  margin: 10px;
+  background-color: #eee;
+}
+
+#cleardiv {
+  margin:auto;
+  text-align:center;
+  }
+
+  .sprite.selected {
+  background-color: rgba(255, 153, 0, 0.3);
+}
+
+</style>
+
+
+ <h1>
+  BTC Orange Pixel Previewer
+  </h1>
+  <p>
+   New to BTC Orange Pixels? See the <a href="https://github.com/ZimmerAllDay/orangepixels">BTC Orange Pixels Getting Started Guide and Documentation »</a>
+</p>
+ <p>     
+  Directions: click on the map below to preview your BTC Orange Pixels.
+  Press clear to start over.<br/><br/>
+  When you're happy, use the attribute list generated.
+  </p>
+  <div id="spritesheet"></div>
+
+  <canvas id="canvas" width="240" height="240"></canvas>
+
+  <div id="cleardiv">
+   <button id="clear">Clear</button>
+  </div>
+  <p id="output"></p>
+
+  BTC Orange Pixels is a project by <a href="https://twitter.com/zimmerallday">@ZimmerAllDay</a>.
+  Learn more on the <a href="https://discord.gg/swBWd827qM">Ordinal Punks discord</a> (in the #generative-orc-721 channel)
+  and the <a href="https://github.com/ordbase/generative-orc-721">generative-orc-721 github</a>
+  <footer>This previewer adopted from a fiddle written by Jokie </footer>
+
+
+<!-- note: requires jquery 3.4.1 -->
+<script scr="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script>
+ // 24 columns x 24 rows    (576 tiles)
+ //    tile / sprite 24 x 24px - width x height
+ //
+let cols = 24;
+let rows = 24;
+let tiles = cols * rows;
+let width = 24;
+let height = 24;
+
+let scaleFactor = 10;
+
+let canvas = document.getElementById('canvas');
+canvas.width = width * scaleFactor;
+canvas.height = height * scaleFactor;
+
+let ctx = canvas.getContext('2d');
+ctx.imageSmoothingEnabled = false; // Disable image smoothing
+
+let img = new Image();
+img.src = 'https://github.com/ZimmerAllDay/orangepixels/blob/main/spritesheet.png?raw=true';
+
+let selectedSprites = [];
+let isMouseDown = false;
+
+img.onload = function () {
+    for (let i = 0; i < tiles; i++) {
+        let sprite = document.createElement('div');
+        sprite.className = 'sprite';
+
+        let x = i % cols;
+        let y = Math.floor(i / cols);
+
+        let pos = `-${x * width}px -${y * height}px`;
+        sprite.style.backgroundPosition = pos;
+
+        sprite.addEventListener('mousedown', () => {
+            const index = selectedSprites.indexOf(i);
+            if (index !== -1) {
+                // Deselect the sprite
+                selectedSprites.splice(index, 1);
+            } else {
+                // Select the sprite
+                selectedSprites.push(i);
+            }
+
+            sprite.classList.toggle('selected');
+        });
+
+        sprite.addEventListener('mouseover', () => {
+            if (isMouseDown) {
+                const index = selectedSprites.indexOf(i);
+                if (index === -1) {
+                    selectedSprites.push(i);
+                    sprite.classList.add('selected');
+                } else {
+                    selectedSprites.splice(index, 1);
+                    sprite.classList.remove('selected');
+                }
+            }
+        });
+
+        document.getElementById('spritesheet').appendChild(sprite);
+    }
+};
+
+document.getElementById('spritesheet').addEventListener('mousedown', () => {
+    isMouseDown = true;
+});
+
+document.getElementById('spritesheet').addEventListener('mouseup', () => {
+    isMouseDown = false;
+    updateCanvas();
+});
+
+document.getElementById('spritesheet').addEventListener('mouseleave', () => {
+    if (isMouseDown) {
+        const sprites = document.getElementsByClassName('sprite');
+        for (let j = 0; j < sprites.length; j++) {
+            sprites[j].classList.remove('selected');
+        }
+        selectedSprites = [];
+    }
+});
+
+document.getElementById('clear').addEventListener('click', () => {
+    const sprites = document.getElementsByClassName('sprite');
+    for (let j = 0; j < sprites.length; j++) {
+        sprites[j].classList.remove('selected');
+    }
+    selectedSprites = [];
+    updateCanvas();
+});
+
+function updateCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (const selectedIndex of selectedSprites) {
+        const spriteIndex = selectedIndex % tiles;
+        const spriteX = spriteIndex % cols;
+        const spriteY = Math.floor(spriteIndex / cols);
+
+        ctx.drawImage(
+            img,
+            spriteX * width,
+            spriteY * height,
+            width,
+            height,
+            0,
+            0,
+            width * scaleFactor,
+            height * scaleFactor
+        );
+    }
+
+    output.textContent = '"g":[' + selectedSprites.map(sprite => sprite % tiles).join(', ') + ']';
+}
+
+  </script>
