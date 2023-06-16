@@ -169,16 +169,28 @@ NEW!  For up-to-date ORC-721 analytics / statistics see the [Generative-ORC-721 
 
 
 
-# Generative ORC-721 Protocol / Standard for Bitcoin & Co.
+# Generative ORC-721 Protocol / Standard for Bitcoin & Co.   (Also Known As OG, Ordgen, Ordinal Generative)
 
 Author:  [Gerald Bauer](https://github.com/geraldb) ([Punk's Not Dead](https://github.com/cryptopunksnotdead), [Learn Pixel Art](https://github.com/learnpixelart), etc)
 
 
 
 Let's deploy a new 721 d.i.y. punk (pixel head) collection
-in 8 seconds ;-) - yes, you can. Example - [Inscription No. 9947030](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0):
+in 8 seconds ;-) - yes, you can. Example - [Inscription No. 9947030 (Classic JSON Format)](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0):
 
+... and in the standard text format:
 
+```
+og deploy diypunks
+name: D.I.Y. Punks
+max: 721
+dim: 24x24
+cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
+    
 ``` json
 {
     "p": "orc-721",
@@ -191,13 +203,24 @@ in 8 seconds ;-) - yes, you can. Example - [Inscription No. 9947030](https://ord
 }
 ```
 
+</details>
 
 
-That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0]`:
+
+
+That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `0`:
 
 - 0 - ![](diypunks/i/0_human.png) punk (human) base
 
+in standard text format:
 
+```
+og mint diypunks 0
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
+    
 ``` json
 {
    "p":"orc-721",
@@ -206,16 +229,27 @@ That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `[0
    "g":[0]
 }
 ```
-
+    
+</details>
+    
 ![](diypunks/i/punk0.png)  4x
 ![](diypunks/i/punk0@4x.png)
 
 
 
-and the second with the (generative) specs - `[0,38]`:
+and the second with the (generative) specs - `0 38`:
 
 - 0 - ![](diypunks/i/0_human.png)  punk (human) base
 - 38 - ![](diypunks/i/38_laser-eyes.png) laser eyes
+
+in standard text format:
+
+```
+og mint diypunks 0 38
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
 
 ``` json
 {
@@ -226,15 +260,27 @@ and the second with the (generative) specs - `[0,38]`:
 }
 ```
 
+</details>
+    
 ![](diypunks/i/punk1.png)  4x
 ![](diypunks/i/punk1@4x.png)
 
 
-and the third with the (generative specs) - `[59,0,38]`:
+and the third with the (generative specs) - `59 0 38`:
 
 - 59 - ![](diypunks/i/59_bitcoin-pattern.png)  background - bitcoin pattern
 - 0 - ![](diypunks/i/0_human.png)  punk (human) base
 - 38 - ![](diypunks/i/38_laser-eyes.png) laser eyes
+
+
+in standard text format:
+
+```
+og mint dypunks 59 0 38
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
 
 ``` json
 {
@@ -245,6 +291,8 @@ and the third with the (generative specs) - `[59,0,38]`:
 }
 ```
 
+</details>
+    
 ![](diypunks/i/punk2.png)  4x
 ![](diypunks/i/punk2@4x.png)
 
