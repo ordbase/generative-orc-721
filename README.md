@@ -128,7 +128,7 @@ magenta    ->    ![](diymartians/i/magenta.png) (204 bytes)   inscribe by Jdogg 
 mars red -> ![](diymartians/i/marsred.png) (204 bytes)   inscribe by Jdogg - thank you!
 
 
-in 4x <br>
+in 4x   (only for documentation - DO NOT INSCRIBE) <br>
 ![](diymartians/i/martians@4x.png)
 
 
