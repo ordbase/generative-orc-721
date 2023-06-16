@@ -276,7 +276,7 @@ and the third with the (generative specs) - `59 0 38`:
 in standard text format:
 
 ```
-og mint dypunks 59 0 38
+og mint diypunks 59 0 38
 ```
 
 <details>
