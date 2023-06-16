@@ -21,10 +21,20 @@ PS:  See [/market](market)  on public reference inscription.json datasets and sc
 ##  Wen Magic Eden (ME)?
 
 
+**721 D.I.Y. Punks**  -> <https://magiceden.io/ordinals/marketplace/diy-punks>   - managed by [@diypunksnfts](https://twitter.com/diypunksnfts)
+
+**721 D.I.Y. Punks V2** -> <https://magiceden.io/ordinals/marketplace/diypunks-v2>
+
+**1000 D.I.Y. Ordibots** -> <https://magiceden.io/ordinals/marketplace/diyordibots>
+
+
+**100 D.I.Y. Recursive Apes** -> <https://magiceden.io/ordinals/marketplace/recursive-apes>
+
+**100 D.I.Y. Recursive Aliens** -> <https://magiceden.io/ordinals/marketplace/recursivealien>
 
 
 
-
+...
 
 
 
