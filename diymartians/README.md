@@ -19,15 +19,15 @@ Yes, you can help ...
 Help with the 24×24px .PNG inscribes ...      IMPORTANT! PLEASE ONLY INSCRIBE 24x24px .PNGs in 1x .. NO 4x -  the 4x is only for documentation in the readme page.
 
 
-**7 Martians in 24×24px in .PNG**
+**7 Martians in 24×24px in .PNG**   - DONE!
 
-orange -> ![](i/orange.png)  <- (204 bytes)      HELP - PLEASE, INSCRIBE!<br>
-gold       ->   ![](i/gold.png)  <-  (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
-cyber green  ->  ![](i/cybergreen.png)  <-  (207 bytes)  HELP - PLEASE, INSCRIBE!<br>
-deep blue   ->   ![](i/deepblue.png)  <- (207 bytes)    HELP - PLEASE, INSCRIBE!<br>
-midnight   ->    ![](i/midnight.png)  <- (204 bytes)  HELP - PLEASE, INSCRIBE!<br>
-magenta    ->    ![](i/magenta.png)  <- (204 bytes)   HELP - PLEASE, INSCRIBE!<br>
-mars red -> ![](i/marsred.png)  <- (204 bytes)   HELP - PLEASE, INSCRIBE!
+orange -> ![](i/orange.png)  <- (204 bytes)   inscribe by Jdogg - thank you!<br>
+gold       ->   ![](i/gold.png)  <-  (204 bytes)  inscribe by Jdogg - thank you!<br>
+cyber green  ->  ![](i/cybergreen.png)  <-  (207 bytes)  inscribe by Jdogg - thank you!<br>
+deep blue   ->   ![](i/deepblue.png)  <- (207 bytes)    inscribe by Jdogg - thank you!<br>
+midnight   ->    ![](i/midnight.png)  <- (204 bytes)  inscribe by Jdogg - thank you!<br>
+magenta    ->    ![](i/magenta.png)  <- (204 bytes)   inscribe by Jdogg - thank you!<br>
+mars red -> ![](i/marsred.png)  <- (204 bytes)   inscribe by Jdogg - thank you!
 
 
 
