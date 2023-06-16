@@ -3,6 +3,20 @@
 //
 
 
+function randomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+// console.log(randomInt(3));
+// expected output: 0, 1 or 2
+
+ function randomDesign() {
+   let design = designs[ randomInt( designs.length) ];
+   // note: auto-trim - leading and trailing empty lines & whitespaces
+   return design.trim();
+ }
+
+
+
 
 
 
@@ -97,6 +111,12 @@ function drawCanvas(array) {
    drawCanvas(a);
      })
 
+     $("#design").on("click", function() {
+      var design = randomDesign();
+      a = parseNumbers( design );
+      drawCanvas( a );
+      $("#out").val( design );
+     })
 
 
      $("#grid").on("change", function() {
@@ -113,19 +133,10 @@ function drawCanvas(array) {
   ////////////////////////////////
   // add random design on startup
 
-  var design = "128 129 130 131 132 133 134 151 159 174\n" +
-               "177 178 179 180 181 184 198 200 206 208\n" +
-               "222 224 226 227 228 230 232 246 248 250\n" +
-               "252 254 256 270 272 274 276 278 280 293\n" +
-               "295 297 300 302 304 317 319 321 324 326\n" +
-               "328 342 344 346 348 350 352 366 368 370\n" +
-               "372 374 376 390 392 394 396 398 400 414\n" +
-               "416 418 419 420 422 424 438 440 446 448\n" +
-               "462 464 465 466 467 468 469 472 486 488\n" +
-               "495 510 512 514 515 516 517 518 534 536\n" +
-               "538 558 560 562";
+  var design = randomDesign();
   console.log( "design:", design );
   var a = parseNumbers( design );
+
   drawCanvas( a );
   $("#out").val( design );
 

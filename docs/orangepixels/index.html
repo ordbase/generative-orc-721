@@ -56,6 +56,7 @@
   <script type="text/javascript" src="lib3rd/jquery-3.2.1.min.js"></script>
 
   <script type="text/javascript" src="lib/pixelart.js"></script>
+  <script type="text/javascript" src="designs.js"></script>
 
   <!-- move lib/setup.js to end of file/page - no need to use onload? - better (more modern) practice?
        why? why not?
@@ -80,6 +81,8 @@
         ↑ Read - Reads the g numbers in the textbox to draw pixels in canvas.
         <br>
         ⊘ Reset - Clears the canvas - resets to empty.
+        <br>
+        Try Random (Design)  - Draws ready-made pixels design.
       </p>
   </div>
 
@@ -100,6 +103,9 @@
       </button>
       <button id="redraw">
     ↺ Redraw
+      </button>
+      <button id="design">
+        Try Random (Design)
       </button>
 
       <input name="grid" type="checkbox" id="grid" checked>
