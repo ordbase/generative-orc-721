@@ -113,6 +113,36 @@ SOON!    First with your help let's complete step 1 and than ready to deploy in 
 
 
 
+###  Frequently Asked Questions (F.A.Q.) and Answers
+
+> Q: Bro, I can carve parts. What should I do？
+
+See the 24×24px .PNG Inscribes  with the label  
+"HELP - PLEASE, INSCRIBE!"  above  - pick any .PNG ( each about 200 bytes) and inscribe
+and please post in the #generative-orc-721 channel
+in the ordinal punks discord   to avoid double sats spending ;-) - double inscribes of 24x24 .PNGs. 
+
+If all 10 backgrounds .PNGs and 1,2 or 3 laser eyes .. and the bonus happy smile ... and optinally the noun glasses ... 
+are inscribed than all is set to  ... Wen deploy?
+
+
+> Q: Why u say "Let's do the world's 1st (d.i.y) recursive generative"
+> why is it [100 D.I.Y. Recursive Martians - Aliens Vol. 2] the 1st? 
+
+... the world's 1st (d.i.y.) recursive generative is [100 d.i.y.(recursvie) apes](../diyapes) ...<br>
+... now why is the upcoming "100 D.I.Y. (Recursive) Martians - Aliens Vol. 2"  the world's 1st (d.i.y) recursive generative ...<br> 
+... it is the the world's 1st (d.i.y) true recursive generative mix-n-match collection ...<br>
+... you see? ...<br>
+...  all recursive attributes to generate  100 d.i.y.(recursvie) apes are sourced from .... ??? ...<br> 
+.... yes, all recursive attributes are single-sourced from recursive punks  inscribed by a single bro - see <https://ordiscan.com/address/bc1p2wrnw6gkyapz67s7ew422z5j9wt442t48day79pe5lv275at5phqlpn9cn> ...<br> 
+.... how recursive is that?! ...<br>
+... all recursive attributes to generate  100 d.i.y.(recursvie) martians - aliens vol. 2  are sourced from .... ???? ...<br>
+... many sources ... many inscribers ... mix-n-match ... yes, that's recursive! ... ( and not yet another inscribed "recursive" .HTML image carousel (anno 2023) that lets you browse other people's ordinals)...<br>
+... help to  make it happen today!  inscribe yourself in history and own the (bitcoin) orange 24x24px square 
+or pattern (background). yes, you can!
+
+
+
 ## Questions? Comments?
 
 Please post in the #generative-orc-721 channel
