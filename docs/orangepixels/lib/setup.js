@@ -9,6 +9,9 @@ function randomInt(max) {
 // console.log(randomInt(3));
 // expected output: 0, 1 or 2
 
+
+var designs = designs_starter.concat( designs_punks );
+
  function randomDesign() {
    let design = designs[ randomInt( designs.length) ];
    // note: auto-trim - leading and trailing empty lines & whitespaces
