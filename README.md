@@ -119,13 +119,16 @@ Help with the 24×24px .PNG inscribes ...
 
 **7 Martians in 24×24px in .PNG**
 
-orange -> ![](diymartians/i/orange.png) (204 bytes)      inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-gold       ->   ![](diymartians/i/gold.png)  (204 bytes)  inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-cyber green  ->  ![](diymartians/i/cybergreen.png)  (207 bytes)  inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-deep blue   ->   ![](diymartians/i/deepblue.png) (207 bytes)    inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-midnight   ->    ![](diymartians/i/midnight.png) (204 bytes)  inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-magenta    ->    ![](diymartians/i/magenta.png) (204 bytes)   inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-mars red -> ![](diymartians/i/marsred.png) (204 bytes)   inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
+
+orange -> ![](i/orange.png)  <- (204 bytes)   [inscribe №12225771] (https://www.ord.io/12225771)  by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+gold       ->   ![](i/gold.png)  <-  (204 bytes)  [inscribe №12225872] (https://www.ord.io/12225872)  by [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+cyber green  ->  ![](i/cybergreen.png)  <-  (207 bytes)  [inscribe №12225773](https://www.ord.io/12225773) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+deep blue   ->   ![](i/deepblue.png)  <- (207 bytes)    [inscribe №12225772](https://www.ord.io/12225772) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+midnight   ->    ![](i/midnight.png)  <- (204 bytes)  [inscribe №12225841](https://www.ord.io/12225841) by [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+magenta    ->    ![](i/magenta.png)  <- (204 bytes)   [inscribe №12225843](https://www.ord.io/12225843)    by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+mars red -> ![](i/marsred.png)  <- (204 bytes)   [inscribe №12225816] (https://www.ord.io/12225816) by [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
+
+
 
 
 in 4x   (only for documentation - DO NOT INSCRIBE) <br>
@@ -190,7 +193,7 @@ cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0
 
 <details>
 <summary markdown="1">Classic JSON Format</summary>
-    
+
 ``` json
 {
     "p": "orc-721",
@@ -220,7 +223,7 @@ og mint diypunks 0
 
 <details>
 <summary markdown="1">Classic JSON Format</summary>
-    
+
 ``` json
 {
    "p":"orc-721",
@@ -229,9 +232,9 @@ og mint diypunks 0
    "g":[0]
 }
 ```
-    
+
 </details>
-    
+
 ![](diypunks/i/punk0.png)  4x
 ![](diypunks/i/punk0@4x.png)
 
@@ -261,7 +264,7 @@ og mint diypunks 0 38
 ```
 
 </details>
-    
+
 ![](diypunks/i/punk1.png)  4x
 ![](diypunks/i/punk1@4x.png)
 
@@ -292,7 +295,7 @@ og mint diypunks 59 0 38
 ```
 
 </details>
-    
+
 ![](diypunks/i/punk2.png)  4x
 ![](diypunks/i/punk2@4x.png)
 

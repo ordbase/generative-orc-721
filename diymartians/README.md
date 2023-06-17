@@ -21,13 +21,13 @@ Help with the 24×24px .PNG inscribes ...      IMPORTANT! PLEASE ONLY INSCRIBE 2
 
 **7 Martians in 24×24px in .PNG**   - DONE!
 
-orange -> ![](i/orange.png)  <- (204 bytes)   inscribe by [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-gold       ->   ![](i/gold.png)  <-  (204 bytes)  inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-cyber green  ->  ![](i/cybergreen.png)  <-  (207 bytes)  inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-deep blue   ->   ![](i/deepblue.png)  <- (207 bytes)    inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-midnight   ->    ![](i/midnight.png)  <- (204 bytes)  inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-magenta    ->    ![](i/magenta.png)  <- (204 bytes)   inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-mars red -> ![](i/marsred.png)  <- (204 bytes)   inscribe by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
+orange -> ![](i/orange.png)  <- (204 bytes)   [inscribe №12225771] (https://www.ord.io/12225771)  by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+gold       ->   ![](i/gold.png)  <-  (204 bytes)  [inscribe №12225872] (https://www.ord.io/12225872)  by [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+cyber green  ->  ![](i/cybergreen.png)  <-  (207 bytes)  [inscribe №12225773](https://www.ord.io/12225773) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+deep blue   ->   ![](i/deepblue.png)  <- (207 bytes)    [inscribe №12225772](https://www.ord.io/12225772) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+midnight   ->    ![](i/midnight.png)  <- (204 bytes)  [inscribe №12225841](https://www.ord.io/12225841) by [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+magenta    ->    ![](i/magenta.png)  <- (204 bytes)   [inscribe №12225843](https://www.ord.io/12225843)    by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+mars red -> ![](i/marsred.png)  <- (204 bytes)   [inscribe №12225816] (https://www.ord.io/12225816) by [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
 
 
 
