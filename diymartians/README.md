@@ -37,11 +37,11 @@ in 4x  (only for documentation - DO NOT INSCRIBE)<br>
 
 
 
-**3 Laser Eyes in 24×24px in .PNG**
+**3 Laser Eyes in 24×24px in .PNG**   - DONE!
 
-laser eyes -> ![](i/lasereyes.png)  <- (143 bytes) HELP - PLEASE, INSCRIBE!<br>
-laser eyes (gold) ->  ![](i/lasereyes-gold.png)  <- (143 bytes) HELP - PLEASE, INSCRIBE!<br>
-laser eyes (blue) ->  ![](i/lasereyes-blue.png)  <- (208 bytes) HELP - PLEASE, INSCRIBE!
+laser eyes -> ![](i/lasereyes.png)  <- (143 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<<br>
+laser eyes (gold) ->  ![](i/lasereyes-gold.png)  <- (143 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<<br>
+laser eyes (blue) ->  ![](i/lasereyes-blue.png)  <- (208 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<
 
 
 in 4x  (only for documentation - DO NOT INSCRIBE)<br>
@@ -78,9 +78,9 @@ and a sampling of  Martians w/ Backgrounds in 4x (only for documentation - DO NO
 
 
 
-**Bonus - 1 Happy Smile in 24×24px in .PNG**
+**Bonus - 1 Happy Smile in 24×24px in .PNG**  - DONE!
 
-smile -> ![](i/smile.png)  <- (90 bytes) HELP - PLEASE, INSCRIBE!
+smile -> ![](i/smile.png)  <- (90 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<
 
 
 in 4x (only for documentation - DO NOT INSCRIBE)<br>
@@ -90,10 +90,10 @@ and a sampling of  Martians w/ Smile in 4x (only for documentation - DO NOT INSC
 ![](i/martians-smile@4x.png)
 
 
-**Bonus -  2 Noun Glasses in 24×24px in .PNG**
+**Bonus -  2 Noun Glasses in 24×24px in .PNG**  - DONE!
 
-noun glasses      -> ![](i/noun-glasses.png)   <- (189 bytes) HELP - PLEASE, INSCRIBE! <br>
-noun glasses xl   ->  ![](i/noun-glasses_xl.png)  <- (196 bytes) HELP - PLEASE, INSCRIBE!
+noun glasses      -> ![](i/noun-glasses.png)   <- (189 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<<br>
+noun glasses xl   ->  ![](i/noun-glasses_xl.png)  <- (196 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<
 
 
 in 4x (only for documentation - DO NOT INSCRIBE)<br>
