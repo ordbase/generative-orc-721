@@ -123,7 +123,7 @@ and please post in the #generative-orc-721 channel
 in the ordinal punks discord   to avoid double sats spending ;-) - double inscribes of 24x24 .PNGs. 
 
 If all 10 backgrounds .PNGs and 1,2 or 3 laser eyes .. and the bonus happy smile ... and optinally the noun glasses ... 
-are inscribed than all is set to  ... Wen deploy?
+are inscribed than all is set for step 2 ... Wen deploy?
 
 
 > Q: Why u say "Let's do the world's 1st (d.i.y) recursive generative"
