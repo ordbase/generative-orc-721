@@ -36,6 +36,22 @@ PS:  See [/market](market)  on public reference inscription.json datasets and sc
 
 ...
 
+**d.i.y. daily market update**
+
+Sat, Jun 17th 2023
+
+- 721 d.i.y punks - floor ₿ 0.00075  - vol ₿ 0.2515 - owners 134 - listed 89 
+- 721 d.i.y. punks v2  - floor ₿ 0.0001   - vol ₿ 0.0284  - owners 137 - listed 89 
+- 1000 d.i.y. ordibots - floor ₿ 0.000275  - vol ₿ 0.0802 - owners 104 - listed 136 
+- 100 d.i.y. recursive apes - floor ₿ 0.00095 -  vol ₿ 0.1802  - owners 73 - listed 33 
+- 100 d.i.y. recursive aliens - floor  ₿ 0.00035 - vol ₿ 0.0157  - owners 29 - listed 36 
+
+
+ 
+
+
+
+
 
 
 ## Wen Ordinals Wallet  (OW)?
