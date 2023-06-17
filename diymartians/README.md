@@ -39,9 +39,9 @@ in 4x  (only for documentation - DO NOT INSCRIBE)<br>
 
 #### 3 Laser Eyes in 24×24px in .PNG   - DONE!
 
-laser eyes -> ![](i/lasereyes.png)  <- (143 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-laser eyes (gold) ->  ![](i/lasereyes-gold.png)  <- (143 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-laser eyes (blue) ->  ![](i/lasereyes-blue.png)  <- (208 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
+laser eyes -> ![](i/lasereyes.png)  <- (143 bytes)  [inscribe №12359718](https://www.ord.io/12359718)  by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+laser eyes (gold) ->  ![](i/lasereyes-gold.png)  <- (143 bytes)  [inscribe №12359739](https://www.ord.io/12359739)  by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+laser eyes (blue) ->  ![](i/lasereyes-blue.png)  <- (208 bytes)  [inscribe №12359716](https://www.ord.io/12359716) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
 
 
 in 4x  (only for documentation - DO NOT INSCRIBE)<br>
@@ -80,7 +80,7 @@ and a sampling of  Martians w/ Backgrounds in 4x (only for documentation - DO NO
 
 #### Bonus - 1 Happy Smile in 24×24px in .PNG  - DONE!
 
-smile -> ![](i/smile.png)  <- (90 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
+smile -> ![](i/smile.png)  <- (90 bytes)   [inscribe №12360772](https://www.ord.io/12360772) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
 
 
 in 4x (only for documentation - DO NOT INSCRIBE)<br>
@@ -92,8 +92,8 @@ and a sampling of  Martians w/ Smile in 4x (only for documentation - DO NOT INSC
 
 #### Bonus -  2 Noun Glasses in 24×24px in .PNG  - DONE!
 
-noun glasses      -> ![](i/noun-glasses.png)   <- (189 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
-noun glasses xl   ->  ![](i/noun-glasses_xl.png)  <- (196 bytes) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
+noun glasses      -> ![](i/noun-glasses.png)   <- (189 bytes)   [inscribe №12359717](https://www.ord.io/12359717) by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!<br>
+noun glasses xl   ->  ![](i/noun-glasses_xl.png)  <- (196 bytes)   [inscribe №12359733](https://www.ord.io/12359733)  by  [@612crypto_eth](https://twitter.com/612crypto_eth) - thank you!
 
 
 in 4x (only for documentation - DO NOT INSCRIBE)<br>
