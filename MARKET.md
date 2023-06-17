@@ -36,7 +36,7 @@ PS:  See [/market](market)  on public reference inscription.json datasets and sc
 
 ...
 
-**d.i.y. daily market update**
+**d.i.y. weekly market update**
 
 Sat, Jun 17th 2023
 
