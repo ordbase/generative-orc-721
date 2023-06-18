@@ -1,7 +1,10 @@
 
 
 
-**What's News? Updates**
+## What's News? Updates
+
+**Wen Market? Wen Magic Eden (ME)? Wen Ordinals Wallet (OW)?  See [/market @ Bitcoin Ordinal Generative (ORC-721 / OG / Ordgen) Community »](https://github.com/inscribes/market)**
+
 
 We are live!  The world's first ORC-721 collections (on bitcoin) include:
 
