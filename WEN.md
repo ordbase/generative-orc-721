@@ -7,5 +7,5 @@ and most important step is to collect (and validate and order) all mint inscribe
 It all depends on you. How can you help? 
 
 
-We moved to a new home, see [/inscribes @ Bitcoin ORC-721 Inscribes Community »](https://github.com/inscribes/inscribes)
+We moved to a new home, see [/inscribes @ Bitcoin Ordinal Generative (ORC-721 / OG / Ordgen) Community »](https://github.com/inscribes/inscribes)
 
