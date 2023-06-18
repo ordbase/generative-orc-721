@@ -23,3 +23,11 @@ tmpa16z/
 
 # OSX
 .DS_Store
+
+
+
+###
+#  note:  ignore .json in market/
+#          e.g. all inscription.json datasets
+market/*.json
+

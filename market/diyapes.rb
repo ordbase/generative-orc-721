@@ -20,7 +20,9 @@ inscriptions = generate_inscriptions(
                       slug: 'diyapes',
                       max: 100,
                       name: 'D.I.Y. Recursive Ape',
-                      include_images: true
+                      include_images: true,
+                      include_attributes: true,
+                      include_dna: true
                      )
 
 

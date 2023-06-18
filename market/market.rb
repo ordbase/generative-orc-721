@@ -13,7 +13,10 @@
 
 
 def generate_inscriptions( slug:, max:, name:,
-                            offset: 0, include_images: false  )
+                            offset: 0,
+                            include_images: false,
+                            include_attributes: false,
+                            include_dna: false  )
 
   recs = read_csv( "./#{slug}/mint.csv" )
   recs = recs[0, max]    ## cut-off "cursed" overflow "negatives" if any
@@ -28,6 +31,20 @@ def generate_inscriptions( slug:, max:, name:,
 
   ## pp mapping
 
+
+  meta =  if include_attributes
+              read_csv( "./#{slug}/meta.csv" )
+          else
+             []
+          end
+
+  ## note: MUST sort meta records by id!!!
+  ##          do NOT assume / expected sorted records!!!!
+  meta = meta.sort do |l,r|
+                         l['id'].to_i(10) <=> r['id'].to_i(10)
+                   end
+
+
   data = []
   recs.each_with_index do |rec,i|
 
@@ -40,8 +57,32 @@ def generate_inscriptions( slug:, max:, name:,
       }
     }
 
-    h['meta']['high_res_img_url'] = "https://ordbase.github.io/content/#{id}.png"  if include_images
+    if include_attributes
+        attributes = []
 
+        ## for delimiter allow for now:  - why? why not?
+        ##     (multiple) space ( )
+        ##      command or semicolon
+        g  =  rec['g'].strip.split( %r{[ ,;/_-]+} ).map {|v| v.to_i(10) }
+        g.each do |value|
+           attribute  = meta[value]
+           if attribute.nil?
+              puts "!! ERROR - no meta record found g no. #{value}; sorry"
+              exit 1
+           end
+           attributes << { 'trait_type' => attribute['category'],
+                           'value'      => "#{value} - #{attribute['name']}" }
+        end
+
+        if include_dna
+          attributes <<  { 'trait_type' => 'DNA',
+                           'value'      => g.join( ' ' ) }
+        end
+
+        h['meta']['attributes'] = attributes
+    end
+
+    h['meta']['high_res_img_url'] = "https://ordbase.github.io/content/#{id}.png"  if include_images
 
    data << h
   end
@@ -49,16 +90,3 @@ def generate_inscriptions( slug:, max:, name:,
   data
 end
 
-
-
-__END__
-
-### example from recursive punks  inscriptions.json  ...
-
-{
-    "id": "e7676a95cb0dab3058edff0371a095685b998213cebaeea0a17e2c16e973eb9ei0",
-    "meta": {
-      "name": "Recursive Punk #0",
-      "high_res_img_url": "https://raw.githubusercontent.com/RecursivePunks/RecursivePunks/main/highres/0.png"
-    }
-  },

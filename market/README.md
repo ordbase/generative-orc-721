@@ -1,6 +1,10 @@
 # Wen Market?
 
 
+**Wen Market? Wen Magic Eden (ME)? Wen Ordinals Wallet (OW)?  See [/market @ Bitcoin Ordinal Generative (ORC-721 / OG / Ordgen) Community »](https://github.com/inscribes/market)**
+
+
+
 To help with market submission  ...
 
 
@@ -13,7 +17,7 @@ collection ...
 Use / start with the [market/diyordibots.rb](diyordibots.rb) script ...
 
 ... that will auto-generate a filled-in basic skeleton
-of an inscription.json dataset ...
+of an inscriptions.json dataset ...
 
 ... to run ... you must install the ruby machinery  (and the ruby package manager called rubygems ) ...
 
@@ -25,9 +29,9 @@ of an inscription.json dataset ...
     $ ruby market/diyordibots.rb
 
 
-... that's it  ... that will get you   [market/diyordibots_inscriptions.json](diyordibots_inscriptions.json)   generated  (using the
-[diyordibots/mint.csv](../diyordibots/mint.csv) &
-[market/diyordibots_ids.csv](diyordibots_ids.csv) tabular datasets in the comma-separated values (.csv) format)
+... that's it  ... that will get you  `market/diyordibots_inscriptions.json` generated  (using the
+[`diyordibots/mint.csv`](../diyordibots/mint.csv) &
+[`market/diyordibots_ids.csv`](diyordibots_ids.csv) tabular datasets in the comma-separated values (.csv) format)
 
 
 .. that's the basic skeleton ...

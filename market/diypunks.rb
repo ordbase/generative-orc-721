@@ -19,7 +19,10 @@ require_relative 'market'     ## use/pull-in (shared) code
 inscriptions = generate_inscriptions(
                       slug: 'diypunks',
                       max: 721,
-                      name: 'D.I.Y. Punk'
+                      name: 'D.I.Y. Punk',
+                      include_images: true,
+                      include_attributes: true,
+                      include_dna: true
                      )
 
 

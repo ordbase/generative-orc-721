@@ -1,57 +1,58 @@
-id, name
+id, name, category
 
 ####
 ##  base -   REQUIRED - pick the one and only
 
-0, ape
+0, Ape, Base
 
 
 ##
 # hair
-1, (black) mohawk
+1, Mohawk,  Hair
 
 
 ###
 #  face
-2,   spots
+2,   Spots,   Face
 
 ##
 #  headwear (hats, caps & more)
 
-3, bandana
-4, headband
-5, tophat
-6, cowboy hat
-7, cap
-8, cap forward
-9, knitted cap
-10, beanie
-11, do-rag
+3, Bandana,     Headwear
+4, Headband,     Headwear
+5, Top Hat,     Headwear
+6, Cowboy Hat,     Headwear
+7, Cap,     Headwear
+8, Cap Forward,     Headwear
+9, Knitted Cap,     Headwear
+10, Beanie,     Headwear
+11, Do-rag,     Headwear
 
 ####
 #  eyewear (glasses, shades, & more)
 
-12, nerd glasses
-13, vr
-14, 3d glasses
-15, eye mask
-16, regular shades
-17, small shades
-18, horned rim glasses
-19, eye patch
+12, Nerd Glasses, Eyewear
+13, VR, Eyewear
+14, 3D Glasses, Eyewear
+15, Eye Mask, Eyewear
+16, Regular Shades, Eyewear
+17, Small Shades, Eyewear
+18, Horned Rim Glasses, Eyewear
+19, Eye Patch, Eyewear
+
 
 ####
 #  jewelery
-20,  earring
-21,  goldchain
+20,  Earring, Jewelery
+21,  Gold Chain, Jewelery
 
 ###
 # props
-22, pipe
-23, cigarette
-24, medical mask
+22, Pipe, Props
+23, Cigarette, Props
+24, Medical Mask, Props
 
 ###
 #  clothes
-25,  hoodie
+25,  Hoodie,  Clothes
 
