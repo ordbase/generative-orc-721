@@ -169,7 +169,7 @@ Try the [D.I.Y. Birdie Previewer »](https://ordbase.github.io/generative-orc-72
 
 
 
-NEW!  For up-to-date ORC-721 analytics / statistics see the [Generative-ORC-721 Dune dashboard](https://dune.com/jokie/orc-721-dashboard)  - thanks to Jokie.
+NEW!  For up-to-date ORC-721 analytics / statistics see the [Generative-ORC-721 Dune dashboard](https://dune.com/jokie/orc-721-dashboard)  - thanks to  [@ondograph11 (Jokie)](https://twitter.com/ondograph11).
 
 
 ---
