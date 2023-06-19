@@ -1,0 +1,5 @@
+!! ERROR(S) in  12800642 / f2807a47edeb36d61f3f779c6a37b0665709cfa8d113ca928e1f1eed2153e1b7i0:
+{"p":"orc-721","op":"mint","s":"diymartians","g":["g":[1,32,35,34,39,9]}
+
+   - json parse -- 451: unexpected token at ':[1,32,35,34,39,9]}'
+
