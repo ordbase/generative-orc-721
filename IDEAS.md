@@ -45,7 +45,7 @@ into any text file.
 
 **D.I.Y. Punks Sample**
 
-Example - [diypunks/spritesheet.csv](diypunks/spritesheet.csv):
+Example - [diypunks/spritesheet.csv](sandbox/diypunks/spritesheet.csv):
 
 ``` csv
 name,   category, base64
@@ -58,7 +58,7 @@ Demon,   Base,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAD1BMVEUAAAAAAAC4cA
 
 **D.I.Y. Wiener**
 
-Example - [no2/spritesheet.csv](no2/spritesheet.csv):
+Example - no2/spritesheet.csv:
 
 ``` csv
 name, category, base64
@@ -72,7 +72,7 @@ name, category, base64
 
 **Format Option 2) Tabular Text (.csv) - Compact**
 
-Example - [diyordibots/spritesheet.csv](diyordibots/spritesheet.csv):
+Example - [diyordibots/spritesheet.csv](sandbox/diyordibots/spritesheet.csv):
 
 ``` csv
 name, category, base64

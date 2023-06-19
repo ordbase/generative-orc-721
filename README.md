@@ -345,7 +345,7 @@ Example - [spritesheet.png (~4kb) @ Inscription No. 9917010](https://ordinals.co
 <details>
 <summary markdown="1">4x</summary>
 
-![](diypunks/spritesheet@4x.png)
+![](diypunks/i/spritesheet@4x.png)
 
 </details>
 
@@ -412,7 +412,7 @@ Example - [diypunks/spritesheet.png](diypunks/spritesheet.png) (~4kb):
 <details>
 <summary markdown="1">4x</summary>
 
-![](diypunks/spritesheet@4x.png)
+![](diypunks/i/spritesheet@4x.png)
 
 </details>
 
@@ -448,7 +448,7 @@ inscribed on bitcoin (btc), see [D.I.Y. Punks Read Me 'n' Frequently Asked Quest
 
 **Format Option 1) Binary Image - Ultra-Compact**
 
-Example - [no2/spritesheet.png](no2/spritesheet.png) (~??kb):
+Example - no2/spritesheet.png (~??kb):
 
 ![](no2/spritesheet.png)
 
@@ -496,7 +496,7 @@ Example - [diyordibots/spritesheet.png](diyordibots/spritesheet.png) (~3kb):
 <details>
 <summary markdown="1">4x</summary>
 
-![](diyordibots/spritesheet@4x.png)
+![](diyordibots/i/spritesheet@4x.png)
 
 </details>
 
