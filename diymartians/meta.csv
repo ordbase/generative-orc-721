@@ -1,0 +1,76 @@
+id, name,  category
+
+###########
+## 7 base martians (aliens)
+0,  martian orange
+1,  gold
+2,  cyber green
+3,  deep blue
+4,  midnight
+5,  magenta
+6,  mars red
+
+7, mohawk,      hair
+8, smile
+9, spots
+
+##############
+## headwear  - hats, caps, etc.
+10, bandana
+11, headband
+12, top hat
+13, cowboy hat
+14, cap
+15, cap forward
+16, knitted cap
+17, beanie
+18, do-rag
+
+#######################
+## eyewwear - glasses, etc.
+19, nerd glasses
+20, vr
+21, 3d glasses
+22, eye mask
+23, regular shades
+24, small shades
+25, horned rim glasses
+26, eye patch
+
+27, red-ish nounie    (small)
+28, red-ish noun
+29, blue-ish  noun
+30, rgb noun
+
+31, laser eyes
+32, laser eyes gold
+33,  laser eyes blue
+
+###################
+### jewelery
+34, earring
+35, goldchain
+
+#############
+### props
+36, pipe
+37, cigarette
+38, medical mask
+
+#####################
+## clothes / clothing
+39, hoodie
+
+
+##############################
+### 10 backgrounds  (optional)
+40, bitcoin orange
+41, bitcoin pattern
+42,  red
+43,  green
+44,  dollar pattern
+45,  blue
+46,  aqua
+47,  classic
+48,  rainbow
+49,  ukraine
