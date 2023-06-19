@@ -4,7 +4,6 @@ require 'pixelart'
 
 
 BLACK  = 0xff         ## e.g. rgba(0,0,0,255) - #000000ff
-ORANGE = 0xff9900ff
 
 
 def pixels_to_numbers( pixels, colors: [BLACK] )
@@ -62,15 +61,32 @@ write_text( "./tmp2/designs-punks.js", buf )
 #  convert starter images
 
 
-## downsample  8x back to 1x !!
-steps_96px_to_24px = Image.calc_sample_steps( 24*8, 24 )
-
 starters = {
-  'ordinal punk no. 1'  => Image.read( "./orange/punk01_bw.png" ),
-  'smile face'  =>  Image.read( "./orange/smile@8x.png" ).sample( steps_96px_to_24px ),
-  'orangepix'  =>  Image.read( "./orange/orangepix1@8x.png" ).sample( steps_96px_to_24px ),
-
+  'ordinal punk no. 1'  => Image.read( "./orange/opunk1.png" ),
+  'smile face'  =>  Image.read( "./orange/smile.png" ),
+  'punk'  =>  Image.read( "./orange/punk.png" ),
 }
+
+
+['cat1',
+ 'coffee',
+ 'knight1',
+ 'knight2',
+ 'shibainu1',
+ 'shibainu2',
+].each do |name|
+   starters[ name ] = Image.read( "./orange/#{name}.png" )
+end
+
+9.times do |num|
+  name = "money#{num+1}"
+  starters[ name ] = Image.read( "./orange/#{name}.png" )
+end
+
+27.times do |num|
+  name = "animal#{num+1}"
+  starters[ name ] = Image.read( "./orange/#{name}.png" )
+end
 
 
 buf = ""
@@ -79,7 +95,7 @@ starters.each_with_index do |(name, img), i|
   pixels = img.pixels
   colors = pixels.uniq.size
   puts "==>  num #{i}   #{img.width}x#{img.height}  #{colors} color(s)..."
-  nums = pixels_to_numbers( pixels, colors: [BLACK, ORANGE] )
+  nums = pixels_to_numbers( pixels )
   puts "    #{nums.size} / #{pixels.size}  pixels"
 
   ## add
