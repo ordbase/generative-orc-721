@@ -31,6 +31,23 @@ Fill-in your g(enenrative) numbers and ALWAYS validate the json format - e.g. he
 
 ALWAYS preview your image for best results - YOUR NUMBERS, YOUR IMAGE.
 
+.. IMPORTANT TIP  .... if you want a background START with background - no other way possible.
+
+... again if you use a background  MUST be first ...  you can use NO background (than transparent).
+
+... one more tip ..... number 8  .. is the happy alien smile!
+
+.. tip ... if you use the hoodie (clothing)  add before laser eyes or shades or noun glasses etc.
+
+... alpha tip ...
+... only one (ultra-ultra-ultra-rare) hair attribute in the set ...
+... black mohawk  - no. 7
+
+... hard to see the (golden) jewelery ... no. 34 is the (golden) earing ...
+.. no. 35 is the golden chain ...
+
+
+
 Questions? Comments?
 
 Please post in the #generative-orc-721 channel
