@@ -46,7 +46,7 @@ module Pixelart
 end
 
 
-__END__
+
 
 ## split money series into 1/1s
 ##  change to all white & black!
