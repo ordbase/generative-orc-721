@@ -14,8 +14,7 @@ that let's you mix'n'match inscribes from more than one collection source (yes, 
 
 To find your g(enerative) numbers in range 0-49 (50) - try the [D.I.Y. Recursive Martians - Aliens Vol. 2 Previewer »](https://ordbase.github.io/generative-orc-721/diymartians)
 
-Or see the cheatsheet here for names & categories <https://github.com/ordbase/generative-orc-721/blob/master/diymartians/meta.csv>
-
+Or see the cheatsheet here for names & categories [diymartians/meta.csv](diymartians/meta.csv).
 
 For the mint inscribe text - use 
 
