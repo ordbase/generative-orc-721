@@ -6,7 +6,41 @@ The idea ...
 let's do the world's 1st (d.i.y) recursive generative ...
 that let's you mix'n'match inscribes from more than one collection source (yes, that is recursive!) ...
 
-Try the [D.I.Y. Recursive Martians - Aliens Vol. 2 Previewer »](https://ordbase.github.io/generative-orc-721/diymartians)
+
+
+## Wen mint?
+
+
+
+To find your g(enerative) numbers in range 0-49 (50) - try the [D.I.Y. Recursive Martians - Aliens Vol. 2 Previewer »](https://ordbase.github.io/generative-orc-721/diymartians)
+
+Or see the cheatsheet here for names & categories <https://github.com/ordbase/generative-orc-721/blob/master/diymartians/meta.csv>
+
+
+For the mint inscribe text - use 
+
+``` json
+{
+   "p":"orc-721",
+   "op":"mint",
+   "s":"diymartians",
+   "g":[]
+}
+```
+
+Fill-in your g(enenrative) numbers and ALWAYS validate the json format - e.g. here -> <https://jsonlint.com>.
+
+ALWAYS preview your image for best results - YOUR NUMBERS, YOUR IMAGE.
+
+Questions? Comments?
+
+Please post in the #generative-orc-721 channel
+in the ordinal punks discord.
+For an invite
+see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
+
+
+
 
 
 
