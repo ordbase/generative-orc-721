@@ -12,10 +12,44 @@ function randomInt(max) {
 
 var designs = designs_starter.concat( designs_punks );
 
+
+function mapAsciiToColor( x, chars ) {
+  let pos = chars.indexOf( x );
+  if( pos == -1 ) {
+     // assume number (as string) - convert to number
+     return parseInt( x, 10 );
+  }
+  else {
+    return pos;
+  }
+}
+
+function parseAscii( str, chars ) {
+  let ary = [];
+  str.trim().split( "\n" ).forEach( line => {
+       line = line.trim();
+       if( line.startsWith( "#" ) || line.length == 0 ) {
+         // do nothing; skip
+       } else {
+         values = line.split( /[ \t]+/ ).map( x => mapAsciiToColor( x, chars ));
+         ary.push( values );
+       }
+     } );
+  return ary;
+}
+
+ function designToNumbers( str ) {
+   // note: for now assume 24x24 px
+   let ary = parseAscii( str, ".@" );
+
+   return generateNumbers( ary );
+ }
+
+
  function randomDesign() {
    let design = designs[ randomInt( designs.length) ];
    // note: auto-trim - leading and trailing empty lines & whitespaces
-   return design.trim();
+   return designToNumbers(  design.trim() );
  }
 
 

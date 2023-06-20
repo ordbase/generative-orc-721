@@ -33,7 +33,7 @@
         }
           // convert to string
 
-           let str = nums.map( (num) => ""+num ).join(" ");
+           let str = nums.map( (num) => ""+num ).join(", ");
         return str;
 
     }
@@ -60,7 +60,7 @@
             if( line.startsWith( "#" ) || line.length == 0 ) {
               // do nothing; skip
             } else {
-              line.split( /[ \t]+/ ).map( x =>
+              line.split( /[ \t,]+/ ).map( x =>
                                     nums.push( parseInt( x, 10)) );
             }
           } );
