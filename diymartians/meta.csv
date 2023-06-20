@@ -2,75 +2,75 @@ id, name,  category
 
 ###########
 ## 7 base martians (aliens)
-0,  martian orange
-1,  gold
-2,  cyber green
-3,  deep blue
-4,  midnight
-5,  magenta
-6,  mars red
+0,  Orange, Base
+1,  Gold,  Base
+2,  Cyber Green, Base
+3,  Deep Blue, Base
+4,  Midnight, Base
+5,  Magenta, Base
+6,  Mars Red, Base
 
-7, mohawk,      hair
-8, smile
-9, spots
+7, Mohawk,      Hair
+8, Smile,  Emotion
+9, Spots,   Face
 
 ##############
 ## headwear  - hats, caps, etc.
-10, bandana
-11, headband
-12, top hat
-13, cowboy hat
-14, cap
-15, cap forward
-16, knitted cap
-17, beanie
-18, do-rag
+10, Bandana,   Headwear
+11, Headband,   Headwear
+12, Top Hat,   Headwear
+13, Cowboy Hat,   Headwear
+14, Cap,   Headwear
+15, Cap Forward,   Headwear
+16, Knitted Cap,   Headwear
+17, Beanie,   Headwear
+18, Do-rag,   Headwear
 
 #######################
-## eyewwear - glasses, etc.
-19, nerd glasses
-20, vr
-21, 3d glasses
-22, eye mask
-23, regular shades
-24, small shades
-25, horned rim glasses
-26, eye patch
+## Eyewear - glasses, etc.
+19, Nerd Glasses,  Eyewear
+20, VR,  Eyewear
+21, 3D Glasses,  Eyewear
+22, Eye Mask,  Eyewear
+23, Regular Shades,  Eyewear
+24, Small Shades,  Eyewear
+25, Horned Rim Glasses,  Eyewear
+26, Eye Patch,  Eyewear
 
-27, red-ish nounie    (small)
-28, red-ish noun
-29, blue-ish  noun
-30, rgb noun
+27, Red Nounie Glasses,  Eyewear
+28, Red Noun Glasses,  Eyewear
+29, Blue Noun Glasses,  Eyewear
+30, Red/Green/Blue Noun Glasses,  Eyewear
 
-31, laser eyes
-32, laser eyes gold
-33,  laser eyes blue
+31, Laser Eyes,          Eyewear
+32, Laser Eyes Gold,           Eyewear
+33, Laser Eyes Blue,           Eyewear
 
 ###################
 ### jewelery
-34, earring
-35, goldchain
+34, Earring,   Jewelery
+35, Goldchain, Jewelery
 
 #############
 ### props
-36, pipe
-37, cigarette
-38, medical mask
+36, Pipe,  Props
+37, Cigarette,  Props
+38, Medical Mask,  Props
 
 #####################
 ## clothes / clothing
-39, hoodie
+39, Hoodie,   Clothes
 
 
 ##############################
 ### 10 backgrounds  (optional)
-40, bitcoin orange
-41, bitcoin pattern
-42,  red
-43,  green
-44,  dollar pattern
-45,  blue
-46,  aqua
-47,  classic
-48,  rainbow
-49,  ukraine
+40, Bitcoin Orange,   Background
+41, Bitcoin Pattern,   Background
+42,  Red,   Background
+43,  Green,   Background
+44,  Dollar Pattern,   Background
+45,  Blue,   Background
+46,  Aqua,   Background
+47,  Classic,   Background
+48,  Rainbow,   Background
+49,  Ukraine,   Background
