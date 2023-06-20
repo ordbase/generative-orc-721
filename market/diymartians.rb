@@ -19,7 +19,7 @@ require_relative 'market'     ## use/pull-in (shared) code
 inscriptions = generate_inscriptions(
                       slug: 'diymartians',
                       max: 100,
-                      name: 'D.I.Y. Recursive Martian',
+                      name: 'D.I.Y. Martian',
                       include_images: true,
                       include_attributes: true,
                       include_dna: true

@@ -95,6 +95,20 @@ see the [Words On Bitcoin Getting Started Guide and Documentation »](https://gi
 </details>
 
 
+[**100 D.I.Y. (Recursive) Martians - Aliens Vol. 2**](https://ordinals.com/inscription/b2426c302ad2807d832b994cb509000a5fa8ac9c08cce273b16400a8409b4c13i0) (24×24px)  - world's 1st recursive generative mix'n'match  (re-using recursive punks, recursive noun punks, 10 boring backgrounds, 7 martians, alien happy smile 1/1, and more .PNG inscribes in 24×24px - thank you!) -  deploy (& 10 boring backgrounds, 7 martians, alien happy smile 1/1, & more) inscribes thanks to [@612crypto_eth](https://twitter.com/612crypto_eth)
+
+
+
+<details>
+<summary markdown="1">Show / Hide</summary>
+
+![](diymartians/i/diymartians.png)
+
+... let's remove boring backgrounds ...
+
+![](diymartians/i/diymartians-remove_background.png)
+
+</details>
 
 
 
@@ -104,6 +118,8 @@ in the ordinal punks discord (in the #generative-orc-721 channel).
 For an invite
 see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
 
+
+<!--
 
 
 ## D.I.Y. RECURSIVE MARTIANS - ALIENS VOL.2 (MAX. 100) NEED YOUR HELP ...
@@ -149,7 +165,6 @@ Try the [D.I.Y. Recursive Martians - Aliens Vol. 2 Previewer »](https://ordbase
 
 
 
-<!--
 
 ## D.I.Y. BIRDIES (MAX. 721) NEED YOUR HELP ...
 
