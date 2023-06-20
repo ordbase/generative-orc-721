@@ -15,6 +15,21 @@ def pixels_to_numbers( pixels, colors: [BLACK] )
 end
 
 
+def image_to_ascii( img, colors: [BLACK] )
+  buf = ""
+  img.height.times do |y|
+    img.width.times do |x|
+      pixel = img[x,y]
+
+      char = colors.include?( pixel ) ? '@' : '.'
+      buf << "#{char} "   ## note: add extra (white)space
+    end
+    buf << "\n"
+  end
+  buf
+end
+
+
 
 ####
 ## convert 150 punks (1-bit black & white)
@@ -35,15 +50,17 @@ punks.size.times do |i|
   pixels = img.pixels
   colors = pixels.uniq.size
   puts "==>  num #{i}   #{img.width}x#{img.height}  #{colors} color(s)..."
-  nums = pixels_to_numbers( pixels )
-  puts "    #{nums.size} / #{pixels.size}  pixels"
+
+  ## nums = pixels_to_numbers( pixels )
+  ## puts "    #{nums.size} / #{pixels.size}  pixels"
+  ascii = image_to_ascii( img )
 
   ## add
   buf +=<<TXT
 `
 ######
-#  punk no. #{i+1}  - #{nums.size} / #{pixels.size} pixels
-#{nums.join( ' ')}
+#  punk no. #{i+1}  - #{img.width}x#{img.height} px
+#{ascii}
 `,
 TXT
 
@@ -95,15 +112,16 @@ starters.each_with_index do |(name, img), i|
   pixels = img.pixels
   colors = pixels.uniq.size
   puts "==>  num #{i}   #{img.width}x#{img.height}  #{colors} color(s)..."
-  nums = pixels_to_numbers( pixels )
-  puts "    #{nums.size} / #{pixels.size}  pixels"
+  # nums = pixels_to_numbers( pixels )
+  # puts "    #{nums.size} / #{pixels.size}  pixels"
 
+  ascii = image_to_ascii( img )
   ## add
   buf +=<<TXT
 `
 ######
-#  #{name}  - #{nums.size} / #{pixels.size} pixels
-#{nums.join( ' ')}
+#  #{name}  - #{img.width}x#{img.height} px
+#{ascii}
 `,
 TXT
 
