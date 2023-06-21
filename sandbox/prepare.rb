@@ -85,8 +85,8 @@ pages = {
 #   'diybirdies'  => [ 'bird/', 19 ],
 #    'diyapes' => [ 'ape/', 4 ],
 #    'diyaliens' => [ 'alien/', 4 ],
-   'diymartians'  => [ 'martian/', 4 ],
-
+#   'diymartians'  => [ 'martian/', 4 ],
+    'orangepixels'  => [ 'pixel/', 1 ],
 }
 
 

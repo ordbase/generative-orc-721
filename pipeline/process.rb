@@ -17,7 +17,9 @@ require_relative 'validate'
 ## SLUG = 'diybirdies'
 ## SLUG = 'diyapes'
 ## SLUG = 'diyaliens'
-SLUG = 'diymartians'
+## SLUG = 'diymartians'
+SLUG = 'orangepixels'
+
 
 
 DEPLOYS ={
@@ -50,7 +52,10 @@ DEPLOYS ={
                    },
    'diymartians' => {  'num' => 12799513,
                        'g'   =>  50   ## 0-49 (50) inscribe ids
-                    }
+                    },
+   'orangepixels' => {  'num' => 13070955,
+                       'g'   =>  576   ## 0-575 (576 - 24*24)
+                       },
 
 }
 
