@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./generate/diypunks.rb
+#    $ ruby generate/diypunks.rb
 
 require 'ordgen'
 

@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./generate/diymartians.rb
+#    $ ruby generate/diymartians.rb
 
 require 'ordgen'
 

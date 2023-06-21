@@ -1,15 +1,16 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/preview_diyordibots.rb
+#    $ ruby preview/diyordibots.rb
 
-require 'pixelart'
+require 'ordgen'
 
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
-diyordibots   = Orc721::Generator.read( './diyordibots/spritesheet.png',
+diyordibots   = Ordgen.read( './diyordibots/spritesheet.png',
                                           width: 32,
                                           height: 32 )
+
 
 
 specs = [
@@ -28,7 +29,7 @@ specs.each do |attributes|
   puts "==> bot #{attributes.inspect}"
   punk = diyordibots.generate( *attributes )
 
-  path = "./tmp/bot-#{attributes.join('_')}"
+  path = "./preview/tmp/bot-#{attributes.join('_')}"
   punk.save( path+'.png' )
   punk.zoom(4).save( path+'@4x.png' )
 end

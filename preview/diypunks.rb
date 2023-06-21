@@ -1,14 +1,15 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/preview_diypunks.rb
+#    $ ruby preview/diypunks.rb
 
-require 'pixelart'
+require 'ordgen'
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
-diypunks    = Orc721::Generator.read( './diypunks/spritesheet.png',
-                                        width: 24,
-                                        height: 24 )
+diypunks   = Ordgen.read( './diypunks/spritesheet.png',
+                                          width: 24,
+                                          height: 24 )
+
 
 
 specs = [
@@ -60,7 +61,7 @@ specs.each do |attributes|
   puts "==> punk #{attributes.inspect}"
   punk = diypunks.generate( *attributes )
 
-  path = "./tmp/punk-#{attributes.join('_')}"
+  path = "./preview/tmp/punk-#{attributes.join('_')}"
   punk.save( path+'.png' )
   punk.zoom(4).save( path+'@4x.png' )
 end

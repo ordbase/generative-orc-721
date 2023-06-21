@@ -1,28 +1,29 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/preview_diyapes.rb
+#    $ ruby preview/diymartians.rb
 
 require 'ordgen'
 
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
-diyapes  = Ordgen.read( './docs/diyapes/spritesheet.png',
+diymartians   = Ordgen.read( './docs/diymartians/spritesheet.png',
                                           width: 24,
                                           height: 24 )
 
 
 specs = [
-  [0],
-  [0,10,14],
-  [0,1,20],
+  [0,31,39,36],
+  [44,1,10,23],
+  [2,7,18,25,29,37,44],
+  [1,32,35,34,39,9],
  ]
 
 specs.each do |attributes|
-  puts "==> ape #{attributes.inspect}"
-  punk = diyapes.generate( *attributes )
+  puts "==> martian #{attributes.inspect}"
+  punk = diymartians.generate( *attributes )
 
-  path = "./tmp/ape-#{attributes.join('_')}"
+  path = "./preview/tmp/martian-#{attributes.join('_')}"
   punk.save( path+'.png' )
   punk.zoom(4).save( path+'@4x.png' )
 end

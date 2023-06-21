@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/preview_diyaliens.rb
+#    $ ruby preview/diyaliens.rb
 
 require 'ordgen'
 
@@ -22,7 +22,7 @@ specs.each do |attributes|
   puts "==> alien #{attributes.inspect}"
   punk = diyaliens.generate( *attributes )
 
-  path = "./tmp/alien-#{attributes.join('_')}"
+  path = "./preview/tmp/alien-#{attributes.join('_')}"
   punk.save( path+'.png' )
   punk.zoom(4).save( path+'@4x.png' )
 end

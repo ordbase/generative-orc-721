@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./generate/diyapes.rb
+#    $ ruby generate/diyapes.rb
 
 require 'ordgen'
 

@@ -133,4 +133,12 @@ end
 write_text( "./tmp2/designs.js", buf )
 
 
+####
+## dump numbers
+p pixels_to_numbers( Image.read( "./orange/opunk1.png" ).pixels )
+puts
+p pixels_to_numbers( Image.read( "./orange/smile.png" ).pixels )
+puts
+
+
 puts "bye"

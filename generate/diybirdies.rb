@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./generate/diybirdies.rb
+#    $ ruby generate/diybirdies.rb
 
 require 'ordgen'
 

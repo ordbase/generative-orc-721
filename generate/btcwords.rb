@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./generate/btcwords.rb
+#    $ ruby generate/btcwords.rb
 
 require 'ordgen'
 

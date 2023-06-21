@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./sandbox/preview_diybirdies.rb
+#    $ ruby preview/diybirdies.rb
 
 require 'ordgen'
 
@@ -31,6 +31,10 @@ specs = [
 
     ## rerun
     [17, 93, 108, 173],
+
+    ## more (unconfirmed)
+    [25, 192, 177, 99],
+    [92, 172, 209],
 ]
 
 
@@ -38,7 +42,7 @@ specs.each do |attributes|
   puts "==> birdie #{attributes.inspect}"
   punk = diybirdies.generate( *attributes )
 
-  path = "./tmp/birdie-#{attributes.join('_')}"
+  path = "./preview/tmp/birdie-#{attributes.join('_')}"
   punk.save( path+'.png' )
   punk.zoom(4).save( path+'@4x.png' )
 end

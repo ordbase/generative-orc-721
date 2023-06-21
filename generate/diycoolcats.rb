@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./generate/diycoolcats.rb
+#    $ ruby generate/diycoolcats.rb
 
 require 'ordgen'
 

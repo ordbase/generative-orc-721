@@ -1,6 +1,6 @@
 ####
 #  to run use
-#    $ ruby ./generate/diyordibots.rb
+#    $ ruby generate/diyordibots.rb
 
 require 'ordgen'
 
