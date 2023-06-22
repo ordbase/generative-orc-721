@@ -25,6 +25,49 @@ module Pixelart
   end # module Pixelart
 
 
+
+BLACK  = 0xff         ## e.g. rgba(0,0,0,255) - #000000ff
+
+def pixels_to_numbers( pixels, colors: [BLACK] )
+  nums = []
+  pixels.each_with_index do |pixel, i|
+      nums << i   if colors.include?( pixel )
+  end
+  nums
+end
+
+
+##
+## blackout
+['monkey1',
+ 'monkey2',
+ 'monkey3',
+ 'monkey4',
+ 'monkey5',
+ 'monkey6',
+ ].each do |name|
+
+   puts "==> #{name}..."
+
+   img = Image.read( "./orange2/tmp/#{name}.png" )
+   img = img.blackout
+
+   img.save( "./orange2/#{name}.png" )
+   orange = img.change_colors( { 0xff => 0xff9900ff,
+                                 0xffffffff => 0, } )
+   orange.zoom(8).save( "./orange2/tmp/#{name}@4x.png" )
+
+   puts
+   p pixels_to_numbers( img.pixels )
+   puts
+end
+
+
+
+
+
+__END__
+
 ##
 ## blackout
 ['cat1',
