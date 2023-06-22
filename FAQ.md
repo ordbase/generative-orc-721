@@ -1,6 +1,6 @@
 Ordgen / ORC-721
 
-#  Frequently asked questions  (F.A.Q) and Answers
+#  Frequently Asked Questions  (F.A.Q) and Answers
 
 
 ## Q: Wen image (in wallet) - i see text?
