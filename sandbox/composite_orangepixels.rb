@@ -109,7 +109,8 @@ recs.each_with_index do |rec,i|
   composite << img
 
   ## color = 'ff9900'  ## bitcoin orange
-  color = '00ff00'  ## green
+  ## color = '00ff00'  ## green
+  color = '0000ff'  ## blue
   composite_neon << img.neon( color, invert: invert_ids.include?( i ) )
 end
 
