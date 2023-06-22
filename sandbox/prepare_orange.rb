@@ -55,7 +55,9 @@ end
    img.save( "./orange2/#{name}.png" )
    orange = img.change_colors( { 0xff => 0xff9900ff,
                                  0xffffffff => 0, } )
-   orange.zoom(8).save( "./orange2/tmp/#{name}@4x.png" )
+   orange.save( "./orange2/tmp/orange-#{name}.png" )
+   orange.zoom(4).save( "./orange2/tmp/orange-#{name}@4x.png" )
+   orange.zoom(8).save( "./orange2/tmp/orange-#{name}@8x.png" )
 
    puts
    p pixels_to_numbers( img.pixels )

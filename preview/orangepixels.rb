@@ -5,6 +5,55 @@
 require 'ordgen'
 
 
+
+
+module Pixelart
+
+class Image
+
+  ## neon glow special effect
+  def neon( color )
+    ## transparent & white
+    inverse1 = change_colors( {
+              color => 'ffffff',  ## color to white
+            })
+
+    ##  transparent & color
+    inverse2 = self
+####
+# inspired by
+#   https://css-tricks.com/how-to-create-neon-text-with-css/
+#
+# .neonText {
+#    color: #fff;
+#    text-shadow:
+#      // white glow
+#       0 0 7px #fff,
+#       0 0 10px #fff,
+#       0 0 21px #fff,
+#      // green glow
+#       0 0 42px #0fa,
+#       0 0 82px #0fa,
+#       0 0 92px #0fa,
+#       0 0 102px #0fa,
+#       0 0 151px #0fa;
+
+    base = Image.new( width, height, Color::BLACK )
+    base.compose!( inverse2.blur( 12 ) )  # -blur 21x21
+    base.compose!( inverse2.blur( 6 ) )  # -blur 10x10
+    base.compose!( inverse2.blur( 4 ) )   # -blur 7x7
+
+    base.compose!( inverse1.blur( 2 ) )   # -blur 2x2
+    base.compose!( inverse1 )
+    base
+  end
+end # class Image
+end # module Pixelart
+
+
+
+
+
 ## step 1 - read (local) spritesheet.png ("art layers")
 orangepixels  =  Ordgen.read( './orangepixels/spritesheet.png',
                                           width: 24,
@@ -29,6 +78,12 @@ specs = [
   ## ???
   [115, 116, 117, 128, 129, 130, 131, 132, 133, 134, 139, 141, 151, 159, 163, 165, 174, 184, 187, 188, 189, 198, 208, 211, 213, 222, 232, 235, 237, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 259, 260, 261, 270, 271, 281, 283, 285, 293, 295, 297, 302, 305, 307, 309, 317, 319, 324, 329, 331, 332, 333, 342, 343, 347, 349, 353, 355, 357, 366, 368, 369, 370, 372, 374, 375, 376, 379, 381, 390, 400, 403, 404, 405, 414, 424, 427, 429, 438, 443, 444, 445, 446, 448, 450, 453, 462, 468, 471, 472, 473, 476, 486, 493, 499, 510, 514, 515, 516, 517, 518, 519, 520, 521, 522, 534, 538, 558, 562],
 
+    [57, 58, 59, 60, 61, 80, 86, 103, 111, 127, 133, 135, 138, 139, 140, 141, 151, 153, 155, 157, 158, 159, 160, 161, 163, 165, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 182, 184, 186, 188, 189, 193, 195, 197, 199, 201, 203, 205, 207, 209, 211, 212, 217, 218, 220, 222, 224, 226, 228, 230, 231, 232, 233, 234, 235, 242, 243, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 268, 269, 270, 271, 280, 294, 295, 297, 298, 301, 302, 304, 318, 319, 321, 325, 328, 342, 343, 352, 367, 376, 391, 392, 395, 397, 400, 415, 416, 417, 423, 424, 439, 440, 443, 444, 445, 448, 464, 465, 471, 488, 489, 490, 494, 512, 513, 514, 515, 516, 517, 536, 537, 538, 539, 540, 560, 561, 562, 563, 564],
+]
+
+specs = [
+  ## more
+  [128, 129, 130, 131, 132, 133, 134, 151, 159, 174, 177, 178, 179, 180, 181, 182, 184, 198, 200, 207, 208, 222, 223, 232, 246, 256, 270, 272, 273, 274, 278, 279, 280, 293, 296, 297, 298, 302, 303, 304, 317, 320, 321, 322, 326, 327, 328, 342, 352, 366, 376, 390, 391, 400, 414, 415, 420, 424, 438, 440, 444, 447, 448, 462, 465, 466, 470, 472, 486, 491, 492, 493, 495, 510, 514, 515, 516, 517, 518, 534, 538, 558, 562],
 ]
 
 specs.each do |attributes|
@@ -36,9 +91,14 @@ specs.each do |attributes|
   img = orangepixels.generate( *attributes )
 
   ## note: use first five numbers and add pix(el) count
-  path = "./preview/tmp/orange-#{attributes[0,5].join('_')}-pix#{attributes.count}"
+  path = "./preview/tmp2/orange-#{attributes[0,5].join('_')}-pix#{attributes.count}"
   img.save( path+'.png' )
   img.zoom(4).save( path+'@4x.png' )
+
+  neon = img.neon( 'ff9900' )
+  neon.save( path+'_neon.png' )
+  neon.zoom(4).save( path+'_neon@4x.png' )
+  neon.zoom(8).save( path+'_neon@8x.png' )
 end
 
 
