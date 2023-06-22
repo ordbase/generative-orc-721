@@ -6,7 +6,7 @@
 
 here's a first quick answer / commentary:   for now ordgen / ORC-721  is bitmaps / .PNG  2D   ... support for new format - (scalable) vector graphics (.SVG) supporting 3D upcoming   BUT maybe in a week or two.
 ... another idea is the ordgen "on-chain" render than you can recurse in .SVG  and do the above ...
-... if you want to do it NOW ... you CAN ... BUT you have to inscripe the generated image in 1x as .PNG.  it is your (extra) image so one more inscription needed.
+... if you want to do it NOW ... you CAN ... BUT you have to inscripe the generated image in 1x as .PNG.  it is your image - one more inscription needed to recursve in .SVG.
 
 
 
