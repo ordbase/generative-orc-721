@@ -9,22 +9,36 @@ class Image
   ## neon glow special effect
   def neon( color, invert: false )
 
+    ## find color - assume 1-bit (one color only)
+    colors = pixels.uniq.sort    ## let 0 (transparent go first)
+
+    if colors.size != 2 && colors[0] != 0
+      puts "!! ERROR - 1-bit image expected; got #{colors.inspect}"
+      exit 1
+    end
+
+   foreground = colors[1]
+
+
     img = if invert
               change_colors( {
-                color => 0,
-                0     => color
+                foreground => 0,
+                0     => foreground
               })
           else
              self
           end
 
-    ## transparent & white
+     ## transparent & white
     inverse1 = img.change_colors( {
-                  color => 'ffffff',  ## color to white
-               })
+              foreground => 'ffffff',  ## 1-bit color to white
+            })
 
-    ##  transparent & color
-    inverse2 = img
+    ## transparent & color
+    inverse2 = img.change_colors( {
+                foreground => color,  ##  1-bit color to color
+           })
+
 ####
 # inspired by
 #   https://css-tricks.com/how-to-create-neon-text-with-css/
@@ -85,7 +99,7 @@ composite_neon  = ImageComposite.new( 10, 10, width: width,
                                               height: height )
 
 
-invert_ids = [5,10,11]
+invert_ids = [5,10,11,34]
 
 recs.each_with_index do |rec,i|
   g = orangepixels._parse( rec['g'] )
@@ -94,7 +108,9 @@ recs.each_with_index do |rec,i|
 
   composite << img
 
-  composite_neon << img.neon( 'ff9900', invert: invert_ids.include?( i ) )
+  ## color = 'ff9900'  ## bitcoin orange
+  color = '00ff00'  ## green
+  composite_neon << img.neon( color, invert: invert_ids.include?( i ) )
 end
 
 

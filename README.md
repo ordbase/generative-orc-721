@@ -111,6 +111,11 @@ see the [Words On Bitcoin Getting Started Guide and Documentation »](https://gi
 </details>
 
 
+[**100 Orange Pixels**](https://ordinals.com/inscription/429915c362dacc2b1f7d4a5f7d929ee04e52298c35a7fe9c4e5a29580691b364i0) (24×24px) by  [@ZimmerAllDay](https://twitter.com/zimmerallday) -
+see the [Orange Pixels Getting Started Guide and Documentation »](https://github.com/ZimmerAllDay/orangepixels)
+
+
+
 
 
 Wen [next] deploy?   You are welcome to announce your ORC-721 collections

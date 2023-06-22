@@ -7,8 +7,8 @@ require 'ordgen'
 
 ## note: change outdir (root for /num & /btcwords)
 ##          to where you want to save the generated images
-# outdir = '../ordbase.github.io'
-outdir = './tmp/orangepixels'
+outdir = '../ordbase.github.io'
+# outdir = './tmp/orangepixels'
 
 
 ## step 1 - read (local) spritesheet.png ("art layers")
