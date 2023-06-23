@@ -56,6 +56,11 @@ end
  'heart4',
  'smiley1',
  'smiley2',
+ 'smiley3',
+ 'smiley4',
+ 'smiley5',
+ 'smiley6',
+ 'smiley7',
 ].each do |name|
 
    puts "==> #{name}..."
