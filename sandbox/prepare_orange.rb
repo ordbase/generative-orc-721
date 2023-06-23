@@ -45,7 +45,18 @@ end
  'monkey4',
  'monkey5',
  'monkey6',
- ].each do |name|
+ ]
+
+
+[
+ 'gm',
+ 'heart1',
+ 'heart2',
+ 'heart3',
+ 'heart4',
+ 'smiley1',
+ 'smiley2',
+].each do |name|
 
    puts "==> #{name}..."
 
