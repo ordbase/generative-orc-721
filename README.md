@@ -131,7 +131,7 @@ see <https://twitter.com/OrdinalPhunks>.
 
 
 
-## D.I.Y. PHUNKS (MAX. 99) NEED YOUR HELP ...
+## D.I.Y. PHUNKS (MAX. 99) NEED YOUR HELP
 
 PHREE THE PHUNKS! 
 
