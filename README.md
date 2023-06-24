@@ -148,7 +148,7 @@ and so on (and less bytes saving sats).
 Yes, you can help! Looking for inscribe sponsors to get started minting this weekend ... 
 for news & updates join  the Ordinal Phunks discord ..
 
-Ordinal Phunks - what!? See [**Ordinal Phunks »**](https://twitter.com/OrdinalPhunksV0) for more and discord invite. 
+Ordinal Phunks - what!? For more and discord invite see [**Ordinal Phunks »**](https://twitter.com/OrdinalPhunksV0) 
 
 Yes,  do not fade the Ordinal Phunks ... Ordinal Phunks are not going away ... and now get 99 D.I.Y. (Left-Looking) Phunks frens  ... 
 join us to make it happen.
