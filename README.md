@@ -117,11 +117,42 @@ see the [Orange Pixels Getting Started Guide and Documentation »](https://githu
 
 
 
-
+<!--
 Wen [next] deploy?   You are welcome to announce your ORC-721 collections
 in the ordinal punks discord (in the #generative-orc-721 channel).
 For an invite
 see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
+-->
+
+Wen [next] deploy?   You are welcome to announce your ORC-721 collections
+in the ordinal phunks discord (in the #random channel).
+For an invite
+see <https://twitter.com/OrdinalPhunks>.
+
+
+
+## D.I.Y. PHUNKS (MAX. 99) NEED YOUR HELP ...
+
+PHREE THE PHUNKS! 
+
+... let's kick-off 99 D.I.Y. (Left-Looking) Phunks this weekend ... 
+
+if anyone is interested in the upcoming free mint (first-come / first-serve), 
+please join the Ordinal Phunks discord ....
+ for now find news & updates  in the #random (General) channel  
+
+ote: this is a world's 1st ORC-721 collection ... first with the new og standard text protocol ... 
+making minting easier (goodbye json, goodbye quotes (`"""`), goodbye commas (`,,,,`), goodbye objects (`{}`) 
+and so on (and less bytes saving sats).  
+
+Yes, you can help! Looking for inscribe sponsors to get started minting this weekend ... 
+for news & updates join  the Ordinal Phunks discord ..
+
+Ordinal Phunks - what!? see [**Ordinal Phunks »**](https://twitter.com/OrdinalPhunksV0) for more and discord invite. 
+
+Yes,  do not fade the Ordinal Phunks ... Ordinal Phunks are not going away ... and now get 99 D.I.Y. (Left-Looking) Phunks frens  ... 
+join us to make it happen.
+
 
 
 <!--
