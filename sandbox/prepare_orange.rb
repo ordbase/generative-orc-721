@@ -61,6 +61,16 @@ end
  'smiley5',
  'smiley6',
  'smiley7',
+]
+
+['paper1',
+ 'paper2',
+ 'paper3',
+ 'paper4',
+ 'op45',
+ 'op55',
+ 'op93',
+ 'op95',
 ].each do |name|
 
    puts "==> #{name}..."
