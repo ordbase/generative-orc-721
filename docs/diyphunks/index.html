@@ -94,7 +94,7 @@ join us to make it happen.
 <p>
   Directions: click on the map below to preview your DIY (Left-Looking) Phunk.
   Press clear to start over.<br/><br/>
-  When you're happy, use the attribute list generated.
+  When you're happy, use the og standard mint text generated.
   </p>
   <div id="spritesheet"></div>
 
@@ -136,7 +136,7 @@ img.onload = function() {
         sprite.addEventListener('click', () => {
             ctx.drawImage(img, (i % 10) * 24, Math.floor(i / 10) * 24, 24, 24, 0, 0, 24 * scaleFactor, 24 * scaleFactor);
             selectedSprites.push(i);
-            output.textContent = '"g":[' + selectedSprites.join(', ') + ']';
+            output.textContent = "og mint diyphunks " + selectedSprites.join(' ');
         });
         document.getElementById('spritesheet').appendChild(sprite);
     }

@@ -133,25 +133,31 @@ see <https://twitter.com/OrdinalPhunks>.
 
 ## D.I.Y. PHUNKS (MAX. 99) NEED YOUR HELP
 
-PHREE THE PHUNKS! 
+PHREE THE PHUNKS!
 
-... let's kick-off 99 D.I.Y. (Left-Looking) Phunks this weekend ... 
+... let's kick-off 99 D.I.Y. (Left-Looking) Phunks this weekend ...
 
-if anyone is interested in the upcoming free mint (first-come / first-serve), 
+if anyone is interested in the upcoming free mint (first-come / first-serve),
 please join the Ordinal Phunks discord ....
- for now find news & updates  in the #random (General) channel  
+ for now find news & updates  in the #random (General) channel
 
-Note: this is a world's 1st ORC-721 collection ... first with the new og standard text protocol ... 
-making minting easier (goodbye json, goodbye quotes (`"""`), goodbye commas (`,,,,`), goodbye objects (`{}`) 
-and so on (and less bytes saving sats).  
+Note: this is a world's 1st ORC-721 collection ... first with the new og standard text protocol ...
+making minting easier (goodbye json, goodbye quotes (`"""`), goodbye commas (`,,,,`), goodbye objects (`{}`)
+and so on (and less bytes saving sats).
 
-Yes, you can help! Looking for inscribe sponsors to get started minting this weekend ... 
+Yes, you can help! Looking for inscribe sponsors to get started minting this weekend ...
 for news & updates join  the Ordinal Phunks discord ..
 
-Ordinal Phunks - what!? For more and discord invite see [**Ordinal Phunks »**](https://twitter.com/OrdinalPhunksV0) 
+Ordinal Phunks - what!? For more and discord invite see [**Ordinal Phunks »**](https://twitter.com/OrdinalPhunksV0)
 
-Yes,  do not fade the Ordinal Phunks ... Ordinal Phunks are not going away ... and now get 99 D.I.Y. (Left-Looking) Phunks frens  ... 
+Yes,  do not fade the Ordinal Phunks ... Ordinal Phunks are not going away ... and now get 99 D.I.Y. (Left-Looking) Phunks frens  ...
 join us to make it happen.
+
+
+PS:  Try the [D.I.Y. Phunks (Image) Previewer »](https://ordbase.github.io/generative-orc-721/diyphunks)
+
+
+
 
 
 
