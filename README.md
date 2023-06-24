@@ -137,6 +137,8 @@ PHREE THE PHUNKS!
 
 ... let's kick-off 99 D.I.Y. (Left-Looking) Phunks this weekend ...
 
+
+
 if anyone is interested in the upcoming free mint (first-come / first-serve),
 please join the Ordinal Phunks discord ....
  for now find news & updates  in the #random (General) channel
@@ -152,6 +154,8 @@ Ordinal Phunks - what!? For more and discord invite see [**Ordinal Phunks »**](
 
 Yes,  do not fade the Ordinal Phunks ... Ordinal Phunks are not going away ... and now get 99 D.I.Y. (Left-Looking) Phunks frens  ...
 join us to make it happen.
+
+... read more at the [99 D.I.Y. Phunks Readme »](diyphunks)
 
 
 PS:  Try the [D.I.Y. Phunks (Image) Previewer »](https://ordbase.github.io/generative-orc-721/diyphunks)
