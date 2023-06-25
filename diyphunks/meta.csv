@@ -1,0 +1,99 @@
+id, name, category
+
+## 2 Backgrounds   -- OPTIONAL  Pick One or None
+58, Bitcoin Orange,  Background
+59, Bitcoin Pattern, Background
+
+
+## 10 Phunk Base Types   -- MUST Pick One
+0, Human, Base
+1, Vampire, Base
+2, Demon, Base
+3, Zombie, Base
+4, Ape, Base
+5, Alien, Base
+6, Orc, Base
+7, Robot, Base
+8, Mummy, Base
+9, Skeleton, Base
+
+## Hair                    -- OPTIONAL  Pick One or None
+22, Messy Black Hair, Hair
+23, Mohawk Black, Hair
+24, Blonde Short, Hair
+25, Wild Blonde, Hair
+26, Wild White Hair, Hair
+27, Crazy Red Hair, Hair
+28, Red Mohawk, Hair
+29, Clown Hair Blue, Hair
+
+
+## Headwear (Hats, Caps, & More)  -- OPTIONAL  Pick One or None
+10, Bandana,   Headwear
+11, Beanie,   Headwear
+12, Birthday Hat,   Headwear
+13, Cap Forward,   Headwear
+14, Cap Red,   Headwear
+15, Cap McD Red,   Headwear
+16, Knitted Cap,   Headwear
+17, Cowboy Hat,   Headwear
+18, Fedora,   Headwear
+19, Sombrero,   Headwear
+20, Jester Hat,   Headwear
+21, Top Hat,   Headwear
+
+
+## Eyewear (Sunglasses, Shades, & More)  -- OPTIONAL  Pick One or None
+
+30, 3D Glasses,    Eyewear
+31, Regular Shades, Eyewear
+32, Classic Shades,    Eyewear
+33, Big Shades,    Eyewear
+34, Heart Shades,    Eyewear
+35, Eye Mask,    Eyewear
+36, Eye Patch,    Eyewear
+37, VR,            Eyewear
+38, Laser Eyes,    Eyewear
+
+
+## Beards  -- OPTIONAL  Pick One or None
+
+39, Big Beard, Beards
+40, Chinstrap, Beards
+41, Goatie, Beards
+
+
+## Mouth & Emotions -- OPTIONAL  Pick One or None
+
+42, Buckteeth,  Mouth
+43, Frown,  Mouth
+44, Smile,  Mouth
+
+
+## Face -- OPTIONAL  Pick One or None
+45, Spots, Face
+46, Mole, Face
+
+## Nose   -- OPTIONAL  Pick One or None
+47, Clown Nose, Nose
+
+
+
+## Specials & More   -- OPTIONAL  Pick One or None
+48, Demon Horns, More
+
+
+## Mouth Props    -- OPTIONAL  Pick One or None
+49, Bubble Gum, Mouth Props
+50, Cigarette, Mouth Props
+51, Cigar, Mouth Props
+52, Pipe, Mouth Props
+53, Medical Mask, Mouth Props
+
+## Jewelery    -- OPTIONAL
+54, Earring,   Jewelery
+55, Gold Chain, Jewelery
+56, Silver Chain, Jewelery
+
+## Clothes   -- OPTIONAL  Pick One or None
+57, Hoodie, Clothes
