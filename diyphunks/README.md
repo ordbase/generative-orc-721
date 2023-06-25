@@ -17,7 +17,7 @@ Disclaimer -   **No guarantees. Use at your own risk. Here be dragons.**
 
 
 
-### How to mint 100 D.I.Y. Phunks collection
+### How to mint D.I.Y. Phunks
 
 (copy-n-paste from announcement in [Ordinal Phunks](https://twitter.com/OrdinalPhunksV0) discord)
 by [@TheInscriptor](https://twitter.com/TheInscriptor)
@@ -46,7 +46,7 @@ Example:
 
 
 
-<!-->
+<!--
 
 ## D.I.Y. PHUNKS (MAX. 99) NEED YOUR HELP
 
