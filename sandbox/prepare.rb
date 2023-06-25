@@ -86,7 +86,8 @@ pages = {
 #    'diyapes' => [ 'ape/', 4 ],
 #    'diyaliens' => [ 'alien/', 4 ],
 #   'diymartians'  => [ 'martian/', 4 ],
-    'orangepixels'  => [ 'pixel/', 2 ],
+#    'orangepixels'  => [ 'pixel/', 2 ],
+    'diyphunks'  => [ 'phunk/', 1 ],
 }
 
 

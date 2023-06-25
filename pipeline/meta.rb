@@ -12,7 +12,8 @@ require 'ordinals'
 ## slug = 'diyapes'
 ## slug = 'diyaliens'
 ## slug = 'diymartians'
-slug = 'orangepixels'
+## slug = 'orangepixels'
+slug = 'diyphunks'
 
 
 recs = read_csv( "./sandbox/tmp/ordinals.#{slug}.csv" )

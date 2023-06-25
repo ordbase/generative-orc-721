@@ -18,8 +18,9 @@ require_relative 'validate'
 ## SLUG = 'diyapes'
 ## SLUG = 'diyaliens'
 ## SLUG = 'diymartians'
-SLUG = 'orangepixels'
-
+## SLUG = 'orangepixels'
+SLUG = 'diyphunks'
+format = 'text'
 
 
 DEPLOYS ={
@@ -56,7 +57,9 @@ DEPLOYS ={
    'orangepixels' => {  'num' => 13070955,
                        'g'   =>  576   ## 0-575 (576 - 24*24)
                        },
-
+    'diyphunks' => { 'num' => 13418851,
+                     'g'   => 60,     ##  max g range e.g. 0-59 (60)
+                   },
 }
 
 
@@ -90,6 +93,28 @@ num_to_ids = []
 
 mints = []
 error_log = ""
+
+OG_MINT_RX = /\A
+               og
+              [ ]+
+               mint
+              [ ]+
+              /x
+
+## single-line for now
+OG_MINT_SLUG_NUMS_RX = /\A
+            og
+           [ ]+
+            mint
+           [ ]+
+             (?<slug>[a-z][a-z0-9]*)
+           [ ]+
+            (?<nums>[0-9]+
+                 ([ ]+[0-9]+)*
+             )
+          \z/x
+
+
 
 
 recs.each_with_index do |rec,i|
@@ -141,14 +166,47 @@ recs.each_with_index do |rec,i|
   ######
   ## todo/fix - single step - validate json only first
   ######
+   errors = nil
+   data   = nil
 
-   ## first see if valid json
-   data = nil
-   begin
-     data = JSON.parse( content )
-   rescue JSON::ParserError => ex
-      ## keep going
-   end
+   if format == 'text'
+
+      ## strip leading trailing spaces - why? why not?
+
+      ## quick check for now only
+      ##   must start with og
+       if OG_MINT_RX.match( content.strip ).nil?
+          puts "!! SKIP - NO MATCH OG_MINT:"
+          puts content
+          next
+       end
+
+       ## try to convert to json
+       m=OG_MINT_SLUG_NUMS_RX.match( content.strip )
+
+       ### FIX: report/ log error
+       if m.nil?   ## skip for now
+          puts "!! SKIP NO MATCH OG_MINT_SLUG_NUMS:"
+          puts content
+          next
+       end
+          data = {
+            'p'  => 'orc-721',
+            'op' => 'mint',
+            's'  => m[:slug],
+            'g'  => m[:nums].split( /[ ]+/).map {|num| num.to_i(10) }
+            }
+          puts data.to_json
+
+       errors = validate_mint( num, data.to_json, deploys: DEPLOYS )
+    else ## assume "classic" json
+
+     ## first see if valid json
+     begin
+       data = JSON.parse( content )
+     rescue JSON::ParserError => ex
+       ## keep going
+     end
 
 
    if data
@@ -172,9 +230,11 @@ recs.each_with_index do |rec,i|
    end
 
 
-   ## note: todo/fix - need to filter out deploys and other ops!
-   ##             from error list
-   errors = validate_mint( num, content, deploys: DEPLOYS )
+    ## note: todo/fix - need to filter out deploys and other ops!
+    ##             from error list
+    errors = validate_mint( num, content, deploys: DEPLOYS )
+  end
+
    if errors.size != 0
      buf = ""
      buf << "!! ERROR(S) in  #{num} / #{id}:\n"
@@ -188,7 +248,6 @@ recs.each_with_index do |rec,i|
      puts buf              ## print to screen
      error_log << buf      ## auto-add to error log
    else
-     data = JSON.parse( content )
      slug = data['s']
      if slug != SLUG
       puts "!! ERROR - sorry - only setup for >#{SLUG}<"
