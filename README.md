@@ -115,6 +115,11 @@ see the [Words On Bitcoin Getting Started Guide and Documentation »](https://gi
 see the [Orange Pixels Getting Started Guide and Documentation »](https://github.com/ZimmerAllDay/orangepixels)
 
 
+**ORC-721 Protocol Update - Look Ma! No More Commas (`,,,`)! No More Arrays (`[[[]]]`)! No More Objects (`{}`)! No More Quotes (`"""`)! No More JSON! It's OG Text!**
+
+
+[**100 D.I.Y. (Left-Looking) Phunks**](https://ordinals.com/inscription/09e3c57879b0a30239b088468277d009f838111d254eb22f35a9b2a31b77a5d4i0) (24×24px)  - world's 1st generative with og standard text deploy & mint format; deploy (& spritesheet) inscribes thanks to [@AlteredOracle](https://twitter.com/AlteredOracle)
+
 
 
 <!--
@@ -130,6 +135,7 @@ For an invite
 see <https://twitter.com/OrdinalPhunks>.
 
 
+<!--
 
 ## D.I.Y. PHUNKS (MAX. 99) NEED YOUR HELP
 
@@ -160,7 +166,7 @@ join us to make it happen.
 
 PS:  Try the [D.I.Y. Phunks (Image) Previewer »](https://ordbase.github.io/generative-orc-721/diyphunks)
 
-
+-->
 
 
 
