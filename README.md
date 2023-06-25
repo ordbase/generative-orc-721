@@ -368,8 +368,8 @@ og mint diyphunks 59 0 38
 
 </details>
 
-![](diypunks/i/phunk2.png)  4x
-![](diypunks/i/phunk2@4x.png)
+![](diyphunks/i/phunk2.png)  4x
+![](diyphunks/i/phunk2@4x.png)
 
 
 and so on.
