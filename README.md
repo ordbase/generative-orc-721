@@ -250,17 +250,17 @@ Author:  [Gerald Bauer](https://github.com/geraldb) ([Punk's Not Dead](https://g
 
 
 
-Let's deploy a new 721 d.i.y. punk (pixel head) collection
-in 8 seconds ;-) - yes, you can. Example - [Inscription No. 9947030 (Classic JSON Format)](https://ordinals.com/inscription/753f663770d816f61acd35da8dd04e122eec8582e93ca36b2122f2d4ac206089i0):
+Let's deploy a new 100 d.i.y. phunk (pixel head) collection
+in 8 seconds ;-) - yes, you can. Example - [Inscription No. 13418851](https://ordinals.com/inscription/09e3c57879b0a30239b088468277d009f838111d254eb22f35a9b2a31b77a5d4i0):
 
-... and in the standard text format:
+... in the standard text format:
 
 ```
-og deploy diypunks
-name: D.I.Y. Punks
-max: 721
+og deploy diyphunks
+name: D.I.Y. Phunks
+max: 100
 dim: 24x24
-cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0
+dd91c8b33dd19ccd8410e54c2099bfd50d4f777a186ee974fe4c15420c42ea0fi0
 ```
 
 <details>
@@ -270,11 +270,11 @@ cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0
 {
     "p": "orc-721",
     "op": "deploy",
-    "slug": "diypunks",
-    "name": "D.I.Y. Punks",
-    "max": 721,
+    "slug": "diyphunks",
+    "name": "D.I.Y. Phunks",
+    "max": 100,
     "dim": "24x24",
-    "generative": "cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0"
+    "generative": "dd91c8b33dd19ccd8410e54c2099bfd50d4f777a186ee974fe4c15420c42ea0fi0"
 }
 ```
 
@@ -283,14 +283,14 @@ cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0
 
 
 
-That's it. Ready to mint the first d.i.y. punk with the (generative) specs - `0`:
+That's it. Ready to mint the first d.i.y. phunk with the (generative) specs - `0`:
 
-- 0 - ![](diypunks/i/0_human.png) punk (human) base
+- 0 - ![](diyphunks/i/0_human.png) phunk (human) base
 
 in standard text format:
 
 ```
-og mint diypunks 0
+og mint diyphunks 0
 ```
 
 <details>
@@ -300,27 +300,27 @@ og mint diypunks 0
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diypunks",
+   "s":"diyphunks",
    "g":[0]
 }
 ```
 
 </details>
 
-![](diypunks/i/punk0.png)  4x
-![](diypunks/i/punk0@4x.png)
+![](diyphunks/i/phunk0.png)  4x
+![](diyphunks/i/phunk0@4x.png)
 
 
 
 and the second with the (generative) specs - `0 38`:
 
-- 0 - ![](diypunks/i/0_human.png)  punk (human) base
-- 38 - ![](diypunks/i/38_laser-eyes.png) laser eyes
+- 0 - ![](diyphunks/i/0_human.png)  punk (human) base
+- 38 - ![](diyphunks/i/38_laser-eyes.png) laser eyes
 
 in standard text format:
 
 ```
-og mint diypunks 0 38
+og mint diyphunks 0 38
 ```
 
 <details>
@@ -330,28 +330,28 @@ og mint diypunks 0 38
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diypunks",
+   "s":"diyphunks",
    "g":[0,38]
 }
 ```
 
 </details>
 
-![](diypunks/i/punk1.png)  4x
-![](diypunks/i/punk1@4x.png)
+![](diyphunks/i/phunk1.png)  4x
+![](diyphunks/i/phunk1@4x.png)
 
 
 and the third with the (generative specs) - `59 0 38`:
 
-- 59 - ![](diypunks/i/59_bitcoin-pattern.png)  background - bitcoin pattern
-- 0 - ![](diypunks/i/0_human.png)  punk (human) base
-- 38 - ![](diypunks/i/38_laser-eyes.png) laser eyes
+- 59 - ![](diyphunks/i/59_bitcoin-pattern.png)  background - bitcoin pattern
+- 0 - ![](diyphunks/i/0_human.png)  punk (human) base
+- 38 - ![](diyphunks/i/38_laser-eyes.png) laser eyes
 
 
 in standard text format:
 
 ```
-og mint diypunks 59 0 38
+og mint diyphunks 59 0 38
 ```
 
 <details>
@@ -361,27 +361,28 @@ og mint diypunks 59 0 38
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diypunks",
+   "s":"diyphunks",
    "g":[59,0,38]
 }
 ```
 
 </details>
 
-![](diypunks/i/punk2.png)  4x
-![](diypunks/i/punk2@4x.png)
+![](diypunks/i/phunk2.png)  4x
+![](diypunks/i/phunk2@4x.png)
 
 
 and so on.
 
 
-NEW!  Try the [D.I.Y. Punks Previewer »](https://ordbase.github.io/generative-orc-721/diypunks)
+NEW!  Try the [D.I.Y. Phunks Previewer »](https://ordbase.github.io/generative-orc-721/diyphunks)
 
 
 
 Where's the catch?   Step 0: To make  it work you can (re)use
 existing inscribed spritesheets / art layers or inscribe your very own.
 Read on.
+
 
 
 
@@ -397,7 +398,7 @@ two format options:
 NOTE:  Yes, support for more formats upcoming - next stop - vector graphics (in .SVG).
 
 
-Let's use the d.i.y (ordinal) punks as an example.
+Let's use the d.i.y (left-looking) phunks as an example.
 
 
 
@@ -405,14 +406,14 @@ Let's use the d.i.y (ordinal) punks as an example.
 
 Inscribe the spritesheet / art layers as a single binary image file (image/png).
 
-Example - [spritesheet.png (~4kb) @ Inscription No. 9917010](https://ordinals.com/inscription/cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0):
+Example - [spritesheet.png (~4kb) @ Inscription No. 13412985](https://ordinals.com/inscription/dd91c8b33dd19ccd8410e54c2099bfd50d4f777a186ee974fe4c15420c42ea0fi0):
 
-![](diypunks/spritesheet.png)
+![](diyphunks/spritesheet.png)
 
 <details>
 <summary markdown="1">4x</summary>
 
-![](diypunks/i/spritesheet@4x.png)
+![](diyphunks/i/spritesheet@4x.png)
 
 </details>
 
@@ -422,22 +423,33 @@ Note:  To make it work all sprites or attributes MUST be of the same image dimen
 counting left-to-right and top-to-bottom.
 
 
-Thus, for example `[59,0,38]` from the mint starter examples:
+Thus, for example `59 0 38` from the mint starter examples
+in standard text format:
+
+```
+og mint diyphunks 59 0 38
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
 
 ``` json
 {
    "p":"orc-721",
    "op":"mint",
-   "s":"diypunks",
+   "s":"diyphunks",
    "g":[59,0,38]
 }
 ```
 
-references the sprites / attributes no. 59 - ![](diypunks/i/59_bitcoin-pattern.png),
-no. 0 - ![](diypunks/i/0_human.png),
-no. 38- ![](diypunks/i/38_laser-eyes.png)
+</details>
+
+
+references the sprites / attributes no. 59 - ![](diyphunks/i/59_bitcoin-pattern.png),
+no. 0 - ![](diyphunks/i/0_human.png),
+no. 38- ![](diyphunks/i/38_laser-eyes.png)
 and the sprites / attributes
-get merged / stacked / pasted-on-top-of-each-other in the order listed resulting in ![](diypunks/i/punk2.png).
+get merged / stacked / pasted-on-top-of-each-other in the order listed resulting in ![](diyphunks/i/phunk2.png).
 
 
 

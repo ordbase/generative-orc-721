@@ -15,6 +15,9 @@ diyphunks   = Ordgen.read( './diyphunks/spritesheet.png',
 specs = [
   [5,57,38],
   [4,57,38],
+
+  [59,0,38],
+  [58,4,19],
 ]
 
 
