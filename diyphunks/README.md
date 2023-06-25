@@ -1,12 +1,54 @@
 # 99 D.I.Y. (Left-Looking) Phunks -  Orange-Pilled Theme
 
+
+
 The idea ...
 
 let's do the world's 1st d.i.y. generative ... left-looking phunks ...
 
 ... and the world's 1st ordgen / ORC-721 collection using the new standard text format for deploy & mint ...
 
+Try the [D.I.Y. Phunks (Image) Previewer »](https://ordbase.github.io/generative-orc-721/diyphunks)
 
+
+## Wen mint?
+
+deploy (& spritesheet) inscribes thanks to [@AlteredOracle](https://twitter.com/AlteredOracle)
+
+Disclaimer -   **No guarantees. Use at your own risk. Here be dragons.**
+
+
+
+### How to mint 100 D.I.Y. Phunks collection
+
+(copy-n-paste from announcement in [Ordinal Phunks](https://twitter.com/OrdinalPhunksV0) discord)
+by [@TheInscriptor](https://twitter.com/TheInscriptor)
+
+Step 1 - Assemble your Phunk here: https://ordbase.github.io/generative-orc-721/diyphunks
+
+Step 2 - Copy the generated string, example:
+
+    og mint diyphunks 0 11 37
+
+Step 3 -  Use: https://looksordinal.com/index.html (or any preferred inscription service) to mint the token
+
+
+IMPORTANT!  Keep the window open and focused after you make
+the BTC payment for inscription until all the transactions
+show up (you can mint more at once, recomended max is 10)
+
+Feel free to check #random (General) channel
+in the ordinal phunks discord for any questions.
+
+Example:
+
+![](i/howto-mint-preview.png)
+
+![](i/howto-mint-inscribe.png)
+
+
+
+<!-->
 
 ## D.I.Y. PHUNKS (MAX. 99) NEED YOUR HELP
 
@@ -35,7 +77,6 @@ PS:  Try the [D.I.Y. Phunks (Image) Previewer »](https://ordbase.github.io/gene
 
 
 
-
 ## Wen deploy?
 
 Here's everything to make it happen - yes, you can help inscribe!
@@ -61,6 +102,8 @@ dim: 24x24
 
 
 That's it. Yes, you can.
+-->
+
 
 
 ## Questions? Comments?
