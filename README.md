@@ -132,7 +132,7 @@ see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
 Wen [next] deploy?   You are welcome to announce your ORC-721 collections
 in the ordinal phunks discord (in the #random channel).
 For an invite
-see <https://twitter.com/OrdinalPhunks>.
+see <https://twitter.com/OrdinalPhunksV0>.
 
 
 <!--
