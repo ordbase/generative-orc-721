@@ -19,12 +19,13 @@ require 'ordgen'
 width = 24
 height = 24
 
-slug = 'diymartians'
-max  = 100
+## slug = 'diymartians'
+slug = 'diyphunks'
+## max  = 100
 
 
 recs = read_csv( "./#{slug}/mint.csv" )
-recs = recs[0, max]    ## cut-off "cursed" overflow "negatives" if any
+## recs = recs[0, max]    ## cut-off "cursed" overflow "negatives" if any
 
 puts "   #{recs.size } mint record(s)"
 
@@ -40,7 +41,7 @@ mapping = read_csv( "./market/#{slug}_ids.csv" ).reduce( {} ) do |mapping, rec|
 
 
 ## read (local) spritesheet.png ("art layers")
-gen    = Ordgen.read( "./docs/#{slug}/spritesheet.png",
+gen    = Ordgen.read( "./#{slug}/spritesheet.png",
                                         width: width,
                                         height: height )
 
