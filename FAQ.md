@@ -34,7 +34,16 @@ or on your own host).
 
 ## Q:  How can i generate the  image "off-chain"?
 
-Use the ordgen library (or tooling).
+The ordgen image generation algorithm is "super-simple" ... paste / merge the generative sprites / tiles / "recursions" 
+in the stacking order (left-to-right) into a new image (using the dim size from deploy text eg. 24x24, 32x32 etc). That's it.  
+
+
+Use any programming or scriptiong language of your choice. Or use the ready-made ordgen library (or tooling).
+
+For ready-made preview scripts, see [/preview »](preview).
+
+For ready-made generate scripts, see [/generate »](generate).
+
 
 
 ## Q:  YOUR NUMBERS, YOUR IMAGE - explain?
