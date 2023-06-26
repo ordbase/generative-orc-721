@@ -1,6 +1,43 @@
 # Ideas
 
+## More Dimensions 
 
+> your orangenpixel [by ZimmerAllDay] idea was already realized on ETH
+
+1-bit 20x24 canvas example on ethereum -> <https://canvas.papercorp.org>
+
+> turn your imagination into an NFT in a 20x20 canvas
+
+pixel format  is:
+
+```
+[
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0]
+  [0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0]
+]
+```
+
+... that is the canvas matrix metadata (copy-n-pasted) from the website ...
+
+... that meta data format looks like hitting the jack pot ... and i have marked the new "matrix" style as an upcoming ordgen / ORC-721 protocol update that lets you expand the g(enerative) numbers in two dimensions (x and y).
 
 
 ## Alternate Spritesheet Formats
