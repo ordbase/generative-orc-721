@@ -617,7 +617,7 @@ and the deploy inscription:
 og deploy diyordibots
 name: D.I.Y. Ordibots
 max: 1000
-dim: 32x32,
+dim: 32x32
 <spritesheet/art layers inscription id here>
 ```
 
