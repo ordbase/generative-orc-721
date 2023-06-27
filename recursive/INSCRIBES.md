@@ -1,5 +1,4 @@
-# (Recursive) Inscribes
-
+#  (Recursive) Inscribes
 
 ## Recursive Punks
 
@@ -115,4 +114,3 @@ note - ordiscan.com shows "submodules"  - recursive content (attributes)
 
 markets:
 - <https://magiceden.io/ordinals/marketplace/recursive-nounpunks>
-
