@@ -118,3 +118,15 @@ https://redketchup.io/image-resizer
 
 
 
+
+###  More Design Notes
+
+- Keep all keys unique, that is, MUST start with a different letter,
+  thus,
+  - d is the same as dim
+  - g is the same as generative
+  - n is the same as name
+  - m is the same as max
+  - s is the same as slug
+  - etc.
+

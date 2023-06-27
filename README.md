@@ -497,6 +497,17 @@ Example - [diypunks/spritesheet.png](diypunks/spritesheet.png) (~4kb):
 
 and the deploy inscription:
 
+```
+og deploy diypunks
+name: D.I.Y. Punks
+max: 721
+dim: 24x24
+cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
+
 ``` json
 {
     "p": "orc-721",
@@ -508,6 +519,9 @@ and the deploy inscription:
     "generative": "cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0"
 }
 ```
+
+</details>
+
 
 and the mint inscriptions...
 
@@ -540,6 +554,18 @@ Example - no2/spritesheet.png (~??kb):
 
 and the deploy inscription:
 
+```
+og deploy diywiener
+name: D.I.Y. Wiener
+max: 100
+dim: 32x32
+<spritesheet/art layers inscription id here>
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
+
+
 ``` json
 {
     "p": "orc-721",
@@ -551,6 +577,9 @@ and the deploy inscription:
     "generative": "<spritesheet/art layers inscription id here>"
 }
 ```
+
+</details>
+
 
 and the mint inscriptions...
 
@@ -583,6 +612,18 @@ Example - [diyordibots/spritesheet.png](diyordibots/spritesheet.png) (~3kb):
 
 and the deploy inscription:
 
+
+```
+og deploy diyordibots
+name: D.I.Y. Ordibots
+max: 1000
+dim: 32x32,
+<spritesheet/art layers inscription id here>
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
+
 ``` json
 {
     "p": "orc-721",
@@ -595,6 +636,9 @@ and the deploy inscription:
 }
 ```
 
+</details>
+
+
 and the mint inscriptions:
 
 ordibot no. 0 specs:
@@ -605,6 +649,13 @@ ordibot no. 0 specs:
 - face: ![](diyordibots/i/9_surprised.png)  9 - surprised
 
 
+```
+og mint diyordibots 2 5 16 23 9
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
+
 ``` json
 {
    "p":"orc-721",
@@ -613,6 +664,9 @@ ordibot no. 0 specs:
    "g": [2,5,16,23,9]
 }
 ```
+
+</details>
+
 
 ![](diyordibots/i/ordibot0.png)  4x
 ![](diyordibots/i/ordibot0@4x.png)
@@ -627,6 +681,14 @@ ordibot no. 1 specs:
 - belly:  ![](diyordibots/i/23_empty.png)  23 - empty
 - face:  ![](diyordibots/i/8_neutral.png)  8 - neutral
 
+
+```
+og mint diyordibots 0 4 16 23 8
+```
+
+<details>
+<summary markdown="1">Classic JSON Format</summary>
+
 ``` json
 {
    "p":"orc-721",
@@ -635,6 +697,8 @@ ordibot no. 1 specs:
    "g": [0,4,16,23,8]
 }
 ```
+
+</details>
 
 ![](diyordibots/i/ordibot1.png)  4x
 ![](diyordibots/i/ordibot1@4x.png)
@@ -723,19 +787,6 @@ Three main ideas:
 1) Make it (even) easier
 2) Use less bytes (and, thus, save on inscription fees)
 3) Many more options (and less restrictions / requirements)
-
-
-
-###  More Design Notes
-
-- Keep all keys unique, that is, MUST start with a different letter,
-  thus,
-  - d is the same as dim
-  - g is the same as generative
-  - n is the same as name
-  - m is the same as max
-  - s is the same as slug
-  - etc.
 
 
 
