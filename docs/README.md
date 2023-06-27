@@ -31,6 +31,12 @@ Ordgen / ORC-721 Collection (Image) Previewers include:
 - [D.I.Y. Martians - Aliens Vol. 2 »](diymartians)
 
 
+**More**
+
+- [Words On Bitcoin @ ZimmerAllDay »](https://zimmerallday.github.io/btcwords)
+- [Orange Pixels @ ZimmerAllDay »](https://zimmerallday.github.io/orangepixels)
+
+
 
 <!--
 debug github pages (in subdirectory)
