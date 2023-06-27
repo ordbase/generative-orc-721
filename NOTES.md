@@ -2,6 +2,21 @@
 # More ORC-721 Notes (Work-In-Progress)
 
 
+Q: wen use standard text format or "classic" json format?
+
+about the new text format - the rule is the deploy leads, that is, if the deploy is in json than the mints must be in json too and if the deploy is in text than the mints must be in text too.    json not ded (if anyone wants to deploy using "classic" json).
+
+
+Q: mix-n-match of "recursion"(s) and "spritesheet"(s) possible?
+
+yes, you can stack spritesheets too ... numbers get added.   yes, you can reference specific tiles from multiple spritesheets.  ORC-721 started with single spritesheet to keep it simple (to get started and not confuse everybody). and yes - you can mix'n'match "recursion"(s) and spritesheet(s). another world's 1st generative? wen deploy?
+
+
+
+
+
+
+
 Q: If there is no way to know the current number
 of mints and obtain the initial 721, it will be frustrating
 

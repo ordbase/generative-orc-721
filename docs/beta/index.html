@@ -1,21 +1,16 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <title>ORC-721 Previewer</title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <script
-    type="text/javascript"
-    src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
-    
-  ></script>
+  <!-- note: requires jquery 3.4.1 -->
+  <script scr="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
 
   <style id="compiled-css" type="text/css">
@@ -60,13 +55,14 @@
   margin: auto;
   transform: scale(1);
   transform-origin: 0 0;
+  image-rendering: pixelated;
 }
 
 
 #canvas {
   filter: blur(.0px);
   border: 2px solid #ccc;
-  margin: 10px;
+  margin: 50px;
   text-align: center;
   background-color: #eee;
 }
@@ -118,7 +114,7 @@ a:not([disabled]) {
   text-decoration: underline;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=number], textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -205,12 +201,16 @@ label {
   <p>
     Fill in the form below to generate a link to a page like this for your own collection.
   </p>
+  <p>Tool only supports square sprites. For rectangular sprites, pls contact the project for enhancement.</p>
   <form id="shareForm">
     <label for="sprite_url">Url to your Sprite Image:</label>
     <input type="text" id="sprite_url_input" name="sprite_url" placeholder="Example: https://example.com/spritesheet.png"><br>
     <label for="slug">Slug:</label>
     <input type="text" id="slug_input" name="slug" placeholder="Example: diyapes">
     <br />
+    <label for="cols">Number of Sprites in each row on your Spritesheet (defaults to 10):</label>
+    <input type="number" id="cols_input" name="cols" placeholder="Example: 10">
+
     <br />
     <input type="submit" value="Generate Shareable Link">
   </form>
@@ -229,9 +229,9 @@ label {
     <script type="text/javascript">//<![CDATA[
 
 
-//instructions: Change these variables to create your own previewer!
-let sprite_url = "https://raw.githubusercontent.com/ordbase/generative-orc-721/master/diypunks/spritesheet.png"; 
-let slug = "diypunks"; //orc-721 slug 
+//These default values can be overridden by incoming params
+let sprite_url = "https://raw.githubusercontent.com/ordbase/generative-orc-721/master/diypunks/spritesheet.png";
+let slug = "diypunks"; //orc-721 slug
 let num_columns_on_spritesheet = 10;
 
 //variables that are automatically set. no need to touch them unless you don't have a square sheet
@@ -246,6 +246,10 @@ sprite_url = params.get('sprite_url') || sprite_url;
 slug = params.get('slug') || slug;
 num_columns_on_spritesheet = params.get('cols') || num_columns_on_spritesheet;
 
+//lets set the title if a slug is passed in.
+if (params.get('slug')) { document.title = slug + ' ORC-721 Previewer' }
+
+
 let canvas = document.getElementById('canvas');
 canvas.width = 240;
 canvas.height = 240;
@@ -258,21 +262,12 @@ let output = document.getElementById('output');
 let selectedSprites = [];
 let scaleFactor = 10;
 
+//scale up spritesheet
+let container = document.querySelector('.container');
+
+
 img.src = sprite_url;
 
-/*
-document.getElementById('spriteMap').addEventListener('change', function(evt) {
-    if (evt.target.files.length > 0) {
-        let file = evt.target.files[0];
-        let reader = new FileReader();
-        reader.onloadend = function() {
-            img.src = reader.result;
-            img.onload();
-        }
-        reader.readAsDataURL(file);
-    }
-});
-*/
 
 function generateMintString(slug, attr_array) {
   return `{"p":"orc-721", "op":"mint", "s":"${slug}", "g":[${attr_array}]}`;
@@ -284,7 +279,7 @@ function tryParseJSONObject(jsonString) {
 
     // Handle non-exception-throwing cases:
     // Neither JSON.parse(false) or JSON.parse(1234) throw errors, hence the type-checking,
-    // but... JSON.parse(null) returns null, and typeof null === "object", 
+    // but... JSON.parse(null) returns null, and typeof null === "object",
     // so we must check for that, too. Thankfully, null is falsey, so this suffices:
     if (o && typeof o === "object") {
       return o;
@@ -297,7 +292,7 @@ function tryParseJSONObject(jsonString) {
 function validateBtnClick() {
   const jsonStr = document.getElementById('jsonInput').value;
   let msgElement = document.getElementById('validity_message');
-  clearCanvas();
+	clearCanvas();
   msgElement.innerHTML = validateJson(jsonStr);
   let jsonObj = JSON.parse(jsonStr);
   programmaticallyClickG(jsonObj.g);
@@ -376,13 +371,17 @@ img.onload = function() {
   let spriteColumns = num_columns_on_spritesheet;
   let spriteRows = num_rows_on_spritesheet ? num_rows_on_spritesheet : Math.round(img.height / (img.width / spriteColumns));
 
+  let scale = container.offsetWidth / img.width;
+
   // Set the input fields to the calculated values
   //spriteColumnsInput.value = spriteColumns;
   //spriteRowsInput.value = spriteRows;
   num_rows_on_spritesheet = spriteRows; //set globally for json validator -- terrible hack
 
-  let spriteWidth = img.width / spriteColumns;
-  let spriteHeight = img.height / spriteRows;
+//  let spriteWidth = img.width / spriteColumns;
+//  let spriteHeight = img.height / spriteRows;
+  let spriteWidth = (img.width / spriteColumns) * scale;
+  let spriteHeight = (img.height / spriteRows) * scale;
   let numberOfSprites = spriteColumns * spriteRows;
 
   let spritesheet = document.getElementById('spritesheet');
@@ -391,9 +390,11 @@ img.onload = function() {
   // Dynamically set the grid and background properties
   spritesheet.style.gridTemplateColumns = `repeat(${spriteColumns}, ${spriteWidth}px)`;
   spritesheet.style.gridTemplateRows = `repeat(${spriteRows}, ${spriteHeight}px)`;
-  spritesheet.style.width = `${img.width}px`;
-  spritesheet.style.height = `${img.height}px`;
+  spritesheet.style.width = `${img.width * scale}px`;
+  spritesheet.style.height = `${img.height * scale}px`;
+  console.log("height of spritesheet: "+scale);
   spritesheet.style.background = `url(${img.src})`;
+  spritesheet.style.backgroundSize = `${img.width * scale}px ${img.height * scale}px`;
 
   for (let i = 0; i < numberOfSprites; i++) {
     let sprite = document.createElement('div');
@@ -401,12 +402,15 @@ img.onload = function() {
     sprite.style.width = `${spriteWidth}px`;
     sprite.style.height = `${spriteHeight}px`;
     sprite.style.backgroundPosition = `-${(i % spriteColumns) * spriteWidth}px -${Math.floor(i / spriteColumns) * spriteHeight}px`;
+    sprite.style.backgroundSize = `${img.width * scale}px ${img.height * scale}px`;
     sprite.title = i;
     sprite.addEventListener('click', () => {
       let row = Math.floor(i / spriteColumns);
       let col = i % spriteColumns;
 
-      ctx.drawImage(img, col * spriteWidth, row * spriteHeight, spriteWidth, spriteHeight, 0, 0, canvas.width, canvas.height);
+      //need to scale back down for the canvas
+      ctx.drawImage(img, col * spriteWidth / scale, row * spriteHeight / scale, spriteWidth / scale, spriteHeight / scale, 0, 0, canvas.width, canvas.height);
+
       selectedSprites.push(i);
       output.textContent = generateMintString(slug, selectedSprites);
       sprite.classList.add('selected');
@@ -420,7 +424,7 @@ img.onload = function() {
 
 //clear canvas button
 document.getElementById('clear').addEventListener('click', () => {
-  clearCanvas();
+	clearCanvas();
 });
 
 //set subtitle to slug
@@ -429,17 +433,19 @@ document.getElementById('subtitle').innerHTML = slug;
 //generate shareable custom collection page.
 document.getElementById('shareForm').addEventListener('submit', function(e) {
   e.preventDefault(); // Prevent the form from submitting normally
-  
+
   let sprite_url_input = document.getElementById('sprite_url_input').value;
   let slug_input = document.getElementById('slug_input').value;
-  
+  let cols_input = document.getElementById('cols_input').value;
+
   // Construct the URL with the sprite_url and slug parameters
-  let shareableUrl = window.location.origin + window.location.pathname + 
-    '?sprite_url=' + encodeURIComponent(sprite_url_input) + 
-    '&slug=' + encodeURIComponent(slug_input);
+  let shareableUrl = window.location.origin + window.location.pathname +
+    '?sprite_url=' + encodeURIComponent(sprite_url_input) +
+    '&slug=' + encodeURIComponent(slug_input) +
+    '&cols=' + encodeURIComponent(cols_input);
 
   // Display the shareable link
-  document.getElementById('shareableLink').innerHTML = 'Shareable Link: ' + `<a href=${shareableUrl} target=_blank>${shareableUrl}</a>`;
+  document.getElementById('shareableLink').innerHTML = 'Shareable Link:<br/> ' + `<a href=${shareableUrl} target=_blank>${shareableUrl}</a>`;
 });
 
 
