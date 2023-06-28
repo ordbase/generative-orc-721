@@ -41,16 +41,16 @@ og deploy ordinalpunks
 ...
 ```
 
-that's it. no need for max because the inscribe id list IS the max ... and the magic switch to turn a deploy to use the "BEFORE" formula is dropping the max / maxblock. that's it.  let me know what you think.  
+that's it. no need for max because the inscribe id list IS the max ... and the magic switch to turn a deploy to use the "BEFORE" formula is dropping the max / maxblock. that's it.
 
 as a bonus - ordgen / ORC-721 slugs / keys are like sat names  - first-come / first-serve - and, thus, the ordinalpunks name is yours forever with a deploy.
 
 now what for you might be thinking?
 what if .... a ordgen / ORC-721 indexer produces a listing something like this ... https://unisat.io/brc20  or this https://www.brc-20.io/   - do you want to ("automagically") get listed or not? being world's first counts ;-). 
 
-...exploring some more...  maybe lets go recursive! ... recursive what!? ...
+...let's explore some more...  let's go recursive! ... recursive what!? ...
 
-... let's use the inscribe id for the ordinalpunks meta data!!
+... let's use the inscribe id for the ordinalpunks meta data / manifest!!
 now how does this look:
 
 ```
@@ -59,7 +59,8 @@ a64027dabba3c5acf83068028edf4e938464ff3c6b279f0415f5c6573cf03207i0
 ```
 
 yes. that's it.
-and the inscribe id is this -> https://ordinals.com/content/a64027dabba3c5acf83068028edf4e938464ff3c6b279f0415f5c6573cf03207i0  (the official manifest inscribe by @FlowStay )
+and the inscribe id is this -> https://ordinals.com/content/a64027dabba3c5acf83068028edf4e938464ff3c6b279f0415f5c6573cf03207i0 
+(the official meta data manifest inscribe by @FlowStay )
 
 thus - the new proposal - if anyone wants to inscribe this text ( two lines):
 
@@ -68,7 +69,7 @@ og deploy ordinalpunks
 a64027dabba3c5acf83068028edf4e938464ff3c6b279f0415f5c6573cf03207i0
 ```
 
-than this is the world's 1st ordgen / ORC-721 collection with manifest using the BEFORE formula for automagic processing by indexers.
+than this is the world's 1st ordgen / ORC-721 collection with meta data manifest using the BEFORE formula for automagic processing by indexers.
 
 
 .. one more thing ...
@@ -129,9 +130,9 @@ pixel format  is:
 
 ... that is the canvas matrix metadata (copy-n-pasted) from the website ...
 
-... that meta data format looks like hitting the jack pot ... and i have marked the new "matrix" style as an upcoming ordgen / ORC-721 protocol update that lets you expand the g(enerative) numbers in two dimensions (x and y).
+... that meta data "matrix" style format looks like hitting the jack pot ... and marked for an upcoming ordgen / ORC-721 protocol update that lets you expand the g(enerative) numbers in two dimensions (x and y).
 
-more explorations ...
+let's explore some more ...
 
 happy to do a 16 color (or 256 color - 8bit) canvas in ordgen / ORC-721 ... BUT ... 
 
