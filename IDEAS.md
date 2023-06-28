@@ -23,7 +23,7 @@ that's it.  no need for max becaue the number of inscribe ids listed are the max
 
 
 
-.. explore options for a new ordgen / ORC-721 collection syntax where you inscribe the mints (as .PNGs)  BEFORE the deploy inscribe!
+.. let's explore options for a new ordgen / ORC-721 collection syntax where you inscribe the mints (as .PNGs)  BEFORE the deploy inscribe!
 
 ... so what?!
 
