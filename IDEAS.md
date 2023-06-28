@@ -19,7 +19,7 @@ og deploy canvas
 ....
 ```
 
-that's it.  no need for max becaue the number of inscribe ids listed are the max.
+that's it.  no need for max because the number of inscribe ids listed are the max.
 
 
 
