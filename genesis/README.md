@@ -174,12 +174,14 @@ New to CryptoPunksData Contract (Anno 2021)?  See [Inside the CryptoPunksData Co
 132 ![](i/132-horned_rim_glasses.png "Horned Rim Glasses (f)")
 133 ![](i/133-silver_chain.png "Silver Chain (f)")
 
+
 In a Table
 
-| No   |  24x24  | Name |
-|------|---------|------|
-| 1 | ![](i/001-male_1.png) |  Male 1 |
-| 2 | ![](i/002-male_2.png) |  Male 2 |
+| No   |  24x24  | Name |  Inscription №  |
+|------|---------|------|---------------|
+| 0 | ![](i/background-bitcoin-orange.png) | Bonus! Backgroud Bitcoin Orange |  [№ 12723302](https://ordinals.com/inscription/189b02ffc8aac68a45102e9837a1ca92e422bf5544d9011a863626cf6b0abeeai0) |
+| 1 | ![](i/001-male_1.png) |  Male 1 | №  |
+| 2 | ![](i/002-male_2.png) |  Male 2 | №  |
 | 3 | ![](i/003-male_3.png) |  Male 3 |
 | 4 | ![](i/004-male_4.png) |  Male 4 |
 | 5 | ![](i/005-female_1.png) |  Female 1 |
@@ -187,8 +189,8 @@ In a Table
 | 7 | ![](i/007-female_3.png) |  Female 3 |
 | 8 | ![](i/008-female_4.png) |  Female 4 |
 | 9 | ![](i/009-zombie.png) |  Zombie |
-| 10 | ![](i/010-ape.png) |  Ape |
-| 11 | ![](i/011-alien.png) |  Alien |
+| 10 | ![](i/010-ape.png) |  Ape | [№ 11617849](https://ordinals.com/inscription/b36750a6b444e3815f0cbb50a36e0f1231b74ba930855b1e9067f907942f34fci0)
+| 11 | ![](i/011-alien.png) |  Alien | [№ 11617799](https://ordinals.com/inscription/81ec4177e7fce4e568cc1c14366fe29deb88b0f0841eb12d4f1d0638cca68201i0)  |
 | 12 | ![](i/012-rosy_cheeks.png) |  Rosy Cheeks (m) |
 | 13 | ![](i/013-luxurious_beard.png) |  Luxurious Beard (m) |
 | 14 | ![](i/014-clown_hair_green.png) |  Clown Hair Green (m) |
