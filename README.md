@@ -122,17 +122,33 @@ see the [Orange Pixels Getting Started Guide and Documentation »](https://githu
 
 
 
-<!--
-Wen [next] deploy?   You are welcome to announce your ORC-721 collections
-in the ordinal punks discord (in the #generative-orc-721 channel).
-For an invite
-see <https://twitter.com/OrdinalPunks/status/1620230583711576068>.
--->
+
 
 Wen [next] deploy?   You are welcome to announce your ORC-721 collections
-in the ordinal phunks discord (in the #random channel).
-For an invite
-see <https://twitter.com/OrdinalPhunksV0>.
+in the [ordinal punks](https://ordinalpunks.com) discord (in the #generatie-orc-721 channel)
+or in the [ordinal phunks](https://twitter.com/OrdinalPhunksV0) discord (in the #random / General channel).
+
+
+
+## D.I.Y. GENESIS PUNKS (MAX. 10 000) NEED YOUR HELP
+
+
+Yes, you can help! Looking for inscribe sponsor to get the free mint (first-come/first-serve) started  ...
+
+The idea is re(use) or "recurse on" all 133 .PNG inscriptions in
+the recursive punks collection - 
+that are - surprise, suprise -  pixel-perfect copies of 
+the "originals" in the CryptoPunksData contract (Anno 2021).
+
+Let's deploy a new ordgen / ORC-721 collection - 10 000 D.I.Y. Genesis Punks - (re)using or (is it "recursing on"?) the .PNGs indexed 1 to 133 with the bonus bitcoin orange background at 0 - plus going beyond recursive punks 
+by matching the attribute ids in the CryptoPunksData in the generative dna ("on-chain" bitcoin metadata).
+
+... read more at the [10 000 D.I.Y. Genesis Punks Readme »](genesis)
+
+
+PS:  Try the [D.I.Y. Genesis Punks (Image) Previewer »](https://ordbase.github.io/generative-orc-721/genesis)
+
+
 
 
 <!--
