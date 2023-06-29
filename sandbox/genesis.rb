@@ -283,6 +283,7 @@ inscribes = {
 pp inscribes
 
 
+
 inscribes.each_with_index do |(name,id), i|
 
     if id.empty?
@@ -513,6 +514,33 @@ end
 puts
 puts buf
 puts
+
+
+ids = []
+inscribes.each_with_index do |(name,id), i|
+    ids << id
+end
+
+puts ids.join( "\n" )
+puts
+
+
+###
+## assemble spritesheet
+composite = ImageComposite.new( 10, 14, width: 24,
+                                        height: 24 )
+
+inscribes.each_with_index do |(name,id), i|
+  path = "./tmp/genesis/#{name}.png"
+  img = Image.read( path )
+  composite << img
+end
+
+
+composite.save( "./tmp/genesis/spritesheet.png" )
+# composite.zoom(4).save( "./tmp/genesis/spritesheet@4x.png" )
+# composite.zoom(8).save( "./tmp/genesis/spritesheet@8x.png" )
+
 
 
 puts "bye"
