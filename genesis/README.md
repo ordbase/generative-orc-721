@@ -26,8 +26,8 @@ Interested?
 Join us in the ordinal phunks discord (in the #random / General channel).
 For an invite
 see <https://twitter.com/OrdinalPhunksV0> ...
-or in the ordinal punks discord (in the #generative-orc channel).
-For an invite see <https://twitter.com/OrdinalPunks/status/1620230583711576068>
+or in the ordinal punks discord (in the #generative-orc-721 channel).
+For an invite see <http://ordinalpunks.com>
 
 
 
