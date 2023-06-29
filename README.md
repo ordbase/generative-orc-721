@@ -125,7 +125,7 @@ see the [Orange Pixels Getting Started Guide and Documentation »](https://githu
 
 
 Wen [next] deploy?   You are welcome to announce your ORC-721 collections
-in the [ordinal punks](https://ordinalpunks.com) discord (in the #generatie-orc-721 channel)
+in the [ordinal punks](https://ordinalpunks.com) discord (in the #generative-orc-721 channel)
 or in the [ordinal phunks](https://twitter.com/OrdinalPhunksV0) discord (in the #random / General channel).
 
 
@@ -250,10 +250,11 @@ Try the [D.I.Y. Birdie Previewer »](https://ordbase.github.io/generative-orc-72
 -->
 
 
-
+<!--
 
 NEW!  For up-to-date ORC-721 analytics / statistics see the [Generative-ORC-721 Dune dashboard](https://dune.com/jokie/orc-721-dashboard)  - thanks to  [@ondograph11 (Jokie)](https://twitter.com/ondograph11).
 
+-->
 
 ---
 
