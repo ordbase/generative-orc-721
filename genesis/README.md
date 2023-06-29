@@ -26,7 +26,6 @@ Interested?
 Join us in the ordinal phunks discord (in the #random / General channel).
 For an invite
 see <https://twitter.com/OrdinalPhunksV0> ...
-
 or in the ordinal punks discord (in the #generative-orc channel).
 For an invite see <https://twitter.com/OrdinalPunks/status/1620230583711576068>
 
@@ -35,7 +34,7 @@ For an invite see <https://twitter.com/OrdinalPunks/status/1620230583711576068>
 New to 10 000 Recursive Punks? See  [Recursive Punks README »](https://github.com/RecursivePunks)
 
 
-New to CryptoPunksData Contract (Anno 2021)?  See [Inside the CryptoPunksData Contract - All 133 Assets (11 Archetypes 'n' 122 Attributes) in the 24x24px Format For Easy (Re)Use "Off-Chain" @ Punk's Not Dead »](https://github.com/cryptopunksnotdead/punks.sandbox/tree/master/punksdata-assets)
+New to CryptoPunksData Contract (Anno 2021)?  See [Inside the CryptoPunksData Contract - Decoding the On-Chain Assets (11 Archetypes and 122 Attributes) and Color Palette for Easy (Re)Use "Off-Chain" @ Punk's Not Dead »](https://github.com/cryptopunksnotdead/punks.sandbox/tree/master/punksdata)
 
 
 
