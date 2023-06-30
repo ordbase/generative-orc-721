@@ -1,9 +1,10 @@
 
 
+**NEW!  [Discussions - Join Us - Welcome to the Ordgen / ORC-721 Community - Wen [next] deploy? »](https://github.com/orc721/market/discussions)**
+
 
 **Wen Market? Wen Magic Eden (ME)? Wen Ordinals Wallet (OW)?  See [/market @ Bitcoin Ordinal Generative (ORC-721 / OG / Ordgen) Community »](https://github.com/orc721/market)**
 
-**NEW!**   [Discussions - Join Us - Welcome to the Ordgen / ORC-721 Community - Wen [next] deploy? »](https://github.com/orc721/market/discussions)
 
 
 
