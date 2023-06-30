@@ -23,6 +23,8 @@ Let's deploy a new ordgen / ORC-721 collection - 10 000 D.I.Y. Genesis Punks - (
 by matching the attribute ids in the CryptoPunksData in the generative dna ("on-chain" bitcoin metadata).
 
 
+## Wen deploy?
+
 Yes, you can.  Please, help and inscribe the ordgen / ORC-721 
 deploy text to start the free mint (first-come / first-serve) and
 inscribe yourself into (crypto & ordinal bitcoin) history! 
