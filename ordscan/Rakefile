@@ -1,0 +1,30 @@
+require 'hoe'
+## require './lib/ordscan/version.rb'
+
+Hoe.spec 'ordscan' do
+
+  self.version =   '0.0.1'  ##Pixelart::Module::Ordgen::VERSION
+
+
+  self.summary = "ordscan - ordinals (generative ORC-721) inscription (on bitcoin & co) indexer / scanner"
+  self.description = summary
+
+  self.urls    = { home: 'https://github.com/ordbase/generative-orc-721' }
+
+  self.author  = 'Gerald Bauer'
+  self.email   = 'gerald.bauer@gmail.com'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.extra_deps = [
+    ['ordlite'],
+  ]
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+    required_ruby_version: '>= 2.3'
+  }
+end
