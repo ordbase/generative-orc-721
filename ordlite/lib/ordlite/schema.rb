@@ -48,7 +48,8 @@ create_table :inscribes, :id => :string do |t|
    
     ##  "content length": "85 bytes",
     ## note:  extract bytes as integer!!!
-    t.integer  :content_length, null: false
+    ##    change to bytes - why? why not?
+    t.integer  :bytes, null: false
     ## "content type": "text/plain;charset=utf-8",
     ## note: make sure always lower/down case!!!
     t.string   :content_type, null: false
@@ -63,10 +64,11 @@ create_table :inscribes, :id => :string do |t|
 
     ##
     ## "genesis height": "792337",
+    ##   -> change height to block - why? why not?
     ## "genesis fee": "6118",
     ## "genesis transaction": "0a3a4dbf6630338bc4df8e36bd081f8f7d2dee9441131cb03a18d43eb4882d5c",
     ## "offset": "0"
-    t.integer    :height, null: false
+    t.integer    :block, null: false
     t.integer    :fee, null: false
     t.string     :tx, null: false
     t.integer    :offset, null: false 
@@ -76,12 +78,15 @@ create_table :inscribes, :id => :string do |t|
     ##    is this minter/inscriber addr??? 
     t.string     :address, null: false
 
-    ## -- ignore for now - why? why not?
-    ##   what is output  ???
-    ## "location": "0a3a4dbf6630338bc4df8e36bd081f8f7d2dee9441131cb03a18d43eb4882d5c:0:0",
     ## "output": "0a3a4dbf6630338bc4df8e36bd081f8f7d2dee9441131cb03a18d43eb4882d5c:0",
     ##  "output value": "546",
-  
+    t.string   :output, null: false
+    t.integer  :value,  null: false
+
+    ## -- ignore for now - why? why not?
+    ##   what is location  ???
+    ## "location": "0a3a4dbf6630338bc4df8e36bd081f8f7d2dee9441131cb03a18d43eb4882d5c:0:0",
+
   ## timestamp at last
   t.timestamps
 end

@@ -3,6 +3,8 @@ Manifest.txt
 README.md
 Rakefile
 lib/ordlite.rb
+lib/ordlite/base.rb
+lib/ordlite/cache.rb
 lib/ordlite/models/blob.rb
 lib/ordlite/models/forward.rb
 lib/ordlite/models/inscribe.rb

@@ -8,8 +8,6 @@ require 'ordlite'
 
 OrdDb.setup_in_memory_db
 
-Inscribe = OrdDb::Model::Inscribe
-Blob     = OrdDb::Model::Blob
 
 
 b1 = Blob.create( id: 'id123', content: 'c123')
