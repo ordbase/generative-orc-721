@@ -134,17 +134,14 @@ or in the [ordinal phunks](https://twitter.com/OrdinalPhunksV0) discord (in the 
 
 
 
-## D.I.Y. GENESIS PUNKS (MAX. 10 000) NEED YOUR HELP
-
-
-Yes, you can help! Looking for inscribe sponsor to get the free mint (first-come/first-serve) started  ...
+## D.I.Y. GENESIS PUNKS (MAX. 10 000) WEN MINT? NOw - FREE, FIRST-COME/FIRST-SERVE 
 
 The idea is re(use) or "recurse on" all 133 .PNG inscriptions in
 the recursive punks collection - 
 that are - surprise, suprise -  pixel-perfect copies of 
 the "originals" in the CryptoPunksData contract (Anno 2021).
 
-Let's deploy a new ordgen / ORC-721 collection - 10 000 D.I.Y. Genesis Punks - (re)using or (is it "recursing on"?) the .PNGs indexed 1 to 133 with the bonus bitcoin orange background at 0 - plus going beyond recursive punks 
+Let's mint a new ordgen / ORC-721 collection (free, first-come/first-serve) - 10 000 D.I.Y. Genesis Punks - (re)using or (is it "recursing on"?) the .PNGs indexed 1 to 133 with the bonus bitcoin orange background at 0 - plus going beyond recursive punks 
 by matching the attribute ids in the CryptoPunksData in the generative dna ("on-chain" bitcoin metadata).
 
 ... read more at the [10 000 D.I.Y. Genesis Punks Readme »](genesis)
