@@ -18,29 +18,35 @@ puts "  #{Blob.count} blob(s)"
 ####################
 ## query for deploy candidates
 
-deploys = Blob.joins(:inscribe).where( "content LIKE '%deploy%' AND (content LIKE '%orc-721%' OR content LIKE '%og%')" )
-               .order( 'num' )
+deploys = Inscribe.deploys
 puts "   #{deploys.size} deploy candidate(s)"
 
 deploys.each_with_index do |rec,i|
-    puts "==> deploy #{i} - num #{rec.inscribe.num} - #{rec.inscribe.bytes} bytes - #{rec.inscribe.date}"
+    puts "==> deploy #{i} - num #{rec.num} - #{rec.bytes} bytes - #{rec.date}"
     puts rec.content 
 end
+
+
+punks_deploys = Inscribe.deploys_by( slug: 'diypunks')
+puts "   #{punks_deploys.size} deploy candidate(s)"
+
 
 
 #######################
 ## query for mint candidates
 
-mints = Blob.joins(:inscribe).where( "content LIKE '%mint%' AND (content LIKE '%orc-721%' OR content LIKE '%og%')" )
-               .order( 'num' )
+mints = Inscribe.mints
 puts "   #{mints.size} mint candidate(s)"
 
 ## print last hundred mint candidates
 mints[-100,100].each_with_index do |rec,i|
-    puts "==> mint #{i} - num #{rec.inscribe.num} - #{rec.inscribe.bytes} bytes - #{rec.inscribe.date}"
+    puts "==> mint #{i} - num #{rec.num} - #{rec.bytes} bytes - #{rec.date}"
     puts rec.content 
 end
 
+
+phunks_mints = Inscribe.mints_by( slug: 'diyphunks')
+puts "   #{phunks_mints.size} mint candidate(s)"
 
 
 puts "   #{deploys.size} deploy candidate(s)"

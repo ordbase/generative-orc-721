@@ -8,6 +8,7 @@ require 'ordlite'
 
 OrdDb.setup_in_memory_db
 
+__END__
 
 
 b1 = Blob.create( id: 'id123', content: 'c123')
