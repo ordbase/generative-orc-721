@@ -17,7 +17,7 @@ that are - surprise, suprise -  pixel-perfect copies of
 the "originals" in the CryptoPunksData contract (Anno 2021).
 
 
-Let's deploy a new ordgen / ORC-721 collection - 10 000 D.I.Y. Genesis Punks - (re)using or (is it "recursing on"?) the .PNGs indexed 1 to 133 with the bonus bitcoin orange background at 0 - plus going beyond recursive punks 
+Let's mint a new ordgen / ORC-721 collection (free, first-come/first-serve) - 10 000 D.I.Y. Genesis Punks - (re)using or (is it "recursing on"?) the .PNGs indexed 1 to 133 with the bonus bitcoin orange background at 0 - plus going beyond recursive punks 
 by matching the attribute ids in the CryptoPunksData in the generative dna ("on-chain" bitcoin metadata).
 
 ## Wen mint?  NOW (Free, First-Come/First-Serve)
