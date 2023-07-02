@@ -189,8 +189,9 @@ e047590efef1e16b6e74a883835949b13b1921eb8587cee20dc4056c39be4b6ci0
 
 </details>
 
+<!--
 [Inscribe №14470668](https://ordinals.com/inscription/65c0a852e285e5a19372305f2eef97c5cabedc3f6addc71d27088b31540d172bi0) by  ???  thank you!
-
+-->
 
 Interested?  
 Join us in the ordinal phunks discord (in the #random / General channel).
