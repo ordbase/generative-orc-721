@@ -134,7 +134,7 @@ or in the [ordinal phunks](https://twitter.com/OrdinalPhunksV0) discord (in the 
 
 
 
-## D.I.Y. GENESIS PUNKS (MAX. 10 000) WEN MINT? NOw - FREE, FIRST-COME/FIRST-SERVE 
+## D.I.Y. GENESIS PUNKS (MAX. 10 000) WEN MINT? NOW - FREE, FIRST-COME/FIRST-SERVE 
 
 The idea is re(use) or "recurse on" all 133 .PNG inscriptions in
 the recursive punks collection - 
