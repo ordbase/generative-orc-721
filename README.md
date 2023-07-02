@@ -134,7 +134,11 @@ or in the [ordinal phunks](https://twitter.com/OrdinalPhunksV0) discord (in the 
 
 
 
-## D.I.Y. GENESIS PUNKS (MAX. 10 000) WEN MINT? NOW - FREE, FIRST-COME/FIRST-SERVE 
+## D.I.Y. GENESIS PUNKS (MAX. 10 000) WEN MINT?
+
+<!--
+NOW - FREE, FIRST-COME/FIRST-SERVE 
+-->
 
 The idea is re(use) or "recurse on" all 133 .PNG inscriptions in
 the recursive punks collection - 
@@ -145,6 +149,9 @@ Let's mint a new ordgen / ORC-721 collection (free, first-come/first-serve) - 10
 by matching the attribute ids in the CryptoPunksData in the generative dna ("on-chain" bitcoin metadata).
 
 ... read more at the [10 000 D.I.Y. Genesis Punks Readme »](genesis)
+
+**Update** - Sorry for the bad news ...  unfortunately the deploy inscribe is broken ... i am heart broken too ...
+the first line is missing in action e.g.  `og deploy genesis`.   If anyone can help out with a new inscribe, please do ... yes, you can.
 
 
 PS:  Try the [D.I.Y. Genesis Punks (Image) Previewer »](https://ordbase.github.io/generative-orc-721/genesis)
