@@ -139,7 +139,7 @@ puts "   #{mints.size} mint candidate(s)"
 
 Let's import all cached 
 inscriptions metadata datafiles (& content)
-from  [/ordinals.cache](https://github.com/ordbase/ordinals.cache)   
+from  [/ordinals.cache](https://github.com/ordbase/ordinals.cache)
 into an (sql) database e.g. `ord.db`: 
 
 
