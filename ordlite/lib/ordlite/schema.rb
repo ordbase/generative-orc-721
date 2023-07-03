@@ -87,7 +87,7 @@ create_table :inscribes, :id => :string do |t|
     ##   what is location  ???
     ## "location": "0a3a4dbf6630338bc4df8e36bd081f8f7d2dee9441131cb03a18d43eb4882d5c:0:0",
 
-  ## timestamp at last
+  ## timestamp last
   t.timestamps
 end
 
@@ -100,9 +100,36 @@ create_table :blobs, :id => :string do |t|
  
     t.binary     :content,   null: false
 
-  ## timestamp at last
+  ## timestamp last
   t.timestamps
 end
+
+create_table :collections, :id => :string do |t|
+  t.string   :name
+  t.integer  :max        # max limit
+  t.integer  :maxblock   # max block limit
+  t.string   :dim        # dimension e.g. 24x24 (in px)
+
+  t.string   :inscribe_id,  null: false   ## foreign key reference
+
+  ## timestamp last
+  t.timestamps
+end
+
+#####
+## join table (collections has_many modules)
+##   rename to layer / sprites / blocks / tiles / modules / submodules / subs / mods / ...etc - why? why not?
+##             layerlists or inscribelists or ???
+create_table :inscriberefs, :id => false do |t|
+  t.string  :collection_id, null: false
+  t.string  :inscribe_id,   null: false
+  t.integer :pos,           null: false    ## position (index) in list (starting at 0)
+  ## todo/fix: make collection_id + inscribe_id + pos unique index - why? why not?
+
+  ## timestamp last
+  t.timestamps
+end
+
 
 
 end # block Schema.define
