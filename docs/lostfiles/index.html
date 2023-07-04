@@ -57,7 +57,7 @@ body {
 
 <p>
   Directions: click on the map below to preview your DIY Lost File.
-  Press clear to start over.<br/><br/>
+  Press clear to start over.<br/>
   When you're happy, use the og standard mint text generated.
   </p>
   <div id="spritesheet"></div>
@@ -79,9 +79,18 @@ DIY Lost Files is a project by the <a href="https://twitter.com/OrdinalPhunksV0"
 <script scr="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
   <script>
+
+ let cols = 16;
+ let rows = 5;
+ let tiles = cols * rows;
+ let width = 24;
+ let height = 24;
+
+ let scaleFactor = 10;
+
 let canvas = document.getElementById('canvas');
-canvas.width = 240;
-canvas.height = 240;
+canvas.width =  width * scaleFactor;   // 240px
+canvas.height = height * scaleFactor;  // 240px
 let ctx = canvas.getContext('2d');
 ctx.imageSmoothingEnabled = false; // Disable image smoothing
 let img = new Image();
@@ -90,15 +99,29 @@ img.src = 'https://ordbase.github.io/generative-orc-721/lostfiles/spritesheet.pn
 
 let output = document.getElementById('output');
 let selectedSprites = [];
-let scaleFactor = 10;
+
 
 img.onload = function() {
-    for(let i = 0; i < 80; i++) {
+  for(let i = 0; i < tiles; i++) {
         let sprite = document.createElement('div');
         sprite.className = 'sprite';
-        sprite.style.backgroundPosition = `-${(i % 10) * 24}px -${Math.floor(i / 10) * 24}px`;
+
+        let x = i % cols;
+        let y = Math.floor(i / cols);
+        // console.log( `==> add sprite ${i} - x: ${x} y: ${y}` );
+
+        let pos = `-${x * width}px -${y * height}px`;
+        sprite.style.backgroundPosition = pos;
+        // console.log( `  pos: ${pos}` );
+
+
         sprite.addEventListener('click', () => {
-            ctx.drawImage(img, (i % 10) * 24, Math.floor(i / 10) * 24, 24, 24, 0, 0, 24 * scaleFactor, 24 * scaleFactor);
+            ctx.drawImage(img,
+                          x * width,
+                          y * height,
+                          width, height, 0, 0,
+                          width * scaleFactor,
+                          height * scaleFactor);
             selectedSprites.push(i);
             output.textContent = "og mint lostfiles " + selectedSprites.join(' ');
         });
