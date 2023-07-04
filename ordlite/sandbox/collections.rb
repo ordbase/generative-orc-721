@@ -19,7 +19,8 @@ puts "  #{Blob.count} blob(s)"
 puts "  #{Collection.count} collection(s)"
 
 
-Collection.joins(:inscribe).order('num desc').each_with_index do |rec,i|
+recs = Collection.joins(:inscribe).order('num desc').to_a
+recs.each_with_index do |rec,i|
   puts "==> #{i+1}  #{rec.id} >#{rec.name}< max. #{rec.max}"
   puts "   #{rec.layers.count} layer(s):"
   rec.layers.each_with_index do |layer,i|
@@ -27,9 +28,6 @@ Collection.joins(:inscribe).order('num desc').each_with_index do |rec,i|
   end
   puts
 end
-
-
-
 
 
 
@@ -41,7 +39,7 @@ buf =<<TXT
 TXT
 
 
-Collection.joins(:inscribe).order('num desc').each_with_index do |rec,i|
+recs.each_with_index do |rec,i|
     puts "==> deploy #{i} - num #{rec.inscribe.num} - #{rec.inscribe.bytes} bytes - #{rec.inscribe.date}"
     puts rec.inscribe.content 
 

@@ -19,13 +19,6 @@ puts "  #{Blob.count} blob(s)"
 ####################
 ## query for deploy candidates
 
-OG_DEPLOY_RX = /\A
-               og
-              [ ]+
-               deploy
-              [ ]+
-              /x
-
 
 deploys = Inscribe.deploys
 puts "   #{deploys.size} deploy candidate(s)"
@@ -40,19 +33,20 @@ deploys.each_with_index do |rec,i|
     ## try to auto-fill / add collections
     text = rec.content.strip
 
+    data = nil  ## first see if valid json
     ## check if text or json format
-    if OG_DEPLOY_RX.match( text )
+    if OG.is_deploy?( text )
+      data = OG.parse_deploy( text )  
     else  ## assume json
-      
-      data = nil  ## first see if valid json
-     begin
+      begin
         data = JSON.parse( text )
       rescue JSON::ParserError => ex
         ## keep going
         puts "!! WARN - skip deploy - json parse error"
         next
       end
- 
+    end
+
       ## only add if first deploy
       slug = data['slug']
       if slugs.include?( slug )
@@ -78,7 +72,6 @@ deploys.each_with_index do |rec,i|
          inscribe = Inscribe.find( id )
          col.inscriberefs.create( pos: i, 
                                   inscribe_id: inscribe.id )
-      end   
     end
 end
 

@@ -39,6 +39,11 @@ require_relative 'schema'
 require_relative 'cache'
 
 
+###
+# og (ordgen) helpers
+require_relative 'og'
+
+
 
 module OrdDb
 
