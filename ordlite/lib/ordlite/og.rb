@@ -3,6 +3,12 @@
 
 module Og
 
+  OG_MINT_RX = /\A
+     og
+     [ ]+
+     mint
+     [ ]+
+     /x
 
   OG_DEPLOY_RX = /\A
      og
@@ -11,12 +17,55 @@ module Og
      [ ]+
      /x
 
-  def self.is_deploy?( txt )
-    OG_DEPLOY_RX.match( text ) != nil
-  end
+
+  def self.is_mint?( txt )  OG_MINT_RX.match( txt ) != nil; end
+  def self.is_deploy?( txt )  OG_DEPLOY_RX.match( txt ) != nil; end
+
+
   class << self
-     alias_method :deploy?, :is_deploy?
+    alias_method :mint?, :is_mint?
+    alias_method :deploy?, :is_deploy?
   end
+
+
+
+## single-line for now
+OG_MINT_SLUG_NUMS_RX = /\A
+            og
+           [ ]+
+            mint
+           [ ]+
+             (?<slug>[a-z][a-z0-9]*)
+           [ ]+
+            (?<nums>[0-9]+
+                 ([ ]+[0-9]+)*
+             )
+          \z/x
+
+
+def self.parse_mint( txt )
+  data = {}
+  lines = _lines( txt )
+
+  ## try to convert to json
+  m=OG_MINT_SLUG_NUMS_RX.match( lines[0] )
+
+  ### FIX: report/ log error
+  ###   raise parse error - why? why not?
+  if m.nil?  
+     puts "!! ERROR NO MATCH OG_MINT_SLUG_NUMS:"
+     pp lines
+     exit 1
+  end
+            
+  data['p'] = 'orc-721'
+  data['op'] = 'mint'
+  data['s']  = m[:slug]
+  data['g']  = m[:nums].split( /[ ]+/).map {|num| num.to_i(10) }
+ 
+  data
+end
+
 
 
  HEADER_RX = /\A(?<key>[a-z]+)
@@ -30,12 +79,7 @@ def self.parse_deploy( txt )
 ## for now convert to orc-721 format (json-like) - why? why not
 
   data = {}
-  ## note: chom will remove trailing newline (\n)
-  lines = txt.lines( chomp: true )
-  ## strip (remove leading and trailing spaces too)
-  lines = lines.map {|line| line.strip }
-  ## remove empties  (e.g. "")
-  lines = lines.reject {|line| line.empty? }
+  lines = _lines( txt )
   
   values = lines[0].split( /[ ]+/ )
 
@@ -63,6 +107,19 @@ def self.parse_deploy( txt )
   end
   data
 end
+
+
+def self._lines( txt )
+  ## note: chomp will remove trailing newline (\n)
+  lines = txt.lines( chomp: true )
+  ## strip (remove leading and trailing spaces too)
+  lines = lines.map {|line| line.strip }
+  ## remove empties  (e.g. "")
+  lines = lines.reject {|line| line.empty? }
+  lines
+end
+
+
 end  # module Og
 
 ## add alias - why? why not?

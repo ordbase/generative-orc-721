@@ -32,5 +32,18 @@ TXT
 end
 
 
+def test_parse_mint
+  txt = 'og mint diyphunks 0 49 28'
+ 
+  data = {
+      'p'   => 'orc-721',
+      'op'  =>'mint',
+      's'=>'diyphunks',
+      'g' => [0,49,28],
+    }
+  
+    assert_equal  data, OG.parse_mint( txt )   
+end
+
 
 end # class TestOg

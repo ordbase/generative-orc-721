@@ -131,9 +131,39 @@ create_table :inscriberefs, :id => false do |t|
 end
 
 
+create_table :generatives, :id => :string do |t|
+  t.string  :collection_id, null: false
+  t.string  :g,             null: false  ##  use space separated numbers - why? why not?    
+  t.binary  :content    ### optional for now - why? why not?
+ 
+  ## timestamp last
+  t.timestamps
+end
+
+
+
 
 end # block Schema.define
 
 end # method up
 end # class CreateDb
+
+###
+#  migrations helpers
+class AddGeneratives
+
+def up  
+  ActiveRecord::Schema.define do
+    create_table :generatives, :id => :string do |t|
+      t.string  :collection_id, null: false
+      t.string  :g,             null: false  ##  use space separated numbers - why? why not?    
+      t.binary  :content    ### optional for now - why? why not?
+     
+      ## timestamp last
+      t.timestamps
+    end
+  end # block Schema.define
+end # method up
+end # class AddGeneratives
+  
 end # module OrdDb

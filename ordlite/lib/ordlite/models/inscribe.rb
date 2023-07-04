@@ -5,6 +5,7 @@ module OrdDb
   class Inscribe < ActiveRecord::Base
     has_one :blob, foreign_key: 'id'
     has_one :collection    ## optional (auto-added via og/orc-721 deploy)
+    has_one :generative, foreign_key: 'id'   ## optional (auto-added via og/orc-721 deploy)
 
 
     def content

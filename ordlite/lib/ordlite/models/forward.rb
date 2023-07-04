@@ -13,6 +13,7 @@ Prop      = ConfDb::Model::Prop
 class Inscribe    < ActiveRecord::Base ; end
 class Blob        < ActiveRecord::Base ; end
 class Collection  < ActiveRecord::Base ; end
+class Generative  < ActiveRecord::Base ; end
 
 
 ### join tables - add inline here - why? why not?

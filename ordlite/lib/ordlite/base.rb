@@ -32,6 +32,7 @@ require_relative 'models/forward'
 require_relative 'models/inscribe'
 require_relative 'models/blob'
 require_relative 'models/collection'
+require_relative 'models/generative'
 
 
 require_relative 'schema'      
