@@ -10,31 +10,32 @@ To find your g(enerative) numbers in range 0-89 (90) - try the [D.I.Y. Maxi Biz 
 
 ![](i/maxibiz1@10x.png)
 
-`og mint diymaxibiz 63 9 55 32`
+`og mint diymaxibiz 85 9 28 29 65 34`
 
 ![](i/maxibiz2@10x.png)
 
-`og mint diymaxibiz 62 9 61 57 33`
+`og mint diymaxibiz 84 9 78 73 35`
 
 ![](i/maxibiz3@10x.png)
 
-`òg mint diymaxibiz 66 12 25 32`
+`og mint diymaxibiz 86 12 25 34`
 
 ![](i/maxibiz4@10x.png)
 
-`og mint diymaxibiz 1 22 42 57 32`
+`og mint diymaxibiz 1 22 44 73 34`
 
 ![](i/maxibiz5@10x.png)
 
-`og mint diymaxibiz 62 3 51 32`
+`og mint diymaxibiz 84 3 64 34`
 
 ![](i/maxibiz6@10x.png)
 
-`og mint diymaxibiz 62 3 51 32`
+`og mint diymaxibiz 87 1 66 27 74 34`
 
 
 ![](i/maxibiz7@10x.png)
-`og mint diymaxibiz 62 3 51 32`
+
+`og mint diymaxibiz 84 81 34`
 
 
 
