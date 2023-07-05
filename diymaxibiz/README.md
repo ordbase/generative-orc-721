@@ -2,7 +2,7 @@
 
 
 
-To find your g(enerative) numbers in range 0-69 (70) - try the [D.I.Y. Maxi Biz (Punks) Previewer »](https://ordbase.github.io/generative-orc-721/diymaxibiz)
+To find your g(enerative) numbers in range 0-89 (90) - try the [D.I.Y. Maxi Biz (Punks) Previewer »](https://ordbase.github.io/generative-orc-721/diymaxibiz)
 
 
 **Samples**
@@ -28,6 +28,14 @@ To find your g(enerative) numbers in range 0-69 (70) - try the [D.I.Y. Maxi Biz 
 
 `og mint diymaxibiz 62 3 51 32`
 
+![](i/maxibiz6@10x.png)
+
+`og mint diymaxibiz 62 3 51 32`
+
+
+![](i/maxibiz7@10x.png)
+`og mint diymaxibiz 62 3 51 32`
+
 
 
 
@@ -37,7 +45,7 @@ To find your g(enerative) numbers in range 0-69 (70) - try the [D.I.Y. Maxi Biz 
 Here's everything to make it happen - yes, you can help inscribe!
 
 
-### Step 1:   Inscribe spritesheet.png (<3kb)
+### Step 1:   Inscribe spritesheet.png (<4kb)
 
 ![](spritesheet.png)
 
