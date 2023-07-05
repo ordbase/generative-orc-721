@@ -42,13 +42,16 @@ eyes = %w[
   m/smile
   m/frown
   m/spots
-  bigbeard
+  m/bigbeard
+  m/normalbeard
+  m/chinstrap
+  m/goat
 
-  lasereyes
+  m/goldchain
+
   lasereyes-red
   lasereyes-green
   lasereyes-blue
-  lasereyes2
   lasereyes2-red
   lasereyes2-green
   lasereyes2-blue
@@ -71,44 +74,73 @@ accessories = %w[
   m/messyhair
   m/mohawk
   m/peakspike
-
+  m/orangeside
+  m/clownhair
+  m/wildhair1
+  m/wildhair2
 
   m/bandana
   m/beanie
+  m/wizardhat
   m/cap
+  m/mcd
   m/capforward
   m/cowboyhat
   m/fedora
   m/headband
+  m/beret
   m/knittedcap
+  m/sombrero
   m/tophat
+  m/unclesamhat
+  m/footballhelmet
+  m/libertycap
+  m/crown
+  m/saudi
+  m/jew
   
   m/bubblegum
   m/cigarette
   m/pipe
   m/medicalmask
 
+
   m/bearhood
+  m/froghood
   m/hoodie
+]
+
+## 1/1s
+mores = %w[
+  more1
+  more2
+  more3
+  more4
+  more5
 ]
 
 backgrounds = %w[
  background-bitcoin-orange
  background-bitcoin-pattern
- background-red
- background-green
  background-dollar-pattern
- background-blue
+ background-usa
  background-rainbow
  background-ukraine 
 ]
 
 
+# lasereyes
+# lasereyes2
+# background-red
+# background-green
+# background-blue
 
-composite = ImageComposite.new( 10, 7, width: 24,
+
+
+composite = ImageComposite.new( 10, 9, width: 24,
                                        height: 24 )
 
-names = base + patterns + eyes + accessories +  backgrounds
+names = base + patterns + eyes + accessories + mores + backgrounds
 
 names.each do |name|
    path = "./#{name}.png"
