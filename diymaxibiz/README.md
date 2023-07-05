@@ -12,19 +12,19 @@ To find your g(enerative) numbers in range 0-69 (70) - try the [D.I.Y. Maxi Biz 
 
 `og mint diymaxibiz 63 9 55 32`
 
-![](i/maxibiz1@10x.png)
+![](i/maxibiz2@10x.png)
 
 `og mint diymaxibiz 62 9 61 57 33`
 
-![](i/maxibiz1@10x.png)
+![](i/maxibiz3@10x.png)
 
 `òg mint diymaxibiz 66 12 25 32`
 
-![](i/maxibiz1@10x.png)
+![](i/maxibiz4@10x.png)
 
 `og mint diymaxibiz 1 22 42 57 32`
 
-![](i/maxibiz1@10x.png)
+![](i/maxibiz5@10x.png)
 
 `og mint diymaxibiz 62 3 51 32`
 
