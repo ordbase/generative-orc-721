@@ -111,7 +111,7 @@ recs.each_with_index do |rec,i|
   ## color = 'ff9900'  ## bitcoin orange
   ## color = '00ff00'  ## green
   color = '0000ff'  ## blue
-  composite_neon << img.neon( color, invert: invert_ids.include?( i ) )
+  ## composite_neon << img.neon( color, invert: invert_ids.include?( i ) )
 end
 
 
@@ -119,8 +119,8 @@ composite.save( "./tmp2/orangepixels.png" )
 composite.zoom(4).save( "./tmp2/orangepixels@4x.png" )
 
 
-composite_neon.save( "./tmp2/orangepixels_neon.png" )
-composite_neon.zoom(4).save( "./tmp2/orangepixels_neon@4x.png" )
+## composite_neon.save( "./tmp2/orangepixels_neon.png" )
+## composite_neon.zoom(4).save( "./tmp2/orangepixels_neon@4x.png" )
 
 
 puts "bye"

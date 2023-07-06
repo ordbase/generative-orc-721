@@ -18,9 +18,11 @@ require_relative 'validate'
 ## SLUG = 'diyapes'
 ## SLUG = 'diyaliens'
 ## SLUG = 'diymartians'
-## SLUG = 'orangepixels'
-SLUG = 'diyphunks'
-format = 'text'
+SLUG = 'orangepixels'
+format = 'json'
+
+## SLUG = 'diyphunks'
+## format = 'text'
 
 
 DEPLOYS ={
