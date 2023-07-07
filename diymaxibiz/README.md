@@ -2,6 +2,22 @@
 
 
 
+## Fam
+
+1x <br>
+
+![](i/diymaxibiz.png)
+
+4x  <br>
+![]()
+
+![](i/diymaxibiz@4x.png)
+
+
+
+
+
+
 To find your g(enerative) numbers in range 0-89 (90) - try the [D.I.Y. Maxi Biz (Punks) Previewer »](https://ordbase.github.io/generative-orc-721/diymaxibiz)
 
 

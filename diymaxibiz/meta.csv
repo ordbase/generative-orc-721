@@ -1,0 +1,117 @@
+id, name,  category
+
+## Base
+0, Punk (Faceless), Base
+1, Punk, Base
+2, Marc, Base
+3, Ape, Base
+4, Demon (Faceless), Base
+5, Demon, Base
+6, Frankenstein (Faceless), Base
+7, Frankenstein, Base
+8, Orc (Faceless), Base
+9, Orc, Base
+10, Alien (Faceless), Base
+11, Alien, Base 
+12, Robot (Faceless), Base
+13, Robot, Base
+
+14,  Punk (Abstract 1), Base
+15,  Punk (Abstract 2), Base
+16,  Punk (Abstract 3), Base
+
+### Patterns
+17,  Abstract 1, Pattern
+18,  Abstract 2, Pattern
+19,  Abstract 3, Pattern
+20,  Abstract 4, Pattern
+
+###
+21,  Face,      Face  
+22,  Smile,     Face
+23,  Frown,     Face
+24,  Spots,     Face
+
+25,  Big,        Beard
+26,  Normal,     Beard
+27,  Chin Strap,  Beard
+28,  Goatee,     Beard
+
+29,  Gold Chain,  Accessories
+
+30,  R(ed) 1,  Laser Eyes
+31,  G(reen) 1,  Laser Eyes
+32,  B(lue) 1,  Laser Eyes
+33,  R(ed) 2,  Laser Eyes
+34,  G(reen) 2,  Laser Eyes
+35,  B(lue) 2,  Laser Eyes
+ 
+36,  R(ed), Noun
+37,  G(reen),  Noun
+38,  B(lue),  Noun
+
+
+39,  Small Shades,  Accessories
+40,  Regular Shades,  Accessories
+41,  Hearts,  Accessories
+42,  3D Glasses,  Accessories
+43,  VR,  Accessories
+
+44,  Crazy,  Hair
+45,  Frumpy,  Hair
+46,  Messy,  Hair
+47,  Mohawk,  Hair
+48,  Peak Spike,  Hair
+49,  Side,  Hair
+50,  Clown,  Hair
+51,  Wild 1,  Hair
+52,  Wild 2,  Hair
+
+53,  Bandana,  Accessories
+54,  Beanie,  Accessories
+55,  Wizard Hat,  Accessories
+56,  Cap,  Accessories
+57,  McD Cap,  Accessories
+58,  Cap Forward,  Accessories
+59,  Cowboy Hat,  Accessories
+60,  Fedora,  Accessories
+61,  Headband,  Accessories
+62,  Beret,  Accessories
+63,  Knitted Cap,  Accessories
+64,  Sombrero,  Accessories
+65,  Top Hat,  Accessories
+66,  Uncle Sam Hat,  Accessories
+67,  Football Helmet,  Accessories
+68,  Liberty Cap,  Accessories
+69,  Crown,  Accessories
+70,  Saudi,  Accessories
+71,  Rabbi Hat (With Curls),  Accessories
+  
+
+72,  Bubble Gum,  Accessories
+73,  Cigarette,  Accessories
+74,  Pipe,  Accessories
+75,  Medical Mask,  Accessories
+
+
+76,  Onesie (Bear),  Accessories
+77,  Onesie (Frog),  Accessories
+78,  Hoodie,  Accessories
+
+
+79,   Punk (Abstract 4), Base
+
+## 1/1s
+80,  Maxi Hero, 1/1
+81,  Maxi Mario, 1/1
+82,  Maxi Mushroom, 1/1
+83,  Maxi Cat, 1/1
+
+
+84, Bitcoin Orange, Background
+85, Bitcoin, Background
+86, Greenback (Dollar), Background
+87, United States, Background
+88, Rainbow, Background
+89, Ukraine, Background
+

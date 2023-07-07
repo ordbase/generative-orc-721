@@ -29,7 +29,8 @@ def generate_page( slug:, max:, name:,
   ## pp mapping
 
   ## note:  add s for plural now
-  title  =   name.end_with?( 's') ? name : "#{name}s"
+  title  =   name.end_with?( 's') ||
+             name.end_with?( 'z') ? name : "#{name}s"
 
   buf = <<TXT
 ## #{title} (#{slug}) max. #{max}

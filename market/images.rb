@@ -20,8 +20,9 @@ width = 24
 height = 24
 
 ## slug = 'diymartians'
-slug = 'diyphunks'
-## max  = 100
+## slug = 'diyphunks'
+slug = 'diymaxibiz'
+max  = 100
 
 
 recs = read_csv( "./#{slug}/mint.csv" )
