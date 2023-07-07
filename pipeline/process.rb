@@ -21,8 +21,8 @@ require_relative 'validate'
 # SLUG = 'orangepixels'
 # format = 'json'
 
-## SLUG = 'diyphunks'
-SLUG = 'diymaxibiz'
+SLUG = 'diyphunks'
+## SLUG = 'diymaxibiz'
 format = 'text'
 
 
