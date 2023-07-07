@@ -10,8 +10,8 @@ recs = read_csv( "./#{slug}/mint.csv" )
 puts "   #{recs.size} record(s) - total"
 
 ## cut down to first hundred
-## recs = recs[0, max]
-## puts "   #{recs.size} record(s)"
+recs = recs[0, max]
+puts "   #{recs.size} record(s)"
 
 
 spritesheet_path =   "./#{slug}/spritesheet.png"

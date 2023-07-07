@@ -173,7 +173,7 @@ recs.each_with_index do |rec,i|
   ######
   ## todo/fix - single step - validate json only first
   ######
-   errors = nil
+   errors = []
    data   = nil
 
    if format == 'text'
@@ -191,12 +191,12 @@ recs.each_with_index do |rec,i|
        ## try to convert to json
        m=OG_MINT_SLUG_NUMS_RX.match( content.strip )
 
-       ### FIX: report/ log error
        if m.nil?   ## skip for now
-          puts "!! SKIP NO MATCH OG_MINT_SLUG_NUMS:"
-          puts content
-          next
-       end
+          msg = "protocol format -- no pattern match; expected (single) line in the format 'og mint <slug> <nums>'" 
+          # puts "!! ERROR - #{msg}:"
+          # puts content
+          errors = [msg]
+       else
           data = {
             'p'  => 'orc-721',
             'op' => 'mint',
@@ -204,8 +204,8 @@ recs.each_with_index do |rec,i|
             'g'  => m[:nums].split( /[ ]+/).map {|num| num.to_i(10) }
             }
           puts data.to_json
-
-       errors = validate_mint( num, data.to_json, deploys: DEPLOYS )
+          errors = validate_mint( num, data.to_json, deploys: DEPLOYS )
+        end
     else ## assume "classic" json
 
      ## first see if valid json
