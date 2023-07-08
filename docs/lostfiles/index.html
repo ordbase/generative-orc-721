@@ -12,10 +12,16 @@ body {
 
 #spritesheet {
   display: grid;
+  /*
   grid-template-columns: repeat(16, 24px);
   grid-template-rows: repeat(5, 24px);
   width: 384px;
   height: 120px;
+  */
+  grid-template-columns: repeat(10, 24px);
+  grid-template-rows: repeat(6, 24px);
+  width: 240px;
+  height: 144px;
   margin: auto;
 
   /*
@@ -49,14 +55,14 @@ body {
 
 
  <h1>
-  D.I.Y. Lost Files (Portrait) Previewer
+  D.I.Y. Lost Maxi Biz Files (Portrait) Previewer
   </h1>
 
 
 
 
 <p>
-  Directions: click on the map below to preview your DIY Lost File.
+  Directions: click on the map below to preview your DIY Lost Maxi Biz File.
   Press clear to start over.<br/>
   When you're happy, use the og standard mint text generated.
   </p>
@@ -80,8 +86,10 @@ DIY Lost Files is a project by the <a href="https://twitter.com/OrdinalPhunksV0"
 
   <script>
 
- let cols = 16;
- let rows = 5;
+ // let cols = 16;
+ // let rows = 5;
+ let cols = 10;
+ let rows = 6;
  let tiles = cols * rows;
  let width = 24;
  let height = 24;
