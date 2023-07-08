@@ -13,18 +13,17 @@ body {
 #spritesheet {
   display: grid;
   grid-template-columns: repeat(10, 496px);   
-  grid-template-rows: repeat(6, 500px);
-  width: 4960px;
+  grid-template-rows:     repeat(6, 500px);
+ 
+  width:  4960px;    
   height: 3000px;
   margin: auto;
 
-  /*
-  background: url(https://cdn.discordapp.com/attachments/900856159211257889/1113607517512155136/cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0.png);
-  */
   background: url(https://ordbase.github.io/generative-orc-721/diyorditroops/spritesheet.png);
 
-  transform: scale(1);
+  transform: scale(0.1); 
   transform-origin: 0 0;
+ 
 }
 
 .sprite {
@@ -60,7 +59,12 @@ body {
   Press clear to start over.<br/>
   When you're happy, use the og standard mint text generated.
   </p>
-  <div id="spritesheet"></div>
+
+
+  <div style="max-width: 496px; max-height: 300px; margin: auto;"> 
+      <div id="spritesheet"></div>
+  </div>
+
 
   <canvas id="canvas" width="496" height="500"></canvas>
 
@@ -78,6 +82,8 @@ DIY Ordi Troops  is a project by the ordgen / ORC-721 community.
 <!-- note: requires jquery 3.4.1 -->
 <script scr="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+
+
   <script>
 
  let cols = 10;
@@ -94,7 +100,6 @@ canvas.height = height * scaleFactor;  // 240px
 let ctx = canvas.getContext('2d');
 ctx.imageSmoothingEnabled = false; // Disable image smoothing
 let img = new Image();
-// img.src = 'https://cdn.discordapp.com/attachments/900856159211257889/1113607517512155136/cf5df319bbe23fa3d012e5ee0810700c8e82aebff41164246f0d87d7b60a9903i0.png';
 img.src = 'https://ordbase.github.io/generative-orc-721/diyorditroops/spritesheet.png';
 
 let output = document.getElementById('output');
