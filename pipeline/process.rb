@@ -21,8 +21,9 @@ require_relative 'validate'
 # SLUG = 'orangepixels'
 # format = 'json'
 
-SLUG = 'diyphunks'
+## SLUG = 'diyphunks'
 ## SLUG = 'diymaxibiz'
+SLUG = 'diyorditroops'
 format = 'text'
 
 
@@ -65,6 +66,9 @@ DEPLOYS ={
                    },
     'diymaxibiz' => { 'num' => 14999762,
                    'g'   => 90,     ##  max g range e.g. 0-89 (90)
+                 },
+    'diyorditroops' => { 'num' => 15567938,
+                   'g'   => 58,     ##  max g range e.g. 0-57 (58)
                  },
 }
 
