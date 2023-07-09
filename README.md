@@ -125,6 +125,18 @@ see the [Orange Pixels Getting Started Guide and Documentation »](https://githu
 [**100 D.I.Y. (Left-Looking) Phunks**](https://ordinals.com/inscription/09e3c57879b0a30239b088468277d009f838111d254eb22f35a9b2a31b77a5d4i0) (24×24px)  - world's 1st generative with og standard text deploy & mint format; deploy (& spritesheet) inscribes thanks to [@AlteredOracle](https://twitter.com/AlteredOracle)
 
 
+[**100 D.I.Y. Maxi Biz (Punks)**](https://ordinals.com/inscription/7e238c49e16368a4b089fbd6f2ca4c866d415e3801f059e54f8e1025650560e1i0) (24×24px) 
+
+<details>
+<summary markdown="1">Show / Hide</summary>
+
+![](diymaxibiz/i/diymaxibiz.png)
+
+</details>
+
+
+[**25 D.I.Y. (Recursive) Ordi Troops**](https://ordinals.com/inscription/24ab235103da2f2f4c6ba186e2bc56534a100395d218145af50e9b658e9d9a1fi0) (496×500px)  -  deploy inscribe thanks to [@ord_gen](https://twitter.com/ord_gen)
+
 
 
 
