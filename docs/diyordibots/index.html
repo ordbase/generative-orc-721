@@ -7,7 +7,7 @@
 
 <style>
   body {
-    text-align:center;
+    text-align: center;
   }
 
   #spritesheet {
@@ -19,9 +19,6 @@
     margin: auto;
 
     background: url(https://raw.githubusercontent.com/ordbase/generative-orc-721/master/diyordibots/spritesheet.png);
-
-    transform: scale(1);
-    transform-origin: 0 0;
   }
 
   .sprite {
@@ -32,7 +29,6 @@
   #canvas {
     width: 320px;
     height: 320px;
-    filter: blur(.0px);
     border: 2px solid #ccc;
     margin: 10px;
     background-color: #eee;
@@ -50,7 +46,7 @@
     </h1>
     <p>
     Directions: click on the map below to preview your DIY Ordibot.
-    Press clear to start over.<br/><br/>
+    Press clear to start over.<br><br>
     When you're happy, use the attribute list generated.
     </p>
     <div id="spritesheet"></div>
@@ -67,9 +63,6 @@
     and the <a href="https://github.com/ordbase/generative-orc-721">generative-orc-721 github</a>
     <footer>This previewer adopted from a fiddle written by Jokie </footer>
 
-
-  <!-- note: requires jquery 3.4.1 -->
-  <script scr="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <script>
   let canvas = document.getElementById('canvas');

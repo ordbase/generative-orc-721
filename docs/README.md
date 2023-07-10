@@ -13,15 +13,16 @@ Ordgen / ORC-721 Collection (Image) Previewers include:
 
 ## Standard Text Format Series
 
+- [D.I.Y. Phunks »](diyphunks)
+- [D.I.Y. Maxi Biz (Punks) »](diymaxibiz)
+- [D.I.Y. Genesis Punks »](genesis)
 
-
-- [D.I.Y. Phunks (Left-Looking) »](diyphunks)
 
 
 ##  "Classic" JSON Format Series
 
 
-- [D.I.Y. Punks (Right-Looking) »](diypunks)
+- [D.I.Y. Punks »](diypunks)
 - [D.I.Y. Ghost Punks »](diyghostpunks)
 - [D.I.Y. Ordibots »](diyordibots)
 - [D.I.Y. Cool Cats »](diycoolcats)
