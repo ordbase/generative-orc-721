@@ -17,19 +17,23 @@ that are - surprise, suprise -  pixel-perfect copies of
 the "originals" in the CryptoPunksData contract (Anno 2021).
 
 
-Let's mint a new ordgen / ORC-721 collection (free, first-come/first-serve) - 10 000 D.I.Y. Genesis Punks - (re)using or (is it "recursing on"?) the .PNGs indexed 1 to 133 with the bonus bitcoin orange background at 0 - plus going beyond recursive punks 
+Let's deploy & mint a new ordgen / ORC-721 collection (free, first-come/first-serve) - 10 000 D.I.Y. Genesis Punks - (re)using or (is it "recursing on"?) the .PNGs indexed 1 to 133 with the bonus bitcoin orange background at 0 - plus going beyond recursive punks 
 by matching the attribute ids in the CryptoPunksData in the generative dna ("on-chain" bitcoin metadata).
+
+<!--
 
 ## Wen mint?
 
-<!--
 NOW (Free, First-Come/First-Serve)
--->
 
-Try the [D.I.Y. Genesis Punks (Image) Previewer »](https://ordbase.github.io/generative-orc-721/genesis)
 
 Sorry for the bad news ...  unfortunately the deploy inscribe is broken ... i am heart broken too ...
 the first line is missing in action e.g.  `og deploy genesis`.   If anyone can help out with a new inscribe, please do ... yes, you can.
+-->
+
+
+Try the [D.I.Y. Genesis Punks (Image) Previewer »](https://ordbase.github.io/generative-orc-721/genesis)
+
 
 ## Wen deploy? 
 
@@ -42,8 +46,11 @@ inscribe yourself into (crypto & ordinal bitcoin) history!
 
 Here's the ordgen / ORC-721 deploy text:
 
+<!--
 <details>
 <summary markdown="1">Show / Hide</summary>
+-->
+
 
 ```
 og deploy genesis
@@ -186,12 +193,13 @@ d57f77b3eb7d5c4412bdc86deebc96a67517c27dcc6d6119fec1ba33f0367862i0
 e047590efef1e16b6e74a883835949b13b1921eb8587cee20dc4056c39be4b6ci0
 ```
 
+<!--
 
 </details>
 
-<!--
 [Inscribe №14470668](https://ordinals.com/inscription/65c0a852e285e5a19372305f2eef97c5cabedc3f6addc71d27088b31540d172bi0) by  ???  thank you!
 -->
+
 
 Interested?  
 Join us in the ordinal phunks discord (in the #random / General channel).
