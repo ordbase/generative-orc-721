@@ -20,13 +20,14 @@ INSCRIBE_RX = %r{
 
 def prepare_inscribes( dir )
 
+  ## in html format
   pages = Dir.glob( "#{dir}/**/*.html")
 
   inscribes = []
 
   rx = INSCRIBE_RX
-  pages.each do |page|
-    txt = read_text( page )
+  pages.each do |path|
+    txt = read_text( path )
 
     txt.scan( rx ) do |_|
       m = Regexp.last_match
@@ -35,6 +36,17 @@ def prepare_inscribes( dir )
     end
   end
 
+
+  ### in csv format
+  datasets = Dir.glob( "#{dir}/**/*.csv")
+
+  datasets.each do |path|
+    recs = read_csv( path )
+
+    recs.each do |rec|
+      inscribes << rec['id'].strip
+    end
+  end
 
   ## pp inscribes
   puts "   #{inscribes.size} inscribe(s)"
@@ -48,6 +60,8 @@ def prepare_inscribes( dir )
 end
 
 
+
+
 ids = prepare_inscribes( './inbox' )
 
 
@@ -55,7 +69,7 @@ cache_dir = '../ordinals.cache/btc'
 delay_in_s = 0.5
 
 ids.each_with_index do |id,i|
-  puts "==> #{i+1}/#{ids.size} - #{id}"
+  ## puts "==> #{i+1}/#{ids.size} - #{id}"
 
 
   ## step 1)  get metadata records
@@ -64,7 +78,9 @@ ids.each_with_index do |id,i|
   meta = nil
    if File.exist?( meta_path )
        meta = read_json( meta_path )
+       print "."
    else
+       print " #{i+1}/#{ids.size}-#{id}"
        ## fetch and cache in cache
        meta = Ordinals.inscription( id )
        pp meta
@@ -78,19 +94,21 @@ ids.each_with_index do |id,i|
    content_type = meta['content type']
    if !(content_type.start_with?( 'text/' )  ||
         content_type.start_with?( 'application/json'))
-    puts "!! expected text/* or application/json inscribe; got:"
-    pp meta
-    exit 1
+    puts "!! expected text/* or application/json inscribe; got: #{content_type}"
+    ## pp meta
+    next  ### exit 1
    end
 
-   puts "   content_type: >#{content_type}<..."
+
+   ## puts "   content_type: >#{content_type}<..."
 
    ## step 2) get content - check for mime type - text/
    ##   note - save appliation/json as .txt for now too - why? why not?
 
    path    = "#{cache_dir}/content/#{id}.txt"
    if File.exist?( path )
-       puts "  in cache"
+       ## puts "  in cache"
+       print "."
    else
       ## note: save text as blob - byte-by-byte as is  (might be corrupt text)
 
@@ -109,6 +127,7 @@ ids.each_with_index do |id,i|
       sleep( delay_in_s )
    end
 end
+puts
 
 
 puts "bye"
