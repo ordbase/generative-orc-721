@@ -60,6 +60,26 @@ module OrdDb
     OrdDb.create
   end
 
+  def self.auto_migrate!
+    ### todo/fix:
+    ##    check props table and versions!!!!!
+
+    # first time? - auto-run db migratation, that is, create db tables
+    unless LogDb::Model::Log.table_exists?
+      LogDb.create     # add logs table
+    end
+
+    unless ConfDb::Model::Prop.table_exists?
+      ConfDb.create    # add props table
+    end
+
+    unless OrdDb::Model::Inscribe.table_exists?
+      OrdDb.create
+    end
+  end # method auto_migrate!
+
+
+
   def self.connect( config={} )
 
     if config.empty?

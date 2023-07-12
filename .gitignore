@@ -31,3 +31,14 @@ tmpa16z/
 #          e.g. all inscription.json datasets
 market/*.json
 
+
+#####
+#  add inbox directories (new pipeline)
+inbox/
+
+
+
+###
+#  ignore sqlite dbs
+*.db
+ord.db

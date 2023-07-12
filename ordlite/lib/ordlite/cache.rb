@@ -18,24 +18,43 @@ def import_all
    puts "  #{paths.size} inscribe datafile(s) found"
 
    paths.each_with_index do |path, i|
-     puts "==> inscribe #{i+1}/#{paths.size}..."
+     ## puts "==> inscribe #{i+1}/#{paths.size}..."
      data = _read_inscribe( path )
      
-     Inscribe.create_from_cache( data )
+     id = data['id']
+
+     ## skip if exists (use update later - why? why not?)
+     rec = Inscribe.find_by( id: id )
+     if rec 
+      ## skip - already in db
+        print '.'
+     else
+        print " #{id}"  #  NEW - add / insert into db"
+        Inscribe.create_from_cache( data )
+     end
    end
+   puts
 
 
    paths = Dir.glob( "#{@dir}/content/**.txt" )
    puts "  #{paths.size} content datafile(s) found"
 
    paths.each_with_index do |path, i|
-      puts "==> blob #{i+1}/#{paths.size}..."
+      ## puts "==> blob #{i+1}/#{paths.size}..."
       content = _read_blob( path )
       id      = File.basename( path, File.extname( path ))
-      
-      Blob.create( id: id,
-                   content: content )
+  
+      rec = Blob.find_by( id: id )
+      if rec
+        ## skip - already in db
+        print '.'
+      else
+         print " #{id}"   # NEW - add / insert into db"
+         Blob.create( id: id,
+                      content: content )
+      end
     end
+    puts
 end
 
 
