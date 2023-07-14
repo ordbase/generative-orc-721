@@ -7,11 +7,11 @@ base = %w[
   maxibiz/base1
   maxibiz/base2a
   maxibiz/base2
+  maxibiz/base3a
+  maxibiz/base3
 ]
 
 eyes = %w[
-  maxibiz/eyes
-  maxibiz/eyepatch
   maxibiz/shades
   maxibiz/3dglasses
   maxibiz/lasereyes-red
@@ -21,8 +21,6 @@ eyes = %w[
   maxibiz/lasereyes2-green
   maxibiz/lasereyes2-blue
 ]
-
-##  maxibiz/eyes2
 
 
 accessories = %w[
