@@ -3,30 +3,40 @@ require 'pixelart'
 
 
 base = %w[
-  base1a-orange
-  base1b-orange
-  base2a-orange
-  base2b-orange
-  base3a-orange
-  base3b-orange
-  base1-orc
-  base2-orc
+  more/base1-orange
+  more/base1-orange-orc
+  more/base2-orange
+  more/base2-orange-orc
+  more/base3-orange
+  more/base3-orange-orc
+  more/base1-green
+  more/base1-green-orc
+  more/base1-blue
+  more/base1-blue-orc
 ]
 
 eyes = %w[
   eyes
   eyes2
   eyes3
-  eyes4
+  eyes5
+  eyes6
+  eyes7
+  eyes8
+  eyes9
   more/eyemask
   3dglasses
   eyepatch
   lasereyes
   lasereyes2
+  more/lasereyes3
   shades
   shades2
-  visor 
+  visor
+  visor2 
 ]
+
+##  eyes4
 
 
 accessories = %w[
@@ -49,15 +59,18 @@ accessories = %w[
    policecap
    tophat
    hat
+   hat2
+   hat3
    helmet
    helmet2
+   halo
    earring
    more/bubblegum
 ]
 
 ## 1/1s or punks
 mores = %w[
-  base1-punk
+  more/base1-punk
   more/lasereyes-punk
 ]
 
@@ -69,12 +82,16 @@ backgrounds = %w[
 ]
 
 
+names = base + eyes + accessories + mores + backgrounds
+
+puts "  #{names.size} name(s)"
+## => 52 name(s)
 
 
-composite = ImageComposite.new( 10, 5, width: 28,
+
+composite = ImageComposite.new( 10, 6, width: 28,
                                        height: 28 )
 
-names = base + eyes + accessories + mores + backgrounds
 
 names.each do |name|
    path = "./#{name}.png"

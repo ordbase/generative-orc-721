@@ -11,7 +11,7 @@ base = %w[
 
 eyes = %w[
   maxibiz/eyes
-  maxibiz/eyes2
+  maxibiz/eyepatch
   maxibiz/shades
   maxibiz/3dglasses
   maxibiz/lasereyes-red
@@ -22,6 +22,8 @@ eyes = %w[
   maxibiz/lasereyes2-blue
 ]
 
+##  maxibiz/eyes2
+
 
 accessories = %w[
    maxibiz/mohawk
@@ -29,8 +31,10 @@ accessories = %w[
    maxibiz/cap2
    maxibiz/cap4
    maxibiz/cap7
+   maxibiz/knittedcap
    maxibiz/cowboyhat
    maxibiz/tophat
+   maxibiz/helmet
    maxibiz/bubblegum
 ]
 
@@ -48,12 +52,15 @@ backgrounds = %w[
 ]
 
 
+names = base + eyes + accessories + mores + backgrounds
+
+puts "  #{names.size} name(s)"
+## => 31 name(s)
+
 
 
 composite = ImageComposite.new( 10, 3, width: 28,
                                        height: 28 )
-
-names = base + eyes + accessories + mores + backgrounds
 
 names.each do |name|
    path = "./#{name}.png"
