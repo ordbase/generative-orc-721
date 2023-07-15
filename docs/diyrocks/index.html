@@ -1,0 +1,127 @@
+
+<!--
+    source based on fiddle by @jokie
+       see https://jsfiddle.net/a6mnft3d/34/
+-->
+
+
+<style>
+body {
+  text-align: center;
+}
+
+#spritesheet {
+  display: grid;
+  grid-template-columns: repeat(10, 28px);
+  grid-template-rows: repeat(3, 28px);
+  width: 280px;
+  height: 84px;   
+  margin: auto;
+
+  background: url(spritesheet.png);
+}
+
+.sprite {
+  width: 28px;
+  height: 28px;
+}
+
+#canvas {
+  width: 280px;
+  height: 280px;
+  border: 2px solid #ccc;
+  margin: 10px;
+  background-color: #eee;
+}
+
+#cleardiv {
+  margin: auto;
+  text-align: center;
+  }
+</style>
+
+
+ <h1>
+  D.I.Y. Rocks (Incl. Punks & Maxi Biz) Previewer
+  </h1>
+
+
+
+<p>
+  Directions: click on the map below to preview your DIY Rock.
+  Press clear to start over.<br><br>
+  When you're happy, use the og standard mint text generated.
+  </p>
+  <div id="spritesheet"></div>
+
+  <canvas id="canvas" width="280" height="280"></canvas>
+
+  <div id="cleardiv">
+   <button id="clear">Clear</button>
+  </div>
+
+
+  <p id="output"></p>
+
+  DIY Rocks (Incl. Punks & Maxi Biz) is a project by the ordgen / ORC-721 community.
+    Learn more on the <a href="https://ordinalpunks.com">Ordinal Punks discord</a> (in the #generative-orc-721 channel)
+    and the <a href="https://github.com/ordbase/generative-orc-721">generative-orc-721 github</a>
+    <footer>This previewer adopted from a fiddle written by Jokie </footer>
+
+
+    <script>
+
+   let cols = 10;
+   let rows = 3;
+   let tiles = cols * rows;
+   let width = 28;
+   let height = 28;
+
+   let scaleFactor = 10;
+
+  let canvas = document.getElementById('canvas');
+  canvas.width =  width * scaleFactor;   // 280px
+  canvas.height = height * scaleFactor;  // 280px
+  let ctx = canvas.getContext('2d');
+  ctx.imageSmoothingEnabled = false; // Disable image smoothing
+  let img = new Image();
+  img.src = 'spritesheet.png';
+
+  let output = document.getElementById('output');
+  let selectedSprites = [];
+
+
+  img.onload = function() {
+    for(let i = 0; i < tiles; i++) {
+          let sprite = document.createElement('div');
+          sprite.className = 'sprite';
+
+          let x = i % cols;
+          let y = Math.floor(i / cols);
+          // console.log( `==> add sprite ${i} - x: ${x} y: ${y}` );
+
+          let pos = `-${x * width}px -${y * height}px`;
+          sprite.style.backgroundPosition = pos;
+          // console.log( `  pos: ${pos}` );
+
+
+          sprite.addEventListener('click', () => {
+              ctx.drawImage(img,
+                            x * width,
+                            y * height,
+                            width, height, 0, 0,
+                            width * scaleFactor,
+                            height * scaleFactor);
+              selectedSprites.push(i);
+              output.textContent = "og mint diyrocks " + selectedSprites.join(' ');
+          });
+          document.getElementById('spritesheet').appendChild(sprite);
+      }
+  };
+
+  document.getElementById('clear').addEventListener('click', () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      selectedSprites = [];
+      output.textContent = '';
+  });
+</script>
