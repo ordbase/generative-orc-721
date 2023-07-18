@@ -65,47 +65,88 @@ end
 ids = prepare_inscribes( './inbox' )
 
 
-cache_dir = '../ordinals.cache/btc'
+def json_to_txt( data )
+  buf = ''
+  data.each do |k,v|
+    next if ['preview', 'content'].include?( k )
+    buf << "#{k.gsub( ' ', '-')}: #{v}\n"
+  end
+  buf
+end
+
+
+HEADER_RX = /\A(?<key>[a-z][a-z0-9_-]*)
+                 :
+                 [ ]*
+               (?<value>.+?)    ## non-greedy
+              \z
+             /x
+
+def read_props( path )
+  txt = read_text( path )
+  h = {}
+  txt.each_line do |line|
+    line = line.strip
+    next if line.empty?
+    if m=HEADER_RX.match(line)
+      key   = m[:key]
+      value = m[:value]
+      
+      h[key] = value
+   else 
+      puts "!! ERROR - parse error - no header pattern match for:"
+      puts line
+      exit 1
+   end
+  end
+  h
+end
+
+
+cache_dir = '../ordinals.cache/inscription'
 delay_in_s = 0.5
+
 
 ids.each_with_index do |id,i|
   ## puts "==> #{i+1}/#{ids.size} - #{id}"
 
 
   ## step 1)  get metadata records
-  meta_path    = "#{cache_dir}/#{id}.json"
+  meta_path    = "#{cache_dir}/#{id[0,2]}/#{id[2..-1]}.meta.txt"
 
   meta = nil
    if File.exist?( meta_path )
-       meta = read_json( meta_path )
+       meta = read_props( meta_path )
        print "."
    else
        print " #{i+1}/#{ids.size}-#{id}"
        ## fetch and cache in cache
        meta = Ordinals.inscription( id )
        pp meta
+       meta_txt = json_to_txt( meta )
 
-       write_json( meta_path, meta )
+       write_text( meta_path, meta_txt )
 
        sleep( delay_in_s )
    end
 
 
-   content_type = meta['content type']
-   if !(content_type.start_with?( 'text/' )  ||
-        content_type.start_with?( 'application/json'))
-    puts "!! expected text/* or application/json inscribe; got: #{content_type}"
-    ## pp meta
-    next  ### exit 1
+   extname = nil
+   content_type = meta['content-type']
+   if content_type.start_with?( 'text/plain' )
+       extname = '.txt'
+   elsif content_type.start_with?( 'application/json' )
+       extname = '.json'
+   elsif content_type.start_with?( 'image/png' )
+       extname = '.png'
+   else
+     puts "!! ERROR - unexpected content type; got: #{content_type}"
+     ## pp meta
+     exit 1
    end
 
 
-   ## puts "   content_type: >#{content_type}<..."
-
-   ## step 2) get content - check for mime type - text/
-   ##   note - save appliation/json as .txt for now too - why? why not?
-
-   path    = "#{cache_dir}/content/#{id}.txt"
+   path    = "#{cache_dir}/#{id[0,2]}/#{id[2..-1]}#{extname}"
    if File.exist?( path )
        ## puts "  in cache"
        print "."
