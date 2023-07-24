@@ -3,7 +3,7 @@
 #   $ ruby pipeline2/sync.rb
 
 
-$LOAD_PATH.unshift( "./ordlite/lib" )
+$LOAD_PATH.unshift( "../ordbase/ordlite/lib" )
 require 'ordlite'
 
 OrdDb.connect( adapter:  'sqlite3',
@@ -13,7 +13,7 @@ OrdDb.connect( adapter:  'sqlite3',
 OrdDb.auto_migrate!
 
 
-cache =  OrdDb::Cache.new( '../ordinals.cache/btc' )
+cache =  OrdDb::Cache.new( '../ordinals.cache/inscription' )
 cache.import_all
 
 

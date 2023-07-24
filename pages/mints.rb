@@ -2,12 +2,11 @@
 #  generate a feed / page with the last hundred mints
 #
 #  to run use:
-#   $ ruby pipeline2/page_mints.rb
+#   $ ruby pages/mints.rb
 
 
-$LOAD_PATH.unshift( "./ordlite/lib" )
+$LOAD_PATH.unshift( "../ordbase/ordlite/lib" )
 require 'ordlite'
-require 'cocos'
 
 
 OrdDb.connect( adapter:  'sqlite3',
@@ -54,10 +53,6 @@ end
 buf =<<TXT
 New to Generative ORC-721?  See the [Getting Started Guide & Documentation »](https://github.com/ordbase/generative-orc-721)
 
-**Q: Wen image (in wallet) - i see text?**
-
-Please, see [Frequently Asked Questions (F.A.Q) and Answers »](https://github.com/ordbase/generative-orc-721/blob/master/FAQ.md)
-
 
 ## Mints
 
@@ -94,7 +89,7 @@ buf += <<TXT
 
 ---
 
-Page Generated with [Ordlite - Ordinal Inscription (SQL) Database - Scripts](https://github.com/ordbase/generative-orc-721/tree/master/ordlite).  
+Page Generated with [Ordlite - Ordinal Inscription (SQL) Database - Scripts](https://github.com/ordbase/ordbase/tree/master/ordlite).  
 TXT
 
 ## puts buf

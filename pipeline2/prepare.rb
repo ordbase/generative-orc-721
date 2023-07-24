@@ -2,10 +2,9 @@
 #  to run use
 #   $  ruby  pipeline2/prepare.rb
 
+$LOAD_PATH.unshift( "../ordbase/ordinals/lib" )
 require 'ordinals'
 
-
-require_relative 'cache'
 
 
 cache = Ordinals::Cache.new( '../ordinals.cache/inscription' )
