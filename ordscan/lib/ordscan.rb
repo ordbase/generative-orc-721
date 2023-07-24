@@ -1,3 +1,0 @@
-
-puts "hello, ordscan!"
-
