@@ -1,0 +1,100 @@
+
+<!--
+    source based on fiddle by @jokie
+       see https://jsfiddle.net/a6mnft3d/34/
+-->
+
+
+<style>
+body {
+  text-align: center;
+}
+
+#spritesheet {
+  display: grid;
+  grid-template-columns: repeat(10, 24px);
+  grid-template-rows: repeat(9, 24px);
+  width: 240px;
+  height: 216px;
+  margin: auto;
+
+  background: url(spritesheet.png);
+}
+
+.sprite {
+  width: 24px;
+  height: 24px;
+}
+
+#canvas {
+  width: 240px;
+  height: 240px;
+  border: 2px solid #ccc;
+  margin: 10px;
+  background-color: #eee;
+}
+
+#cleardiv {
+  margin: auto;
+  text-align: center;
+  }
+</style>
+
+
+ <h1>
+  DIY Barbies
+  </h1>
+
+  <p>
+  Directions: click on the map below to preview your DIY Barbie.
+  Press clear to start over.<br><br>
+  When you're happy, use the attribute list generated.
+  </p>
+  <div id="spritesheet"></div>
+
+  <canvas id="canvas" width="240" height="240"></canvas>
+
+  <div id="cleardiv">
+   <button id="clear">Clear</button>
+  </div>
+  <p id="output"></p>
+
+DIY Barbies is a project by the ORC-721 community.
+  Learn more on the <a href="https://discord.gg/swBWd827qM">Ordinal Punks discord</a> (in the #generative-orc-721 channel)
+  and the <a href="https://github.com/ordbase/generative-orc-721">generative-orc-721 github</a>
+  <footer>This previewer adopted from a fiddle written by Jokie </footer>
+
+
+  <script>
+let canvas = document.getElementById('canvas');
+canvas.width = 240;
+canvas.height = 240;
+let ctx = canvas.getContext('2d');
+ctx.imageSmoothingEnabled = false; // Disable image smoothing
+let img = new Image();
+img.src = 'spritesheet.png';
+
+let output = document.getElementById('output');
+let selectedSprites = [];
+let scaleFactor = 10;
+
+img.onload = function() {
+    for(let i = 0; i < 90; i++) {
+        let sprite = document.createElement('div');
+        sprite.className = 'sprite';
+        sprite.style.backgroundPosition = `-${(i % 10) * 24}px -${Math.floor(i / 10) * 24}px`;
+        sprite.addEventListener('click', () => {
+            ctx.drawImage(img, (i % 10) * 24, Math.floor(i / 10) * 24, 24, 24, 0, 0, 24 * scaleFactor, 24 * scaleFactor);
+            selectedSprites.push(i);
+            output.textContent = '"barbie ' + selectedSprites.join(' ');
+        });
+        document.getElementById('spritesheet').appendChild(sprite);
+    }
+};
+
+document.getElementById('clear').addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    selectedSprites = [];
+    output.textContent = '';
+});
+  </script>
