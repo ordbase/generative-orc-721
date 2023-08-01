@@ -13,9 +13,9 @@ body {
 #spritesheet {
   display: grid;
   grid-template-columns: repeat(10, 24px);
-  grid-template-rows: repeat(9, 24px);
+  grid-template-rows: repeat(8, 24px);
   width: 240px;
-  height: 216px;
+  height: 192px;
   margin: auto;
 
   background: url(spritesheet.png);
@@ -59,8 +59,9 @@ body {
   </div>
   <p id="output"></p>
 
-DIY Barbies is a project by the ORC-721 community.
-  Learn more on the <a href="https://discord.gg/swBWd827qM">Ordinal Punks discord</a> (in the #generative-orc-721 channel)
+DIY Barbies is a project by the ordgen / ORC-721 community.
+  Learn more in the <a href="https://discord.gg/dDhvHKjm2t">Ordgen / ORC_721 discord</a> 
+  (in the #general channel)
   and the <a href="https://github.com/ordbase/generative-orc-721">generative-orc-721 github</a>
   <footer>This previewer adopted from a fiddle written by Jokie </footer>
 
@@ -79,7 +80,7 @@ let selectedSprites = [];
 let scaleFactor = 10;
 
 img.onload = function() {
-    for(let i = 0; i < 90; i++) {
+    for(let i = 0; i < 80; i++) {
         let sprite = document.createElement('div');
         sprite.className = 'sprite';
         sprite.style.backgroundPosition = `-${(i % 10) * 24}px -${Math.floor(i / 10) * 24}px`;
