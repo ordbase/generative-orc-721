@@ -42,8 +42,20 @@ deploys ={
 
 
 
+
 mint_inscribes.each do |num, content|
-  errors =  validate_mint( num, content, deploys: deploys )
+
+  ###  1) check for valid json
+  data = nil
+  errors = nil
+  begin
+    data = JSON.parse( content )
+    errors = validate_mint( num, data, deploys: deploys )
+    ## puts "   OK - json parse"
+  rescue JSON::ParserError => ex
+    errors = ["json parse -- #{ex.message}"]
+  end
+
   if errors.size == 0
      puts "OK       - #{num}"
   else

@@ -4,19 +4,19 @@
 #  to run use:
 #   $ ruby pages/mints.rb
 
-
+$LOAD_PATH.unshift( "../ordbase/ordinals/lib" )
 $LOAD_PATH.unshift( "../ordbase/ordlite/lib" )
 require 'ordlite'
 
 
-OrdDb.connect( adapter:  'sqlite3',
-               database: './ord.db' )
+OrdDb.open( './ord.db' )
 
 
 puts
 puts "  #{Inscribe.count} inscribe(s)"
 puts "  #{Blob.count} blob(s)"
 puts "  #{Collection.count} collection(s)"
+puts "  #{Factory.count} factories"
 puts "  #{Generative.count} generative(s)"
 
 
@@ -69,7 +69,7 @@ mints.each_with_index do |generative,i|
   buf << "<br>\n"
 
   ## add images
-  if generative.collection.id == 'diyorditroops'
+  if generative.factory.id == 'diyorditroops'
     buf << %Q[<img src="https://orc721.github.io/orditroops.starter/num/#{rec.num}.png" width="10%">]
     buf << "<br>\n"  
   else

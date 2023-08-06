@@ -7,18 +7,26 @@
 ##       diypunks == DiyPunks  etc.
 
 
-## todo/fix:
-##   do NOT allow -_ at end of name in slug!!!!
-
-
-def validate_mint( num, data, deploys: {} )
+def validate_mint( num, content, deploys: {} )
   errors = []
 
+  ###  1) check for valid json
+  h = nil
+  begin
+    h = JSON.parse( content )
+    ## puts "   OK - json parse"
+  rescue JSON::ParserError => ex
+    msg = "json parse -- #{ex.message}"
+    errors << msg
+    ## puts "   !! ERROR - #{msg}"
+  end
+
+  if h
     ###  2) check for protocol required keys  - p,op,s,g
     ##          todo: allow (long-form) alternative for s e.g. slug
     ##          todo: allow (long-form) alternative for g e.g. generative?
     ['p','op','s','g'].each do |key|
-       if data.has_key?( key )
+       if h.has_key?( key )
           ## continue
        else
           msg = "protocol format -- required key '#{key}' not found in inscribe text"
@@ -29,7 +37,7 @@ def validate_mint( num, data, deploys: {} )
 
     ## 3) check for protocol values
     if errors.size == 0
-      value = data['p']
+      value = h['p']
       if value != 'orc-721'
         msg = "protocol format -- expected value 'orc-721' for key 'p'; got '#{value}'"
         errors << msg
@@ -37,7 +45,7 @@ def validate_mint( num, data, deploys: {} )
     end
 
     if errors.size == 0
-      value = data['op']
+      value = h['op']
       if value != 'mint'
         msg = "protocol format -- expected value 'mint' for key 'op'; got '#{value}'"
         errors << msg
@@ -46,7 +54,7 @@ def validate_mint( num, data, deploys: {} )
 
 
     if errors.size == 0
-      slug = value = data['s']
+      slug = value = h['s']
 
        ## slug must use this regex (texp pattern) format
        ##  note: MUST start with a-z (NOT numbers or _-)
@@ -78,7 +86,7 @@ def validate_mint( num, data, deploys: {} )
              errors << msg
          else
             ## check for g
-            g = values =  data['g']
+            g = values =  h['g']
             if values.size == 0   ## empty array
               msg = "protocol format -- empty g"
               errors << msg
@@ -106,6 +114,7 @@ def validate_mint( num, data, deploys: {} )
         end
      end
     end
+  end
 
   errors
 end
