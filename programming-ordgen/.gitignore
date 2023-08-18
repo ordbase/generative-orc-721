@@ -1,0 +1,6 @@
+###
+#  ignore sqlite dbs
+*.db
+ord.db
+
+
