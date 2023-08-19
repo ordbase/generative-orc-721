@@ -8,9 +8,7 @@ puts "   #{recs.size} record(s)"
 #=> 21 record(s)
 
 OrdDb.open( './ordbase.db' )
-
-ids = recs.map {|rec| rec['id'] }
-OrdDb.import( ids )
+OrdDb.import( recs )
 
 puts
 puts "  #{Inscribe.count} inscribe(s)"

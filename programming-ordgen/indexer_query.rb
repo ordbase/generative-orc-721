@@ -7,14 +7,10 @@ puts
 puts "  #{Inscribe.count} inscribe(s)"
 puts "  #{Blob.count} blob(s)"
 
-inscribes = Inscribe.joins( :blob )
-                   .where( 'content LIKE ?', '%deploy%' )
-                   .order( 'num' )
+inscribes = Inscribe.search( 'deploy' )
 puts "  #{inscribes.size} deploy inscribe candidate(s)"
                 
-inscribes = Inscribe.joins( :blob )
-                   .where( 'content LIKE ?', '%mint%' )
-                   .order( 'num' )
+inscribes = Inscribe.search( 'mint' )
 puts "  #{inscribes.size} mint inscribe candidate(s)"
 
 
@@ -22,9 +18,7 @@ puts "  #{inscribes.size} mint inscribe candidate(s)"
 require_relative 'og'
 
 
-inscribes = Inscribe.joins( :blob )
-                   .where( 'content LIKE ?', '%deploy%' )
-                   .order( 'num' )
+inscribes = Inscribe.search( 'deploy' )
 puts "  #{inscribes.size} inscribe candidate(s)"
 #=> 1 deploy inscribe candidate(s)
 
@@ -33,9 +27,7 @@ inscribes.each do |inscribe|
   pp data
 end
 
-inscribes = Inscribe.joins( :blob )
-                   .where( 'content LIKE ?', '%mint%' )
-                   .order( 'num' )
+inscribes = Inscribe.search( 'mint' )
 puts "  #{inscribes.size} inscribe candidate(s)"
 #=> 20 mint inscribe candidate(s)
 

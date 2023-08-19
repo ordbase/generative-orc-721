@@ -88,9 +88,7 @@ puts "   #{recs.size} record(s)"
 #=> 21 record(s)
 
 OrdDb.open( './ordbase.db' )
-
-ids = recs.map {|rec| rec['id'] }
-OrdDb.import( ids )
+OrdDb.import( recs )
 ```
 
 resulting in:
@@ -175,17 +173,12 @@ puts "  #{Blob.count} blob(s)"
 #=> 21 blob(s)
 
 
-inscribes = Inscribe.joins( :blob )
-                   .where( 'content LIKE ?', '%deploy%' )
-                   .order( 'num' )
-puts "  #{inscribes.size} inscribe candidate(s)"
+inscribes = Inscribe.search( 'deploy' )
+puts "  #{inscribes.size} deploy inscribe candidate(s)"
 #=> 1 deploy inscribe candidate(s)
 
-
-inscribes = Inscribe.joins( :blob )
-                   .where( 'content LIKE ?', '%mint%' )
-                   .order( 'num' )
-puts "  #{inscribes.size} inscribe candidate(s)"
+inscribes = Inscribe.search( 'mint' )
+puts "  #{inscribes.size} mint inscribe candidate(s)"
 #=> 20 mint inscribe candidate(s)
 ```
 
@@ -195,10 +188,8 @@ deploy & mint text inscriptions:
 ``` ruby
 require_relative 'og'
 
-inscribes = Inscribe.joins( :blob )
-                   .where( 'content LIKE ?', '%deploy%' )
-                   .order( 'num' )
-puts "  #{inscribes.size} inscribe candidate(s)"
+inscribes = Inscribe.search( 'deploy' )
+puts "  #{inscribes.size} deploy inscribe candidate(s)"
 #=> 1 deploy inscribe candidate(s)
 
 inscribes.each do |inscribe|
@@ -206,10 +197,8 @@ inscribes.each do |inscribe|
   pp data
 end
 
-inscribes = Inscribe.joins( :blob )
-                   .where( 'content LIKE ?', '%mint%' )
-                   .order( 'num' )
-puts "  #{inscribes.size} inscribe candidate(s)"
+inscribes = Inscribe.search( 'mint'  )
+puts "  #{inscribes.size} mint inscribe candidate(s)"
 #=> 20 mint inscribe candidate(s)
 
 inscribes.each do |inscribe|
